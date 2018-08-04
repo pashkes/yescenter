@@ -1,0 +1,208 @@
+.header {
+  &.show-menu {
+    .menu {
+
+      visibility: visible;
+      z-index: 10;
+    }
+    .menu__inner {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    .header__top {
+      display: none;
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+    }
+    .header__toggle-menu {
+      background-image: url(%=static=%minified-svg/close.svg);
+      background-size: 14px 14px;
+    }
+    .header__bottom {
+      @include media-breakpoint-down(sm) {
+        padding: 0;
+      }
+    }
+    .header__logo-wrapper {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      @include media-breakpoint-up(md) {
+        padding: 0;
+      }
+    }
+  }
+  &__top {
+    color: #fff;
+    background-color: $dark-blue;
+  }
+  &__you-city {
+    font-family: Intro, Arial sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+  }
+  &__select-wrapper {
+    border-bottom: 1px dashed #25344A;
+  }
+  &__select-city {
+    font: 12px Intro, Arial sans-serif;
+    letter-spacing: 0.2px;
+    text-align: left;
+    appearance: none;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    &::-ms-expand {
+      display: none;
+    }
+  }
+  &__additional-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__link {
+    display: block;
+    padding: 14px 16px;
+    font-family: 'Open Sans', Intro, sans-serif;
+    font-size: 13px;
+    line-height: 1.69;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+  }
+  &__search {
+    display: none;
+  }
+  &__search-btn {
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 32px;
+    padding: 0;
+    @include media-breakpoint-up(xl) {
+      margin-left: 16px;
+    }
+    &:hover {
+      .icon {
+        fill: $primary-red;
+      }
+    }
+    .icon {
+      fill: #fff;
+    }
+  }
+  &__bottom {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ebebeb;
+    @include media-breakpoint-up(md) {
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 20px;
+      padding-bottom: 16px;
+    }
+  }
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
+  }
+  &__logo {
+    display: block;
+    margin-right: 8px;
+    @include media-breakpoint-up(xl) {
+      margin-right: 20px;
+    }
+    img {
+      @include media-breakpoint-up(xl) {
+        width: 76px;
+        height: 76px;
+      }
+    }
+  }
+  &__site-desc {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: 0.9px;
+    }
+  }
+  &__user-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: -12px;
+    margin-left: -12px;
+    @include media-breakpoint-up(xl) {
+      margin-right: -16px;
+      margin-left: -16px;
+    }
+  }
+  &__item {
+    margin: 0 12px;
+    @include media-breakpoint-up(xl) {
+      margin: 0 16px;
+    }
+    &--contact {
+      text-align: right;
+    }
+  }
+  &__registered-course {
+    width: auto;
+    min-width: 216px;
+  }
+  &__order-call {
+    min-width: 177px;
+    width: auto;
+  }
+  &__title-delivery {
+    font-family: 'Open Sans', Intro sans-serif;
+    font-size: 13px;
+    line-height: 1.69;
+    letter-spacing: 0.3px;
+    text-align: right;
+    color: #959595;
+  }
+  &__tel {
+    font-family: Intro, 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.4px;
+    @include media-breakpoint-up(xl) {
+      font-size: 24px;
+      letter-spacing: 0.5px;
+    }
+  }
+  &__toggle-menu {
+    margin-right: -7px;
+    z-index: 11;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(%=static=%minified-svg/burger-btn.svg) center no-repeat;
+    background-size: 16px 16px;
+    &:hover {
+      fill: $primary-red;
+    }
+  }
+  &__menu {
+    @include media-breakpoint-up(xl) {
+      border-bottom: 1px solid #ebebeb;
+    }
+  }
+}

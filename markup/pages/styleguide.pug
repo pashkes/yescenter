@@ -1,0 +1,33 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  head
+    +head(head.defaults)
+  body
+    section.pt-3.pb-3.section.section--grey
+      .container
+          .row
+            .col-3
+              .row
+                .col-12.mb-2
+                  button(type="button").btn.btn--red Кнопка
+                .col-12.mb-2
+                  button(type="button").btn.btn--border-red Кнопка
+                .col-12.mb-2
+                  button(type="button").btn.btn--grey Кнопка
+                .col-12.mb-2
+                  button(type="button").btn.btn--light-blue Кнопка
+                .col-12.mb-2
+                  button(type="button").btn.btn--border-white Кнопка
+            .col-3
+              h2.h2 Заголовок
+            .col
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dicta eveniet, itaque magnam minus molestias praesentium quaerat quibusdam quisquam quo repellat velit. Aliquid ipsa laudantium molestiae nam nihil! Eaque, excepturi!
+
+
+  script(src='%=static=%js/separate-js/svg4everybody.min.js')
+  script svg4everybody();
+
+  //- Main scripts. You can replace it, but I recommend you to leave it here
+  script(src='%=static=%js/main%=hash=%%=min=%.js')

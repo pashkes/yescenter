@@ -1,0 +1,44 @@
+mixin promo(data)
+  .promo
+    .container
+      .promo__slider-wrapper
+        ul.promo__slider.js-promo-slider
+          li.promo__slide
+            div(style={'background-image': 'url(%=static=%img/content/promo-1.jpg)'}).promo__bg-image
+              .promo__body
+                h3.promo__title Английская
+                  br
+                  | школа актерского
+                  br
+                  | мастерства
+                p.promo__subtitle Вырабатывает навык изъясняться на английском языке красиво и правильно.
+                a(href="#").promo__btn.btn.btn--border-white Подробнее
+          li.promo__slide
+            div(style={'background-image': 'url(%=static=%img/content/promo-2.jpg)'}).promo__bg-image
+             .promo__body
+                h3.promo__title Интенсивный
+                  br
+                  | языковой практикум
+                  br
+                  | в Лондоне
+                p.promo__subtitle 18—21 марта
+                  br
+                  | Успейте записаться!
+                a(href="#").promo__btn.btn.btn--border-white Подробнее
+          li.promo__slide
+            div(style={'background-image': 'url(%=static=%img/content/promo-3.jpg)'}).promo__bg-image
+              .promo__body
+                h3.promo__title Английская
+                  br
+                  | школа актерского
+                  br
+                  | мастерства
+                p.promo__subtitle Вырабатывает навык изъясняться на английскомязыке красиво и правильно.
+                a(href="#").promo__btn.btn.btn--border-white Подробнее
+      .promo__footer
+        .row.justify-content-md-between.align-items-center
+          .col-md-auto
+            .promo__dots
+          .col-md-auto.text-center
+            a(href="#").promo__show-all Показать все акции
+             span &nbsp;&rarr;

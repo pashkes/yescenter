@@ -1,0 +1,97 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  font: 11px/2 Intro, Arial sans-serif;
+  letter-spacing: 1.1px;
+  vertical-align: top;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition: $transition-base;
+  cursor: pointer;
+  &--red {
+    border-color: $secondary-red;
+    color: #fff;
+    background-color: $secondary-red;
+  }
+  &--border-red {
+    color: $secondary-red;
+    border: 1px solid #ed1c24;
+    background-color: #fff;
+    &:hover {
+      border-color: #b82730;
+    }
+
+  }
+  &--border-white {
+    border-color: #ffffff;
+    color: #fff;
+    background-color: transparent;
+    letter-spacing: 0.8px;
+  }
+  &--grey {
+    background-color: transparent;
+    border-color: #d7d7d7;
+    letter-spacing: 0.8px;
+  }
+  &--light-blue {
+    border-color: rgba(#d7d7d7, .3);
+    background-color: transparent;
+    color: #ffffff;
+  }
+  &:hover {
+    border-color: #b82730;
+    background-color: #b82730;
+    color: #fff;
+  }
+  &:active {
+    background-color: darken(#b82730, 10%);
+  }
+}
+.btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  &:hover,&:focus {
+    .icon {
+      fill: $primary-red;
+    }
+  }
+}
+
+.slick-dots {
+  padding: 18px 0 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 0;
+}
+
+.slick-dots li.slick-active button::before {
+  background-color: #ce282f;
+}
+
+.slick-dots button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.slick-dots button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
