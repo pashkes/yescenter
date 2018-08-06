@@ -1,0 +1,56 @@
+.trial-lesson {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  min-height: 343px;
+  padding: 20px 24px 32px;
+  background: #1E293C url(%=static=%general/gift-xs.png) right bottom no-repeat;
+  @include media-breakpoint-up(md) {
+    min-height: 272px;
+    padding: 40px 31px 48px 31px;
+    background-image: url(%=static=%general/gift-md.png);
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 44px 44px 48px;
+    min-height: 264px;
+    background-image: url(%=static=%general/gift-xl.png);
+  }
+  &__title {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 42px;
+    letter-spacing: 0.2px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 18px;
+      font-size: 28px;
+      line-height: 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      letter-spacing: -0.5px;
+      font-size: 50px;
+      line-height: 42px;
+    }
+  }
+  &__subtitle {
+    letter-spacing: 0.1px;
+    max-width: 200px;
+    line-height: 22px;
+    @include media-breakpoint-up(md) {
+      max-width: 345px;
+      letter-spacing: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 29px;
+      max-width: 487px;
+    }
+  }
+  &__btn {
+    margin-top: auto;
+    @include media-breakpoint-up(md) {
+      max-width: 224px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 278px;
+    }
+  }
+}

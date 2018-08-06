@@ -1,0 +1,132 @@
+.features {
+  padding-top: 30px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ebebeb;
+  @include media-breakpoint-up(md) {
+    padding-top: 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 64px;
+    padding-bottom: 60px;
+  }
+  &__title {
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 34px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 42px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &:hover .features__img {
+      box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
+    }
+    @include media-breakpoint-up(md) {
+      margin-bottom: 48px;
+    }
+    @include media-breakpoint-up(xl) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+  }
+  &__name {
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Intro;
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+    }
+    a {
+      line-height: 1;
+    }
+  }
+  &__img {
+    margin-right: 24px;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background-color: $secondary-red;
+    border-radius: 50%;
+    transition: $transition-base;
+    @include media-breakpoint-up(md) {
+      width: 97px;
+      height: 97px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 128px;
+      height: 128px;
+      margin-right: 0;
+      margin-bottom: 22px;
+    }
+    &--light {
+      img {
+        @include media-breakpoint-up(md) {
+          width: 41px;
+          height: 60px;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 84px;
+          height: 80px;
+        }
+      }
+    }
+    &--book {
+      img {
+        @include media-breakpoint-up(md) {
+          width: 59px;
+          height: 50px;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 79px;
+          height: 76px;
+        }
+      }
+    }
+    &--cup {
+      img {
+        @include media-breakpoint-up(md) {
+          width: 43px;
+          height: 56px;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 57px;
+          height: 74px;
+        }
+      }
+    }
+    &--education {
+      img {
+        @include media-breakpoint-up(md) {
+          width: 60px;
+          height: 56px;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 80px;
+          height: 74px;
+        }
+      }
+    }
+    &--children {
+      img {
+        @include media-breakpoint-up(md) {
+          width: 47px;
+          height: 61px;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 62px;
+          height: 71px;
+        }
+      }
+    }
+  }
+}

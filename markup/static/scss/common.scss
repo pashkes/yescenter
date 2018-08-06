@@ -1,6 +1,6 @@
 // Common styles of the project
 body {
-  font: 15px/1.6 Intro, Arial sans-serif;
+font: 15px/1.6 Intro, Arial sans-serif;
   color: $text-color;
   letter-spacing: 0.3px;
   min-width: 320px;
@@ -25,18 +25,32 @@ p {
 
 .h2 {
   margin-top: 0;
-  margin-bottom: 18px;
-  font: 18px/1.44 Intro, Arial sans-serif;
+  margin-bottom: 10px;
+  font: 18px/26px Intro, Arial sans-serif;
   letter-spacing: 0.7px;
   text-transform: uppercase;
   @include media-breakpoint-up(md) {
-    margin-bottom: 32px;
+    margin-bottom: 22px;
     font-size: 28px;
     line-height: 1.357;
     letter-spacing: 1.1px;
   }
   @include media-breakpoint-up(xl) {
     font-size: 30px;
+  }
+}
+.subtitle {
+  margin-bottom: 28px;
+  font-family: 'Open Sans', Intro sans-serif;
+  line-height: 22px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 38px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 50px;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
   }
 }
 .container,
@@ -73,6 +87,10 @@ h1, h2, h3 {
     padding-top: 42px;
     padding-bottom: 48px;
   }
+  @include media-breakpoint-up(xl) {
+    padding-top: 64px;
+    padding-bottom: 88px;
+  }
 }
 .page-wrapper {
   max-width: 1344px;
@@ -81,4 +99,7 @@ h1, h2, h3 {
   @include media-breakpoint-up(xl) {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
+}
+.icon {
+  transition: $transition-base;
 }

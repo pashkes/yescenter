@@ -1,10 +1,19 @@
 mixin promo(data)
-  .promo
-    .container
+  include ../icon/icon
+
+  section.promo
+    .container-fluid
       .promo__slider-wrapper
+        button(type="button").promo__arrow.promo__arrow--prev.text-hide.js-promo-prev-btn
+          +icon('arrow-left', 12, 11)
+          |Предадущий слайд
+        button(type="button").promo__arrow.promo__arrow--next.text-hide.js-promo-next-btn
+          +icon('arrow-right', 12, 11)
+          | Следующий слайд
         ul.promo__slider.js-promo-slider
           li.promo__slide
-            div(style={'background-image': 'url(%=static=%img/content/promo-1.jpg)'}).promo__bg-image
+            div.promo__bg-image
+              img(src="%=static=%img/content/promo-1@2x.jpg" width="671" height="408" alt="Английская школа актерского мастерства")
               .promo__body
                 h3.promo__title Английская
                   br
@@ -14,8 +23,9 @@ mixin promo(data)
                 p.promo__subtitle Вырабатывает навык изъясняться на английском языке красиво и правильно.
                 a(href="#").promo__btn.btn.btn--border-white Подробнее
           li.promo__slide
-            div(style={'background-image': 'url(%=static=%img/content/promo-2.jpg)'}).promo__bg-image
-             .promo__body
+            div.promo__bg-image
+              img(src="%=static=%img/content/promo-2@2x.jpg" width="671" height="408" alt="Интенсивный языковой практикум в Лондоне")
+            .promo__body
                 h3.promo__title Интенсивный
                   br
                   | языковой практикум
@@ -26,7 +36,8 @@ mixin promo(data)
                   | Успейте записаться!
                 a(href="#").promo__btn.btn.btn--border-white Подробнее
           li.promo__slide
-            div(style={'background-image': 'url(%=static=%img/content/promo-3.jpg)'}).promo__bg-image
+            div.promo__bg-image
+              img(src="%=static=%img/content/promo-1@2x.jpg" width="671" height="408" alt="Английская школа актерского мастерства")
               .promo__body
                 h3.promo__title Английская
                   br
@@ -35,6 +46,7 @@ mixin promo(data)
                   | мастерства
                 p.promo__subtitle Вырабатывает навык изъясняться на английскомязыке красиво и правильно.
                 a(href="#").promo__btn.btn.btn--border-white Подробнее
+    .container
       .promo__footer
         .row.justify-content-md-between.align-items-center
           .col-md-auto

@@ -5,12 +5,16 @@ html(class="no-js", lang="ru")
   include ../components/footer/footer.pug
   include ../components/header/header
   include ../components/promo/promo
+  include ../components/courses/courses
+  include ../components/features/features
   head
     +head(head.defaults)
   body
     .page-wrapper
       +header()
       +promo()
+      +courses(courses.en)
+      +features()
       +footer()
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();

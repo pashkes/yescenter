@@ -1,0 +1,66 @@
+mixin courses(data)
+  section.courses.section.section--grey
+    include ../icon/icon
+    include ../lang-card/lang-card
+    include ../trial-lesson/trial-lesson
+    .container
+      h2.h2.courses__title Школа иностранных языков — языковые курсы YES
+      p.subtitle Не секрет, что владение иностранными языками открывает широкие возможности для карьерного роста, захватывающих путешествий по всему миру, организации увлекательного досуга, создания нового круга общения и самосовершенствования. Лингвистический центр YES предлагает вам открыть для себя новые языки или повысить свой уровень владения ими. Обучение в Москве, Подмосковье, Владимирской и Тульской областях проводится на базе 18 наших филиалов.
+      .courses__header
+        .courses__select.d-md-none
+          span.courses__flag.en.js-current-lang
+          select.courses__select-lang.js-select-lang
+            option(value="en") Английский
+            option(value="de") Немецкий
+            option(value="fr") Французкий
+            option(value="it") Итальянский
+            option(value="es") Испанский
+            option(value="zht") Китайский
+            option(value="ja") Японский
+          +icon('arrow-bottom', 12, 8)
+        div(role="tablist").courses__langs.d-none.d-md-flex.nav
+          a(href="#en" role="tab" aria-selected="true" data-toggle="tab").courses__select.active
+            span.courses__flag.en
+            span.courses__name-lang Английский
+          a(href="#de" role="tab" aria-selected="false" data-toggle="tab").courses__select
+            span.courses__flag.de
+            span.courses__name-lang Немецкий
+          a(href="#fr" role="tab" aria-selected="false" data-toggle="tab").courses__select
+            span.courses__flag.fr
+            span.courses__name-lang Французкий
+          a(href="#it" role="tab" aria-selected="false" data-toggle="tab").courses__select
+            span.courses__flag.it
+            span.courses__name-lang Итальянский
+          a(href="#es" role="tab" aria-selected="false" data-toggle="tab").courses__select
+            span.courses__flag.es
+            span.courses__name-lang Испанский
+          a(href="#zht" role="tab" aria-selected="false" data-toggle="tab").courses__select
+            span.courses__flag.zht
+            span.courses__name-lang Китайский
+          a(href="#ja" role="tab" aria-selected="false" data-toggle="tab").courses__select
+            span.courses__flag.ja
+            span.courses__name-lang Японский
+    .courses__content
+      .container
+        div(role="tabpanel").courses__panel.active.show#en
+          .row.js-slider-course
+            each item in data
+              .col-auto.col-xl-3
+                if(item.equalGroup)
+                  +lang-card(item)(data-mh="my-group")
+                else
+                  +lang-card(item)
+    .container
+      .courses__dots
+    .courses__footer.text-center.d-none.d-xl-block
+      .container
+        a(href="#").courses__show-more.btn.btn--grey показать еще
+    .container
+      p.courses__desc.subtitle Мы открываем перспективы для учебы и работы за границей, получения престижных должностей и комфортных путешествий. Собственная методика поможет выучить язык без зубрежки и многочасовых занятий с книгами, а специальные программы для детей от 3 лет и взрослых, охватывающие групповые, индивидуальные и корпоративные занятия, помогут включиться в образовательный процесс.
+      +trial-lesson()
+
+
+
+
+
+

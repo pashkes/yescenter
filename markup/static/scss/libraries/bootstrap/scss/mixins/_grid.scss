@@ -22,8 +22,8 @@
 @mixin make-row() {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -8px;
-  margin-left: -8px;
+  margin-right: -16px;
+  margin-left: -16px;
 }
 
 @mixin make-col-ready() {

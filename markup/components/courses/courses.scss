@@ -1,0 +1,169 @@
+.courses {
+  &__title {
+    max-width: 235px;
+    @include media-breakpoint-up(md) {
+      max-width: 530px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 100%;
+    }
+  }
+  &__header {
+    padding-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 14px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 24px;
+    }
+  }
+  .slick-list {
+    padding-bottom: 15px;
+  }
+  .slick-dots {
+    @include media-breakpoint-up(md) {
+      justify-content: flex-start;
+      margin-left: 10px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 0;
+    }
+  }
+  &__content {
+    .container {
+      @include media-breakpoint-up(md) {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      @include media-breakpoint-up(xl) {
+        max-width: 1216px;
+        padding-right: 32px;
+      }
+    }
+  }
+  .lang-card {
+    @include media-breakpoint-up(md) {
+      width: 263px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: auto;
+    }
+  }
+  &__select {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 40px;
+    padding-left: 45px;
+    padding-right: 24px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: solid 1px #d7d7d7;
+    text-decoration: none;
+    &:hover .courses__name-lang {
+      color: $primary-red;
+    }
+    &.active {
+      background-color: $primary-red;
+      .courses__name-lang {
+        color: #fff;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      width: auto;
+      margin-bottom: 16px;
+      padding-right: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .icon {
+      stroke: $primary-red;
+    }
+  }
+  &__flag {
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &.en {
+      background-image: url(%=static=%general/langs/united-kingdom.png);
+    }
+    &.de {
+      background-image: url(%=static=%general/langs/germany.png);
+    }
+    &.fr {
+      background-image: url(%=static=%general/langs/france.png);
+    }
+    &.it {
+      background-image: url(%=static=%general/langs/italy.png);
+    }
+    &.es {
+      background-image: url(%=static=%general/langs/spain.png);
+    }
+    &.zht {
+      background-image: url(%=static=%general/langs/china.png);
+    }
+    &.ja {
+      border-color: #e8e8e8;
+      background-image: url(%=static=%general/langs/japan.png);
+    }
+  }
+  &__select-lang {
+    width: 100%;
+    margin-bottom: 3px;
+    border: none;
+    appearance: none;
+    background-color: transparent;
+    font: 15px 'Open Sans', Intro sans-serif;
+    letter-spacing: 0.3px;
+    color: #191919;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+      + .icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__langs {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  &__name-lang {
+    font-family: 'Open Sans', Intro sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: $black;
+  }
+  &__footer {
+    @include media-breakpoint-up(xl) {
+      padding-top: 24px;
+    }
+  }
+  &__show-more {
+    min-width: 240px;
+    width: auto;
+  }
+  &__desc {
+    padding-top: 5px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 42px;
+      padding-top: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 50px;
+      padding-top: 45px;
+    }
+  }
+}
