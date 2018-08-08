@@ -1,0 +1,19 @@
+mixin certifications(data)
+  section.certifications.section
+    .container
+      .row.justify-content-xl-between
+        .col-xl-7
+          h2.certifications__title.h2 Гарантия качественного обучения
+          p.certifications__subtitle.subtitle YES — это открытый международный центр по обучению, подготовке к Кембриджским экзаменам, где ваш ребенок выучит язык в соответствии с международными стандартами. Как официальный участник проекта Cambridge English, мы гарантируем высокий уровень преподавания, подтвержденный квалификацией педагогов. Подготовим учеников к успешной сдаче IELTS и TOEFL, в том числе — в объеме, необходимом для обучения за границей.
+        .col-xl-5
+          .row.certifications__slider.js-certifications-slider
+            .col
+              //Big image in link in href attributes. Small image in img tag
+              a(href="%=static=%img/content/certification-1.jpg" data-fancybox="gallery")
+                img(src="%=static=%img/content/certification-1.jpg" width="200" height="284" alt="сертификат-1")
+            .col
+              //Big image in link in href attributes. Small image in img tag
+              a(href="%=static=%img/content/certification-1.jpg" data-fancybox="gallery")
+                img(src="%=static=%img/content/certification-2.jpg" width="200" height="284" alt="сертификат-2")
+
+

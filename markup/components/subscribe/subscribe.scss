@@ -1,0 +1,100 @@
+.subscribe {
+  padding-top: 32px;
+  @include media-breakpoint-up(md) {
+    padding-top: 48px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 96px;
+    padding-bottom: 97px;
+  }
+  &__inner {
+    padding: 9px 24px 32px 24px;
+    background-color: $grey-secondary;
+    @include media-breakpoint-up(md) {
+      padding-top: 0;
+      padding-right: 50px;
+      padding-bottom: 32px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 0;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 15px;
+      font-size: 28px;
+      line-height: 30px;
+      letter-spacing: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 50px;
+      font-size: 44px;
+      line-height: 44px;
+      letter-spacing: -0.4px;
+    }
+    span {
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+    }
+  }
+  &__field {
+    margin-bottom: 32px;
+    background-color: transparent;
+    @include media-breakpoint-up(md) {
+      max-width: 286px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 8px;
+      position: relative;
+      bottom: 7px;
+    }
+  }
+
+  &__img {
+    display: block;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      max-width: 263px;
+      height: 239px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 392px;
+      height: 288px;
+      overflow: hidden;
+    }
+    img {
+      max-width: 251px;
+      object-position: -14px;
+      @include media-breakpoint-up(md) {
+        max-width: 314px;
+        object-position: -20px;
+      }
+      @include media-breakpoint-up(xl) {
+        max-width: 428px;
+        object-position: -21px -17px;
+      }
+    }
+  }
+  &__body {
+    margin-top: -12px;
+    @include media-breakpoint-up(md) {
+      padding-top: 51px;
+      padding-bottom: 17px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 65px;
+    }
+  }
+  &__btn {
+    @include media-breakpoint-up(md) {
+      max-width: 224px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 278px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.reviews {
+  padding-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 36px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 81px;
+    padding-bottom: 77px;
+  }
+  &__title {
+    margin-bottom: 27px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 34px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 38px;
+    }
+  }
+  &__item {
+    @include media-breakpoint-up(md) {
+      max-width: 320px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 362px;
+    }
+  }
+  .slick-list {
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 15px;
+    }
+  }
+  &__slider {
+    position: relative;
+    .container {
+      @include media-breakpoint-up(md) {
+        padding-right: 0;
+        margin-left: calc((100vw - 768px)/2);
+        max-width: calc(768px + (100vw - 768px / 2));
+      }
+      @include media-breakpoint-up(lg) {
+        margin-left: calc((100vw - 960px)/2);
+        max-width: calc(960px + (100vw - 960px / 2));
+      }
+      @include media-breakpoint-up(xl) {
+        margin-left: auto;
+        max-width: 1216px;
+        padding-right: 32px;
+      }
+    }
+  }
+  &__arrow {
+    position: absolute;
+    display: none;
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      top: 160px;
+    }
+  }
+  .slick-dots {
+    @include media-breakpoint-up(md) {
+      margin-left: -5px;
+    }
+  }
+  &__footer {
+    @include media-breakpoint-up(md) {
+      padding-top: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 5px;
+    }
+  }
+}

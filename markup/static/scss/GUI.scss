@@ -12,11 +12,7 @@
   text-align: center;
   transition: $transition-base;
   cursor: pointer;
-  &--red {
-    border-color: $secondary-red;
-    color: #fff;
-    background-color: $secondary-red;
-  }
+
   &--border-red {
     color: $secondary-red;
     border: 1px solid #ed1c24;
@@ -36,6 +32,7 @@
     background-color: transparent;
     border-color: #d7d7d7;
     letter-spacing: 0.8px;
+    color: #fff;
   }
   &--light-blue {
     border-color: rgba(#d7d7d7, .3);
@@ -43,20 +40,30 @@
     color: #ffffff;
   }
   &:hover {
-    border-color: #b82730;
-    background-color: #b82730;
+    border-color: $primary-red;
+    background-color: $primary-red;
     color: #fff;
   }
   &:active {
     background-color: darken(#b82730, 10%);
   }
+  &--red {
+    border-color: $primary-red;
+    color: #fff;
+    background-color: $primary-red;
+    &:hover {
+      background-color: #b82730;
+      border-color: #b82730;
+    }
+  }
 }
+
 .btn-close {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  &:hover,&:focus {
+  &:hover, &:focus {
     .icon {
       fill: $primary-red;
     }
@@ -70,6 +77,10 @@
   list-style-type: none;
   font-size: 0;
   margin-bottom: 13px;
+  @include media-breakpoint-up(md) {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .slick-dots li.slick-active button::before {
@@ -95,4 +106,202 @@
   height: 9px;
   border-radius: 50%;
   background-color: #e1e1e1;
+}
+
+.show-all {
+  font-size: 11px;
+  line-height: 2;
+  letter-spacing: 0.8px;
+  color: $primary-red;
+  text-transform: uppercase;
+  span {
+    padding-left: 5px;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    font-family: Arial sans-serif;
+  }
+}
+
+.slide-arrow {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  width: 64px;
+  height: 40px;
+  background-color: $secondary-red;
+  transition: $transition-base;
+  z-index: 2;
+  &:hover {
+    transform: translateX(0);
+  }
+  &:focus {
+    outline: none;
+  }
+  @include media-breakpoint-only(xl) {
+    display: flex;
+  }
+  &--prev {
+    justify-content: flex-end;
+    left: 0;
+    border-radius: 0 25px 25px 0;
+    transform: translateX(-32px);
+  }
+  &--next {
+    right: 0;
+    border-radius: 25px 0 0 25px;
+    transform: translateX(24px);
+  }
+}
+
+.form {
+  &__label {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .8;
+    color: rgba(#363636, .6);
+    letter-spacing: 0.28px;
+  }
+  &__field {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #353535;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.28px;
+    transition: $transition-base;
+    @include placeholder {
+      opacity: 0.6;
+      font-family: 'Open Sans', Intro, sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      color: rgba(54, 54, 54, 0.6);
+    }
+    &:focus {
+      outline: none;
+      border-color: #d52833;
+    }
+    @include media-breakpoint-up(md) {
+      margin-bottom: 17px;
+    }
+  }
+  .SumoSelect {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 18px;
+    }
+  }
+  .SelectClass {
+    cursor: pointer;
+  }
+  .SumoSelect > .CaptionCont {
+    border: none;
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+  }
+
+  .SelectBox {
+    padding: 7px 17px 7px 0;
+  }
+
+  .SumoSelect > .CaptionCont > span {
+    color: #363636;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.28px;
+    pointer-events: none;
+  }
+
+  .SumoSelect:focus > .CaptionCont, .SumoSelect:hover > .CaptionCont {
+    box-shadow: none;
+    border-color: #000;
+  }
+
+  .SumoSelect > .CaptionCont > label > i {
+    background-image: url(%=static=%minified-svg/arrow-bottom-red.svg);
+    background-size: 12px 8px;
+    width: 10px;
+    height: 6px;
+    opacity: 1;
+    right: 0;
+    left: initial;
+    top: 5px;
+    pointer-events: none;
+  }
+
+  .SumoSelect > .CaptionCont > label {
+    width: 44px;
+    pointer-events: none;
+  }
+
+  .SumoSelect > .optWrapper > .options {
+    max-height: 300px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+  }
+
+  .SumoSelect > .optWrapper {
+    border-radius: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .SumoSelect.open > .optWrapper {
+    top: 100%;
+  }
+
+  .SumoSelect:focus > .CaptionCont, .SumoSelect.open > .CaptionCont {
+    box-shadow: none;
+    border-color: #000;
+  }
+
+  .SumoSelect > .optWrapper > .options > li.opt:first-child {
+    border-radius: 0;
+  }
+
+  .SumoSelect > .optWrapper > .options li.opt {
+    border-bottom: none;
+    padding: 0 15px;
+  }
+
+  .SumoSelect > .optWrapper > .options li label {
+    color: #363636;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.28px;
+  }
+
+  .opt.selected label {
+    color: #d32a33 !important;
+    font-weight: 700;
+    letter-spacing: 0.28px;
+  }
+
+  .SumoSelect > .optWrapper > .options li.opt:hover {
+    background-color: transparent;
+  }
+
+  .SumoSelect > .optWrapper > .options li.opt:hover label {
+    color: #d32a33;
+
+  }
+  .SumoSelect > .optWrapper > .options li.opt.disabled {
+    display: none;
+  }
+  .SumoSelect > .CaptionCont > span.placeholder {
+    font-style: normal;
+    font-family: 'Open Sans', Intro, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    opacity: .6;
+    color: rgba(54, 54, 54, 0.6);
+  }
 }

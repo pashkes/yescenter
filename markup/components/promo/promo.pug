@@ -4,10 +4,10 @@ mixin promo(data)
   section.promo
     .container-fluid
       .promo__slider-wrapper
-        button(type="button").promo__arrow.promo__arrow--prev.text-hide.js-promo-prev-btn
+        button(type="button").promo__arrow.slide-arrow.slide-arrow--prev.text-hide.js-promo-prev-btn
           +icon('arrow-left', 12, 11)
           |Предадущий слайд
-        button(type="button").promo__arrow.promo__arrow--next.text-hide.js-promo-next-btn
+        button(type="button").promo__arrow.slide-arrow.slide-arrow--next.text-hide.js-promo-next-btn
           +icon('arrow-right', 12, 11)
           | Следующий слайд
         ul.promo__slider.js-promo-slider
@@ -46,11 +46,12 @@ mixin promo(data)
                   | мастерства
                 p.promo__subtitle Вырабатывает навык изъясняться на английскомязыке красиво и правильно.
                 a(href="#").promo__btn.btn.btn--border-white Подробнее
-    .container
-      .promo__footer
-        .row.justify-content-md-between.align-items-center
-          .col-md-auto
-            .promo__dots
-          .col-md-auto.text-center
-            a(href="#").promo__show-all Показать все акции
-             span &nbsp;&rarr;
+    .promo__footer
+      .container
+        .promo__footer
+          .row.justify-content-md-between.align-items-center
+            .col-md-auto
+              .promo__dots
+            .col-md-auto.text-center
+              a(href="#").show-all Показать все акции
+               span &nbsp;&rarr;

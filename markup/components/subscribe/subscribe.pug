@@ -1,0 +1,19 @@
+mixin subscribe(data)
+  section.subscribe.section
+    .container
+      form.subscribe__inner.form#subscribe
+        .row
+          .col-md-auto
+            .subscribe__img
+              img(src="%=static=%img/general/letter.png" alt="Подпишитесь на нашу новостную рассылку")
+          .col-md
+            .subscribe__body
+              h3.subscribe__title
+                span Подпишитесь
+                | на нашу новостную рассылку
+              .row
+                .col-xl-6
+                  label(for="subscribe-email").hidden Ваше имя и фамилия
+                  input(type="email" placeholder="Ваша электронная почта" name="email" required).subscribe__field.form__field#subscribe-email
+                .col-xl-6
+                  button.subscribe__btn.btn.btn--red Отправить

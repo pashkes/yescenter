@@ -1,0 +1,41 @@
+.forms-education {
+  padding-bottom: 13px;
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+    padding-bottom: 106px;
+  }
+  &__title {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 28px;
+    }
+  }
+  &__item {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 34px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+  &__subject {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 21px;
+      font-size: 24px;
+      line-height: 26px
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    margin-bottom: 0;
+    @include media-breakpoint-up(xl) {
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+    }
+  }
+}

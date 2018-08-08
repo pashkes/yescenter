@@ -1,0 +1,25 @@
+mixin reviews(data)
+  include ../review/review
+  section.reviews.section
+    .container
+      h2.reviews__title.h2 отзывы о нашем центре
+    .reviews__slider
+      button(type="button").reviews__arrow.slide-arrow.slide-arrow--prev.text-hide.js-reviews-prev-btn
+        +icon('arrow-left', 12, 11)
+        | Предадущий слайд
+      button(type="button").reviews__arrow.slide-arrow.slide-arrow--next.text-hide.js-reviews-prev-btn
+        +icon('arrow-right', 12, 11)
+        | Следующий слайд
+      .container
+        .row.js-reviews-slider
+          each item in data
+            .col-auto
+              +review(item).reviews__item
+    .reviews__footer
+      .container
+        .row.align-items-md-center
+          .col-md-auto.d-xl-none
+            .reviews__dots
+          .col-md-auto.ml-md-auto.text-center
+            a(href="#").show-all читать все отзывы
+              span &nbsp;&rarr;

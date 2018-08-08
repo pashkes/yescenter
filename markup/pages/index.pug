@@ -7,6 +7,16 @@ html(class="no-js", lang="ru")
   include ../components/promo/promo
   include ../components/courses/courses
   include ../components/features/features
+  include ../components/certifications/certifications
+  include ../components/video-data/video-data
+  include ../components/reviews/reviews
+  include ../components/teachers/teachers
+  include ../components/news/news
+  include ../components/map/map
+  include ../components/partners/partners
+  include ../components/causes/causes
+  include ../components/forms-education/forms-education
+  include ../components/subscribe/subscribe
   head
     +head(head.defaults)
   body
@@ -15,9 +25,20 @@ html(class="no-js", lang="ru")
       +promo()
       +courses(courses.en)
       +features()
+      +certifications()
+      +video-data()
+      +reviews(reviews)
+      +teachers(teachers)
+      +news()
+      +map()
+      +partners()
+      +causes()
+      +forms-education()
+      +subscribe()
       +footer()
-    script(src='%=static=%js/separate-js/svg4everybody.min.js')
-    script svg4everybody();
+      script(src='%=static=%js/separate-js/svg4everybody.min.js')
+      script svg4everybody();
 
-    //- Main scripts. You can replace it, but I recommend you to leave it here
-    script(src='%=static=%js/main%=hash=%%=min=%.js')
+      //- Main scripts. You can replace it, but I recommend you to leave it here
+      script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+      script(src='%=static=%js/main%=hash=%.js')

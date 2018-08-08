@@ -1,0 +1,7 @@
+include ../icon/icon
+mixin social(data)
+  ul.social&attributes(attributes)
+    each item in data
+      li.social__item
+        a(href="#").social__link
+          +icon(item.iconName, item.iconWidth, item.iconHeight)

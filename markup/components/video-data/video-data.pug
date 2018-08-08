@@ -1,0 +1,27 @@
+mixin video-data(data)
+  section.video-data.section.section--grey
+    .container
+      h2.video-data__title.h2 видеоматериалы
+    .video-data__slider
+      button(type="button").video-data__arrow.slide-arrow.slide-arrow--prev.text-hide.js-video-prev-btn
+        +icon('arrow-left', 12, 11)
+        | Предадущий слайд
+      button(type="button").video-data__arrow.slide-arrow.slide-arrow--next.text-hide.js-video-next-btn
+        +icon('arrow-right', 12, 11)
+        | Следующий слайд
+      .container
+        ul.video-data__list.js-video-data-slider
+          li
+            .embed-responsive.embed-responsive-16by9
+              iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0").embed-responsive-item
+          li
+            .embed-responsive.embed-responsive-16by9
+              iframe(src="https://www.youtube.com/embed/5D0OyvlDV6U?rel=0&amp;controls=0&amp;showinfo=0").embed-responsive-item
+    .video-data__footer
+      .container
+        .row.justify-content-md-between.align-items-md-center
+          .col-md-auto
+            .video-data__dots
+          .col-md-auto
+            a(href="#").show-all смотреть все видеоматериалы
+              span &nbsp;&rarr;

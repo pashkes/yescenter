@@ -1,0 +1,43 @@
+.teacher {
+  &__img {
+    width: 166px;
+    height: 166px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    overflow: hidden;
+    @include media-breakpoint-up(md) {
+      width: 192px;
+      height: 192px;
+      margin-bottom: 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 28px;
+    }
+    img {
+      max-width: 100%;
+      width: 166px;
+      height: 166px;
+      @include media-breakpoint-up(md) {
+        width: 192px;
+        height: 192px;
+      }
+    }
+  }
+  &__name {
+    display: block;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+  }
+  &__grey-text {
+    font-family: 'Open Sans', Intro, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

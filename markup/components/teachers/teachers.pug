@@ -1,0 +1,28 @@
+mixin teachers(data)
+  section.teachers.section
+    include ../teacher/teacher
+    .container
+      h2.teachers__title.h2 Наши преподаватели
+      p.teachers__subtitle.subtitle Приходите к нам учиться, и мы станем друзьями! Изучение нового языка в школе YES — это новые знакомства с интересными людьми, общение на актуальные темы и неформальная дружеская обстановка. Это поможет Вам получать и передавать новые знания и другую полезную информацию, выдавать новые идеи и творить.
+    .teachers__wrapper
+      button(type="button").teachers__arrow.slide-arrow.slide-arrow--prev.text-hide.js-techers-prev-btn
+        +icon('arrow-left', 12, 11)
+        | Предадущий слайд
+      button(type="button").teachers__arrow.slide-arrow.slide-arrow--next.text-hide.js-techers-next-btn
+        +icon('arrow-right', 12, 11)
+        | Следующий слайд
+      .container
+        ul.teachers__slider.js-techers-slider
+          each item in data
+            li
+              +teacher(item).teachers__slide
+      .teachers__footer
+        .container
+          .row.align-items-md-center
+            .col-md-auto.d-xl-none
+              .teachers__dots
+            .col-md-auto.ml-md-auto.text-center
+              a(href="#").show-all все преподаватели
+                span &nbsp;&rarr;
+
+

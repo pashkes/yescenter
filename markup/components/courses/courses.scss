@@ -23,7 +23,7 @@
   .slick-dots {
     @include media-breakpoint-up(md) {
       justify-content: flex-start;
-      margin-left: 10px;
+      margin-left: -5px;
     }
     @include media-breakpoint-up(xl) {
       padding-top: 0;
@@ -32,11 +32,17 @@
   &__content {
     .container {
       @include media-breakpoint-up(md) {
-        max-width: 100%;
         padding-right: 0;
+        margin-left: calc((100vw - 768px)/2);
+        max-width: calc(768px + (100vw - 768px / 2));
+      }
+      @include media-breakpoint-up(lg) {
+        margin-left: calc((100vw - 960px)/2);
+        max-width: calc(960px + (100vw - 960px / 2));
       }
       @include media-breakpoint-up(xl) {
         max-width: 1216px;
+        margin-left: auto;
         padding-right: 32px;
       }
     }
@@ -154,6 +160,7 @@
   &__show-more {
     min-width: 240px;
     width: auto;
+    color: $text-color;
   }
   &__desc {
     padding-top: 5px;

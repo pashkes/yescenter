@@ -1,2 +1,92 @@
 mixin footer(data)
+  include ../social/social
   footer.footer
+    .container
+      .footer__top
+        .row.justify-content-md-between.align-items-md-center
+          .col-md-7.col-xl-9
+            .footer__inner-langs
+              span.footer__label-couses.d-none.d-xl-block Курсы:
+              ul.footer__lang-list
+                li.footer__lang
+                  a(href="#").footer__link-lang Английский
+                li.footer__lang
+                  a(href="#").footer__link-lang Немецкий
+                li.footer__lang
+                  a(href="#").footer__link-lang Французский
+                li.footer__lang
+                  a(href="#").footer__link-lang Итальянский
+                li.footer__lang
+                  a(href="#").footer__link-lang Испанский
+                li.footer__lang
+                  a(href="#").footer__link-lang Китайский
+                li.footer__lang
+                  a(href="#").footer__link-lang Японский
+          .col-md-auto
+            button(type="button").footer__btn.btn.btn--red записаться на курсы
+      .footer__body
+        .row.justify-content-xl-start
+          .col-7.d-none.d-xl-block
+            .row.align-items-md-center.align-items-xl-start
+              .col-3
+                ul.footer__menu
+                  li.footer__item
+                    a(href="#").footer__link О компании
+                  li.footer__item
+                    a(href="#").footer__link база знаний
+                  li.footer__item
+                    a(href="#").footer__link Карта сайта
+                  li.footer__item
+                    a(href="#").footer__link Расписание
+                  li.footer__item
+                    a(href="#").footer__link Наши школы
+                  li.footer__item
+                    a(href="#").footer__link цены
+              .col-auto
+                ul.footer__menu
+                  li.footer__item
+                    a(href="#").footer__link Иностранные языки детям
+                  li.footer__item
+                    a(href="#").footer__link начинающим
+                  li.footer__item
+                    a(href="#").footer__link Подросткам
+                  li.footer__item
+                    a(href="#").footer__link Взрослым
+                  li.footer__item
+                    a(href="#").footer__link Корпоративное обучение
+                  li.footer__item
+                    a(href="#").footer__link Английский разговорный клуб
+              .col-auto
+                ul.footer__menu
+                  li.footer__item
+                    a(href="#").footer__link международные экзамены
+                  li.footer__item
+                    a(href="#").footer__link Франшиза
+                  li.footer__item
+                    a(href="#").footer__link онлайн тестирование
+                  li.footer__item
+                    a(href="#").footer__link YES MY LIFE
+          .col-xl-5
+            .row.justify-content-center.justify-content-md-between.justify-content-xl-start
+              .col-md-auto.col-xl-6
+                .footer__contact
+                  a(href="tel:+784953800520").footer__tel 8 495 380-05-20
+                  span.footer__sub-title Для Москвы, 09:00—18:00
+              .col-md-auto.col-xl-6
+                .footer__contact
+                  a(href="tel:+788005554477").footer__tel 8 800 555-44-77
+                  span.footer__sub-title Бесплатно по России
+              .col-md-auto.col-xl-auto.ml-xl-auto
+                button(type="button").footer__btn.btn.btn--grey заказать обратный звонок
+      .footer__bottom
+        .row.justify-content-md-between.align-items-md-center
+          .col-md-auto.order-md-2
+            +social(socialFooter).footer__social
+          .col-md.col-xl-9.order-md-1
+            p.footer__copy
+              | &copy; 2001—2018 Центр иностранных языков Yes. «Yes» является зарегистрированным товарным знаком.
+              span При использовании любых материалов сайта, включая фотографии и тексты, активная ссылка на&nbsp;
+                a(href="#") &nbsp;www.yescenter.ru&nbsp;
+                | обязательна.
+
+

@@ -1,0 +1,30 @@
+mixin map(data)
+  .map
+    .container
+      form.map__form.form#order-lesson
+        p.map__title Ждём вас
+          br
+          | на бесплатном
+          br
+          | занятии!
+        .row
+          .col-xl-6
+            label(for="order-lesson-full-name").hidden Ваше имя и фамилия
+            input(placeholder="Ваше имя и фамилия" name="name" required).form__field#order-lesson-full-name
+          .col-xl-6
+            label(for="order-lesson-phone").hidden Ваш номер телефона
+            input(type="tel" placeholder="Ваш номер телефона"  name="phone" required).form__field#order-lesson-phone
+        label(for="order-lesson-language").hidden Выберите язык для изучения
+        select.js-select-lang-order#order-lesson-language
+          option(selected disabled) Выберите язык для изучения
+          option Аглийский
+          option Французкий
+          option Японский
+          option Китайский
+        label(for="order-lesson-comment").hidden Комментарии
+        input(placeholder="Комментарии" name="comments").form__field#order-lesson-comment
+        p.map__conf Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
+          a(href="#") политикой конфиденциальности YES EDUCATION GROUP
+        button.map__btn.btn.btn--red Отправить заявку
+    .map__wrapper
+      .map__canvas#map

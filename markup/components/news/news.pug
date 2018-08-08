@@ -1,0 +1,56 @@
+mixin news(data)
+  section.news
+    .container
+      .row
+        .col-xl-6
+          .news__section
+            .container
+              h2.news__title.h2 Новости и события
+              ul.news__slide.js-news-slide
+                li
+                  article.news__item
+                    h3.news__name
+                      a(href="#") Открытие новой школы в Кунцево
+                    span.news__sub-name 11 сентября 2017
+                    p.news__preview-text В прошлую субботу, 2 сентября, в Центре иностранных языков YES состоялось торжественное открытие новой школы в Кунцево. Оно превратилось в настоящий праздник.
+                li
+                  article.news__item
+                    h3.news__name
+                      a(href="#") Поздравляем с началом нового учебного года!
+                    span.news__sub-name 1 сентября 2017
+                    p.news__preview-text Центр иностранных языков YES поздравляет всех учащихся с началом нового учебного года! Мы от всей души желаем всем вам успешного старта для последующего успешного завершения учебного года.
+
+                li
+                  article.news__item
+                    h3.news__name
+                      a(href="#") Английская королева YES
+                    span.news__sub-name 25 мая 2017
+                    p.news__preview-text Фестиваль "Невесты Подмосковья" ежегодно проходит на территории городского округа Подольск. В нем принимают участие девушки из различных городов Московской области.
+              .row.justify-content-center.justify-content-md-end.justify-content-xl-start
+                .col-md.d-xl-none
+                  .news__dots
+                .col-md-auto.text-center
+                  a(href="#").show-all в архив новостей
+                    span &nbsp;&rarr;
+
+        .col-xl-6.border-left-xl
+          .news__section.news__section--single-news
+            .container
+              h2.news__title.h2 познавательные Статьи
+              article.news__item
+                a(href="#").news__img
+                  img(src="%=static=%img/content/news-img.jpg" width="272" height="176" alt="Следуй плану, достигай цель!")
+                h3.news__name
+                  a(href="#") Следуй плану, достигай цель!
+                span.news__sub-name Автор: Афанаскина Екатерина Владимировна
+                p.news__preview-text Хотелось бы выучить язык международного общения, но все как-то не складывается — командировки, загруженность на работе, маленький ребенок. Хотя, чаще всего, это только отговорки. На мой взгляд, если у человека есть четкое понимание, зачем ему нужен английский язык, то он найдет возможность им заняться, и не придется придумывать оправдания своей чрезмерной ...
+          .news__footer
+            .container
+              .row.justify-content-center.justify-content-md-end.justify-content-xl-start
+                .col-auto
+                  a(href="#").show-all читать больше статей
+                    span &nbsp;&rarr;
+
+
+
+
