@@ -4,16 +4,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>default title</title>
+        <title>default title
+        </title>
         <meta content="" name="description">
         <meta content="" name="keywords">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainyq9c0d.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main421pmp.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -33,157 +34,638 @@
         </script>
     </head>
 
-    <body class="page">
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__top">
-                    <div class="row justify-content-md-between align-items-md-center">
-                        <div class="col-md-7 col-xl-9">
-                            <div class="footer__inner-langs"><span class="footer__label-couses d-none d-xl-block">Курсы:</span>
-                                <ul class="footer__lang-list">
-                                    <li class="footer__lang"><a class="footer__link-lang" href="#">Английский</a>
+    <body>
+        <div class="page-wrapper">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <form><span class="header__you-city">Ваш город:</span>
+                                    <select class="header__select-city js-select-location">
+                                        <option>Москва</option>
+                                        <option>Санкт-Перебург</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="col-auto d-xl-flex align-items-center">
+                                <ul class="header__additional-menu d-none d-xl-flex">
+                                    <li class="header__item-menu"><a class="header__link" href="#">Компаниям</a>
                                     </li>
-                                    <li class="footer__lang"><a class="footer__link-lang" href="#">Немецкий</a>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Франчайзинг</a>
                                     </li>
-                                    <li class="footer__lang"><a class="footer__link-lang" href="#">Французский</a>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Разговорный клуб</a>
                                     </li>
-                                    <li class="footer__lang"><a class="footer__link-lang" href="#">Итальянский</a>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Дистанционное обучение</a>
                                     </li>
-                                    <li class="footer__lang"><a class="footer__link-lang" href="#">Испанский</a>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Онлайн тестирование</a>
                                     </li>
-                                    <li class="footer__lang"><a class="footer__link-lang" href="#">Китайский</a>
+                                </ul>
+                                <form>
+                                    <label class="hidden" for="search">Поиск</label>
+                                    <input class="header__search" type="search" required id="search">
+                                    <button class="header__search-btn js-show-search text-hide">
+                                        <svg class="icon" width="16" height="16" aria-hidden="true">
+                                            <use xlink:href="static/img/svg-symbols.svg#search"></use>
+                                        </svg>Поиск
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center no-gutters">
+                            <div class="col-auto">
+                                <div class="header__logo-wrapper">
+                                    <a class="header__logo" href="index.html">
+                                        <img src="static/img/general/logo.svg" width="42" height="42" alt="Иностранные языки в Москве">
+                                    </a>
+                                    <h1 class="header__site-desc">Иностранные языки<br>в Москве</h1>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header__user-bar">
+                                    <div class="header__item header__item--contact d-none d-md-block"><span class="header__title-delivery d-block">Бесплатно по России</span><a class="header__tel" href="tel:+488005554477">8 800 555-44-77</a>
+                                    </div>
+                                    <div class="header__item d-none d-xl-block">
+                                        <button class="header__order-call btn btn--grey">заказать звонок</button>
+                                    </div>
+                                    <div class="header__item d-none d-md-block">
+                                        <button class="header__registered-course btn btn--red">записаться на курсы</button>
+                                    </div>
+                                    <div class="header__item d-xl-none">
+                                        <button class="header__toggle-menu js-show-main-menu text-hide" type="button">Показать меню</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="menu">
+                        <div class="menu__inner">
+                            <div class="container">
+                                <button class="menu__close btn-close text-hide d-none js-menu-close d-md-block d-xl-none">
+                                    <svg class="icon" width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                                    </svg>Закрыть
+                                </button>
+                                <ul class="menu__main">
+                                    <li class="menu__main-item active"><a class="menu__main-link" href="#">Иностранные языки</a>
                                     </li>
-                                    <li class="footer__lang"><a class="footer__link-lang" href="#">Японский</a>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Программы</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Расписание</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Цены</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Акции</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Школы</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="about.html">О компании</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Информация</a>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-md-auto">
-                            <button class="footer__btn btn btn--red" type="button">записаться на курсы</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__body">
-                    <div class="row justify-content-xl-start">
-                        <div class="col-7 d-none d-xl-block">
-                            <div class="row align-items-md-center align-items-xl-start">
-                                <div class="col-3">
-                                    <ul class="footer__menu">
-                                        <li class="footer__item"><a class="footer__link" href="#">О компании</a>
+                            <div class="menu__body d-xl-none">
+                                <div class="container">
+                                    <ul class="menu__additional">
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Компаниям</a>
                                         </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">база знаний</a>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Франчайзинг</a>
                                         </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">Карта сайта</a>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Разговорный клуб</a>
                                         </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">Расписание</a>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Дистанционное обучение</a>
                                         </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">Наши школы</a>
-                                        </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">цены</a>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Онлайн тестирование</a>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="col-auto">
-                                    <ul class="footer__menu">
-                                        <li class="footer__item"><a class="footer__link" href="#">Иностранные языки детям</a>
-                                        </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">начинающим</a>
-                                        </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">Подросткам</a>
-                                        </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">Взрослым</a>
-                                        </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">Корпоративное обучение</a>
-                                        </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">Английский разговорный клуб</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-auto">
-                                    <ul class="footer__menu">
-                                        <li class="footer__item"><a class="footer__link" href="#">международные экзамены</a>
-                                        </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">Франшиза</a>
-                                        </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">онлайн тестирование</a>
-                                        </li>
-                                        <li class="footer__item"><a class="footer__link" href="#">YES MY LIFE</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-5">
-                            <div class="row justify-content-center justify-content-md-between justify-content-xl-start">
-                                <div class="col-md-auto col-xl-6">
-                                    <div class="footer__contact"><a class="footer__tel" href="tel:+784953800520">8 495 380-05-20</a><span class="footer__sub-title">Для Москвы, 09:00—18:00</span>
+                                    <button class="menu__registration-course btn btn--red">записаться на курсы</button>
+                                    <div class="menu__footer">
+                                        <ul class="menu__contacts">
+                                            <li class="menu__contact"><a class="menu__tel" href="tel:+484953800520">8 495 380-05-20</a><span class="menu__desc d-block">Для Москвы, 09:00—18:00</span>
+                                            </li>
+                                            <li class="menu__contact"><a class="menu__tel" href="tel:+488005554477">8 800 555-44-77</a><span class="menu__desc d-block">Бесплатно по России</span>
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn--light-blue">заказать обратный звонок</button>
                                     </div>
-                                </div>
-                                <div class="col-md-auto col-xl-6">
-                                    <div class="footer__contact"><a class="footer__tel" href="tel:+788005554477">8 800 555-44-77</a><span class="footer__sub-title">Бесплатно по России</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-auto col-xl-auto ml-xl-auto">
-                                    <button class="footer__btn btn btn--grey" type="button">заказать обратный звонок</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer__bottom">
-                    <div class="row justify-content-md-between align-items-md-center">
-                        <div class="col-md-auto order-md-2">
-                            <ul class="social footer__social">
-                                <li class="social__item">
-                                    <a class="social__link" href="#">
-                                        <svg class="icon" width="11" height="20" aria-hidden="true">
-                                            <use xlink:href="static/img/svg-symbols.svg#odnoklassniki"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="#">
-                                        <svg class="icon" width="21" height="12" aria-hidden="true">
-                                            <use xlink:href="static/img/svg-symbols.svg#vk"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="#">
-                                        <svg class="icon" width="18" height="12" aria-hidden="true">
-                                            <use xlink:href="static/img/svg-symbols.svg#youtube"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="#">
-                                        <svg class="icon" width="10" height="20" aria-hidden="true">
-                                            <use xlink:href="static/img/svg-symbols.svg#fb"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="#">
-                                        <svg class="icon" width="18" height="18" aria-hidden="true">
-                                            <use xlink:href="static/img/svg-symbols.svg#insta"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+            </header>
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item">Вакансии</li>
+                </ul>
+            </div>
+            <section class="page-jobs">
+                <div class="container">
+                    <h2 class="page-jobs__title h2">Работа в YES</h2>
+                    <div class="page-jobs__top">
+                        <div class="row">
+                            <div class="col-xl-auto">
+                                <div class="page-jobs__video">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl">
+                                <div class="page-jobs__desc">
+                                    <p>Работа в наших школах - это стабильность, перспектива, реализация планов, управляемые перемены, реализация потенциала и творческая составляющая деятельности. Наша Компания — это сообщество людей, стремящихся к развитию
+                                        своих личностных возможностей и реализации способностей и талантов.</p>
+                                    <p>Сотрудники «YES» — это люди, ставящие перед собой серьезные жизненные цели, и определяющие пути их достижения. Люди, которые работают над совершенствованием своих личностных качеств посредством самопознания, и преобразования
+                                        через деятельность.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md col-xl-9 order-md-1">
-                            <p class="footer__copy">&copy; 2001—2018 Центр иностранных языков Yes. «Yes» является зарегистрированным товарным знаком.<span>При использовании любых материалов сайта, включая фотографии и тексты, активная ссылка на&nbsp;<a href="#">&nbsp;www.yescenter.ru&nbsp;</a>обязательна.</span>
-                            </p>
+                    </div>
+                    <div class="page-jobs__arrordions panel">
+                        <div class="panel__accoardeon" id="parent">
+                            <button class="panel__button" type="button" data-toggle="collapse" data-target="#panel-collapse-1" aria-expanded="false" aria-controls="panel-collapse"><span class="panel__link">
+                      Русскоязычные
+                      преподаватели
+                      английского языка</span><span class="panel__subtitle">от 60 000 рублей в месяц</span>
+                            </button>
+                            <div class="collapse panel__content" id="panel-collapse-1" data-parent="#parent-1">
+                                <h3>Требования к кандидату:</h3>
+                                <ul>
+                                    <li>Мужчина/женщина от 25 до 45 лет;</li>
+                                    <li>Высшее образование (педагогическое/лингвистическое) - обязательно;</li>
+                                    <li>Опыт работы с корпоративными клиентами, руководящим составом компании;</li>
+                                    <li>Опыт преподавания бизнес программ и спецкурсов;</li>
+                                    <li>Владение одним или несколькими иностранными языками (уровень Advanced);</li>
+                                    <li>Наличие сертификатов является преимуществом;</li>
+                                    <li>Хорошо поставленная грамотная речь, умение удерживать внимание аудитории, убеждать;</li>
+                                    <li>Умение быстро устанавливать контакт с незнакомыми людьми, вежливое, располагающее общение;</li>
+                                    <li>Способность адаптировать программу под цели конкретной группы;</li>
+                                    <li>Мобильность по г. Москве, готовность работать на территории Компаний-клиентов.</li>
+                                </ul>
+                                <h3>Обязанности:</h3>
+                                <ul>
+                                    <li>Преподавание английского языка корпоративным клиентам (в группах и индивидуально) по программам General, Business, Conversational и Special Purposes English;</li>
+                                    <li>Подготовка планов занятий, проведение тестирований, оценка прогресса студентов;</li>
+                                    <li>Ежемесячная отчетность.</li>
+                                </ul>
+                                <h3>Описание вакансии:</h3>
+                                <ul>
+                                    <li>Почасовая оплата (обсуждается индивидуально в зависимости от квалификации/опыта);</li>
+                                    <li>Заключение контракта с возможностью перевода на полную занятость;</li>
+                                    <li>Постоянное повышение квалификации на базе корпоративного учебно-методического центра;</li>
+                                    <li>Развивающая творческая рабочая атмосфера.</li>
+                                </ul>
+                                <button class="panel__respond btn btn--red" type="button">Откликнуться на вакансию</button>
+                            </div>
+                            <button class="panel__button" type="button" data-toggle="collapse" data-target="#panel-collapse-2" aria-expanded="false" aria-controls="panel-collapse"><span class="panel__link">Русскоязычные преподаватели немецкого языка</span><span class="panel__subtitle">по итогам собеседования</span>
+                            </button>
+                            <div class="collapse panel__content" id="panel-collapse-2" data-parent="#parent">
+                                <h3>Требования к кандидату:</h3>
+                                <ul>
+                                    <li>Мужчина/женщина от 25 до 45 лет;</li>
+                                    <li>Высшее образование (педагогическое/лингвистическое) - обязательно;</li>
+                                    <li>Опыт работы с корпоративными клиентами, руководящим составом компании;</li>
+                                    <li>Опыт преподавания бизнес программ и спецкурсов;</li>
+                                    <li>Владение одним или несколькими иностранными языками (уровень Advanced);</li>
+                                    <li>Наличие сертификатов является преимуществом;</li>
+                                    <li>Хорошо поставленная грамотная речь, умение удерживать внимание аудитории, убеждать;</li>
+                                    <li>Умение быстро устанавливать контакт с незнакомыми людьми, вежливое, располагающее общение;</li>
+                                    <li>Способность адаптировать программу под цели конкретной группы;</li>
+                                    <li>Мобильность по г. Москве, готовность работать на территории Компаний-клиентов.</li>
+                                </ul>
+                                <h3>Обязанности:</h3>
+                                <ul>
+                                    <li>Преподавание английского языка корпоративным клиентам (в группах и индивидуально) по программам General, Business, Conversational и Special Purposes English;</li>
+                                    <li>Подготовка планов занятий, проведение тестирований, оценка прогресса студентов;</li>
+                                    <li>Ежемесячная отчетность.</li>
+                                </ul>
+                                <h3>Описание вакансии:</h3>
+                                <ul>
+                                    <li>Почасовая оплата (обсуждается индивидуально в зависимости от квалификации/опыта);</li>
+                                    <li>Заключение контракта с возможностью перевода на полную занятость;</li>
+                                    <li>Постоянное повышение квалификации на базе корпоративного учебно-методического центра;</li>
+                                    <li>Развивающая творческая рабочая атмосфера.</li>
+                                </ul>
+                                <button class="panel__respond btn btn--red" type="button">Откликнуться на вакансию</button>
+                            </div>
+                            <button class="panel__button" type="button" data-toggle="collapse" data-target="#panel-collapse-3" aria-expanded="false" aria-controls="panel-collapse"><span class="panel__link">
+                      Конкурс на вакансию «Менеджер по работес клиентами»</span><span class="panel__subtitle">Проводиться в школах: Кузьминки, Солнцево, Ховрино, Балашиха, Жуковский, Королёв, Люберцы, Пушкино, Раменское, Подольск.</span><span class="panel__addit-text first">В связи с расширением Центр Иностранных Языков YES объявляет конкурс на вакансию «Менеджер по работе с клиентами».</span>
+                                <span
+                                class="panel__addit-text">
+                                    Мы ищем члена команды — активного, целеустремлённого и желающего влиться в команду интересных и позитивных людей.</span>
+                            </button>
+                            <div class="collapse panel__content" id="panel-collapse-3" data-parent="#parent">
+                                <h3>Требования к кандидату:</h3>
+                                <ul>
+                                    <li>Мужчина/женщина от 25 до 45 лет;</li>
+                                    <li>Высшее образование (педагогическое/лингвистическое) - обязательно;</li>
+                                    <li>Опыт работы с корпоративными клиентами, руководящим составом компании;</li>
+                                    <li>Опыт преподавания бизнес программ и спецкурсов;</li>
+                                    <li>Владение одним или несколькими иностранными языками (уровень Advanced);</li>
+                                    <li>Наличие сертификатов является преимуществом;</li>
+                                    <li>Хорошо поставленная грамотная речь, умение удерживать внимание аудитории, убеждать;</li>
+                                    <li>Умение быстро устанавливать контакт с незнакомыми людьми, вежливое, располагающее общение;</li>
+                                    <li>Способность адаптировать программу под цели конкретной группы;</li>
+                                    <li>Мобильность по г. Москве, готовность работать на территории Компаний-клиентов.</li>
+                                </ul>
+                                <h3>Обязанности:</h3>
+                                <ul>
+                                    <li>Преподавание английского языка корпоративным клиентам (в группах и индивидуально) по программам General, Business, Conversational и Special Purposes English;</li>
+                                    <li>Подготовка планов занятий, проведение тестирований, оценка прогресса студентов;</li>
+                                    <li>Ежемесячная отчетность.</li>
+                                </ul>
+                                <h3>Описание вакансии:</h3>
+                                <ul>
+                                    <li>Почасовая оплата (обсуждается индивидуально в зависимости от квалификации/опыта);</li>
+                                    <li>Заключение контракта с возможностью перевода на полную занятость;</li>
+                                    <li>Постоянное повышение квалификации на базе корпоративного учебно-методического центра;</li>
+                                    <li>Развивающая творческая рабочая атмосфера.</li>
+                                </ul>
+                                <button class="panel__respond btn btn--red" type="button">Откликнуться на вакансию</button>
+                            </div>
+                            <button class="panel__button" type="button" data-toggle="collapse" data-target="#panel-collapse-4" aria-expanded="false" aria-controls="panel-collapse"><span class="panel__link">
+                       Конкурс на вакансию «Преподавательиностранного языка»</span><span class="panel__subtitle">Проводиться в школах: Кузьминки, Солнцево, Ховрино, Балашиха, Жуковский, Королёв, Люберцы, Пушкино, Раменское, Подольск.</span><span class="panel__addit-text first">В связи с раширением Центр Иностранных Языков YES объявляет конкурс на вакансию «Преподаватель иностранного языка».</span>
+                                <span
+                                class="panel__addit-text">Мы приглашаем в нашу команду амбициозных профессионалов, любящих свое дело и работающих на результат!</span>
+                            </button>
+                            <div class="collapse panel__content" id="panel-collapse-4" data-parent="#parent">
+                                <h3>Требования к кандидату:</h3>
+                                <ul>
+                                    <li>Мужчина/женщина от 25 до 45 лет;</li>
+                                    <li>Высшее образование (педагогическое/лингвистическое) - обязательно;</li>
+                                    <li>Опыт работы с корпоративными клиентами, руководящим составом компании;</li>
+                                    <li>Опыт преподавания бизнес программ и спецкурсов;</li>
+                                    <li>Владение одним или несколькими иностранными языками (уровень Advanced);</li>
+                                    <li>Наличие сертификатов является преимуществом;</li>
+                                    <li>Хорошо поставленная грамотная речь, умение удерживать внимание аудитории, убеждать;</li>
+                                    <li>Умение быстро устанавливать контакт с незнакомыми людьми, вежливое, располагающее общение;</li>
+                                    <li>Способность адаптировать программу под цели конкретной группы;</li>
+                                    <li>Мобильность по г. Москве, готовность работать на территории Компаний-клиентов.</li>
+                                </ul>
+                                <h3>Обязанности:</h3>
+                                <ul>
+                                    <li>Преподавание английского языка корпоративным клиентам (в группах и индивидуально) по программам General, Business, Conversational и Special Purposes English;</li>
+                                    <li>Подготовка планов занятий, проведение тестирований, оценка прогресса студентов;</li>
+                                    <li>Ежемесячная отчетность.</li>
+                                </ul>
+                                <h3>Описание вакансии:</h3>
+                                <ul>
+                                    <li>Почасовая оплата (обсуждается индивидуально в зависимости от квалификации/опыта);</li>
+                                    <li>Заключение контракта с возможностью перевода на полную занятость;</li>
+                                    <li>Постоянное повышение квалификации на базе корпоративного учебно-методического центра;</li>
+                                    <li>Развивающая творческая рабочая атмосфера.</li>
+                                </ul>
+                                <button class="panel__respond btn btn--red" type="button">Откликнуться на вакансию</button>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="forms-education section section--grey page-jobs__about">
+                <div class="container">
+                    <h2 class="forms-education__title h2">Немного о нас</h2>
+                    <div class="row js-form-education-slider">
+                        <div class="col-xl-4">
+                            <article class="forms-education__item">
+                                <h3 class="forms-education__subject">Цель нашей работы</h3>
+                                <p class="forms-education__text">Учить людей иностранным языкам так, чтобы они достигали новых высот в жизни. И делать всё для того, чтобы поддерживать у них интерес к изучению языков. Особенно когда они сомневаются — а стоит ли им продолжать обучение.
+                                    Мы учим студентов любого возраста и уровня подготовки, а также обучаем персонал крупных компаний в Москве и Подмосковье. Вы готовы посвятить себя общению с людьми и сделать изучение языков их любимым делом? Тогда -
+                                    добро пожаловать!</p>
+                            </article>
+                        </div>
+                        <div class="col-xl-4">
+                            <article class="forms-education__item">
+                                <h3 class="forms-education__subject">С кем мы хотим работать</h3>
+                                <p class="forms-education__text">Нам нужны люди, способные зажечь окружающих своим энтузиазмом. Преподаватели иностранных языков, помогающие каждому студенту достигнуть максимального результата. Менеджеры по работе с клиентами, создающие комфортную обстановку
+                                    в школах. Управляющие школами, сплачивающие коллектив и решающие проблемы своих студентов.кого потенциала и самореализации в различных сферах жизни: в семье, работе, учёбе, творчестве, увлечениях.</p>
+                            </article>
+                        </div>
+                        <div class="col-xl-4">
+                            <article class="forms-education__item">
+                                <h3 class="forms-education__subject">Условия</h3>
+                                <p class="forms-education__text">
+                                    <ul class="list">
+                                        <li>Работа в надёжной компании — более 10 лет на рынке.</li>
+                                        <li>Постоянное обучение за счет компании (тренинги для управляющих и менеджеров, семинары для преподавателей).</li>
+                                        <li>Стабильная оплата труда — оклад и премии.</li>
+                                        <li>Гибкий график.</li>
+                                        <li>Бесплатное изучение иностранных языков. Множество возможностей для реализации своих идей.</li>
+                                        <li>Дружный коллектив.</li>
+                                    </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="departure page-jobs__departure">
+                <div class="departure__inner">
+                    <button class="departure__arrow slide-arrow slide-arrow--prev text-hide js-departure-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                        </svg>Предадущий слайд
+                    </button>
+                    <button class="departure__arrow slide-arrow slide-arrow--next text-hide js-departure-next-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                        </svg>Следующий слайд
+                    </button>
+                    <div class="container">
+                        <ul class="departure__slider js-departure-slider">
+                            <li class="departure__slide">
+                                <img src="static/img/content/departure-photo-1.jpg" alt="Преподавателей в штате">
+                            </li>
+                            <li class="departure__slide">
+                                <img src="static/img/content/exit-photo-1-ds.jpg" alt="Учеников занимаются по нашей методике">
+                            </li>
+                            <li class="departure__slide">
+                                <img src="static/img/content/slider.jpg" alt="Преподавателей в штате">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
+            <section class="teachers section teachers--bb-none pb-0 page-jobs__teachers">
+                <div class="container">
+                    <h2 class="teachers__title h2">Наши преподаватели</h2>
+                    <p class="teachers__subtitle subtitle">Приходите к нам учиться, и мы станем друзьями! Изучение нового языка в школе YES — это новые знакомства с интересными людьми, общение на актуальные темы и неформальная дружеская обстановка. Это поможет Вам получать и передавать новые
+                        знания и другую полезную информацию, выдавать новые идеи и творить.</p>
+                </div>
+                <div class="teachers__wrapper">
+                    <button class="teachers__arrow slide-arrow slide-arrow--prev text-hide js-techers-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                        </svg>Предадущий слайд
+                    </button>
+                    <button class="teachers__arrow slide-arrow slide-arrow--next text-hide js-techers-next-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                        </svg>Следующий слайд
+                    </button>
+                    <div class="container">
+                        <ul class="teachers__slider js-techers-slider">
+                            <li>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/teacher-2.jpg" width="166" heigh="166" alt="Теона Папава">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Теона Папава</cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Кузьминки</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/teacher-1.jpg" width="166" heigh="166" alt="Вера Литвинец">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Вера Литвинец</cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Кузьминки</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/teacher-3.jpg" width="166" heigh="166" alt="Елена Потапова">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Елена Потапова</cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Кузьминки</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/teacher-4.jpg" width="166" heigh="166" alt="Вероника Утешева ">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Вероника Утешева </cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Кузьминки</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/teacher-2.jpg" width="166" heigh="166" alt="Теона Папава">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Теона Папава</cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Кузьминки</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="teachers__footer">
+                        <div class="container">
+                            <div class="row align-items-md-center">
+                                <div class="col-md-auto d-xl-none">
+                                    <div class="teachers__dots"></div>
+                                </div>
+                                <div class="col-md-auto ml-md-auto text-center"><a class="show-all" href="#">все преподаватели<span>&nbsp;&rarr;</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe section">
+                <div class="container">
+                    <form class="subscribe__inner form" id="subscribe">
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <div class="subscribe__img">
+                                    <img src="static/img/general/letter.png" alt="Подпишитесь на нашу новостную рассылку">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="subscribe__body">
+                                    <h3 class="subscribe__title"><span>Подпишитесь</span>на нашу новостную рассылку</h3>
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <label class="hidden" for="subscribe-email">Ваше имя и фамилия</label>
+                                            <input class="subscribe__field form__field" type="email" placeholder="Ваша электронная почта" name="email" required id="subscribe-email">
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <button class="subscribe__btn btn btn--red">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-md-7 col-xl-9">
+                                <div class="footer__inner-langs"><span class="footer__label-couses d-none d-xl-block">Курсы:</span>
+                                    <ul class="footer__lang-list">
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Английский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Немецкий</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Французский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Итальянский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Испанский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Китайский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Японский</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <button class="footer__btn btn btn--red" type="button">записаться на курсы</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__body">
+                        <div class="row justify-content-xl-start">
+                            <div class="col-7 d-none d-xl-block">
+                                <div class="row align-items-md-center align-items-xl-start">
+                                    <div class="col-3">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">О компании</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">база знаний</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Карта сайта</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Расписание</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Наши школы</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">цены</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">Иностранные языки детям</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">начинающим</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Подросткам</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Взрослым</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Корпоративное обучение</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Английский разговорный клуб</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">международные экзамены</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Франшиза</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">онлайн тестирование</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">YES MY LIFE</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="row justify-content-center justify-content-md-between justify-content-xl-start">
+                                    <div class="col-md-auto col-xl-6">
+                                        <div class="footer__contact"><a class="footer__tel" href="tel:+784953800520">8 495 380-05-20</a><span class="footer__sub-title">Для Москвы, 09:00—18:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-xl-6">
+                                        <div class="footer__contact"><a class="footer__tel" href="tel:+788005554477">8 800 555-44-77</a><span class="footer__sub-title">Бесплатно по России</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-xl-auto ml-xl-auto">
+                                        <button class="footer__btn btn btn--grey" type="button">заказать обратный звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-md-auto order-md-2">
+                                <ul class="social footer__social">
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="11" height="20" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#odnoklassniki"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="21" height="12" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="18" height="12" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#youtube"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="10" height="20" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#fb"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="18" height="18" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#insta"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md col-xl-9 order-md-1">
+                                <p class="footer__copy">&copy; 2001—2018 Центр иностранных языков Yes. «Yes» является зарегистрированным товарным знаком.<span>При использовании любых материалов сайта, включая фотографии и тексты, активная ссылка на&nbsp;<a href="#">&nbsp;www.yescenter.ru&nbsp;</a>обязательна.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
         <script src="static/js/separate-js/svg4everybody.min.js"></script>
         <script>
             svg4everybody();
         </script>
-        <script src="static/js/mainyq9c0d.min.js"></script>
+        <script src="static/js/main421pmp.js"></script>
     </body>
 
 </html>

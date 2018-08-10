@@ -1,5 +1,5 @@
 mixin departure(data)
-  .departure
+  .departure&attributes(attributes)
     .departure__inner
       button(type="button").departure__arrow.slide-arrow.slide-arrow--prev.text-hide.js-departure-prev-btn
         +icon('arrow-left', 12, 11)

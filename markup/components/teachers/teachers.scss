@@ -5,6 +5,9 @@
   &--no-border {
     border-bottom: none;
   }
+  &--bb-none {
+    border-bottom: none;
+  }
   @include media-breakpoint-up(md) {
     padding-bottom: 48px;
   }

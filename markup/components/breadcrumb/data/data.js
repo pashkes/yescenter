@@ -45,6 +45,13 @@ const data = {
     },
     {
       name: 'Кирьякова Анна'
+    }],
+    jobs: [{
+      name: 'Главная',
+      link: 'index.html'
+    },
+    {
+      name: ' Вакансии'
     }]
   }
 };

@@ -340,3 +340,27 @@
     letter-spacing: 0.3px;
   }
 }
+.list {
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 22px;
+    font-family: 'Open Sans', Intro, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background-color: $secondary-red;
+    }
+  }
+}

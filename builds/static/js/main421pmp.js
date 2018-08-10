@@ -4896,6 +4896,30 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
 
 
 
+(function () {
+  $('.js-certifications-slider').slick({
+    arrows: false,
+    mobileFirst: true,
+    dots: true,
+    centerMode: false,
+    centerPadding: false,
+    infinite: false,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+})();
+
 
 
 
@@ -4944,28 +4968,28 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
 })();
 
 (function () {
-  $('.js-certifications-slider').slick({
+  $('.js-slider-education').slick({
     arrows: false,
-    mobileFirst: true,
     dots: true,
-    centerMode: false,
-    centerPadding: false,
-    infinite: false,
+    mobileFirst: true,
+    adaptiveHeight: true,
     responsive: [{
       breakpoint: 767,
       settings: {
-        slidesToShow: 3,
-        variableWidth: true
+        variableWidth: true,
+        adaptiveHeight: false
       }
     },
     {
       breakpoint: 1343,
       settings: {
-        slidesToShow: 2
+        variableWidth: false,
+        slidesToShow: 4
       }
     }]
   });
 })();
+
 
 (function () {
   $('.js-departure-slider').slick({
@@ -4991,30 +5015,6 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
   });
 })();
 
-
-
-(function () {
-  $('.js-slider-education').slick({
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    adaptiveHeight: true,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        variableWidth: true,
-        adaptiveHeight: false
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        variableWidth: false,
-        slidesToShow: 4
-      }
-    }]
-  });
-})();
 
 
 (function () {
@@ -5052,6 +5052,12 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
 
 
 
+
+(function () {
+  $('.js-menu-close').on('click', function () {
+    $('body').removeClass('show-menu');
+  });
+})();
 
 var myMap, data = [], geodata = [];
 var markCounter = 1;
@@ -5234,12 +5240,6 @@ $('.js-select-lang-order').SumoSelect({
 });
 
 (function () {
-  $('.js-menu-close').on('click', function () {
-    $('body').removeClass('show-menu');
-  });
-})();
-
-(function () {
   var TABLET_SIZE = 767;
   var newsSlider = $('.js-news-slide');
   var newsSliderSettigs = {
@@ -5280,6 +5280,8 @@ $('.js-select-lang-order').SumoSelect({
 
 
 
+
+
 (function () {
   $('.js-partners-slider').slick({
     arrows: false,
@@ -5306,36 +5308,6 @@ $('.js-select-lang-order').SumoSelect({
     }]
   });
 })();
-
-
-
-(function () {
-  $('.js-promo-slider').slick({
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    centerPadding: '0',
-    appendDots: $('.promo__dots'),
-    prevArrow: $('.js-promo-prev-btn'),
-    nextArrow: $('.js-promo-next-btn'),
-
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        variableWidth: true
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        variableWidth: true,
-        arrows: true,
-        dots: false
-      }
-    }]
-  });
-})();
-
 
 (function () {
   var sliderReviews = $('.js-reviews-slider').slick({
@@ -5373,6 +5345,32 @@ $('.js-select-lang-order').SumoSelect({
 })();
 
 
+(function () {
+  $('.js-promo-slider').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    centerPadding: '0',
+    appendDots: $('.promo__dots'),
+    prevArrow: $('.js-promo-prev-btn'),
+    nextArrow: $('.js-promo-next-btn'),
+
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        variableWidth: true,
+        arrows: true,
+        dots: false
+      }
+    }]
+  });
+})();
 
 
 
@@ -5415,6 +5413,8 @@ $('.js-select-lang-order').SumoSelect({
     }]
   });
 })();
+
+
 
 (function () {
   $('.js-show-all-teachers').on('click', function () {

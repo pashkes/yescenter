@@ -2,16 +2,31 @@ doctype html
 html(class="no-js", lang="ru")
 
   include ../components/head/head.pug
-  include ../components/footer/footer.pug
+    include ../components/header/header
+    include ../components/footer/footer.pug
+    include ../components/subscribe/subscribe
+    include ../components/breadcrumb/breadcrumb
+    include ../components/page-jobs/page-jobs
+    include ../components/forms-education/forms-education
+    include ../components/departure/departure
+    include ../components/teachers/teachers
 
   head
     +head(head.defaults)
-  body.page
-    | %=symbols=%
-    +footer()
+  body
+    .page-wrapper
+      +header()
+      .container
+        +breadcrumb(breadcrumb.jobs)
+      +page-jobs()
+      +forms-education(aboutLittle).page-jobs__about
+      +departure().page-jobs__departure
+      +teachers(teachers, true, 'Наши преподаватели').teachers--bb-none.pb-0.page-jobs__teachers
+      +subscribe()
+      +footer()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
 
     //- Main scripts. You can replace it, but I recommend you to leave it here
-    script(src='%=static=%js/main%=hash=%%=min=%.js')
+    script(src='%=static=%js/main%=hash=%.js')

@@ -77,6 +77,8 @@
     padding-top: 18px;
     @include media-breakpoint-up(md) {
       padding-top: 27px;
+      justify-content: flex-start;
+      margin-left: -5px;
     }
   }
   &__arrow {
