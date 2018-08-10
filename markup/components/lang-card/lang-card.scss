@@ -20,6 +20,9 @@
   &:hover {
     box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
   }
+  &--border-grey {
+    border: solid 1px #ebebeb;
+  }
   @include media-breakpoint-up(xl) {
   }
   &__name {

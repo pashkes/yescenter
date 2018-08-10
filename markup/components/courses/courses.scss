@@ -51,9 +51,6 @@
     @include media-breakpoint-up(md) {
       width: 263px;
     }
-    @include media-breakpoint-up(xl) {
-      width: auto;
-    }
   }
   &__select {
     display: flex;

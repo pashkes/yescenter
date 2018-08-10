@@ -1,0 +1,19 @@
+mixin education(data, trial)
+  include ../lang-card/lang-card
+  include ../trial-lesson/trial-lesson
+  .education.courses.section&attributes(attributes)
+    .container
+      h2.h2.courses__title Меня интересует обучение
+    .courses__content
+      .container
+        div(role="tabpanel").courses__panel.active.show#en
+          .row.js-slider-education
+            each item in data
+              .col-auto.col-xl-3
+                if(item.equalGroup)
+                  +lang-card(item, 'записаться').education__item
+                else
+                  +lang-card(item, 'записаться').education__item
+    if trial
+      .container
+        +trial-lesson()

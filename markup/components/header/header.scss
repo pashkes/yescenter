@@ -73,7 +73,7 @@
   &__bottom {
     position: relative;
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #ebebeb;
     background-color: #fff;
     @include media-breakpoint-up(md) {
@@ -130,6 +130,14 @@
   }
   &__item {
     margin: 0 12px;
+    &:last-child {
+      @include media-breakpoint-up(md) {
+        margin-left: 6px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-left: 16px;
+      }
+    }
     @include media-breakpoint-up(xl) {
       margin: 0 16px;
     }
@@ -144,6 +152,7 @@
   &__order-call {
     min-width: 177px;
     width: auto;
+    color: $text-color;
   }
   &__title-delivery {
     font-family: 'Open Sans', Intro sans-serif;

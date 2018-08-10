@@ -47,9 +47,9 @@ mixin courses(data)
             each item in data
               .col-auto.col-xl-3
                 if(item.equalGroup)
-                  +lang-card(item)(data-mh="my-group")
+                  +lang-card(item, 'подробнее')(data-mh="my-group")
                 else
-                  +lang-card(item)
+                  +lang-card(item, 'подробнее')
     .container
       .courses__dots
     .courses__footer.text-center.d-none.d-xl-block

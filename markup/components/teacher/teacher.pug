@@ -1,9 +1,13 @@
 mixin teacher(data)
   .teacher&attributes(attributes)
-    .teacher__img
-      img(src="%=static=%img/content/" + data.photo width="166" heigh="166" alt=data.name)
-    cite.teacher__name #{data.name}
-    span.teacher__grey-text Английский язык
-      br
-      | Кузьминки
+    .teacher__inner
+      a(href="teacher.html").teacher__img
+        img(src="%=static=%img/content/" + data.photo width="166" heigh="166" alt=data.name)
+      a(href="teacher.html").teacher__name
+        cite #{data.name}
+      if data.lang
+
+      span.teacher__grey-text #{data.lang}
+        br
+        | #{data.school}
 

@@ -1,0 +1,36 @@
+mixin teachers-video(data)
+  .teachers-video.section
+    .container
+      h2.teachers-video__title.h2 Наши учителя о себе и школе YES
+    .teachers-video__inner
+      button(type="button").teachers-video__arrow.slide-arrow.slide-arrow--prev.text-hide.js-teachers-video-prev-btn
+        +icon('arrow-left', 12, 11)
+        | Предадущий слайд
+      button(type="button").teachers-video__arrow.slide-arrow.slide-arrow--next.text-hide.js-teachers-video-prev-btn
+        +icon('arrow-right', 12, 11)
+        | Следующий слайд
+      .container
+        ul.teachers-video__slider.js-teachers-video
+          li
+            .teachers-video__slide
+              .embed-responsive.embed-responsive-16by9.teachers-video__video.page-reviews__photo--no-border
+                iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0").embed-responsive-item
+              .teachers-video__name Александр Сергеев
+              .teachers-video__grey Английский язык
+              .teachers-video__grey Школа: Раменское
+          li
+            .teachers-video__slide
+              .embed-responsive.embed-responsive-16by9.teachers-video__video.page-reviews__photo--no-border
+                iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0").embed-responsive-item
+              .teachers-video__name Вера Литвинец
+              .teachers-video__grey Английский язык
+              .teachers-video__grey Школа: Войковская
+          li
+            .teachers-video__slide
+              .embed-responsive.embed-responsive-16by9.teachers-video__video.page-reviews__photo--no-border
+                iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0").embed-responsive-item
+              .teachers-video__name Александр Сергеев
+              .teachers-video__grey Английский язык
+              .teachers-video__grey Школа: Раменское
+    .container
+      .teachers-video__dots

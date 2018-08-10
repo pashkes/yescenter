@@ -1,0 +1,25 @@
+mixin teachers-list(data)
+  include ../teacher/teacher
+  include ../trial-lesson/trial-lesson
+  section.teachers-list.section.section--grey
+    .container
+      header.teachers-list__header
+        .row.align-items-xl-center
+          .col-xl
+            h2.teachers-list__title.h2 Давайте знакомиться
+          .col-xl-auto
+            form.teachers-list__select-inner#teachers-list
+              label(for="teachers-list-select-school").teachers-list__label Выберете школу
+              select.teachers-list__select.form__select#teachers-list-select-school
+                option Раменское
+                option Кузьминки
+      .row.justify-content-center.teachers-list__list.js-list-teachers.justify-content-md-start
+        each item in data
+          .col-auto.col-md-4.col-xl-3.teachers-list__num
+            +teacher(item).teachers-list__item
+      .teachers-list__footer
+        button(type="button").teachers-list__show-more.btn.btn--grey.js-show-all-teachers.d-md-none показать еще
+      +trial-lesson()
+
+
+

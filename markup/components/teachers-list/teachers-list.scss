@@ -1,0 +1,122 @@
+.teachers-list {
+  @include media-breakpoint-up(xl) {
+    padding-top: 87px;
+  }
+  &__header {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 50px;
+    }
+  }
+  &__title {
+    margin-bottom: 22px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 27px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+  &__label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 11px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    color: #898989;
+    text-transform: uppercase;
+    white-space: nowrap;
+    @include media-breakpoint-up(md) {
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+  }
+  &__select-inner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+  &__select {
+    @include media-breakpoint-up(md) {
+      width: 255px;
+    }
+  }
+  &__list {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 22px;
+    }
+  }
+  &__item {
+    margin-bottom: 22px;
+    text-align: center;
+    .teacher__inner {
+      max-width: 192px;
+      @include media-breakpoint-up(xl) {
+        max-width: 196px;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      margin-bottom: 48px;
+      text-align: left;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 54px;
+    }
+    .teacher__img {
+      width: 192px;
+      height: 192px;
+      img {
+        width: 192px;
+        height: 192px;
+      }
+    }
+  }
+  &__footer {
+    margin-bottom: 32px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+  &__show-more {
+    color: $text-color;
+    @include media-breakpoint-up(md) {
+    }
+  }
+  &__list {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 35px;
+    }
+    .teachers-list__num:nth-child(n+5) {
+      display: none;
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+    }
+    &.active {
+      .teachers-list__num:nth-child(n+5) {
+        display: block;
+      }
+    }
+  }
+  &__num {
+    @include media-breakpoint-up(xl) {
+      &:nth-child(4n+2) .teachers-list__item, &:nth-child(4n+3) .teachers-list__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &:nth-child(4n+4) .teachers-list__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+  }
+}

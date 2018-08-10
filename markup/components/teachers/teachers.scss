@@ -2,20 +2,29 @@
   padding-bottom: 20px;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+  &--no-border {
+    border-bottom: none;
+  }
   @include media-breakpoint-up(md) {
-    padding-bottom: 34px;
+    padding-bottom: 48px;
   }
   @include media-breakpoint-up(xl) {
     padding-top: 72px;
     padding-bottom: 80px;
   }
   &__title {
-    margin-bottom: 18px;
+    margin-bottom: 11px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 20px;
+    }
     @include media-breakpoint-up(xl) {
       margin-bottom: 30px;
     }
   }
   &__subtitle {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 55px;
+    }
     @include media-breakpoint-up(xl) {
       max-width: 1045px;
     }
@@ -79,8 +88,19 @@
   }
   &__footer {
     padding-top: 10px;
+    @include media-breakpoint-up(md) {
+      padding-top: 4px;
+    }
     @include media-breakpoint-up(lg) {
       padding-top: 20px;
+    }
+  }
+  .slick-dots {
+    padding-top: 10px;
+  }
+  .teachers__dots {
+    @include media-breakpoint-up(md) {
+      margin-left: -5px;
     }
   }
 }

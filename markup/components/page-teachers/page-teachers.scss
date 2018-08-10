@@ -1,0 +1,74 @@
+.page-teachers {
+  &__title {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 14px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 32px;
+    }
+  }
+  &__subtitle {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 46px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 82px;
+    }
+  }
+  &__found {
+    padding-top: 17px;
+    @include media-breakpoint-up(xl) {
+      padding-top: 47px;
+    }
+    .forms-education__subject {
+      margin-bottom: 17px;
+    }
+  }
+  &__educ {
+    padding-bottom: 0;
+    @include media-breakpoint-up(md) {
+      padding-top: 43px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 86px;
+    }
+    .slick-dots {
+      padding-top: 18px;
+      margin-left: 11px;
+      margin-bottom: -8px;
+      @include media-breakpoint-up(md) {
+        padding-top: 12px;
+      }
+    }
+    .courses__content {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
+    .courses__title {
+      margin-bottom: 25px;
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 48px;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      padding-bottom: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 0;
+    }
+    .lang-card {
+      border: solid 1px #ebebeb;
+      padding: 28px 24px 32px;
+      @include media-breakpoint-up(md) {
+        padding: 28px 31px 32px;
+      }
+    }
+    .lang-card__name {
+      margin-bottom: 12px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

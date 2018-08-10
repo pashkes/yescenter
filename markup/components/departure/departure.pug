@@ -1,0 +1,17 @@
+mixin departure(data)
+  .departure
+    .departure__inner
+      button(type="button").departure__arrow.slide-arrow.slide-arrow--prev.text-hide.js-departure-prev-btn
+        +icon('arrow-left', 12, 11)
+        | Предадущий слайд
+      button(type="button").departure__arrow.slide-arrow.slide-arrow--next.text-hide.js-departure-next-btn
+        +icon('arrow-right', 12, 11)
+        | Следующий слайд
+      .container
+        ul.departure__slider.js-departure-slider
+          li.departure__slide
+            img(src="%=static=%img/content/departure-photo-1.jpg" alt="Преподавателей в штате")
+          li.departure__slide
+            img(src="%=static=%img/content/exit-photo-1-ds.jpg" alt="Учеников занимаются по нашей методике")
+          li.departure__slide
+            img(src="%=static=%img/content/slider.jpg" alt="Преподавателей в штате")

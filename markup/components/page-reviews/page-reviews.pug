@@ -1,0 +1,61 @@
+mixin page-reviews(data)
+  include ../review/review
+  section.page-reviews.section
+    header.page-reviews__header
+      .container
+        .row.align-items-start
+          .col-xl
+            h2.page-reviews__title.h2 Отзывы
+          .col-xl-auto
+            div(role="tablist").page-reviews__nav.nav
+              a(href="#reviews" role="tab" aria-selected="true" data-toggle="tab").page-reviews__tab.active отзывы
+              a(href="#video-reviews" role="tab" aria-selected="true" data-toggle="tab").page-reviews__tab видео-отзывы
+              a(href="#handwritten-reviews" role="tab" aria-selected="true" data-toggle="tab").page-reviews__tab рукописные отзывы
+    form.page-reviews__grey-sect#page-reviews
+      .container
+        .page-reviews__select-inner.d-md-none
+          label(for="page-reviews--label").page-reviews__text-review.js-item-review
+            span.page-reviews__name-review.js-name-list-reviews #{data.selectList[0].name}
+            span.page-reviews__amount-review.js-amount-list-reviews #{data.selectList[0].amount}
+          select.page-reviews__select.js-reviews-list#page-reviews--label
+            each itemReviews in data.selectList
+              option(value=itemReviews.amount) #{itemReviews.name}
+        ul.page-reviews__filters.d-none.d-md-flex.flex-md-wrap
+          each item in data.selectList
+            li.page-reviews__filter
+              label.page-reviews__item-list
+                input(type="radio" name="page-reviews-item" value=item.amount checked=item.checked)
+                span.page-reviews__name-filter #{item.name}
+                span.page-reviews__amount #{item.amount}
+    .page-reviews__body
+      .container
+        div(role="tabpanel").page-reviews__panel.active.show#reviews
+          .row
+            each comment in data.commentsList
+              .col-md-6
+                +review(comment).review--full.page-reviews__review
+          .page-reviews__bottom
+            a(href="#").page-reviews__show-more.btn.btn--grey показать еще
+        div(role="tabpanel").page-reviews__panel#video-reviews
+          .row
+            each itemVideoReview in data.reviewsVideo
+              .col-md-6
+                .page-reviews__writer
+                  .embed-responsive.embed-responsive-16by9.page-reviews__photo.page-reviews__photo--no-border
+                    iframe(src=itemVideoReview.src).embed-responsive-item
+                  span.page-reviews__name #{itemVideoReview.name}
+                  span.page-reviews__school #{itemVideoReview.school}
+          .page-reviews__bottom.page-reviews__bottom--writter
+            a(href="#").page-reviews__show-more.btn.btn--grey показать еще
+        div(role="tabpanel").page-reviews__panel#handwritten-reviews
+          .row.justify-content-center
+            each itemWriter in data.reviewsWriter
+              .col-auto.col-md-4.col-xl-3
+                .page-reviews__writer
+                  a(href="%=static=%img/content/" + itemWriter.src data-fancybox="gallery").page-reviews__photo
+                    img(src="%=static=%img/content/" + itemWriter.src alt=itemWriter.name)
+                  span.page-reviews__name #{itemWriter.name}
+                  span.page-reviews__school #{itemWriter.school}
+
+          .page-reviews__bottom.page-reviews__bottom--writter
+            a(href="#").page-reviews__show-more.btn.btn--grey показать еще

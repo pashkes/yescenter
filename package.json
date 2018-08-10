@@ -5,13 +5,18 @@
     "npm": "^3.x.x",
     "node": "^4.x.x"
   },
-  "os": [ "darwin", "linux", "win32" ],
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
   "description": "Powerfull markup builder",
   "main": "gulpfile.js",
   "dependencies": {
     "babel-core": "^6.16.0",
     "babel-loader": "^6.2.5",
-    "babel-preset-es2015": "^6.16.0"
+    "babel-preset-es2015": "^6.16.0",
+    "readmore-js": "^2.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.0",

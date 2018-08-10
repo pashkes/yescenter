@@ -1,0 +1,48 @@
+.education {
+  @include media-breakpoint-up(md) {
+    padding-top: 60px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+  }
+  .courses__title {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 24px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 46px;
+    }
+  }
+  .courses__content {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 27px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 20px;
+    }
+  }
+  .education__item {
+    @include media-breakpoint-up(md) {
+      min-height: 272px;
+      padding: 29px 30px 32px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 276px;
+      padding-bottom: 36px;
+      margin-bottom: 0;
+    }
+  }
+  .lang-card__name {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 7px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 22px;
+    }
+  }
+  .slick-dots {
+    padding-top: 10px;
+    margin-left: 11px;
+  }
+
+}

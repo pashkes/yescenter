@@ -1,0 +1,31 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+    include ../components/header/header
+    include ../components/footer/footer.pug
+    include ../components/subscribe/subscribe
+    include ../components/breadcrumb/breadcrumb
+    include ../components/education/education
+    include ../components/page-teacher/page-teacher
+    include ../components/trial-lesson/trial-lesson
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header()
+      .container
+        +breadcrumb(breadcrumb.teacher)
+      +page-teacher()
+      section.page-teacher__trial-lesson.section
+        .container
+          +trial-lesson()
+      +education(education).page-teachers__educ
+      +subscribe()
+      +footer()
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%.js')

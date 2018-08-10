@@ -1,12 +1,9 @@
 (function () {
-  let lastLang;
-  $('.js-select-lang').on('change', function () {
-    let currentLang = $(this).find('option:selected').val();
-    if (lastLang) {
-      $('.js-current-lang').removeClass(lastLang);
-    }
-    $('.js-current-lang').addClass(currentLang);
-    lastLang = currentLang;
+  let lastItemReview;
+  $('.js-reviews-list').on('change', function () {
+    let currentItem = $(this).find('option:selected').val();
+    $('.js-current-lang').addClass(currentItem);
+    lastItemReview = currentItem;
   });
 
 

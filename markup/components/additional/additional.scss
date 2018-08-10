@@ -1,0 +1,40 @@
+.additional {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  @include media-breakpoint-up(md) {
+    padding-top: 42px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 75px;
+  }
+  &__subtitle {
+    @include media-breakpoint-up(md) {
+
+    }
+  }
+  &__text {
+    @include media-breakpoint-up(xl) {
+      max-width: 530px;
+    }
+  }
+  &__sect {
+    margin-bottom: 21px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 46px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 70px;
+    }
+    p {
+      margin-bottom: 10px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 22px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+      }
+    }
+  }
+}

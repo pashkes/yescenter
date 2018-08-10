@@ -123,10 +123,10 @@
 }
 
 .slide-arrow {
-  display: flex;
+  display: none;
   align-items: center;
   padding: 0 16px;
-  width: 64px;
+  width: 55px;
   height: 40px;
   background-color: $secondary-red;
   transition: $transition-base;
@@ -144,12 +144,12 @@
     justify-content: flex-end;
     left: 0;
     border-radius: 0 25px 25px 0;
-    transform: translateX(-32px);
+    transform: translateX(-15px);
   }
   &--next {
     right: 0;
     border-radius: 25px 0 0 25px;
-    transform: translateX(24px);
+    transform: translateX(15px);
   }
 }
 
@@ -186,6 +186,28 @@
     }
     @include media-breakpoint-up(md) {
       margin-bottom: 17px;
+    }
+  }
+
+  &__select {
+    width: 100%;
+    padding: 7px 24px;
+    border: solid 1px #d7d7d7;
+    border-radius: 20px;
+    font-family: 'Open Sans', Intro, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    color: #191919;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url(%=static=%minified-svg/arrow-bottom-red.svg) bottom 50% right 24px no-repeat;
+    background-size: 12px 8px;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
     }
   }
   .SumoSelect {
@@ -303,5 +325,18 @@
     letter-spacing: 0.3px;
     opacity: .6;
     color: rgba(54, 54, 54, 0.6);
+  }
+}
+.grey {
+  display: block;
+  font-family: 'Open Sans', Intro, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  color: #a1a1a1;
+  @include media-breakpoint-up(xl) {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
   }
 }
