@@ -1,8 +1,8 @@
-mixin reviews(data)
+mixin reviews(data, title)
   include ../review/review
   section.reviews.section
     .container
-      h2.reviews__title.h2 отзывы о нашем центре
+      h2.reviews__title.h2 #{title}
     .reviews__slider
       button(type="button").reviews__arrow.slide-arrow.slide-arrow--prev.text-hide.js-reviews-prev-btn
         +icon('arrow-left', 12, 11)

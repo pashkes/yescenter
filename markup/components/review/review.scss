@@ -1,9 +1,13 @@
 .review {
   display: flex;
   flex-direction: column;
+  min-height: 344px;
   background-color: #ffffff;
   border: solid 1px #ebebeb;
   transition: $transition-base;
+  @include media-breakpoint-up(md) {
+    min-height: 336px;
+  }
   &--full {
     .review__top {
       margin-bottom: 22px;

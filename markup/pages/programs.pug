@@ -1,0 +1,39 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/header/header
+  include ../components/footer/footer.pug
+  include ../components/breadcrumb/breadcrumb
+  include ../components/programs/programs
+  include ../components/additional/additional
+  include ../components/history/history
+  include ../components/departure/departure
+  include ../components/map/map
+  include ../components/subscribe/subscribe
+  include ../components/reviews/reviews
+
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header()
+      .container
+        +breadcrumb(breadcrumb.programs)
+      section.page-programs
+        .container
+          h2.h2.page-programs__title Программы по изучению иностранных языков
+          p.page-programs__subtitle.subtitle Иностранный язык эффективнее учить в стране его бытования. Но что делать, если у Вас нет возможности поехать во Францию и осваивать французский в аутентичной обстановке? Тогда Вам нужно найти такую школу, где создают условия для полного погружения в языковую среду. Обучение иностранным языкам в центре изучения YES построено именно по такому принципу. Учите иностранный язык эффективно! Не повторяйте школьных ошибок!
+      +programs(programs, true)
+      +additional(additionalText.pageProgram, 'Почему выбирают обучение в YES?')
+      +departure()
+      +history(pageProgramsStatistics).history--no-line.history--bdt-line
+      +reviews(reviews, 'отзывы наших учеников')
+      +map()
+      +subscribe()
+      +footer()
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

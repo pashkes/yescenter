@@ -8,6 +8,57 @@
     padding-top: 78px;
     padding-bottom: 70px;
   }
+  &--bdt-line {
+    border-top: 1px solid #ebebeb;
+  }
+  &--no-line {
+    @include media-breakpoint-up(md) {
+      margin-top: 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+    }
+    .history__title {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 33px;
+      }
+    }
+    .history__item {
+      margin-bottom: 32px;
+    }
+    .history__item--first .history__desc {
+      @include media-breakpoint-up(xl) {
+        max-width: 130px;
+      }
+    }
+    .history__item--second .history__desc {
+      @include media-breakpoint-up(xl) {
+        max-width: 183px;
+      }
+    }
+    .history__item--third .history__desc {
+      @include media-breakpoint-up(xl) {
+        max-width: 152px;
+      }
+    }
+    .history__item--fourth .history__desc {
+      @include media-breakpoint-up(xl) {
+        max-width: 235px;
+      }
+    }
+    .history__year {
+      @include media-breakpoint-up(md) {
+        padding-bottom: 15px;
+        font-size: 80px;
+        line-height: 80px;
+      }
+    }
+    .history__year::before,
+    .history__inner::before {
+      display: none;
+    }
+
+  }
   &__inner {
     position: relative;
     &::before {

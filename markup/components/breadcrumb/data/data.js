@@ -52,6 +52,15 @@ const data = {
     },
     {
       name: ' Вакансии'
-    }]
+    }],
+    programs: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Программы'
+      }
+    ]
   }
 };

@@ -5268,6 +5268,8 @@ $('.js-select-lang-order').SumoSelect({
 
 
 
+
+
 (function () {
 
   $('.js-reviews-list').on('change', function () {
@@ -5309,6 +5311,9 @@ $('.js-select-lang-order').SumoSelect({
   });
 })();
 
+
+
+
 (function () {
   $('.js-promo-slider').slick({
     arrows: false,
@@ -5335,7 +5340,6 @@ $('.js-select-lang-order').SumoSelect({
     }]
   });
 })();
-
 
 (function () {
   var sliderReviews = $('.js-reviews-slider').slick({

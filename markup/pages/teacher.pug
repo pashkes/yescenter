@@ -17,9 +17,7 @@ html(class="no-js", lang="ru")
       .container
         +breadcrumb(breadcrumb.teacher)
       +page-teacher()
-      section.page-teacher__trial-lesson.section
-        .container
-          +trial-lesson()
+      +trial-lesson().page-teacher__trial-lesson.section
       +education(education).page-teachers__educ
       +subscribe()
       +footer()

@@ -1,0 +1,10 @@
+.page-programs {
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 48px;
+  }
+  &__title {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+  }
+}
