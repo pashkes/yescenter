@@ -10,6 +10,7 @@
     height: auto !important;
   }
   @include media-breakpoint-up(md) {
+    width: 263px;
     min-height: 316px;
   }
   @include media-breakpoint-up(xl) {
@@ -19,6 +20,62 @@
   }
   &:hover {
     box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
+  }
+  &--bg {
+    min-height: 257px;
+    padding-top: 30px;
+    border: solid 1px #e1e1e1;
+    background: #fff url(%=static=%general/planet.png) bottom left no-repeat;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      min-height: 207px;
+      border: none;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 224px;
+    }
+    .lang-card__name {
+      margin-bottom: 6px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: -3px;
+      }
+    }
+    .lang-card__desc {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__flag {
+    margin-right: 24px;
+    margin-top: 3px;
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 21px;
+    }
+    img {
+      display: block;
+      border-radius: 4.5px;
+    }
+  }
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    @include media-breakpoint-up(md) {
+      flex-direction: column;
+    }
+  }
+  &__lang-title {
+    line-height: 1;
+    a {
+      font-size: 18px;
+      line-height: 20px;
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
   }
   &--border-grey {
     border: solid 1px #ebebeb;

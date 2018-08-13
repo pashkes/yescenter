@@ -1,6 +1,6 @@
 mixin reviews(data, title)
   include ../review/review
-  section.reviews.section
+  section.reviews.section&attributes(attributes)
     .container
       h2.reviews__title.h2 #{title}
     .reviews__slider

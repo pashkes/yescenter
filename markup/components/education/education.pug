@@ -9,7 +9,7 @@ mixin education(data, trial)
         div(role="tabpanel").courses__panel.active.show#en
           .row.js-slider-education
             each item in data
-              .col-auto.col-xl-3
+              .col-auto
                 if(item.equalGroup)
                   +lang-card(item, 'записаться').education__item
                 else

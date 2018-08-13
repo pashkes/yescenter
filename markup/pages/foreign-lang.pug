@@ -1,0 +1,36 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/footer/footer.pug
+  include ../components/header/header
+  include ../components/breadcrumb/breadcrumb
+  include ../components/page-foreign-lang/page-foreign-lang
+  include ../components/additional/additional
+  include ../components/map/map
+  include ../components/subscribe/subscribe
+  include ../components/reviews/reviews
+
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header()
+      .container
+        +breadcrumb(breadcrumb.foreign)
+      section.page-programs
+        .container
+          h2.h2.page-programs__title Курсы иностранных языков
+          p.page-programs__subtitle.subtitle Хотите получить образование международного уровня? Мечтаете в совершенстве овладеть иностранным языком в короткие сроки? Обращайтесь в лингвистический центр YES! Школа YES — это инновационные учебные материалы, эффективные программы, профессиональный преподавательский состав и 100% гарантия успешного изучения иностранного языка. Благодаря уникальной методике FlashCom вы легко освоите иностранный язык и в дальнейшем сможете самостоятельно использовать навыки для совершенствования полученных знаний!
+      +page-foreign-lang(pageForeignLang.list)
+      +additional(additionalText.pageProgram, 'Почему выбирают обучение в YES?')
+      +reviews(reviews, 'отзывы наших учеников').reviews--border-top
+      +map()
+      +subscribe()
+      +footer()
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

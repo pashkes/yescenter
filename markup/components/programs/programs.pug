@@ -5,13 +5,10 @@ mixin programs(data, trailLessons)
     include ../trial-lesson/trial-lesson
     .courses__content.courses__content
       .container
-        div(role="tabpanel").courses__panel.active.show#en
-          .row
-            each item in data.items
-              .col-md-6.col-lg-4.col-xl-3
-                +lang-card(item, 'подробнее').programs__item
-    .container
-      .courses__dots
+        .row
+          each item in data.items
+            .col-md-6.col-lg-4.col-xl-3
+              +lang-card(item, 'подробнее').programs__item
     .courses__footer.programs__footer.text-center
       .container
         a(href="#").courses__show-more.btn.btn--grey показать еще

@@ -61,6 +61,15 @@ const data = {
       {
         name: 'Программы'
       }
+    ],
+    foreign: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Иностранные языки',
+      }
     ]
   }
 };

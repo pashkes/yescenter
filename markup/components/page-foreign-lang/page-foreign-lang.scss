@@ -1,0 +1,62 @@
+.foreign-course {
+  padding-top: 32px;
+  @include media-breakpoint-up(md) {
+    padding-top: 48px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 88px;
+  }
+  &__list {
+    margin-bottom: 26px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 8px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 48px;
+    }
+  }
+  .col-md-6 {
+    @include media-breakpoint-up(md) {
+      &:nth-last-child(2) .foreign-course__item {
+        min-height: 208px;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      &:nth-last-child(2) .foreign-course__item {
+        min-height: 224px;
+      }
+    }
+  }
+  &__item {
+    &.lang-card {
+      min-height: 160px;
+      margin-bottom: 24px;
+      padding-top: 30px;
+      @include media-breakpoint-up(md) {
+        min-height: 200px;
+        width: 100%;
+        margin-bottom: 32px;
+        padding-right: 32px;
+        padding-left: 32px;
+      }
+      @include media-breakpoint-up(xl) {
+        min-height: 224px;
+      }
+    }
+  }
+  &__subtitle {
+    margin-bottom: 4px;
+    display: block;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 18px;
+    }
+  }
+  .courses__desc {
+    @include media-breakpoint-up(md) {
+      padding-top: 10px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 83px;
+    }
+  }
+}

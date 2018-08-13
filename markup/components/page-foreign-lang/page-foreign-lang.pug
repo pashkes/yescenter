@@ -1,0 +1,39 @@
+mixin page-foreign-lang(data)
+  include ../icon/icon
+  include ../lang-card/lang-card
+  include ../trial-lesson/trial-lesson
+  section.courses.section.section--grey.foreign-course
+    .container
+      .foreign-course__list
+        .row
+          each item in data
+            .col-md-6.col-xl-3
+              .lang-card.foreign-course__item
+                .lang-card__top
+                  .lang-card__flag
+                    img(src="%=static=%img/general/"+item.countryImg width="40" height="26" alt=item.countryName)
+                  h3.lang-card__lang-title
+                    a(href="#") !{item.countryName}
+                a(href="#").lang-card__more.btn.btn--border-red Подробнее
+          .col-md-6.col-xl-3
+            .lang-card.lang-card--bg
+              h3.lang-card__name
+                a(href="#") Не нашли
+                  br
+                  | нужный язык?
+              p.lang-card__desc Просто укажите желаемый язык и мы вам поможем.
+              a(href="#").lang-card__more.btn.btn--red Отправить заявку
+      span.h2.foreign-course__subtitle Какую программу выбрать?
+      p.courses__desc.subtitle
+        | Если Вы планируете изучать английский, немецкий и французский,&#160;
+        a(href="#") пройдите тест&#160;
+        | , и мы поможем Вам подобрать оптимальную программу изучения языка. Стоимость уточните в разделе&#160;
+        a(href="#") цены.&#160;
+        | Если в ваших планах — учить русский как иностранный, предлагаем курсы по методике&#160;
+        a(href="#") Active Com.&#160;
+        | Это быстрое и эффективное освоение русского языка в ходе общения с преподавателем и группах.
+    +trial-lesson(true)
+
+
+
+
