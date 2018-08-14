@@ -9830,6 +9830,38 @@ body.compensate-for-scrollbar {
   }
 }
 
+@media (min-width: 1344px) {
+  .certifications {
+    padding-top: 78px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .certifications__title {
+    margin-bottom: 32px;
+  }
+}
+
+.certifications__slider {
+  padding: 0;
+  font-size: 0;
+}
+
+.certifications .slick-track {
+  margin: 0;
+}
+
+.certifications a {
+  display: block;
+  text-align: center;
+}
+
+.certifications img {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .causes {
   border-top: 1px solid #ebebeb;
 }
@@ -9925,38 +9957,6 @@ body.compensate-for-scrollbar {
   .causes__item::before {
     left: 0;
   }
-}
-
-@media (min-width: 1344px) {
-  .certifications {
-    padding-top: 78px;
-    padding-bottom: 100px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .certifications__title {
-    margin-bottom: 32px;
-  }
-}
-
-.certifications__slider {
-  padding: 0;
-  font-size: 0;
-}
-
-.certifications .slick-track {
-  margin: 0;
-}
-
-.certifications a {
-  display: block;
-  text-align: center;
-}
-
-.certifications img {
-  display: inline-block;
-  vertical-align: top;
 }
 
 .courses__title {
@@ -11352,6 +11352,179 @@ body.compensate-for-scrollbar {
   }
 }
 
+.lang-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 255px;
+  padding: 24px 24px 32px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 1343.98px) {
+  .lang-card {
+    height: auto !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .lang-card {
+    width: 263px;
+    min-height: 316px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .lang-card {
+    min-height: 276px;
+    margin-bottom: 32px;
+    padding: 28px 32px 32px;
+  }
+}
+
+.lang-card:hover {
+  -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.lang-card--bg {
+  min-height: 257px;
+  padding-top: 30px;
+  border: solid 1px #e1e1e1;
+  background: #fff url(../img/general/planet.png) bottom left no-repeat;
+}
+
+@media (min-width: 768px) {
+  .lang-card--bg {
+    width: 100%;
+    min-height: 207px;
+    border: none;
+  }
+}
+
+@media (min-width: 1344px) {
+  .lang-card--bg {
+    min-height: 224px;
+  }
+}
+
+.lang-card--bg .lang-card__name {
+  margin-bottom: 6px;
+}
+
+@media (min-width: 768px) {
+  .lang-card--bg .lang-card__name {
+    margin-bottom: -3px;
+  }
+}
+
+@media (min-width: 768px) {
+  .lang-card--bg .lang-card__desc {
+    margin-bottom: 10px;
+  }
+}
+
+.lang-card__flag {
+  margin-right: 24px;
+  margin-top: 3px;
+}
+
+@media (min-width: 768px) {
+  .lang-card__flag {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 21px;
+  }
+}
+
+.lang-card__flag img {
+  display: block;
+  border-radius: 4.5px;
+}
+
+.lang-card__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .lang-card__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.lang-card__lang-title {
+  line-height: 1;
+}
+
+.lang-card__lang-title a {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .lang-card__lang-title a {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+.lang-card--border-grey {
+  border: solid 1px #ebebeb;
+}
+
+.lang-card__name {
+  margin-bottom: 17px;
+  line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .lang-card__name {
+    margin-bottom: 22px;
+    line-height: 26px;
+  }
+}
+
+.lang-card__name a {
+  font-family: Intro, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .lang-card__name a {
+    font-size: 24px;
+  }
+}
+
+.lang-card__desc {
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+@media (min-width: 768px) {
+  .lang-card__desc {
+    letter-spacing: 0;
+  }
+}
+
+.lang-card__more {
+  margin-top: auto;
+}
+
 .history {
   padding-bottom: 15px;
   border-bottom: 1px solid #ebebeb;
@@ -11586,179 +11759,6 @@ body.compensate-for-scrollbar {
     line-height: 24px;
     letter-spacing: 0.2px;
   }
-}
-
-.lang-card {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 255px;
-  padding: 24px 24px 32px;
-  background-color: #ffffff;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-@media (max-width: 1343.98px) {
-  .lang-card {
-    height: auto !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .lang-card {
-    width: 263px;
-    min-height: 316px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .lang-card {
-    min-height: 276px;
-    margin-bottom: 32px;
-    padding: 28px 32px 32px;
-  }
-}
-
-.lang-card:hover {
-  -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
-}
-
-.lang-card--bg {
-  min-height: 257px;
-  padding-top: 30px;
-  border: solid 1px #e1e1e1;
-  background: #fff url(../img/general/planet.png) bottom left no-repeat;
-}
-
-@media (min-width: 768px) {
-  .lang-card--bg {
-    width: 100%;
-    min-height: 207px;
-    border: none;
-  }
-}
-
-@media (min-width: 1344px) {
-  .lang-card--bg {
-    min-height: 224px;
-  }
-}
-
-.lang-card--bg .lang-card__name {
-  margin-bottom: 6px;
-}
-
-@media (min-width: 768px) {
-  .lang-card--bg .lang-card__name {
-    margin-bottom: -3px;
-  }
-}
-
-@media (min-width: 768px) {
-  .lang-card--bg .lang-card__desc {
-    margin-bottom: 10px;
-  }
-}
-
-.lang-card__flag {
-  margin-right: 24px;
-  margin-top: 3px;
-}
-
-@media (min-width: 768px) {
-  .lang-card__flag {
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 21px;
-  }
-}
-
-.lang-card__flag img {
-  display: block;
-  border-radius: 4.5px;
-}
-
-.lang-card__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media (min-width: 768px) {
-  .lang-card__top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.lang-card__lang-title {
-  line-height: 1;
-}
-
-.lang-card__lang-title a {
-  font-size: 18px;
-  line-height: 20px;
-}
-
-@media (min-width: 768px) {
-  .lang-card__lang-title a {
-    font-size: 24px;
-    line-height: 26px;
-  }
-}
-
-.lang-card--border-grey {
-  border: solid 1px #ebebeb;
-}
-
-.lang-card__name {
-  margin-bottom: 17px;
-  line-height: 22px;
-}
-
-@media (min-width: 768px) {
-  .lang-card__name {
-    margin-bottom: 22px;
-    line-height: 26px;
-  }
-}
-
-.lang-card__name a {
-  font-family: Intro, sans-serif;
-  font-size: 18px;
-  line-height: 1;
-}
-
-@media (min-width: 768px) {
-  .lang-card__name a {
-    font-size: 24px;
-  }
-}
-
-.lang-card__desc {
-  line-height: 22px;
-  letter-spacing: 0.1px;
-}
-
-@media (min-width: 768px) {
-  .lang-card__desc {
-    letter-spacing: 0;
-  }
-}
-
-.lang-card__more {
-  margin-top: auto;
 }
 
 .map {
