@@ -70,6 +70,19 @@ const data = {
       {
         name: 'Иностранные языки',
       }
+    ],
+    eng: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Иностранные языки',
+        link: 'foreign-lang.html'
+      },
+      {
+        name: 'Курсы английского языка'
+      }
     ]
   }
 };

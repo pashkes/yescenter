@@ -10,6 +10,20 @@
     padding-top: 64px;
     padding-bottom: 60px;
   }
+  &--no-border {
+    border-bottom: none;
+  }
+  &--icon-start {
+    .features__item {
+      align-items: flex-start;
+      @include media-breakpoint-up(md) {
+        align-items: center;
+      }
+      @include media-breakpoint-up(xl) {
+        align-items: flex-start;
+      }
+    }
+  }
   &__title {
     margin-bottom: 24px;
     @include media-breakpoint-up(md) {
@@ -126,6 +140,30 @@
         @include media-breakpoint-up(xl) {
           width: 62px;
           height: 71px;
+        }
+      }
+    }
+    &--thumb {
+      img {
+        @include media-breakpoint-up(md) {
+          width: 53px;
+          height: 58px;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 70px;
+          height: 73px;
+        }
+      }
+    }
+    &--parachute {
+      img {
+        @include media-breakpoint-up(md) {
+          width: 62px;
+          height: 59px;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 80px;
+          height: 79px;
         }
       }
     }

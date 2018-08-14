@@ -5234,6 +5234,12 @@ $('.js-select-lang-order').SumoSelect({
 });
 
 (function () {
+  $('.js-menu-close').on('click', function () {
+    $('body').removeClass('show-menu');
+  });
+})();
+
+(function () {
   var TABLET_SIZE = 767;
   var newsSlider = $('.js-news-slide');
   var newsSliderSettigs = {
@@ -5260,12 +5266,6 @@ $('.js-select-lang-order').SumoSelect({
   });
 })();
 
-(function () {
-  $('.js-menu-close').on('click', function () {
-    $('body').removeClass('show-menu');
-  });
-})();
-
 
 
 
@@ -5283,6 +5283,8 @@ $('.js-select-lang-order').SumoSelect({
     $('.js-amount-list-reviews').text(amountReviews);
   });
 })();
+
+
 
 
 
@@ -5452,6 +5454,10 @@ $('.js-select-lang-order').SumoSelect({
     }]
   });
 })();
+
+
+
+
 
 
 

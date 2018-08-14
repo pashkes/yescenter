@@ -1,7 +1,10 @@
 mixin video-data(data)
-  section.video-data.section.section--grey
-    .container
-      h2.video-data__title.h2 видеоматериалы
+  section.video-data.section&attributes(attributes)
+    if data.title
+      .container
+        h2.video-data__title.h2 #{data.title}
+        if data.subtitle
+          p.video-data__subtitle.subtitle #{data.subtitle}
     .video-data__slider
       button(type="button").video-data__arrow.slide-arrow.slide-arrow--prev.text-hide.js-video-prev-btn
         +icon('arrow-left', 12, 11)

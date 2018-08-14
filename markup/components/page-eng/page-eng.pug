@@ -1,0 +1,18 @@
+mixin page-eng(data)
+  include ../trial-lesson/trial-lesson
+  include ../timetable/timetable
+  .page-eng.section.section--grey
+    .container
+      h2.page-eng__title.h2 Наши программы обучения английскому&#160;языку
+      .page-eng__list-card
+        .row
+          each itemList in data.listCard
+            .col-xl-6.d-flex.align-content-stretch
+              .lang-card.page-eng__card
+                h3.page-eng__title-card.lang-card__name
+                  a(href="#") !{itemList.title}
+                span.page-eng__subtitle.grey !{itemList.info}
+                p.page-eng__desc.lang-card__desc !{itemList.desc}
+                a(href="#").lang-card__more.page-eng__more.btn.btn--border-red подробнее
+      +trial-lesson()
+      +timetable(timetable).page-eng__timetable

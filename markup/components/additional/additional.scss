@@ -7,6 +7,43 @@
   @include media-breakpoint-up(xl) {
     padding-top: 75px;
   }
+  &--has-title {
+    @include media-breakpoint-up(md) {
+      padding-top: 50px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 65px;
+      padding-bottom: 36px;
+    }
+    .additional__sect {
+      margin-bottom: 15px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 32px;
+      }
+    }
+    .additional__title {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 40px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 32px;
+      }
+    }
+    .h2 {
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 28px;
+      }
+    }
+  }
+  .h2:nth-child(2) {
+    margin-bottom: 21px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 32px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 36px;
+    }
+  }
   &__title {
     margin-bottom: 16px;
     @include media-breakpoint-up(md) {

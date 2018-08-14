@@ -1,0 +1,59 @@
+mixin timetable(data)
+  .timetable&attributes(attributes)
+    h2.timetable__title.h2 Расписание «горящих» групп по английскому языку
+    .timetable__list.d-xl-none
+      each cardMobile in data.rows
+        .timetable__item
+          .timetable__item-inner
+            table.timetable__table-m
+              tbody
+                tr
+                  td.timetable__th Школа
+                  td #{cardMobile.school}
+                tr
+                  td.timetable__th возраст
+                  td #{cardMobile.yearsOld}
+                tr
+                  td.timetable__th Уровень
+                  td #{cardMobile.level}
+                tr
+                  td.timetable__th День нед.
+                  td #{cardMobile.timeLessons}
+                tr
+                  td.timetable__th время
+                  td #{cardMobile.timeLessons}
+                tr
+                  td.timetable__th ак.ч. в нед.
+                  td #{cardMobile.hours}
+                tr
+                  td.timetable__th стоимость ак.ч.
+                  td #{cardMobile.cost}
+              tfoot
+                tr
+                  td(colspan="2")
+                    a(href="").timetable__btn.btn.btn--border-red-sm записаться
+    table.timetable__table-d.d-none.d-xl-table
+      thead
+        tr
+          th.timetable__th Школа
+          th.timetable__th возраст
+          th.timetable__th Уровень
+          th.timetable__th День нед.
+          th.timetable__th время
+          th.timetable__th ак.ч. в нед.
+          th.timetable__th(colspan="2") стоимость ак.ч.
+      tbody
+        each rowDesktop in data.rows
+          tr
+            td #{rowDesktop.school}
+            td #{rowDesktop.yearsOld}
+            td #{rowDesktop.level}
+            td #{rowDesktop.dayLessons}
+            td #{rowDesktop.timeLessons}
+            td #{rowDesktop.hours}
+            td #{rowDesktop.cost}
+            td
+              a(href="#").timetable__btn
+                span записаться
+
+
