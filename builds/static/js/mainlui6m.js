@@ -4901,6 +4901,30 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
 
 
 (function () {
+  $('.js-certifications-slider').slick({
+    arrows: false,
+    mobileFirst: true,
+    dots: true,
+    centerMode: false,
+    centerPadding: false,
+    infinite: false,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+})();
+
+(function () {
   let lastItemReview;
   $('.js-reviews-list').on('change', function () {
     let currentItem = $(this).find('option:selected').val();
@@ -4944,28 +4968,28 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
 })();
 
 (function () {
-  $('.js-certifications-slider').slick({
+  $('.js-slider-education').slick({
     arrows: false,
-    mobileFirst: true,
     dots: true,
-    centerMode: false,
-    centerPadding: false,
-    infinite: false,
+    mobileFirst: true,
+    adaptiveHeight: true,
     responsive: [{
       breakpoint: 767,
       settings: {
-        slidesToShow: 3,
-        variableWidth: true
+        variableWidth: true,
+        adaptiveHeight: false
       }
     },
     {
       breakpoint: 1343,
       settings: {
-        slidesToShow: 2
+        variableWidth: false,
+        slidesToShow: 4
       }
     }]
   });
 })();
+
 
 (function () {
   $('.js-departure-slider').slick({
@@ -4990,30 +5014,6 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
     ]
   });
 })();
-
-(function () {
-  $('.js-slider-education').slick({
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    adaptiveHeight: true,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        variableWidth: true,
-        adaptiveHeight: false
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        variableWidth: false,
-        slidesToShow: 4
-      }
-    }]
-  });
-})();
-
 
 
 
@@ -5425,6 +5425,13 @@ $('.js-select-lang-order').SumoSelect({
 })();
 
 (function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
+  });
+})();
+
+(function () {
   $('.js-teachers-video').slick({
     dots: true,
     arrows: false,
@@ -5445,13 +5452,6 @@ $('.js-select-lang-order').SumoSelect({
         nextArrow: $('.js-teachers-video-prev-btn')
       }
     }]
-  });
-})();
-
-(function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
   });
 })();
 
