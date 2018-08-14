@@ -4898,6 +4898,8 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
 
 
 
+
+
 (function () {
   $('.js-certifications-slider').slick({
     arrows: false,
@@ -4964,6 +4966,8 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
     slickMobile(langSlider, langSliderSettigs);
   });
 })();
+
+
 
 (function () {
   $('.js-departure-slider').slick({
@@ -5038,8 +5042,6 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
     slickMobile(langSlider, langSliderSettigs);
   });
 })();
-
-
 
 (function () {
   $('.js-show-main-menu').on('click', function () {
@@ -5270,6 +5272,16 @@ $('.js-select-lang-order').SumoSelect({
 
 
 
+(function () {
+
+  $('.js-reviews-list').on('change', function () {
+    let amountReviews = $(this).find('option:selected').val();
+    let currentTextOption = $(this).find('option:selected').text();
+    $('.js-name-list-reviews').text(currentTextOption);
+    $('.js-amount-list-reviews').text(amountReviews);
+  });
+})();
+
 
 
 
@@ -5305,8 +5317,6 @@ $('.js-select-lang-order').SumoSelect({
   });
 })();
 
-
-
 (function () {
   $('.js-promo-slider').slick({
     arrows: false,
@@ -5333,6 +5343,8 @@ $('.js-select-lang-order').SumoSelect({
     }]
   });
 })();
+
+
 
 
 (function () {
@@ -5373,10 +5385,6 @@ $('.js-select-lang-order').SumoSelect({
 
 
 
-
-
-
-
 (function () {
   $('.js-techers-slider').slick({
     dots: true,
@@ -5413,6 +5421,8 @@ $('.js-select-lang-order').SumoSelect({
     }]
   });
 })();
+
+
 
 (function () {
   $('.js-show-all-teachers').on('click', function () {
@@ -5472,15 +5482,5 @@ $('.js-select-lang-order').SumoSelect({
         nextArrow: $('.js-video-next-btn')
       }
     }]
-  });
-})();
-
-(function () {
-
-  $('.js-reviews-list').on('change', function () {
-    let amountReviews = $(this).find('option:selected').val();
-    let currentTextOption = $(this).find('option:selected').text();
-    $('.js-name-list-reviews').text(currentTextOption);
-    $('.js-amount-list-reviews').text(amountReviews);
   });
 })();
