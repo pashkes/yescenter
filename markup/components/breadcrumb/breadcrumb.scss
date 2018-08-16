@@ -21,6 +21,7 @@
     font-size: 12px;
     letter-spacing: 0.4px;
     color: #aeaeae;
+    font-family: 'Open Sans', Intro, sans-serif;
     @include media-breakpoint-up(xl) {
       font-size: 13px;
       padding-right: 20px;

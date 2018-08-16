@@ -7987,7 +7987,7 @@ h1, h2, h3 {
 }
 
 .section--grey {
-  background-color: rgba(234, 236, 238, 0.7);
+  background-color: #F0F2F3;
 }
 
 @media (min-width: 768px) {
@@ -9781,6 +9781,7 @@ body.compensate-for-scrollbar {
   font-size: 12px;
   letter-spacing: 0.4px;
   color: #aeaeae;
+  font-family: 'Open Sans', Intro, sans-serif;
 }
 
 @media (min-width: 1344px) {
@@ -9828,6 +9829,38 @@ body.compensate-for-scrollbar {
   .breadcrumb__link {
     font-size: 13px;
   }
+}
+
+@media (min-width: 1344px) {
+  .certifications {
+    padding-top: 78px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .certifications__title {
+    margin-bottom: 32px;
+  }
+}
+
+.certifications__slider {
+  padding: 0;
+  font-size: 0;
+}
+
+.certifications .slick-track {
+  margin: 0;
+}
+
+.certifications a {
+  display: block;
+  text-align: center;
+}
+
+.certifications img {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .causes {
@@ -9925,38 +9958,6 @@ body.compensate-for-scrollbar {
   .causes__item::before {
     left: 0;
   }
-}
-
-@media (min-width: 1344px) {
-  .certifications {
-    padding-top: 78px;
-    padding-bottom: 100px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .certifications__title {
-    margin-bottom: 32px;
-  }
-}
-
-.certifications__slider {
-  padding: 0;
-  font-size: 0;
-}
-
-.certifications .slick-track {
-  margin: 0;
-}
-
-.certifications a {
-  display: block;
-  text-align: center;
-}
-
-.certifications img {
-  display: inline-block;
-  vertical-align: top;
 }
 
 .courses__title {
@@ -10237,6 +10238,16 @@ body.compensate-for-scrollbar {
 @media (min-width: 1344px) {
   .departure {
     padding-bottom: 90px;
+  }
+}
+
+.departure__title {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .departure__title {
+    margin-bottom: 42px;
   }
 }
 
@@ -10681,6 +10692,40 @@ body.compensate-for-scrollbar {
   }
 }
 
+@media (min-width: 768px) {
+  .features__img--pencil img {
+    width: 46px;
+    height: 59px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .features__img--pencil img {
+    width: 61px;
+    height: 79px;
+  }
+}
+
+.features.page-kids__features {
+  padding-bottom: 0;
+}
+
+@media (min-width: 1344px) {
+  .features.page-kids__features {
+    padding-bottom: 44px;
+  }
+}
+
+.features.page-kids__features .features__item {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .features.page-kids__features .features__item {
+    margin-bottom: 48px;
+  }
+}
+
 .footer {
   padding-top: 21px;
   background-color: #122037;
@@ -11019,6 +11064,10 @@ body.compensate-for-scrollbar {
   .forms-education--our-mission .forms-education__item {
     margin-bottom: 24px;
   }
+}
+
+.forms-education__title {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1344px) {
@@ -11585,6 +11634,186 @@ body.compensate-for-scrollbar {
   .history__desc {
     line-height: 24px;
     letter-spacing: 0.2px;
+  }
+}
+
+.kids-program-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 496px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .kids-program-order {
+    min-height: 350px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .kids-program-order {
+    min-height: 264px;
+  }
+}
+
+.kids-program-order__inner {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 28px 24px 32px;
+  background: url(../img/content/kids_banner.png) no-repeat right -5px bottom 0, -webkit-radial-gradient(50% 270px, farthest-corner, #77d5ee, #116592) no-repeat center bottom;
+  background: url(../img/content/kids_banner.png) no-repeat right -5px bottom 0, radial-gradient(farthest-corner at 50% 270px, #77d5ee, #116592) no-repeat center bottom;
+}
+
+@media (min-width: 768px) {
+  .kids-program-order__inner {
+    padding: 40px 32px 48px;
+    background-position: right 0;
+    background-image: url(../img/content/kids_banner_sm.png);
+    background-color: #0d6077;
+  }
+}
+
+@media (min-width: 1344px) {
+  .kids-program-order__inner {
+    padding: 44px 44px 47px;
+    background-image: url(../img/content/kids_banner_xl.png);
+  }
+}
+
+.kids-program-order__inner ul {
+  padding: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .kids-program-order__inner ul {
+    max-width: 281px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .kids-program-order__inner ul {
+    max-width: 100%;
+  }
+}
+
+.kids-program-order__inner li {
+  margin-bottom: 18px;
+  font-family: 'Open Sans', Intro, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+}
+
+@media (min-width: 768px) {
+  .kids-program-order__inner li {
+    margin-bottom: 4px;
+    line-height: 22px;
+  }
+}
+
+.kids-program-order__inner li b {
+  font-weight: 600;
+}
+
+.kids-program-order__title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+}
+
+@media (min-width: 768px) {
+  .kids-program-order__title {
+    margin-bottom: 18px;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: -0.3px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .kids-program-order__title {
+    letter-spacing: -0.5px;
+    font-size: 50px;
+    line-height: 42px;
+  }
+}
+
+.kids-program-order__bottom {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+@media (min-width: 1344px) {
+  .kids-program-order__bottom {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    margin-top: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.kids-program-order__bottom span {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .kids-program-order__bottom span {
+    max-width: 303px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.kids-program-order__btn {
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .kids-program-order__btn {
+    max-width: 278px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .kids-program-order__btn {
+    max-width: 278px;
+    margin-top: 0;
+    margin-right: 26px;
   }
 }
 
@@ -12696,6 +12925,166 @@ body.show-menu .header__logo-wrapper {
   }
 }
 
+.page-forKids {
+  padding-bottom: 0;
+}
+
+@media (min-width: 1344px) {
+  .page-forKids {
+    padding-top: 87px;
+  }
+}
+
+.page-forKids .page-eng__title {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .page-eng__title {
+    margin-bottom: 32px;
+  }
+}
+
+.page-forKids .subtitle {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-forKids .subtitle {
+    margin-bottom: 43px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .subtitle {
+    max-width: 1010px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .page-eng__list-card {
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .page-eng__card.lang-card {
+    margin-bottom: 34px;
+    min-height: 347px;
+  }
+}
+
+.page-forKids .list + p {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .page-forKids .list + p {
+    margin-bottom: 46px;
+  }
+}
+
+.page-forKids .list li {
+  margin-bottom: 18px;
+}
+
+@media (min-width: 768px) {
+  .page-forKids .list li {
+    padding-left: 42px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .list li {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+  }
+}
+
+.page-forKids .list li::before {
+  width: 8px;
+  height: 8px;
+  top: 8px;
+}
+
+.page-forKids .kids-program-order {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-forKids .kids-program-order {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .kids-program-order {
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-forKids .forms-education {
+    padding-bottom: 27px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .forms-education {
+    padding-top: 88px;
+    padding-bottom: 85px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-forKids .forms-education__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .forms-education__title {
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-forKids .forms-education__subject {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-forKids .forms-education__item {
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .trial-lesson {
+    margin-top: 34px;
+  }
+}
+
+.page-forKids-intro .subtitle {
+  margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+  .page-forKids-intro .subtitle {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids-intro .subtitle {
+    margin-bottom: 84px;
+  }
+}
+
 .page-jobs__title {
   margin-bottom: 28px;
 }
@@ -13054,6 +13443,10 @@ body.show-menu .header__logo-wrapper {
   .page-programs__title {
     margin-bottom: 30px;
   }
+}
+
+.page-programs .subtitle {
+  margin-bottom: 28px;
 }
 
 .page-reviews {
@@ -14873,7 +15266,7 @@ body.show-menu .header__logo-wrapper {
 
 @media (min-width: 768px) {
   .teachers {
-    padding-bottom: 48px;
+    padding-bottom: 35px;
   }
 }
 
@@ -14902,7 +15295,7 @@ body.show-menu .header__logo-wrapper {
 
 @media (min-width: 768px) {
   .teachers__subtitle {
-    margin-bottom: 55px;
+    margin-bottom: 40px;
   }
 }
 
@@ -15654,7 +16047,7 @@ body.show-menu .header__logo-wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 343px;
-  padding: 20px 24px 32px;
+  padding: 28px 24px 32px;
   background: #1E293C url(../img/general/gift-xs.png) right bottom no-repeat;
 }
 
@@ -15750,6 +16143,22 @@ body.show-menu .header__logo-wrapper {
   .video-data {
     padding-top: 82px;
     padding-bottom: 76px;
+  }
+}
+
+.video-data--has-subtitle .video-data__title {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .video-data--has-subtitle .video-data__title {
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .video-data--has-subtitle .video-data__title {
+    margin-bottom: 28px;
   }
 }
 

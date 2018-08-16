@@ -83,6 +83,23 @@ const data = {
       {
         name: 'Курсы английского языка'
       }
+    ],
+    forKids: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Иностранные языки',
+        link: 'foreign-lang.html'
+      },
+      {
+        link: 'eng.html',
+        name: 'Курсы английского языка'
+      },
+      {
+        name: 'Для детей'
+      }
     ]
   }
 };

@@ -7,6 +7,17 @@
     padding-top: 82px;
     padding-bottom: 76px;
   }
+  &--has-subtitle {
+    .video-data__title {
+      margin-bottom: 10px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 18px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 28px;
+      }
+    }
+  }
   &--border-top {
     border-top: 1px solid #ebebeb;
     .video-data__title {

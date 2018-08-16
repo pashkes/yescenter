@@ -1,0 +1,29 @@
+mixin kids-program-order(container)
+  section.kids-program-order&attributes(attributes)
+    if container
+      .container
+        .kids-program-order__inner
+          h2.kids-program-order__title Летние программы для детей
+          ul
+            li
+              b Yes-садик
+              | &nbsp;для детей 5—8 лет, занятия по 1,5 академических часа в день
+            li
+              b Yes-лагерь
+              | &nbsp;для детей 8—12 лет, занятия по 2,5 академических часа в день
+
+          button.kids-program-order__btn.btn.btn--red Отправить заявку
+    else
+      .kids-program-order__inner
+        h2.kids-program-order__title Летние программы для детей
+        ul
+          li
+            b Yes-садик
+            | &nbsp;для детей 5—8 лет, занятия по 1,5 академических часа в день
+          li
+            b Yes-лагерь
+            | &nbsp;для детей 8—12 лет, занятия по 2,5 академических часа в день
+        .kids-program-order__bottom
+          span.d-block Возможность провести&#160;каникулы с пользой!
+          button.kids-program-order__btn.btn.btn--red Отправить заявку
+

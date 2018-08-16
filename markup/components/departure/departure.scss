@@ -6,6 +6,12 @@
   @include media-breakpoint-up(xl) {
     padding-bottom: 90px;
   }
+  &__title {
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 42px;
+    }
+  }
   &__inner {
     position: relative;
   }

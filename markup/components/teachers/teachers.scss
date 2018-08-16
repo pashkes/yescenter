@@ -9,7 +9,7 @@
     border-bottom: none;
   }
   @include media-breakpoint-up(md) {
-    padding-bottom: 48px;
+    padding-bottom: 35px;
   }
   @include media-breakpoint-up(xl) {
     padding-top: 72px;
@@ -26,7 +26,7 @@
   }
   &__subtitle {
     @include media-breakpoint-up(md) {
-      margin-bottom: 55px;
+      margin-bottom: 40px;
     }
     @include media-breakpoint-up(xl) {
       max-width: 1045px;

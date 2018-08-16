@@ -1,6 +1,6 @@
-mixin forms-education(data)
+mixin forms-education(data, noContainer)
   section.forms-education.section.section--grey&attributes(attributes)
-    .container
+    if noContainer
       h2.forms-education__title.h2 #{data.title}
       .row.js-form-education-slider
         each item in data.list
@@ -8,3 +8,12 @@ mixin forms-education(data)
             article.forms-education__item
               h3.forms-education__subject #{item.subtitle}
               p.forms-education__text !{item.text}
+    else
+      .container
+        h2.forms-education__title.h2 #{data.title}
+        .row.js-form-education-slider
+          each item in data.list
+            .col-xl-4
+              article.forms-education__item
+                h3.forms-education__subject #{item.subtitle}
+                p.forms-education__text !{item.text}

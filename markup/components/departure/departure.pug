@@ -1,5 +1,8 @@
-mixin departure(data)
+mixin departure(title)
   .departure&attributes(attributes)
+    if title
+      .container
+        h2.departure__title.h2 #{title}
     .departure__inner
       button(type="button").departure__arrow.slide-arrow.slide-arrow--prev.text-hide.js-departure-prev-btn
         +icon('arrow-left', 12, 11)
