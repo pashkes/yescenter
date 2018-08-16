@@ -1,6 +1,8 @@
 mixin timetable(data)
   .timetable&attributes(attributes)
-    h2.timetable__title.h2 Расписание «горящих» групп по английскому языку
+    h2.timetable__title.h2 #{data.title}
+    if data.subtitle
+      p.subtitle.timetable__subtitle #{data.subtitle}
     .timetable__list.d-xl-none
       each cardMobile in data.rows
         .timetable__item
@@ -10,23 +12,24 @@ mixin timetable(data)
                 tr
                   td.timetable__th Школа
                   td #{cardMobile.school}
-                tr
-                  td.timetable__th возраст
-                  td #{cardMobile.yearsOld}
+                if cardMobile.yearsOld
+                  tr
+                    td.timetable__th возраст
+                    td #{cardMobile.yearsOld}
                 tr
                   td.timetable__th Уровень
                   td #{cardMobile.level}
                 tr
                   td.timetable__th День нед.
-                  td #{cardMobile.timeLessons}
+                  td #{cardMobile.dayLessons}
                 tr
-                  td.timetable__th время
+                  td.timetable__th время занятий
                   td #{cardMobile.timeLessons}
                 tr
                   td.timetable__th ак.ч. в нед.
                   td #{cardMobile.hours}
                 tr
-                  td.timetable__th стоимость ак.ч.
+                  td.timetable__th Стоимость ак.ч.
                   td #{cardMobile.cost}
               tfoot
                 tr
@@ -36,17 +39,19 @@ mixin timetable(data)
       thead
         tr
           th.timetable__th Школа
-          th.timetable__th возраст
+          if data.rows[0].yearsOld
+            th.timetable__th возраст
           th.timetable__th Уровень
           th.timetable__th День нед.
           th.timetable__th время
           th.timetable__th ак.ч. в нед.
-          th.timetable__th(colspan="2") стоимость ак.ч.
+          th.timetable__th(colspan="2") стоимость
       tbody
         each rowDesktop in data.rows
           tr
             td #{rowDesktop.school}
-            td #{rowDesktop.yearsOld}
+            if rowDesktop.yearsOld
+              td #{rowDesktop.yearsOld}
             td #{rowDesktop.level}
             td #{rowDesktop.dayLessons}
             td #{rowDesktop.timeLessons}
@@ -55,5 +60,9 @@ mixin timetable(data)
             td
               a(href="#").timetable__btn
                 span записаться
+    if data.footer
+      .timetable__footer.d-flex.justify-content-center.justify-content-md-start
+        a(href="#").show-all расписание всех групп
+          span &nbsp;&rarr;
 
 

@@ -4898,6 +4898,30 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
 
 
 
+(function () {
+  $('.js-certifications-slider').slick({
+    arrows: false,
+    mobileFirst: true,
+    dots: true,
+    centerMode: false,
+    centerPadding: false,
+    infinite: false,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+})();
+
 
 
 (function () {
@@ -4940,30 +4964,6 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
   }
   $(window).on('load resize', function () {
     slickMobile(langSlider, langSliderSettigs);
-  });
-})();
-
-(function () {
-  $('.js-certifications-slider').slick({
-    arrows: false,
-    mobileFirst: true,
-    dots: true,
-    centerMode: false,
-    centerPadding: false,
-    infinite: false,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 3,
-        variableWidth: true
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
   });
 })();
 
@@ -5267,6 +5267,8 @@ $('.js-select-lang-order').SumoSelect({
     slickMobile(newsSlider, newsSliderSettigs);
   });
 })();
+
+
 
 
 

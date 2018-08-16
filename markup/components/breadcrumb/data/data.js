@@ -100,6 +100,27 @@ const data = {
       {
         name: 'Для детей'
       }
+    ],
+    forKidsSmall: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Иностранные языки',
+        link: 'foreign-lang.html'
+      },
+      {
+        link: 'eng.html',
+        name: 'Курсы английского языка'
+      },
+      {
+        link: 'for-kids.html',
+        name: 'Для детей'
+      },
+      {
+        name: '3-4 лет'
+      }
     ]
   }
 };

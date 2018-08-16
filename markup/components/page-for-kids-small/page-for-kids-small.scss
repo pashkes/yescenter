@@ -1,0 +1,57 @@
+.page-for-kids-small {
+  &.page-forKids {
+    @include media-breakpoint-up(xl) {
+      padding-top: 80px;
+    }
+    .subtitle {
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .timetable__title {
+    @include media-breakpoint-up(xl) {
+      max-width: 740px;
+      margin-bottom: 38px;
+    }
+
+  }
+  .additional {
+    padding-top: 26px;
+    background-color: #fff;
+    @include media-breakpoint-up(md) {
+      padding-top: 42px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 64px;
+      padding-bottom: 60px;
+    }
+  }
+  .additional__title {
+    margin-bottom: 12px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 17px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+  }
+  .additional__sect {
+    margin-bottom: 12px;
+  }
+  .subtitle {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 27px;
+    }
+  }
+  .trial-lesson {
+    margin-bottom: 32px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 48px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 88px;
+    }
+  }
+}
