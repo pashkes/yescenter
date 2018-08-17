@@ -2,7 +2,7 @@ mixin page-corporate(data, notFoundLang, hasTextColumn)
   include ../icon/icon
   include ../lang-card/lang-card
   section.page-corporate.page-corporate--fr.section.foreign-course&attributes(attributes)
-    if !notFoundLang
+    if notFoundLang === 'single'
       .container
         .page-corporate__header.courses__header
           .courses__select.d-md-none
@@ -103,7 +103,7 @@ mixin page-corporate(data, notFoundLang, hasTextColumn)
                       a(href="#") !{item.countryName}
                   a(href="#").lang-card__more.btn.btn--border-red Подробнее
             .col-xl-3.d-flex.align-content-stretch
-              .lang-card.lang-card--bg.lang-card--red.foreign-course__item.page-corporate__not-found
+              .lang-card.lang-card--bg.lang-card--red.foreign-course__item.page-corporate__not-found.page-corporate__not-found--short
                 h3.lang-card__name
                   | Не нашли
                   br

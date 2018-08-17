@@ -4924,8 +4924,6 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
   });
 })();
 
-
-
 (function () {
   let lastItemReview;
   $('.js-reviews-list').on('change', function () {
@@ -4968,6 +4966,8 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
     slickMobile(langSlider, langSliderSettigs);
   });
 })();
+
+
 
 (function () {
   $('.js-departure-slider').slick({
@@ -5284,8 +5284,6 @@ $('.js-select-lang-order').SumoSelect({
 
 
 
-
-
 (function () {
 
   $('.js-reviews-list').on('change', function () {
@@ -5295,6 +5293,8 @@ $('.js-select-lang-order').SumoSelect({
     $('.js-amount-list-reviews').text(amountReviews);
   });
 })();
+
+
 
 
 
@@ -5504,6 +5504,8 @@ $('.js-select-lang-order').SumoSelect({
 
 
 
+
+
 (function () {
   $('.js-thanks-slider').slick({
     arrows: false,
@@ -5531,8 +5533,6 @@ $('.js-select-lang-order').SumoSelect({
     ]
   });
 })();
-
-
 
 
 

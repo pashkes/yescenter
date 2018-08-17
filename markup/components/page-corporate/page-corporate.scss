@@ -17,6 +17,13 @@
       .lang-card__name{
         color: $text-color;
       }
+      &--short {
+        .lang-card__desc,
+        .lang-card__name{
+          color: #fff;
+        }
+      }
+
       .lang-card__desc {
         @include media-breakpoint-up(xl) {
           margin-bottom: 0;
