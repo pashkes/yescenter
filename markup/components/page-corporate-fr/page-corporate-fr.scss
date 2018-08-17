@@ -1,0 +1,46 @@
+.page-corporate-fr {
+  padding-bottom: 22px;
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 50px;
+  }
+  &__title {
+    margin-bottom: 12px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 24px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 48px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 80px;
+      line-height: 26px;
+    }
+  }
+  .page-eng__list-card {
+    margin-bottom: 0;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 8px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 38px;
+    }
+  }
+  &__text {
+    p {
+      margin-bottom: 10px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 22px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 28px;
+        line-height: 26px;
+      }
+    }
+  }
+}

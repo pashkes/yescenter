@@ -1,0 +1,88 @@
+.corporate-education {
+  padding-bottom: 32px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 48px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 72px;
+  }
+  &__title {
+    margin-bottom: 16px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 40px;
+      line-height: 42px;
+      letter-spacing: 1.1px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 48px;
+      letter-spacing: 1.2px;
+    }
+  }
+  &__img {
+    display: block;
+    margin-bottom: 18px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 45px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 50px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #191919;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 26px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 24px;
+    }
+  }
+  &__text {
+    margin-bottom: 28px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 20px;
+      line-height: 26px;
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 34px;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      @include media-breakpoint-up(md) {
+        font-size: 15px;
+      }
+      &:last-child {
+        color: $primary-red;
+        padding-top: 10px;
+        @include media-breakpoint-up(md) {
+          padding-top: 0;
+          margin-left: 42px;
+        }
+      }
+      .icon {
+        margin-right: 10px;
+      }
+    }
+  }
+  &__btn {
+    @include media-breakpoint-up(md) {
+      max-width: 216px;
+    }
+  }
+}

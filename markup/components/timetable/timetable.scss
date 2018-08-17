@@ -87,7 +87,7 @@
     width: 100%;
     th {
       border-bottom: 3px solid #d7d7d7;
-      &:nth-child(6) {
+      &:nth-last-child(2) {
         text-align: center;
       }
     }
@@ -113,7 +113,7 @@
         letter-spacing: 0.3px;
         color: #191919;
         border-bottom: 1px solid #d7d7d7;
-        &:nth-child(6) {
+        &:nth-last-child(3) {
           text-align: center;
         }
         &:last-child {
@@ -140,8 +140,8 @@
     text-transform: uppercase;
     font-family: Intro, sans-serif;
     @include media-breakpoint-up(xl) {
-      padding-top: 4px;
-      padding-bottom: 4px;
+      padding-top: 1px;
+      padding-bottom: 1px;
     }
     &:before {
       content: '';

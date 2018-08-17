@@ -6,9 +6,6 @@
   padding: 24px 24px 32px;
   background-color: #ffffff;
   transition: $transition-base;
-  @include media-breakpoint-down(lg) {
-    height: auto !important;
-  }
   @include media-breakpoint-up(md) {
     width: 263px;
     min-height: 316px;
@@ -22,17 +19,15 @@
     box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
   }
   &--bg {
-    min-height: 257px;
+    width: 100%;
     padding-top: 30px;
     border: solid 1px #e1e1e1;
-    background: #fff url(%=static=%general/planet.png) bottom left no-repeat;
+    min-height: 257px;
+    background: #fff url(%=static=%general/planet.png) -60px 120px no-repeat;
     @include media-breakpoint-up(md) {
+      min-height: 100%;
       width: 100%;
-      min-height: 207px;
       border: none;
-    }
-    @include media-breakpoint-up(xl) {
-      min-height: 224px;
     }
     .lang-card__name {
       margin-bottom: 6px;
@@ -45,6 +40,15 @@
         margin-bottom: 10px;
       }
     }
+  }
+  &--red {
+    background-color: $primary-red;
+    color: #fff;
+    background-image: none;
+    a {
+      color: #fff;
+    }
+
   }
   &__flag {
     margin-right: 24px;
@@ -101,9 +105,12 @@
   &__desc {
     line-height: 22px;
     letter-spacing: 0.1px;
+    color: $text-color;
+
     @include media-breakpoint-up(md) {
       letter-spacing: 0;
     }
+
   }
   &__more {
     margin-top: auto;

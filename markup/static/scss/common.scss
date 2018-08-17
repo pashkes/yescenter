@@ -21,6 +21,7 @@ a {
 p {
   margin-top: 0;
   font: 14px/22px 'Open Sans', sans-serif;
+  color: #191919;
 }
 
 
@@ -28,6 +29,7 @@ p {
   margin-bottom: 28px;
   font-family: 'Open Sans', Intro sans-serif;
   line-height: 22px;
+  color: $text-color;
   @include media-breakpoint-up(md) {
     margin-bottom: 38px;
   }

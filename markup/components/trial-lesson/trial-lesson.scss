@@ -37,6 +37,7 @@
     letter-spacing: 0.1px;
     max-width: 200px;
     line-height: 22px;
+    color: #fff;
     @include media-breakpoint-up(md) {
       max-width: 345px;
       letter-spacing: 0;

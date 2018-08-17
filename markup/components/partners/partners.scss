@@ -9,6 +9,33 @@
     padding-top: 77px;
     padding-bottom: 88px;
   }
+  &--third-row {
+    .partners__slide {
+      width: 100%;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      @include media-breakpoint-up(md) {
+        margin-top: 9px;
+        margin-bottom: 9px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    .slick-list {
+      margin-top: -6px;
+      margin-bottom: -6px;
+      @include media-breakpoint-up(md) {
+        margin-top: -9px;
+        margin-bottom: -9px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-top: -10px;
+        margin-bottom: -10px;
+      }
+    }
+  }
   &__title {
     margin-bottom: 27px;
     @include media-breakpoint-up(md) {
@@ -56,6 +83,7 @@
     width: 128px;
     height: 128px;
     border: solid 1px #e1e1e1;
+    background-color: #fff;
     @include media-breakpoint-up(md) {
       width: 162px;
       height: 162px;
@@ -72,5 +100,13 @@
       justify-content: flex-start;
       margin-left: -5px;
     }
+  }
+  &__slider-wrapper {
+    position: relative;
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
   }
 }

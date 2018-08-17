@@ -121,6 +121,32 @@ const data = {
       {
         name: '3-4 лет'
       }
+    ],
+    corporate: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Компаниям'
+      }
+    ],
+    corporateFr: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Иностранные языки',
+        link: 'foreign-lang.html'
+      },
+      {
+        name: 'Курсы французкого языка',
+        link: 'foreign-lang.html'
+      },
+      {
+        name: 'Компаниям'
+      }
     ]
   }
 };

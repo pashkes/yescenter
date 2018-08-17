@@ -11,7 +11,7 @@ html(class="no-js", lang="ru")
   include ../components/departure/departure
   include ../components/map/map
   include ../components/subscribe/subscribe
-  include ../components/reviews/reviews
+  include ../components/partners/partners
 
   head
     +head(head.defaults)
@@ -22,13 +22,13 @@ html(class="no-js", lang="ru")
         +breadcrumb(breadcrumb.programs)
       section.page-programs
         .container
-          h2.h2.page-programs__title Программы по изучению иностранных языков
+          h1.h2.page-programs__title Программы по изучению иностранных языков
           p.page-programs__subtitle.subtitle Иностранный язык эффективнее учить в стране его бытования. Но что делать, если у Вас нет возможности поехать во Францию и осваивать французский в аутентичной обстановке? Тогда Вам нужно найти такую школу, где создают условия для полного погружения в языковую среду. Обучение иностранным языкам в центре изучения YES построено именно по такому принципу. Учите иностранный язык эффективно! Не повторяйте школьных ошибок!
       +programs(programs, true)
       +additional(additionalText.pageProgram, 'Почему выбирают обучение в YES?')
       +departure()
       +history(pageProgramsStatistics).history--no-line.history--bdt-line
-      +reviews(reviews, 'отзывы наших учеников')
+      +partners(partners.mainPage)
       +map()
       +subscribe()
       +footer()

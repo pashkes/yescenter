@@ -1,0 +1,43 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/footer/footer.pug
+  include ../components/header/header
+  include ../components/breadcrumb/breadcrumb
+  include ../components/subscribe/subscribe
+  include ../components/teachers/teachers
+  include ../components/map/map
+  include ../components/departure/departure
+  include ../components/additional/additional
+  include ../components/history/history
+  include ../components/partners/partners
+  include ../components/thanks/thanks
+  include ../components/page-corporate/page-corporate
+  include ../components/corporate-education/corporate-education
+  include ../components/page-corporate-fr/page-corporate-fr
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header()
+      .container
+        +breadcrumb(breadcrumb.corporateFr)
+      +corporate-education(corporate.defaultFr)
+      +page-corporate-fr(pageCorporateFr)
+      +additional(additionalText.pageCorporate, 'Почему компании выбирают нас?').additional--video-data
+      +departure()
+      +history(pageProgramsStatistics).history--no-line.history--bdt-line
+      +teachers(teachers).teachers--bt-none
+      +page-corporate(pageForeignLang, false)
+      +partners(partners.corporate).partners--third-row.section--grey
+      +thanks(thanks)
+      +map()
+      +subscribe()
+      +footer()
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%.js')

@@ -1,23 +1,17 @@
 mixin partners(data)
-  section.partners.section
-    .container
-      h2.partners__title.h2 наши партнеры
-      ul.partners__slider.js-partners-slider
-        li
-          a(href="#").partners__slide
-            img(src="%=static=%img/content/wano.png" alt="wano")
-        li
-          a(href="#").partners__slide
-            img(src="%=static=%img/content/spbmtsb.png"  alt="spbmtsb")
-        li
-          a(href="#").partners__slide
-            img(src="%=static=%img/content/gefco.png" alt="gefco")
-        li
-          a(href="#").partners__slide
-            img(src="%=static=%img/content/ile.png" alt="ile")
-        li
-          a(href="#").partners__slide
-            img(src="%=static=%img/content/serdix.png" alt="serdix")
-        li
-          a(href="#").partners__slide
-            img(src="%=static=%img/content/hollihop.png" alt="hollihop")
+  section.partners.section&attributes(attributes)
+      .container
+        h2.partners__title.h2 #{data.title}
+      .partners__slider-wrapper
+        button(type="button").partners__arrow.slide-arrow.slide-arrow--prev.text-hide.js-partners-prev-btn
+          +icon('arrow-left', 12, 11)
+          | Предадущий слайд
+        button(type="button").partners__arrow.slide-arrow.slide-arrow--next.text-hide.js-partners-next-btn
+          +icon('arrow-right', 12, 11)
+          | Следующий слайд
+        .container
+          ul(class="partners__slider "+data.classSlider)
+            each item in data.list
+              li
+                a(href="#").partners__slide
+                  img(src="%=static=%img/content/"+item.imgSrc alt=+item.name)

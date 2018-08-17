@@ -1,0 +1,19 @@
+mixin thanks(data)
+  section.thanks
+    .container
+      h2.thanks__title.h2 #{data.title}
+    .thanks__wrapper-slider
+      button(type="button").thanks__arrow.slide-arrow.slide-arrow--prev.text-hide.js-thanks-prev-btn
+        +icon('arrow-left', 12, 11)
+        | Предадущий слайд
+      button(type="button").thanks__arrow.slide-arrow.slide-arrow--next.text-hide.js-thanks-next-btn
+        +icon('arrow-right', 12, 11)
+        | Следующий слайд
+      .container
+        ul.thanks__slider.js-thanks-slider
+          - var i = 1
+          each slide in data.list
+            li
+              a(href="%=static=%img/content/"+slide.imgSrc data-fancybox="gallery").thanks__slide
+                img(src="%=static=%img/content/"+slide.imgSrc alt="thanks-"+i)
+            - i++
