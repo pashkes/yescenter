@@ -187,6 +187,7 @@
     line-height: 1;
     letter-spacing: 0.28px;
     transition: $transition-base;
+    background-color: transparent;
     @include placeholder {
       opacity: 0.6;
       font-family: 'Open Sans', Intro, sans-serif;

@@ -1,0 +1,101 @@
+mixin page-reg(data)
+  form.page-reg.section--grey.form#reg-for-course
+    .container
+      .page-reg__section.page-reg__section--select-lang
+        h3.page-reg__title 1. Какой иностранный язык вас интересует?
+        .row.no-gutters
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              img(src="%=static=%img/general/uk.svg" width="40" heihgt="26" alt="Английский язык").page-reg__country-flag
+              input(type="radio" name="select-lang" checked).page-reg__radio
+              span.page-reg__name Английский язык
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              img(src="%=static=%img/general/germany.svg" width="40" heihgt="26" alt="Немецкий язык").page-reg__country-flag
+              input(type="radio" name="select-lang").page-reg__radio
+              span.page-reg__name Немецкий язык
+
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              img(src="%=static=%img/general/france.svg" width="40" heihgt="26" alt="Французкий язык").page-reg__country-flag
+              input(type="radio" name="select-lang").page-reg__radio
+              span.page-reg__name Французкий язык
+
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              img(src="%=static=%img/general/Italy.svg" width="40" heihgt="26" alt="Итальянский язык").page-reg__country-flag
+              input(type="radio" name="select-lang").page-reg__radio
+              span.page-reg__name Итальянский язык
+
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              img(src="%=static=%img/general/spain.svg" width="40" heihgt="26" alt="Испанский язык").page-reg__country-flag
+              input(type="radio" name="select-lang").page-reg__radio
+              span.page-reg__name Испанский язык
+
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              img(src="%=static=%img/general/china.svg" width="40" heihgt="26" alt="Китайский язык").page-reg__country-flag
+              input(type="radio" name="select-lang").page-reg__radio
+              span.page-reg__name Китайский язык
+
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              img(src="%=static=%img/general/japan.svg" width="40" heihgt="26" alt="Японский язык").page-reg__country-flag
+              input(type="radio" name="select-lang").page-reg__radio
+              span.page-reg__name Японский язык
+
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              input(type="radio" name="select-lang").page-reg__radio
+              span.page-reg__name Другой язык
+      .page-reg__section.page-reg__section--type-education
+        h3.page-reg__title 2. Предпочитаемый вид обучения
+        .row.no-gutters
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              input(type="radio" name="select-type-education" checked).page-reg__radio
+              span.page-reg__name Групповое, очное
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name Индивидуальное, очное
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name Индивидуальное по Skype
+          .col-md-6.col-xl-3.page-reg__col
+            label.page-reg__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name Дистанционное на&#160;онлайн&#160;платформе
+      .page-reg__section.page-reg__section--fields
+        h3.page-reg__title 3. Контактная информация
+        .page-reg__row-field
+          .page-reg__col-field
+            label(for="reg-for-course-full-name").hidden Ваше имя и фамилия
+            input(type="text" id="reg-for-course-full-name" placeholder="Ваше имя и фамилия *" required).page-reg__field.form__field
+          .page-reg__col-field
+            label(for="reg-for-course-tel").hidden Контактный номер телефона *
+            input(type="tel" id="reg-for-course-tel" placeholder="Контактный номер телефона *" required).page-reg__field.form__field
+          .page-reg__col-field
+            label(for="reg-for-course-email").hidden Электронная почта
+            input(type="email" id="reg-for-course-email" placeholder="Электронная почта").page-reg__field.form__field
+          .page-reg__col-field
+            label(for="reg-for-course-company").hidden Компания
+            input(type="text" id="reg-for-course-company" placeholder="Компания").page-reg__field.form__field
+          .page-reg__col-field
+            label(for="reg-for-course-place").hidden Должность
+            input(type="text" id="reg-for-course-place" placeholder="Должность").page-reg__field.form__field
+          .page-reg__col-field
+            label(for="reg-for-course-skype").hidden Никнэйм в Skype
+            input(type="text" id="reg-for-course-skype" placeholder="Никнэйм в Skype").page-reg__field.form__field
+          .page-reg__col-field.w-100
+            label(for="reg-for-course-aim").hidden Цель обучения и пожелания
+            input(type="text" id="reg-for-course-aim" placeholder="Цель обучения и пожелания").page-reg__field.form__field
+        .page-reg__footer
+          .row.align-items-md-center
+            .col-md
+              p.page-reg__polityca Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
+                a(href="#") политикой конфиденциальности
+            .col-md-auto
+              button.page-reg__submit.btn.btn--red Отправить заявку
