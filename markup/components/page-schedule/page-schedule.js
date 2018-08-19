@@ -29,7 +29,7 @@ $(window).on('load', function () {
   var toggleTextButton = function () {
     $('.js-show-filter').on('click', function () {
       var text = $(this).find('span').text();
-      $(this).find('i').text(function (i, text) {
+      $(this).find('span').text(function () {
         return text === 'показать еще фильтры' ? 'Скрыть фильтры' : 'показать еще фильтры';
       });
       $('.js-filter').slideToggle('fast');

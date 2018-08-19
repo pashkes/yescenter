@@ -4942,8 +4942,6 @@ object-assign
   });
 })();
 
-
-
 (function () {
   let lastItemReview;
   $('.js-reviews-list').on('change', function () {
@@ -4987,28 +4985,6 @@ object-assign
   });
 })();
 
-(function () {
-  $('.js-slider-education').slick({
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    adaptiveHeight: true,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        variableWidth: true,
-        adaptiveHeight: false
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        variableWidth: false,
-        slidesToShow: 4
-      }
-    }]
-  });
-})();
 
 
 (function () {
@@ -5034,6 +5010,30 @@ object-assign
     ]
   });
 })();
+
+(function () {
+  $('.js-slider-education').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    adaptiveHeight: true,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        variableWidth: true,
+        adaptiveHeight: false
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        variableWidth: false,
+        slidesToShow: 4
+      }
+    }]
+  });
+})();
+
 
 
 
@@ -5308,6 +5308,8 @@ $('.js-select-lang-order').SumoSelect({
 
 
 
+
+
 (function () {
 
   $('.js-reviews-list').on('change', function () {
@@ -5317,8 +5319,6 @@ $('.js-select-lang-order').SumoSelect({
     $('.js-amount-list-reviews').text(amountReviews);
   });
 })();
-
-
 
 (function () {
   $('.js-select-defaul').each(function () {
@@ -5351,7 +5351,7 @@ $(window).on('load', function () {
   var toggleTextButton = function () {
     $('.js-show-filter').on('click', function () {
       var text = $(this).find('span').text();
-      $(this).find('i').text(function (i, text) {
+      $(this).find('span').text(function () {
         return text === 'показать еще фильтры' ? 'Скрыть фильтры' : 'показать еще фильтры';
       });
       $('.js-filter').slideToggle('fast');
@@ -5359,6 +5359,10 @@ $(window).on('load', function () {
   };
   toggleTextButton();
 });
+
+
+
+
 
 
 
@@ -5423,10 +5427,6 @@ $(window).on('load', function () {
   });
 
 })();
-
-
-
-
 
 
 
@@ -5540,6 +5540,13 @@ $(window).on('load', function () {
 })();
 
 (function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
+  });
+})();
+
+(function () {
   $('.js-teachers-video').slick({
     dots: true,
     arrows: false,
@@ -5560,13 +5567,6 @@ $(window).on('load', function () {
         nextArrow: $('.js-teachers-video-prev-btn')
       }
     }]
-  });
-})();
-
-(function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
   });
 })();
 
