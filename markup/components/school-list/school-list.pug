@@ -1,0 +1,85 @@
+mixin school-list(data)
+  include ../icon/icon
+  section.school-list
+    .school-list__header
+      .container
+        .row.align-items-md-center
+          .col-md
+            h1.school-list__title.h2 Наши школы
+          .col-md-auto.d-none.d-md-block.d-xl-none
+            div(role="tablist").school-list__nav.nav
+              a(href="#map-list" role="tab" aria-selected="true" data-toggle="tab").school-list__tab.active списком
+              a(href="#on-map" role="tab" aria-selected="true" data-toggle="tab").school-list__tab на карте
+    form.school-list__inner#map-list
+      header.school-list__top
+        .container
+          .row.align-items-xl-center
+            .col-xl
+              .js-select-custom-scroll.d-md-none
+                label(for="map-list-cities").hidden Наши школы
+                .form__select-custom.school-list__select
+                  select(id="map-list-cities").js-select-defaul
+                    option Москва
+                    option Московская область
+                    option Санкт-Петербург
+                    option Тула
+                    option Волоколамск
+              ul.school-list__filters.d-none.d-md-flex
+                li.school-list__filter
+                  label.school-list__item-list
+                    input(type="radio" name="map-list-cities" checked)
+                    span.school-list__name-filter Москва
+                li.school-list__filter
+                  label.school-list__item-list
+                    input(type="radio" name="map-list-cities")
+                    span.school-list__name-filter Московская область
+                li.school-list__filter
+                  label.school-list__item-list
+                    input(type="radio" name="map-list-cities")
+                    span.school-list__name-filter Санкт-Петербург
+                li.school-list__filter
+                  label.school-list__item-list
+                    input(type="radio" name="map-list-cities")
+                    span.school-list__name-filter Тула
+                li.school-list__filter
+                  label.school-list__item-list
+                    input(type="radio" name="map-list-cities")
+                    span.school-list__name-filter волоколамск
+            .col-xl-auto.d-md-none.d-xl-block
+              div(role="tablist").school-list__nav.nav
+                a(href="#map-list" role="tab" aria-selected="true" data-toggle="tab").school-list__tab.active списком
+                a(href="#on-map" role="tab" aria-selected="true" data-toggle="tab").school-list__tab на карте
+      .container
+        ul.school-list__list
+          each item in data
+            li.school-list__item
+              .row
+                .col-xl
+                  .row
+                    .col-12
+                      .row.align-items-md-center
+                        .col-md-auto
+                          a(href="#").school-list__name #{item.name}
+                        .col-md
+                          span.school-list__time-work Пн-Пт 10:00 — 22:00, Сб-Вс 10:00 — 16:00
+                    .col-12
+                      .row
+                        .col-xl-auto
+                          span.school-list__address
+                            +icon('picker', 11, 16)
+                            | #{item.address}
+                        .col-xl
+                          a(href="email:" + item.email).school-list__email
+                            +icon('mail', 16, 12)
+                            | #{item.email}
+                    .col-12
+                      p.school-list__contacts
+                        +icon('phone', 10, 16)
+                        | +7&#160;495&#160;125-35-24,&#160;+7&#160;800&#160;100-32-76, +7 495 125-35-24
+                        br
+                        | Отдел корпоративного обучения:&#160;+7&#160;495&#160;984-97-10
+
+                .col-xl-auto
+                  button(type="button").school-list__btn.btn.btn--grey заказать звонок
+
+

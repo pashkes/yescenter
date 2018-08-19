@@ -1,0 +1,31 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/footer/footer.pug
+  include ../components/header/header
+  include ../components/breadcrumb/breadcrumb
+  include ../components/subscribe/subscribe
+  include ../components/interestring-education/interestring-education
+  include ../components/page-schedule/page-schedule
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header()
+      .container
+        +breadcrumb(breadcrumb.schedule)
+      section.page-programs
+        .container
+          h1.h2.page-programs__title Расписание групп в Москве
+          p.page-programs__subtitle.subtitle В любую группу в Центре YES всегда можно добавиться, или подобрать оптимальную по возрасту и уровню. Постоянно открываются новые группы, поэтому, если вы не нашли подходящую для вас группу, позвоните и оставьте заявку!
+      +page-schedule(schedule)
+      +interestring-education(interestingEducation)
+      +subscribe()
+      +footer()
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%.js')

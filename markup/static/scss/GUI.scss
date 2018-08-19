@@ -341,7 +341,129 @@
     opacity: .6;
     color: rgba(54, 54, 54, 0.6);
   }
+  &__select-custom {
+    .SumoSelect > .CaptionCont {
+      border-radius: 20.5px;
+      background-color: #ffffff;
+      border: solid 1px #dddddd;
+      padding-left: 24px;
+      @include media-breakpoint-up(xl) {
+        padding-left: 26px;
+      }
+      > span {
+        font-family: 'Open Sans', Intro, sans-serif;
+        font-size: 15px;
+        letter-spacing: 0.3px;
+        color: #191919;
+      }
+      > label {
+        margin-bottom: 0;
+        width: 48px;
+        > i {
+          background-image: url(%=static=%minified-svg/arrow-bottom-red.svg);
+          background-size: 10px 6px;
+          opacity: 1;
+        }
+      }
+    }
+    .SumoSelect {
+      width: 100%;
+    }
+    .SelectBox {
+      padding: 8px;
+    }
+    .SumoSelect > .optWrapper {
+      border: solid 1px #dddddd;
+      box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 20.5px 20.5px;
+      border-top: none;
+    }
+    .SumoSelect > .optWrapper > .options {
+      position: relative;
+      max-height: 240px;
+
+    }
+    .SumoSelect:hover > .CaptionCont,
+    .SumoSelect:focus > .CaptionCont {
+      box-shadow: none;
+      border-color: #dddddd;
+    }
+    .SumoSelect.open > .CaptionCont {
+      box-shadow: none;
+      border-color: #dddddd;
+      border-radius: 20.5px 20.5px 0 0;
+    }
+    .SumoSelect.open > .CaptionCont {
+      box-shadow: none;
+      border-color: #dddddd;
+      border-radius: 20.5px 20.5px 0 0;
+    }
+    .SumoSelect > .optWrapper > .options li.opt {
+      margin-bottom: 16px;
+      padding: 0 24px;
+      font-family: 'Open Sans', Intro, sans-serif;
+      border-bottom: none;
+      line-height: 1;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      color: #191919;
+      @include media-breakpoint-up(xl) {
+        padding: 0 26px;
+      }
+      &.selected {
+        color: $primary-red;
+      }
+    }
+    .SumoSelect > .optWrapper > .options li.opt:hover {
+      background-color: transparent;
+    }
+    .SumoSelect > .optWrapper > .options > li.opt:first-child {
+      border-radius: 0;
+    }
+    .SumoSelect > .optWrapper > .options > li.opt:last-child label,
+    .SumoSelect > .optWrapper > .options > li.opt:last-child {
+      border-radius: 0;
+      margin-bottom: 0;
+    }
+    .SumoSelect.open > .optWrapper {
+      padding-top: 6px;
+      padding-bottom: 16px;
+    }
+    .SumoSelect > .optWrapper > .options li.opt label,
+    .SumoSelect > .optWrapper > .options li.opt:last-child {
+      margin-bottom: 0;
+    }
+    .simplebar-scrollbar {
+      width: 5px;
+      right: 0;
+    }
+    .simplebar-track {
+      right: 13px;
+    }
+    .simplebar-track.horizontal {
+      display: none;
+    }
+    .simplebar-scrollbar:before {
+      border-radius: 2.5px;
+      background-color: #a2a2a2
+    }
+    .simplebar-track {
+      width: 5px;
+      border-radius: 2.5px;
+      background-color: #dddddd;
+
+    }
+    .simplebar-track.vertical .simplebar-scrollbar:before {
+      top: 0;
+      bottom: 0;
+    }
+    .simplebar-content {
+      padding-bottom: 0;
+    }
+
+  }
 }
+
 .grey {
   display: block;
   font-family: 'Open Sans', Intro, sans-serif;
@@ -355,6 +477,7 @@
     letter-spacing: 0.3px;
   }
 }
+
 .list {
   margin-bottom: 0;
   padding: 0;
@@ -379,6 +502,7 @@
     }
   }
 }
+
 .text-red {
   color: $primary-red
 }

@@ -75,7 +75,9 @@
         }
       }
       @include media-breakpoint-up(xl) {
-        border-left: 1px solid #ebebeb;
+        .page-reg__item {
+          border-left: 1px solid #ebebeb;
+        }
       }
     }
     &:nth-last-child(2) {
@@ -86,7 +88,9 @@
       }
     }
     &:nth-child(4n) {
-      border-right: 1px solid #ebebeb;
+      .page-reg__item {
+        border-right: 1px solid #ebebeb;
+      }
     }
   }
   &__item {

@@ -165,6 +165,24 @@ const data = {
       {
         name: 'Цены'
       }
+    ],
+    schedule: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Расписание'
+      }
+    ],
+    schoolList: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Наши школы'
+      }
     ]
   }
 };

@@ -164,198 +164,241 @@
                 <ul class="breadcrumb">
                     <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a>
                     </li>
-                    <li class="breadcrumb__item">Цены</li>
+                    <li class="breadcrumb__item">Расписание</li>
                 </ul>
             </div>
             <section class="page-programs">
                 <div class="container">
-                    <h1 class="h2 page-programs__title">Стоимость курсов изучения иностранных языков</h1>
-                    <p class="page-programs__subtitle subtitle">Стоимость обучения иностранным языкам может быть различной, Она зависит, в первую очередь, от выбранной формы обучения, а также от курса и изучаемого языка. Цена также определяется, исходя из таких факторов, как содержание и длительность
-                        учебного процесса. Ниже представлена примерная стоимость обучения в Центре YES для разных возрастных категорий.</p>
+                    <h1 class="h2 page-programs__title">Расписание групп в Москве</h1>
+                    <p class="page-programs__subtitle subtitle">В любую группу в Центре YES всегда можно добавиться, или подобрать оптимальную по возрасту и уровню. Постоянно открываются новые группы, поэтому, если вы не нашли подходящую для вас группу, позвоните и оставьте заявку!</p>
                 </div>
             </section>
-            <section class="page-price timetable section--grey">
+            <section class="page-schedule timetable section--grey">
                 <div class="container">
+                    <form class="page-schedule__section" id="select-lang">
+                        <div class="page-schedule__section-item">
+                            <h3 class="page-reg__title">Какой иностранный язык вас интересует?</h3>
+                            <div class="row no-gutters">
+                                <div class="col-md-6 col-xl-3 page-reg__col">
+                                    <label class="page-reg__item">
+                                        <img class="page-reg__country-flag" src="static/img/general/uk.svg" width="40" heihgt="26" alt="Английский язык">
+                                        <input class="page-reg__radio" type="radio" name="select-lang" checked><span class="page-reg__name">Английский язык</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-xl-3 page-reg__col">
+                                    <label class="page-reg__item">
+                                        <img class="page-reg__country-flag" src="static/img/general/germany.svg" width="40" heihgt="26" alt="Немецкий язык">
+                                        <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Немецкий язык</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-xl-3 page-reg__col">
+                                    <label class="page-reg__item">
+                                        <img class="page-reg__country-flag" src="static/img/general/france.svg" width="40" heihgt="26" alt="Французкий язык">
+                                        <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Французкий язык</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-xl-3 page-reg__col">
+                                    <label class="page-reg__item">
+                                        <img class="page-reg__country-flag" src="static/img/general/Italy.svg" width="40" heihgt="26" alt="Итальянский язык">
+                                        <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Итальянский язык</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-xl-3 page-reg__col">
+                                    <label class="page-reg__item">
+                                        <img class="page-reg__country-flag" src="static/img/general/spain.svg" width="40" heihgt="26" alt="Испанский язык">
+                                        <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Испанский язык</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-xl-3 page-reg__col">
+                                    <label class="page-reg__item">
+                                        <img class="page-reg__country-flag" src="static/img/general/china.svg" width="40" heihgt="26" alt="Китайский язык">
+                                        <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Китайский язык</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-xl-3 page-reg__col">
+                                    <label class="page-reg__item">
+                                        <img class="page-reg__country-flag" src="static/img/general/japan.svg" width="40" heihgt="26" alt="Японский язык">
+                                        <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Японский язык</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-xl-3 page-reg__col">
+                                    <label class="page-reg__item">
+                                        <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Другой язык</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-schedule__section-item">
+                            <h3 class="page-reg__title">Какая группа вас интересует?</h3>
+                            <div class="row no-gutters">
+                                <div class="col-3 col-md col-xl-auto page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education"><span class="page-reg__name">A1</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md-auto col-xl-auto page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education"><span class="page-reg__name">A1-A2</span>
+                                    </label>
+                                </div>
+                                <div class="col-3 col-md col-xl-auto page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education"><span class="page-reg__name">A2</span>
+                                    </label>
+                                </div>
+                                <div class="col-3 col-md col-xl-auto page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education"><span class="page-reg__name">B1</span>
+                                    </label>
+                                </div>
+                                <div class="col-3 col-md col-xl-auto page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education"><span class="page-reg__name">B1+</span>
+                                    </label>
+                                </div>
+                                <div class="col-3 col-md col-xl-auto page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education"><span class="page-reg__name">B2</span>
+                                    </label>
+                                </div>
+                                <div class="col-3 col-md col-xl-auto page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education"><span class="page-reg__name">C1</span>
+                                    </label>
+                                </div>
+                                <div class="w-100 d-none d-md-block d-xl-none"></div>
+                                <div class="col-6 col-md col-xl-auto page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education"><span class="page-reg__name">Elementary</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md col-xl-auto page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education"><span class="page-reg__name">Pre-starter</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md col-xl page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education"><span class="page-reg__name">Starter</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 col-md col-xl page-schedule__col">
+                                    <label class="page-schedule__item">
+                                        <input class="page-reg__radio" type="radio" name="select-type-education" checked><span class="page-reg__name">Разговорный</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="page-schedule__show-filter js-show-filter" type="button"><span>показать еще фильтры</span>
+                        </button>
+                        <div class="page-schedule__filter js-filter">
+                            <div class="page-schedule__filter-inner">
+                                <div class="page-schedule__filter-item js-select-custom-scroll">
+                                    <label class="page-schedule__label form__label" for="select-lang-school">Школа</label>
+                                    <div class="form__select-custom">
+                                        <select class="page-schedule__select js-select-defaul" id="select-lang-school">
+                                            <option>Кузьминки</option>
+                                            <option>Солнцево</option>
+                                            <option>Выхино</option>
+                                            <option>Коломенская</option>
+                                            <option>Хорвино</option>
+                                            <option>Выхино</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="page-schedule__filter-item js-select-custom-scroll">
+                                    <label class="page-schedule__label form__label" for="select-lang-old">возраст</label>
+                                    <div class="form__select-custom">
+                                        <select class="page-schedule__select js-select-defaul" id="select-lang-old">
+                                            <option>Взрослые</option>
+                                            <option>3—6 лет</option>
+                                            <option>7—8 лет</option>
+                                            <option>9—10 лет</option>
+                                            <option>11—12 лет</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="page-schedule__filter-item js-select-custom-scroll">
+                                    <label class="page-schedule__label form__label" for="select-lang-day">День нед.</label>
+                                    <div class="form__select-custom">
+                                        <select class="page-schedule__select js-select-defaul" id="select-lang-day">
+                                            <option>Все</option>
+                                            <option>Пн, Вт</option>
+                                            <option>Пн, Вт, Чт</option>
+                                            <option>Пн, Ср, Пт</option>
+                                            <option>Понедельник</option>
+                                            <option>Пн, Вт</option>
+                                            <option>Пн, Вт, Чт</option>
+                                            <option>Пн, Ср, Пт</option>
+                                            <option>Вторник</option>
+                                            <option>Вт, Чт</option>
+                                            <option>Вт, Чт, Сб</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="page-schedule__filter-item js-select-custom-scroll">
+                                    <label class="page-schedule__label form__label" for="select-lang-time">время</label>
+                                    <div class="form__select-custom">
+                                        <select class="page-schedule__select js-select-defaul" id="select-lang-time">
+                                            <option>18:20—19:20</option>
+                                            <option>18:20—19:20</option>
+                                            <option>18:20—19:20</option>
+                                            <option>18:20—19:20</option>
+                                            <option>18:20—19:20</option>
+                                            <option>18:20—19:20</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="page-schedule__filter-item js-select-custom-scroll">
+                                    <label class="page-schedule__label form__label" for="select-lang-status">статус</label>
+                                    <div class="form__select-custom">
+                                        <select class="page-schedule__select js-select-defaul" id="select-lang-status">
+                                            <option>Идет набор</option>
+                                            <option>Формируется</option>
+                                            <option>Запущена</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                     <div class="timetable__list">
                         <div class="timetable__item d-xl-none">
                             <div class="timetable__item-inner">
                                 <table class="timetable__table-m">
                                     <tbody>
                                         <tr>
-                                            <td class="timetable__th">Возраст</td>
-                                            <td>3—6 лет</td>
+                                            <td class="timetable__th">Школа</td>
+                                            <td>Кузьминки</td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">Периодичность</td>
-                                            <td>2 раза в нед.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Время занятий</td>
-                                            <td>1,5 ак.ч</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">человек в группе</td>
-                                            <td>6—8</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">курс обучения</td>
-                                            <td>126 ак.ч / 42 нед.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Стоимость ак.ч.</td>
-                                            <td>330—470 руб.</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2"><a class="timetable__btn btn btn--border-red-sm" href="">записаться</a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="timetable__item d-xl-none">
-                            <div class="timetable__item-inner">
-                                <table class="timetable__table-m">
-                                    <tbody>
-                                        <tr>
-                                            <td class="timetable__th">Возраст</td>
-                                            <td>7—8 лет</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Периодичность</td>
-                                            <td>2 раза в нед.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Время занятий</td>
-                                            <td>2 ак.ч</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">человек в группе</td>
-                                            <td>6—8</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">курс обучения</td>
-                                            <td>168 ак.ч / 43 недель</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Стоимость ак.ч.</td>
-                                            <td>330—470 руб.</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2"><a class="timetable__btn btn btn--border-red-sm" href="">записаться</a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="timetable__item d-xl-none">
-                            <div class="timetable__item-inner">
-                                <table class="timetable__table-m">
-                                    <tbody>
-                                        <tr>
-                                            <td class="timetable__th">Возраст</td>
-                                            <td>9—10 лет</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Периодичность</td>
-                                            <td>2 раза в нед.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Время занятий</td>
-                                            <td>2 ак.ч</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">человек в группе</td>
-                                            <td>6—8</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">курс обучения</td>
-                                            <td>168 ак.ч / 43 нед.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Стоимость ак.ч.</td>
-                                            <td>330—470 руб.</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2"><a class="timetable__btn btn btn--border-red-sm" href="">записаться</a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="timetable__item d-xl-none">
-                            <div class="timetable__item-inner">
-                                <table class="timetable__table-m">
-                                    <tbody>
-                                        <tr>
-                                            <td class="timetable__th">Возраст</td>
-                                            <td>11—12 лет</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Периодичность</td>
-                                            <td>2 раза в неделю</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Время занятий</td>
-                                            <td>2,5 ак.ч</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">человек в группе</td>
-                                            <td>6—8</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">курс обучения</td>
-                                            <td>210 ак.ч / 42 нед.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="timetable__th">Стоимость ак.ч.</td>
-                                            <td>330—470 руб.</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2"><a class="timetable__btn btn btn--border-red-sm" href="">записаться</a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="timetable__item d-xl-none">
-                            <div class="timetable__item-inner">
-                                <table class="timetable__table-m">
-                                    <tbody>
-                                        <tr>
-                                            <td class="timetable__th">Возраст</td>
+                                            <td class="timetable__th">возраст</td>
                                             <td>Взрослые</td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">Периодичность</td>
-                                            <td>2 раза в нед.</td>
+                                            <td class="timetable__th">группа</td>
+                                            <td>Английский</td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">Время занятий</td>
-                                            <td>3 ак.ч</td>
+                                            <td class="timetable__th">Уровень</td>
+                                            <td>Разговорный</td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">человек в группе</td>
-                                            <td>6—8</td>
+                                            <td class="timetable__th">День нед.</td>
+                                            <td>Вт, Чт</td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">курс обучения</td>
-                                            <td>144 ак.ч / 42 недель</td>
+                                            <td class="timetable__th">время</td>
+                                            <td>18:20—19:20
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">Стоимость ак.ч.</td>
-                                            <td>330—470 руб.</td>
+                                            <td class="timetable__th">ак.ч. в нед.</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">статус</td>
+                                            <td>Идет набор</td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
@@ -372,28 +415,225 @@
                                 <table class="timetable__table-m">
                                     <tbody>
                                         <tr>
-                                            <td class="timetable__th">Возраст</td>
+                                            <td class="timetable__th">Школа</td>
+                                            <td>Солнцево</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">возраст</td>
                                             <td>Взрослые</td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">Периодичность</td>
-                                            <td>1 раз в неделю</td>
+                                            <td class="timetable__th">группа</td>
+                                            <td>Английский</td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">Время занятий</td>
-                                            <td>3 ак.ч</td>
+                                            <td class="timetable__th">Уровень</td>
+                                            <td>Разговорный</td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">человек в группе</td>
-                                            <td>6—8</td>
+                                            <td class="timetable__th">День нед.</td>
+                                            <td>Пн, Ср, Пт</td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">курс обучения</td>
-                                            <td>144 ак.ч / 42 нед.</td>
+                                            <td class="timetable__th">время</td>
+                                            <td>18:20—19:20
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td class="timetable__th">Стоимость ак.ч.</td>
-                                            <td>330—470 руб.</td>
+                                            <td class="timetable__th">ак.ч. в нед.</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">статус</td>
+                                            <td>Формируется</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"><a class="timetable__btn btn btn--border-red-sm" href="">записаться</a>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="timetable__item d-xl-none">
+                            <div class="timetable__item-inner">
+                                <table class="timetable__table-m">
+                                    <tbody>
+                                        <tr>
+                                            <td class="timetable__th">Школа</td>
+                                            <td>Выхино</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">возраст</td>
+                                            <td>Взрослые</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">группа</td>
+                                            <td>Английский</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">Уровень</td>
+                                            <td>Разговорный</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">День нед.</td>
+                                            <td>Вт, Чт</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">время</td>
+                                            <td>18:20—19:20
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">ак.ч. в нед.</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">статус</td>
+                                            <td>Запущена</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"><a class="timetable__btn btn btn--border-red-sm" href="">записаться</a>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="timetable__item d-xl-none">
+                            <div class="timetable__item-inner">
+                                <table class="timetable__table-m">
+                                    <tbody>
+                                        <tr>
+                                            <td class="timetable__th">Школа</td>
+                                            <td>Коломенская</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">возраст</td>
+                                            <td>Взрослые</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">группа</td>
+                                            <td>Английский</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">Уровень</td>
+                                            <td>Разговорный</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">День нед.</td>
+                                            <td>Вт, Чт</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">время</td>
+                                            <td>18:20—19:20
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">ак.ч. в нед.</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">статус</td>
+                                            <td>Идет набор</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"><a class="timetable__btn btn btn--border-red-sm" href="">записаться</a>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="timetable__item d-xl-none">
+                            <div class="timetable__item-inner">
+                                <table class="timetable__table-m">
+                                    <tbody>
+                                        <tr>
+                                            <td class="timetable__th">Школа</td>
+                                            <td>Хорвино</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">возраст</td>
+                                            <td>Взрослые</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">группа</td>
+                                            <td>Английский</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">Уровень</td>
+                                            <td>Разговорный</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">День нед.</td>
+                                            <td>Вт, Чт</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">время</td>
+                                            <td>18:20—19:20
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">ак.ч. в нед.</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">статус</td>
+                                            <td>Формируется</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"><a class="timetable__btn btn btn--border-red-sm" href="">записаться</a>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="timetable__item d-xl-none">
+                            <div class="timetable__item-inner">
+                                <table class="timetable__table-m">
+                                    <tbody>
+                                        <tr>
+                                            <td class="timetable__th">Школа</td>
+                                            <td>Выхино</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">возраст</td>
+                                            <td>Взрослые</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">группа</td>
+                                            <td>Английский</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">Уровень</td>
+                                            <td>Разговорный</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">День нед.</td>
+                                            <td>Пн, Ср, Пт</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">время</td>
+                                            <td>18:20—19:20
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">ак.ч. в нед.</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="timetable__th">статус</td>
+                                            <td>Запущена</td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
@@ -408,78 +648,99 @@
                         <table class="timetable__table-d d-none d-xl-table">
                             <thead>
                                 <tr>
-                                    <th class="timetable__th">Возраст</th>
-                                    <th class="timetable__th">Периодичность</th>
-                                    <th class="timetable__th">Время занятий</th>
-                                    <th class="timetable__th">человек в группе</th>
-                                    <th class="timetable__th">курс обучения</th>
-                                    <th class="timetable__th" colspan="2">Стоимость ак.ч.</th>
+                                    <th class="timetable__th">Школа</th>
+                                    <th class="timetable__th">возраст</th>
+                                    <th class="timetable__th">группа</th>
+                                    <th class="timetable__th">Уровень</th>
+                                    <th class="timetable__th">День нед.</th>
+                                    <th class="timetable__th">время</th>
+                                    <th class="timetable__th">ак.ч. в нед.</th>
+                                    <th class="timetable__th" colspan="2">статус</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>3—6 лет</td>
-                                    <td>2 раза в нед.</td>
-                                    <td>1,5 ак.ч</td>
-                                    <td>6—8</td>
-                                    <td>126 ак.ч / 42 нед.</td>
-                                    <td>330—470 руб.</td>
-                                    <td><a class="timetable__btn" href="#"><span>записаться</span></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>7—8 лет</td>
-                                    <td>2 раза в нед.</td>
-                                    <td>2 ак.ч</td>
-                                    <td>6—8</td>
-                                    <td>168 ак.ч / 43 недель</td>
-                                    <td>330—470 руб.</td>
-                                    <td><a class="timetable__btn" href="#"><span>записаться</span></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>9—10 лет</td>
-                                    <td>2 раза в нед.</td>
-                                    <td>2 ак.ч</td>
-                                    <td>6—8</td>
-                                    <td>168 ак.ч / 43 нед.</td>
-                                    <td>330—470 руб.</td>
-                                    <td><a class="timetable__btn" href="#"><span>записаться</span></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>11—12 лет</td>
-                                    <td>2 раза в неделю</td>
-                                    <td>2,5 ак.ч</td>
-                                    <td>6—8</td>
-                                    <td>210 ак.ч / 42 нед.</td>
-                                    <td>330—470 руб.</td>
-                                    <td><a class="timetable__btn" href="#"><span>записаться</span></a>
-                                    </td>
-                                </tr>
-                                <tr>
+                                    <td>Кузьминки</td>
                                     <td>Взрослые</td>
-                                    <td>2 раза в нед.</td>
-                                    <td>3 ак.ч</td>
-                                    <td>6—8</td>
-                                    <td>144 ак.ч / 42 недель</td>
-                                    <td>330—470 руб.</td>
+                                    <td>Английский</td>
+                                    <td>Разговорный</td>
+                                    <td>Вт, Чт</td>
+                                    <td>18:20—19:20
+                                    </td>
+                                    <td>3</td>
+                                    <td>Идет набор</td>
                                     <td><a class="timetable__btn" href="#"><span>записаться</span></a>
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td>Солнцево</td>
                                     <td>Взрослые</td>
-                                    <td>1 раз в неделю</td>
-                                    <td>3 ак.ч</td>
-                                    <td>6—8</td>
-                                    <td>144 ак.ч / 42 нед.</td>
-                                    <td>330—470 руб.</td>
+                                    <td>Английский</td>
+                                    <td>Разговорный</td>
+                                    <td>Пн, Ср, Пт</td>
+                                    <td>18:20—19:20
+                                    </td>
+                                    <td>3</td>
+                                    <td>Формируется</td>
+                                    <td><a class="timetable__btn" href="#"><span>записаться</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Выхино</td>
+                                    <td>Взрослые</td>
+                                    <td>Английский</td>
+                                    <td>Разговорный</td>
+                                    <td>Вт, Чт</td>
+                                    <td>18:20—19:20
+                                    </td>
+                                    <td>3</td>
+                                    <td>Запущена</td>
+                                    <td><a class="timetable__btn" href="#"><span>записаться</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Коломенская</td>
+                                    <td>Взрослые</td>
+                                    <td>Английский</td>
+                                    <td>Разговорный</td>
+                                    <td>Вт, Чт</td>
+                                    <td>18:20—19:20
+                                    </td>
+                                    <td>6</td>
+                                    <td>Идет набор</td>
+                                    <td><a class="timetable__btn" href="#"><span>записаться</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Хорвино</td>
+                                    <td>Взрослые</td>
+                                    <td>Английский</td>
+                                    <td>Разговорный</td>
+                                    <td>Вт, Чт</td>
+                                    <td>18:20—19:20
+                                    </td>
+                                    <td>6</td>
+                                    <td>Формируется</td>
+                                    <td><a class="timetable__btn" href="#"><span>записаться</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Выхино</td>
+                                    <td>Взрослые</td>
+                                    <td>Английский</td>
+                                    <td>Разговорный</td>
+                                    <td>Пн, Ср, Пт</td>
+                                    <td>18:20—19:20
+                                    </td>
+                                    <td>6</td>
+                                    <td>Запущена</td>
                                     <td><a class="timetable__btn" href="#"><span>записаться</span></a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="page-schedule__cost-label">Стоимость аккадемического часа: 380&minus;600 рублей</p>
                     <section class="trial-lesson">
                         <div class="trial-lesson__inner">
                             <h2 class="trial-lesson__title">Пробный урок в подарок</h2>
