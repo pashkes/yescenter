@@ -1,0 +1,32 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/footer/footer.pug
+  include ../components/header/header
+  include ../components/breadcrumb/breadcrumb
+  include ../components/subscribe/subscribe
+  include ../components/page-price/page-price
+  include ../components/interestring-education/interestring-education
+
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header()
+      .container
+        +breadcrumb(breadcrumb.price)
+      section.page-programs
+        .container
+          h1.h2.page-programs__title Стоимость курсов изучения иностранных языков
+          p.page-programs__subtitle.subtitle Стоимость обучения иностранным языкам может быть различной, Она зависит, в первую очередь, от выбранной формы обучения, а также от курса и изучаемого языка. Цена также определяется, исходя из таких факторов, как содержание и длительность учебного процесса. Ниже представлена примерная стоимость обучения в Центре YES для разных возрастных категорий.
+      +page-price(timetablePrice).section--grey
+      +interestring-education(interestingEducation)
+      +subscribe()
+      +footer()
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%.js')

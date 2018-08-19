@@ -3,7 +3,6 @@ const data = {
     title: 'Расписание «горящих» групп по английскому языку',
     rows: [
       {
-        rowName: 'Школа',
         school: 'Кузьминки',
         yearsOld: 'дети 7-8 лет',
         level: 'Pre-starter',
@@ -13,7 +12,6 @@ const data = {
         cost: '380—600 руб'
       },
       {
-        rowName: 'возраст',
         school: 'Солнцево',
         yearsOld: 'Взрослые',
         level: 'Разговорный',
@@ -23,7 +21,6 @@ const data = {
         cost: '380—600 руб'
       },
       {
-        rowName: 'День нед.',
         school: 'Выхино',
         yearsOld: 'дети 7-8 лет',
         level: 'Pre-starter',
@@ -33,7 +30,6 @@ const data = {
         cost: '380—600 руб'
       },
       {
-        rowName: 'время',
         school: 'Коломенская',
         yearsOld: 'Взрослые',
         level: 'Разговорный',
@@ -43,7 +39,6 @@ const data = {
         cost: '380—600 руб'
       },
       {
-        rowName: 'ак.ч. в нед.',
         school: 'Хорвино',
         yearsOld: 'дети 7-8 лет',
         level: 'Pre-starter',
@@ -53,7 +48,6 @@ const data = {
         cost: '380—600 руб'
       },
       {
-        rowName: 'стоимость ак.ч.',
         school: 'Выхино',
         yearsOld: 'Взрослые',
         level: 'Разговорный',
@@ -70,7 +64,6 @@ const data = {
     footer: true,
     rows: [
       {
-        rowName: 'стоимость ак.ч.',
         school: 'Солнцево',
         level: 'pre-starter',
         dayLessons: 'вторник, четверг',
@@ -79,7 +72,6 @@ const data = {
         cost: '380—600 руб'
       },
       {
-        rowName: 'стоимость ак.ч.',
         school: 'Ховрино',
         level: 'pre-starter',
         dayLessons: 'вторник, четверг',
@@ -88,7 +80,6 @@ const data = {
         cost: '380—600 руб'
       },
       {
-        rowName: 'стоимость ак.ч.',
         school: 'Ховрино',
         level: 'pre-starter',
         dayLessons: 'вторник, четверг',
@@ -97,7 +88,6 @@ const data = {
         cost: '380—600 руб'
       },
       {
-        rowName: 'стоимость ак.ч.',
         school: 'Солнцево',
         level: 'pre-starter',
         dayLessons: 'вторник, четверг',
@@ -105,6 +95,59 @@ const data = {
         hours: '6',
         cost: '380—600 руб'
       }
+    ],
+  },
+  timetablePrice: {
+    rows: [
+      {
+        yearsOld: '3—6 лет',
+        dayLessons: '2 раза в нед.',
+        timeLessons: '1,5 ак.ч',
+        peopleAmount: '6—8',
+        duration: '126 ак.ч / 42 нед.',
+        cost: '330—470 руб.'
+      },
+      {
+        yearsOld: '7—8 лет',
+        dayLessons: '2 раза в нед.',
+        timeLessons: '2 ак.ч',
+        peopleAmount: '6—8',
+        duration: '168 ак.ч / 43 недель',
+        cost: '330—470 руб.'
+      },
+      {
+        yearsOld: '9—10 лет',
+        dayLessons: '2 раза в нед.',
+        timeLessons: '2 ак.ч',
+        peopleAmount: '6—8',
+        duration: '168 ак.ч / 43 нед.',
+        cost: '330—470 руб.'
+      },
+      {
+        yearsOld: '11—12 лет',
+        dayLessons: '2 раза в неделю',
+        timeLessons: '2,5 ак.ч',
+        peopleAmount: '6—8',
+        duration: '210 ак.ч / 42 нед.',
+        cost: '330—470 руб.'
+      },
+      {
+        yearsOld: 'Взрослые',
+        dayLessons: '2 раза в нед.',
+        timeLessons: '3 ак.ч',
+        peopleAmount: '6—8',
+        duration: '144 ак.ч / 42 недель',
+        cost: '330—470 руб.'
+      },
+      {
+        yearsOld: 'Взрослые',
+        dayLessons: '1 раз в неделю',
+        timeLessons: '3 ак.ч',
+        peopleAmount: '6—8',
+        duration: '144 ак.ч / 42 нед.',
+        cost: '330—470 руб.'
+      }
     ]
   }
+
 };

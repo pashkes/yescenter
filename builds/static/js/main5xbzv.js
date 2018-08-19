@@ -5057,6 +5057,8 @@ n.isPlainObject(e)?s===!1&&t.removeAttr("style"):s!==!0&&t.removeClass(e),n.isFu
 
 
 
+
+
 var myMap, data = [], geodata = [];
 var markCounter = 1;
 
@@ -5269,6 +5271,8 @@ $('.js-select-lang-order').SumoSelect({
     slickMobile(newsSlider, newsSliderSettigs);
   });
 })();
+
+
 
 
 
