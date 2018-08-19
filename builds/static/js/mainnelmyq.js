@@ -4918,8 +4918,6 @@ object-assign
 
 
 
-
-
 (function () {
   $('.js-certifications-slider').slick({
     arrows: false,
@@ -4944,29 +4942,7 @@ object-assign
   });
 })();
 
-(function () {
-  $('.js-departure-slider').slick({
-    variableWidth: true,
-    centerPadding: '0',
-    slidesToShow: 1,
-    dots: true,
-    mobileFirst: true,
-    arrows: false,
-    prevArrow: '.js-departure-prev-btn',
-    nextArrow: '.js-departure-next-btn',
-    responsive: [
-      {
-        breakpoint: 1343,
-        settings: {
-          arrows: true,
-          dots: false,
-          slidesToShow: 2
-        }
-      }
 
-    ]
-  });
-})();
 
 (function () {
   let lastItemReview;
@@ -5035,6 +5011,30 @@ object-assign
 })();
 
 
+(function () {
+  $('.js-departure-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          dots: false,
+          slidesToShow: 2
+        }
+      }
+
+    ]
+  });
+})();
+
 
 
 (function () {
@@ -5068,8 +5068,6 @@ object-assign
     $('body').toggleClass('show-menu');
   });
 })();
-
-
 
 
 
@@ -5311,46 +5309,6 @@ $('.js-select-lang-order').SumoSelect({
 
 
 (function () {
-  $('.js-select-defaul').each(function () {
-    $(this).SumoSelect();
-  });
-})();
-$(window).on('load', function () {
-  if ($('.js-select-custom-scroll .options').length) {
-    new SimpleBar($('.js-select-custom-scroll .options')[0], {autoHide: false,
-      scrollbarMinSize: 5
-    });
-    new SimpleBar($('.js-select-custom-scroll .options')[1], {autoHide: false,
-      scrollbarMinSize: 5
-    });
-    new SimpleBar($('.js-select-custom-scroll .options')[2], {autoHide: false,
-      scrollbarMinSize: 5
-    });
-    new SimpleBar($('.js-select-custom-scroll .options')[3], {autoHide: false,
-      scrollbarMinSize: 5
-    });
-    new SimpleBar($('.js-select-custom-scroll .options')[4], {autoHide: false,
-      scrollbarMinSize: 5
-    });
-  }
-  var toggleTextButton = function () {
-    var click = 1;
-    $('.js-show-filter').on('click', function () {
-      if (click % 2 === 0) {
-        $(this).find('span').text('Скрыть фильтры');
-        $('.js-filter').slideDown();
-      } else {
-        $(this).find('span').text('показать еще фильтры');
-        $('.js-filter').slideUp();
-      }
-      click = click + 1;
-    });
-  };
-  toggleTextButton();
-});
-
-
-(function () {
 
   $('.js-reviews-list').on('change', function () {
     let amountReviews = $(this).find('option:selected').val();
@@ -5361,6 +5319,46 @@ $(window).on('load', function () {
 })();
 
 
+
+(function () {
+  $('.js-select-defaul').each(function () {
+    $(this).SumoSelect();
+  });
+})();
+$(window).on('load', function () {
+  if ($('.js-select-custom-scroll .options').length) {
+    new SimpleBar($('.js-select-custom-scroll .options')[0], {
+      autoHide: false,
+      scrollbarMinSize: 5
+    });
+    new SimpleBar($('.js-select-custom-scroll .options')[1], {
+      autoHide: false,
+      scrollbarMinSize: 5
+    });
+    new SimpleBar($('.js-select-custom-scroll .options')[2], {
+      autoHide: false,
+      scrollbarMinSize: 5
+    });
+    new SimpleBar($('.js-select-custom-scroll .options')[3], {
+      autoHide: false,
+      scrollbarMinSize: 5
+    });
+    new SimpleBar($('.js-select-custom-scroll .options')[4], {
+      autoHide: false,
+      scrollbarMinSize: 5
+    });
+  }
+  var toggleTextButton = function () {
+    $('.js-show-filter').on('click', function () {
+      var text = $(this).find('span').text();
+      $(this).find('i').text(function (i, text) {
+        return text === 'показать еще фильтры' ? 'Скрыть фильтры' : 'показать еще фильтры';
+      });
+      $('.js-filter').slideToggle('fast');
+    });
+  };
+  toggleTextButton();
+});
 
 
 
@@ -5425,6 +5423,10 @@ $(window).on('load', function () {
   });
 
 })();
+
+
+
+
 
 
 
@@ -5570,10 +5572,6 @@ $(window).on('load', function () {
 
 
 
-
-
-
-
 (function () {
   $('.js-thanks-slider').slick({
     arrows: false,
@@ -5601,6 +5599,10 @@ $(window).on('load', function () {
     ]
   });
 })();
+
+
+
+
 
 (function () {
   $('.js-video-data-slider').slick({
