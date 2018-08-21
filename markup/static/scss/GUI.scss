@@ -28,6 +28,12 @@
     background-color: transparent;
     letter-spacing: 0.8px;
   }
+  &--border-black {
+    border-color: $text-color;
+    color: $text-color;
+    background-color: transparent;
+    letter-spacing: 0.8px;
+  }
   &--grey {
     background-color: transparent;
     border-color: #d7d7d7;

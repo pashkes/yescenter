@@ -1,0 +1,24 @@
+mixin actions(data)
+  include ../trial-lesson/trial-lesson
+  section.actions
+    .container
+      h1.actions__title.h2 #{data.title}
+      .actions__cards
+        .row
+          each item in data.list
+            .col-md-6
+              article.actions__item
+                .actions__preview(style={'background-image': 'url(%=static=%img/content/' + item.src + ')'})
+                  h2.actions__name !{item.title}
+                  span.actions__discount #{item.discount}
+                  a(href="#").actions__btn.btn.btn--border-black Подробнее
+                h3.actions__subject
+                  a(href="#") !{item.subtitle}
+                p.actions__text #{item.text}
+      a(href="#").show-all архив акций
+        span &nbsp;&rarr;
+    +trial-lesson(true)
+
+
+
+

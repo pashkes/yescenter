@@ -4918,6 +4918,8 @@ object-assign
 
 
 
+
+
 (function () {
   $('.js-certifications-slider').slick({
     arrows: false,
@@ -5011,8 +5013,6 @@ object-assign
   });
 })();
 
-
-
 (function () {
   $('.js-slider-education').slick({
     arrows: false,
@@ -5035,6 +5035,8 @@ object-assign
     }]
   });
 })();
+
+
 
 
 (function () {
@@ -5074,6 +5076,14 @@ object-assign
 
 
 
+
+
+
+(function () {
+  $('.js-menu-close').on('click', function () {
+    $('body').removeClass('show-menu');
+  });
+})();
 
 
 
@@ -5258,14 +5268,6 @@ $('.js-select-lang-order').SumoSelect({
 });
 
 (function () {
-  $('.js-menu-close').on('click', function () {
-    $('body').removeClass('show-menu');
-  });
-})();
-
-
-
-(function () {
   var TABLET_SIZE = 767;
   var newsSlider = $('.js-news-slide');
   var newsSliderSettigs = {
@@ -5366,6 +5368,8 @@ $(window).on('load', function () {
   };
   toggleTextButton();
 });
+
+
 
 
 
@@ -5539,6 +5543,13 @@ $(window).on('load', function () {
 
 
 (function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
+  });
+})();
+
+(function () {
   $('.js-techers-slider').slick({
     dots: true,
     arrows: false,
@@ -5572,13 +5583,6 @@ $(window).on('load', function () {
         variableWidth: true
       }
     }]
-  });
-})();
-
-(function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
   });
 })();
 

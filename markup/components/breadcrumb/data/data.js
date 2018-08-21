@@ -209,6 +209,19 @@ const data = {
       {
         name: 'Павелецкая'
       }
+    ],
+    actions: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Информация',
+        link: 'index.html'
+      },
+      {
+        name: 'Наши акции'
+      }
     ]
   }
 };

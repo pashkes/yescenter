@@ -1,0 +1,22 @@
+mixin projects(data)
+  section.projects.section
+    .container
+      h2.projects__title.h2 #{data.title}
+      .projects__list
+        .row
+          each item in data.list
+            .col-md-6.col-xl-3.projects__col
+              article.projects__item
+                img(src="%=static=%img/content/"+item.src alt=item.title)
+                h3.projects__subject.h3 !{item.title}
+                span.projects__date #{item.date}
+                p.projects__text #{item.text}
+                if item.buttonText
+                  a(href="#").projects__btn.btn.btn--border-red #{item.buttonText}
+                else
+                  a(href="#").projects__read-more.show-all читать отчет в блоге
+                    span &nbsp;&rarr;
+
+      a(href="#").projects__show-all.show-all.d-none.d-md-block архив выездных проектов
+        span &nbsp;&rarr;
+

@@ -1,0 +1,123 @@
+.projects {
+  padding-bottom: 0;
+  border-bottom: 1px solid #ebebeb;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 36px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 78px;
+    padding-bottom: 85px;
+  }
+  &__title {
+    margin-bottom: 26px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 42px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 48px;
+    }
+  }
+  &__list {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 42px;
+    }
+  }
+  &__col {
+    display: flex;
+    align-content: stretch;
+    margin-bottom: 32px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 48px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    img {
+      align-self: center;
+      margin-bottom: 24px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 28px;
+      }
+    }
+    .show-all {
+      margin-top: -10px;
+      margin-bottom: -12px;
+      @include media-breakpoint-up(md) {
+        margin-top: -21px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-top: -12px;
+      }
+    }
+  }
+  &__subject {
+    font-size: 18px;
+    line-height: 22px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 12px;
+      font-size: 24px;
+      line-height: 26px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 6px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+  &__date {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Open Sans', Intro, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.5);
+    @include media-breakpoint-up(md) {
+      margin-bottom: 18px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+    }
+  }
+  &__text {
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 32px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 25px;
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+    }
+    + .show-all {
+      margin-top: auto;
+      @include media-breakpoint-up(md) {
+        margin-top: -22px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-top: -14px;
+      }
+    }
+  }
+  &__btn {
+    margin-top: auto;
+    @include media-breakpoint-up(xl) {
+      max-width: 232px;
+    }
+  }
+  &__show-all {
+    @include media-breakpoint-up(md) {
+      margin-top: -12px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+    }
+  }
+}
