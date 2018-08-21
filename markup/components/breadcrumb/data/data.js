@@ -183,6 +183,32 @@ const data = {
       {
         name: 'Наши школы'
       }
+    ],
+    school: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Школы',
+        link: 'index.html'
+      },
+      {
+        name: 'Кузьминки'
+      }
+    ],
+    pagePaveleckayaSchool: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Школы',
+        link: 'index.html'
+      },
+      {
+        name: 'Павелецкая'
+      }
     ]
   }
 };

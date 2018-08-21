@@ -7,10 +7,25 @@
     padding-top: 82px;
     padding-bottom: 4px;
   }
+  &--padding-bottom {
+    padding-bottom: 28px;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 40px;
+      margin-top: -10px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-top: -18px;
+      padding-bottom: 100px;
+    }
+  }
   &__title {
     margin-bottom: 28px;
-    @include media-breakpoint-up(mb) {
-      margin-bottom: 30px;
+    letter-spacing: 0.7px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 24px;
+      font-size: 30px;
+      line-height: 42px;
+      letter-spacing: 1.5px;
     }
     @include media-breakpoint-up(xl) {
       margin-bottom: 50px;

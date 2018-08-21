@@ -1,0 +1,52 @@
+.section-text {
+  border-top: 1px solid #ebebeb;
+  @include media-breakpoint-up(xl) {
+    padding-top: 70px;
+  }
+  .h2 {
+    margin-bottom: 12px;
+    display: block;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 16px;
+      letter-spacing: 1.4px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+  }
+  .h3 {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 12px;
+    }
+  }
+  .subtitle {
+    margin-bottom: 18px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 24px;
+      font-size: 15px;
+      line-height: 24px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 32px;
+    }
+  }
+  .list {
+    li {
+      padding-left: 32px;
+      &::before {
+        @include media-breakpoint-up(xl) {
+          top: 14px;
+        }
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.page-school {
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 26px;
+  }
+  &__title {
+    margin-bottom: 8px;
+    @include media-breakpoint-up(md) {
+      max-width: 500px;
+      margin-bottom: 5px;
+      line-height: 42px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 540px;
+      margin-bottom: 18px;
+    }
+  }
+  .school-list__time-work {
+    margin-bottom: 12px;
+    font-size: 14px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 9px;
+      letter-spacing: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+      padding-top: 4px;
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+    }
+  }
+  .school-list__address {
+    margin-bottom: 11px;
+    align-items: center;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 9px;
+      letter-spacing: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+    }
+  }
+  .school-list__contacts {
+    margin-bottom: 12px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+    }
+    + p {
+      margin-bottom: 8px;
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      padding-left: 24px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 23px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 50px;
+        letter-spacing: 0.3px;
+      }
+    }
+  }
+  .school-list__email {
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+  &__btn {
+    margin-bottom: 32px;
+    color: $text-color;
+    @include media-breakpoint-up(md) {
+      max-width: 188px;
+      margin-bottom: 48px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-width: 188px;
+      margin-top: 12px;
+    }
+  }
+  &__map-wrapper {
+    position: relative;
+    min-height: 192px;
+    margin-bottom: 22px;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      min-height: 272px;
+      margin-bottom: 44px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 480px;
+    }
+  }
+  &__map-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__footer {
+    .h3 {
+      margin-bottom: 12px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 18px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 24px;
+      }
+    }
+    p {
+      margin-bottom: 26px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 40px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+      }
+    }
+    .page-school__btn {
+      @include media-breakpoint-up(xl) {
+        margin-top: 4px;
+      }
+    }
+  }
+}

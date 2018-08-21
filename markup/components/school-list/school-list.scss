@@ -184,6 +184,7 @@
   &__contacts,
   &__address {
     display: flex;
+    align-items: center;
     font-family: 'Open Sans', Intro, sans-serif;
     font-size: 14px;
     line-height: 22px;
@@ -196,10 +197,6 @@
     .icon {
       flex: none;
       margin-right: 12px;
-      margin-top: 3px;
-      @include media-breakpoint-up(xl) {
-        margin-top: 5px;
-      }
     }
   }
   &__email {
@@ -218,6 +215,7 @@
     }
     .icon {
       flex: none;
+      margin-top: 1px;
       margin-right: 12px;
     }
   }
@@ -229,5 +227,103 @@
     @include media-breakpoint-up(xl) {
       margin-bottom: 0;
     }
+  }
+  &__panel {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  &__map-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 424px;
+    @include media-breakpoint-up(md) {
+      min-height: 633px;
+    }
+  }
+  &__map-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__inner-popup {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+  }
+  &__popup {
+    position: relative;
+    padding: 20px 16px;
+    z-index: 1;
+    background-color: #fff;
+    @include media-breakpoint-up(md) {
+      max-width: 328px;
+      padding: 30px 40px 40px;
+    }
+    .school-list__name {
+      font-size: 20px;
+      font-family: Intro, sans-serif;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 16px;
+      }
+    }
+    .school-list__time-work {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 16px;
+      }
+    }
+    .school-list__address {
+      margin-bottom: 12px;
+      font-size: 15px;
+      line-height: 20px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 16px;
+        line-height: 24px;
+      }
+    }
+    .school-list__contacts{
+      margin-bottom: 8px;
+      font-size: 15px;
+      line-height: 22px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 12px;
+        line-height: 24px;
+      }
+    }
+    .school-list__education {
+      margin-bottom: 9px;
+      padding-left: 24px;
+      line-height: 20px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 20px;
+        line-height: 24px;
+      }
+    }
+    .school-list__email {
+      margin-bottom: 16px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 28px;
+      }
+    }
+  }
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    @include media-breakpoint-up(md) {
+      width: 58px;
+      height: 58px;
+    }
+  }
+  &__btn-popup {
+    color: $text-color;
   }
 }

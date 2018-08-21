@@ -1,0 +1,59 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/footer/footer.pug
+  include ../components/header/header
+  include ../components/breadcrumb/breadcrumb
+  include ../components/subscribe/subscribe
+  include ../components/departure/departure
+  include ../components/teachers/teachers
+  include ../components/interestring-education/interestring-education
+  include ../components/page-foreign-lang/page-foreign-lang
+  include ../components/page-school/page-school
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header()
+      .container
+        +breadcrumb(breadcrumb.school)
+      +page-school(schoolIntro)
+      +page-foreign-lang(pageForeignLang.list).foreign-course--no-title
+      +departure(departureSchool, 'наша Школа в Кузьминках').departure--school
+      section.about.section.section--grey.about--school
+        .container
+          .row
+            .col-md-auto
+              .about__col
+                .about__photo
+                  img(src="%=static=%img/content/school-people.jpg" alt="Ирина Филипова")
+                .about__info
+                  cite.about__name Ирина Филипова
+                  span.about__prof Управляющий YES Кузьминки
+            .col-md
+              .about__desc
+                p Вы устали зубрить иностранные слова? Вашей мотивации в изучении языка хватает на месяц или того меньше? Значит, нужно кардинально менять методику изучения. Для начала поставьте цель — зачем зачем Вам иностранный язык? Вот, например, самые популярные цели, которые озвучивают наши студенты:
+                ul.list
+                  li Свободно говорить на иностранном языке, путешествуя по миру.
+                  li Сдать ЕГЭ, ОГЭ и международные экзамены, чтобы получить престижное образование и работу мечты.
+                  li Улучшить знания и подняться по карьерной лестнице.
+                p А теперь представьте себе, что освоение нового иностранного языка проходит в следующем формате:
+                ul.list
+                  li Вы всегда занимаетесь в непринужденной обстановке, материалы даются в понятной форме.
+                  li Внимательный преподаватель заботится о том, чтобы мимо Вас ничего не прошло.
+                  li Каждый урок приносит видимый результат.
+                  li Вы поднимаетесь на новый уровень иностранного языка не позднее чем через 5 месяцев.
+                  li Мы разрабатываем индивидуальную программу для каждого студента, учитывая уровень знаний, особенности восприятия и цели.
+                  li Вы не сможете не выучить язык, так как все занятия проводятся без использования русской речи — Вы полностью погружаетесь в языковую среду.
+      +teachers(teachers, true, 'преподаватели в кузьминках').teachers--bb-none.pb-0
+      +subscribe()
+      +interestring-education(interestingEducation).pt-0.interestring-education--padding-bottom
+      +footer()
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+    script(src='%=static=%js/main%=hash=%.js')

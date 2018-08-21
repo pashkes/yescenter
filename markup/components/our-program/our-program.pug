@@ -1,0 +1,31 @@
+mixin our-program(data)
+  section.our-program.page-corporate--fr.section.foreign-course&attributes(attributes)
+    .container
+      h2.our-program__title.h2 Наши программы
+      p.our-program__subtitle.subtitle Вы хотите изучить востребованный английский, мелодичный французский, экзотический китайский или какой-то другой язык?
+        br
+        | Нужно помочь ребенку в освоении школьной программы или подготовить к ЕГЭ? Планируете путешествия или иностранный язык необходим Вам в работе? Но у Вас совершенно нет возможности тратить много времени на дорогу? Приходите в школу иностранных языков YES на Павелецкой!
+
+      .row
+        each item in data
+          .col-md-6.col-xl-3.d-flex.align-content-stretch
+            .lang-card.foreign-course__item
+              .lang-card__top
+                .lang-card__flag
+                  img(src="%=static=%img/general/" + item.countryImg width="40" height="26" alt=item.countryNameAlt)
+                h3.lang-card__lang-title
+                  a(href="#") !{item.countryName}
+              a(href="#").lang-card__more.btn.btn--border-red Подробнее
+        .col-md-6.col-xl-3.d-flex.align-content-stretch
+          .lang-card.foreign-course__item.our-program__corporate-card
+            h3.lang-card__name
+              a(href="#") Корпоративное обучение
+            p.lang-card__desc.d-md-none.d-xl-block Индивидуальное, групповое и дистанционное обучение.
+            a(href="#").lang-card__more.btn.btn--border-red Подробнее
+      .page-corporate__not-found.lang-card.lang-card--bg
+        .row.align-items-xl-center.flex-grow-1
+          .col-xl
+            h3.lang-card__name Не нашли нужный язык?
+            p.lang-card__desc Просто укажите желаемый язык и мы вам поможем.
+          .col-xl-auto.mt-auto.mt-md-0
+            a(href="#").page-corporate__btn.lang-card__more.btn.btn--red Отправить заявку

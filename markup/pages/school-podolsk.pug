@@ -1,0 +1,44 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/footer/footer.pug
+  include ../components/header/header
+  include ../components/promo/promo
+  include ../components/courses/courses
+  include ../components/features/features
+  include ../components/certifications/certifications
+  include ../components/video-data/video-data
+  include ../components/reviews/reviews
+  include ../components/teachers/teachers
+  include ../components/news/news
+  include ../components/map/map
+  include ../components/partners/partners
+  include ../components/causes/causes
+  include ../components/forms-education/forms-education
+  include ../components/subscribe/subscribe
+  include ../components/section-text/section-text
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header()
+      +promo()
+      +courses(courses, true)
+      +features(features.mainPage)
+      +certifications()
+      +video-data(videoData.mainPage).section--grey
+      +reviews(reviews, 'отзывы о нашем центре')
+      +teachers(teachers, true, 'Наша гордость — это наши преподаватели')
+      +news()
+      +map()
+      +partners(partners.mainPage)
+      +section-text()
+      +subscribe()
+      +footer()
+      script(src='%=static=%js/separate-js/svg4everybody.min.js')
+      script svg4everybody();
+
+      //- Main scripts. You can replace it, but I recommend you to leave it here
+      script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+      script(src='%=static=%js/main%=hash=%.js')

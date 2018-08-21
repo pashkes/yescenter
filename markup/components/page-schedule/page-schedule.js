@@ -9,22 +9,25 @@ $(window).on('load', function () {
       autoHide: false,
       scrollbarMinSize: 5
     });
-    new SimpleBar($('.js-select-custom-scroll .options')[1], {
-      autoHide: false,
-      scrollbarMinSize: 5
-    });
-    new SimpleBar($('.js-select-custom-scroll .options')[2], {
-      autoHide: false,
-      scrollbarMinSize: 5
-    });
-    new SimpleBar($('.js-select-custom-scroll .options')[3], {
-      autoHide: false,
-      scrollbarMinSize: 5
-    });
-    new SimpleBar($('.js-select-custom-scroll .options')[4], {
-      autoHide: false,
-      scrollbarMinSize: 5
-    });
+    if ($('.js-select-custom-scroll .options').length > 4) {
+      new SimpleBar($('.js-select-custom-scroll .options')[1], {
+        autoHide: false,
+        scrollbarMinSize: 5
+      });
+      new SimpleBar($('.js-select-custom-scroll .options')[2], {
+        autoHide: false,
+        scrollbarMinSize: 5
+      });
+      new SimpleBar($('.js-select-custom-scroll .options')[3], {
+        autoHide: false,
+        scrollbarMinSize: 5
+      });
+      new SimpleBar($('.js-select-custom-scroll .options')[4], {
+        autoHide: false,
+        scrollbarMinSize: 5
+      });
+    }
+
   }
   var toggleTextButton = function () {
     $('.js-show-filter').on('click', function () {

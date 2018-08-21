@@ -8,7 +8,7 @@ mixin school-list(data)
             h1.school-list__title.h2 Наши школы
           .col-md-auto.d-none.d-md-block.d-xl-none
             div(role="tablist").school-list__nav.nav
-              a(href="#map-list" role="tab" aria-selected="true" data-toggle="tab").school-list__tab.active списком
+              a(href="#map-list-w" role="tab" aria-selected="true" data-toggle="tab").school-list__tab.active списком
               a(href="#on-map" role="tab" aria-selected="true" data-toggle="tab").school-list__tab на карте
     form.school-list__inner#map-list
       header.school-list__top
@@ -47,8 +47,10 @@ mixin school-list(data)
                     span.school-list__name-filter волоколамск
             .col-xl-auto.d-md-none.d-xl-block
               div(role="tablist").school-list__nav.nav
-                a(href="#map-list" role="tab" aria-selected="true" data-toggle="tab").school-list__tab.active списком
+                a(href="#map-list-w" role="tab" aria-selected="true" data-toggle="tab").school-list__tab.active списком
                 a(href="#on-map" role="tab" aria-selected="true" data-toggle="tab").school-list__tab на карте
+
+    div(role="tabpanel").school-list__panel.active#map-list-w
       .container
         ul.school-list__list
           each item in data
@@ -82,4 +84,40 @@ mixin school-list(data)
                 .col-xl-auto
                   button(type="button").school-list__btn.btn.btn--grey заказать звонок
 
-
+    div(role="tabpanel").school-list__panel#on-map
+      .school-list__map-wrapper
+        .container
+          .school-list__inner-popup
+            .school-list__popup.js-map-popup
+              button(type="button").school-list__close.btn-close.js-close-map-popup
+                +icon('close', 10, 10)
+                | Закрыть
+              a(href="#").school-list__name Коломенская
+              span.school-list__time-work.d-none.d-md-block
+                | Пн-Пт 10:00 — 22:00,
+                br
+                | Сб-Вс 10:00 — 16:00
+              span.school-list__address
+                +icon('picker', 11, 16)
+                | Метро Коломенская,
+                br
+                | Нагатинская&#160;набережная&#160;10,
+                br
+                | корпус 3
+              p.school-list__contacts
+                +icon('phone', 10, 16)
+                | +7 495 125-35-24,
+                br
+                | +7 800 100-32-76,
+                br
+                |+7 495 125-35-24
+              p.school-list__education Отдел корпоративного
+                br
+                | обучения:
+                br
+                | +7 495 984-97-10
+              a(href="email:kolomenskaya@yescenter.ru").school-list__email
+                +icon('mail', 16, 12)
+                | kolomenskaya@yescenter.ru
+              button(type="button").school-list__btn-popup.btn.btn--grey заказать звонок
+        .school-list__map-canvas#map

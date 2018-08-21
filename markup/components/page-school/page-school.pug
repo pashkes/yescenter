@@ -1,0 +1,46 @@
+mixin page-school(data)
+  include ../icon/icon
+  .page-school
+    header.page-school__header
+      .container
+        .row
+          .col-xl
+            h1.page-school__title.h2 #{data.title}
+          .col-xl-auto
+            span.school-list__time-work Пн-Пт 10:00 — 22:00, Сб-Вс&#160;10:00&#160;—&#160;16:00
+        .row
+          .col-xl
+            .row
+              .col-md-auto
+                span.school-list__address
+                  +icon('picker', 11, 16)
+                  | !{data.address}
+              .col-md.d-none.d-md-block
+                a(href="email:"+data.email).school-list__email
+                  +icon('mail', 16, 12)
+                  | #{data.email}
+            p.school-list__contacts
+              +icon('phone', 10, 16)
+              | +7&#160;495&#160;125-35-24, +7&#160;800&#160;100-32-76, +7&#160;495&#160;125-35-24
+            p Отдел корпоративного обучения:&#160;+7&#160;495&#160;984-97-10
+            a(href="email:kuzminki@yescenter.ru").school-list__email.d-md-none
+              +icon('mail', 16, 12)
+              | kuzminki@yescenter.ru
+          .col-xl-auto
+            button(type="button").page-school__btn.btn.btn--grey заказать звонок
+    .page-school__map-wrapper
+      .page-school__map-inner#map
+    footer.page-school__footer
+      .container
+        .row.justify-content-xl-between
+          .col-xl-9
+            h3.h3 Как добраться?
+            p #{data.howToGo}
+          .col-xl-auto
+            button(type="button").page-school__btn.btn.btn--grey распечатать
+
+
+
+
+
+

@@ -14,27 +14,28 @@
   }
   &__inner {
     position: relative;
-  }
-  .container {
-    padding-right: 0;
-    @include media-breakpoint-up(sm) {
-      max-width: 540px;
-    }
-    @include media-breakpoint-up(md) {
+    .container {
       padding-right: 0;
-      margin-left: calc((100vw - 768px)/2);
-      max-width: calc(768px + (100vw - 768px / 2));
-    }
-    @include media-breakpoint-up(lg) {
-      margin-left: calc((100vw - 960px)/2);
-      max-width: calc(960px + (100vw - 960px / 2));
-    }
-    @include media-breakpoint-up(xl) {
-      padding-left: 96px;
-      max-width: 100%;
-      margin-left: 0;
+      @include media-breakpoint-up(sm) {
+        max-width: 540px;
+      }
+      @include media-breakpoint-up(md) {
+        padding-right: 0;
+        margin-left: calc((100vw - 768px)/2);
+        max-width: calc(768px + (100vw - 768px / 2));
+      }
+      @include media-breakpoint-up(lg) {
+        margin-left: calc((100vw - 960px)/2);
+        max-width: calc(960px + (100vw - 960px / 2));
+      }
+      @include media-breakpoint-up(xl) {
+        padding-left: 96px;
+        max-width: 100%;
+        margin-left: 0;
+      }
     }
   }
+
   &__slider {
     overflow: hidden;
     margin-bottom: 0;
@@ -95,4 +96,36 @@
       display: flex;
     }
   }
+  &--school {
+    padding-top: 26px;
+    @include media-breakpoint-up(md) {
+      padding-top: 48px;
+      padding-bottom: 42px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 110px;
+      padding-bottom: 80px;
+    }
+    .slick-slide:not(.slick-active)::before {
+      display: none;
+    }
+    .departure__title {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 26px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 40px;
+      }
+    }
+    .slick-slide img {
+      max-height: 150px;
+      @include media-breakpoint-up(md) {
+        max-height: 288px;
+      }
+      @include media-breakpoint-up(xl) {
+        max-height: 408px;
+      }
+    }
+  }
+
 }

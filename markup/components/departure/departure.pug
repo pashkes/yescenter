@@ -1,4 +1,4 @@
-mixin departure(title)
+mixin departure(data, title)
   .departure&attributes(attributes)
     if title
       .container
@@ -11,10 +11,7 @@ mixin departure(title)
         +icon('arrow-right', 12, 11)
         | Следующий слайд
       .container
-        ul.departure__slider.js-departure-slider
-          li.departure__slide
-            img(src="%=static=%img/content/departure-photo-1.jpg" alt="Преподавателей в штате")
-          li.departure__slide
-            img(src="%=static=%img/content/exit-photo-1-ds.jpg" alt="Учеников занимаются по нашей методике")
-          li.departure__slide
-            img(src="%=static=%img/content/slider.jpg" alt="Преподавателей в штате")
+        ul(class="departure__slider "+data.classSlider)
+          each item in data.images
+            li.departure__slide
+              img(src="%=static=%img/content/"+item.src alt=item.alt)

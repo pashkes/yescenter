@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main6chx2h.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainhn87u7.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -175,7 +175,7 @@
                                 <h1 class="school-list__title h2">Наши школы</h1>
                             </div>
                             <div class="col-md-auto d-none d-md-block d-xl-none">
-                                <div class="school-list__nav nav" role="tablist"><a class="school-list__tab active" href="#map-list" role="tab" aria-selected="true" data-toggle="tab">списком</a><a class="school-list__tab" href="#on-map" role="tab" aria-selected="true" data-toggle="tab">на карте</a>
+                                <div class="school-list__nav nav" role="tablist"><a class="school-list__tab active" href="#map-list-w" role="tab" aria-selected="true" data-toggle="tab">списком</a><a class="school-list__tab" href="#on-map" role="tab" aria-selected="true" data-toggle="tab">на карте</a>
                                 </div>
                             </div>
                         </div>
@@ -227,12 +227,14 @@
                                     </ul>
                                 </div>
                                 <div class="col-xl-auto d-md-none d-xl-block">
-                                    <div class="school-list__nav nav" role="tablist"><a class="school-list__tab active" href="#map-list" role="tab" aria-selected="true" data-toggle="tab">списком</a><a class="school-list__tab" href="#on-map" role="tab" aria-selected="true" data-toggle="tab">на карте</a>
+                                    <div class="school-list__nav nav" role="tablist"><a class="school-list__tab active" href="#map-list-w" role="tab" aria-selected="true" data-toggle="tab">списком</a><a class="school-list__tab" href="#on-map" role="tab" aria-selected="true" data-toggle="tab">на карте</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </header>
+                </form>
+                <div class="school-list__panel active" role="tabpanel" id="map-list-w">
                     <div class="container">
                         <ul class="school-list__list">
                             <li class="school-list__item">
@@ -531,7 +533,41 @@
                             </li>
                         </ul>
                     </div>
-                </form>
+                </div>
+                <div class="school-list__panel" role="tabpanel" id="on-map">
+                    <div class="school-list__map-wrapper">
+                        <div class="container">
+                            <div class="school-list__inner-popup">
+                                <div class="school-list__popup js-map-popup">
+                                    <button class="school-list__close btn-close js-close-map-popup" type="button">
+                                        <svg class="icon" width="10" height="10" aria-hidden="true">
+                                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                                        </svg>Закрыть
+                                    </button><a class="school-list__name" href="#">Коломенская</a><span class="school-list__time-work d-none d-md-block">Пн-Пт 10:00 — 22:00,<br>Сб-Вс 10:00 — 16:00</span><span class="school-list__address">
+                        <svg class="icon" width="11" height="16" aria-hidden="true">
+                          <use xlink:href="static/img/svg-symbols.svg#picker"></use>
+                        </svg>Метро Коломенская,<br>Нагатинская&#160;набережная&#160;10,<br>корпус 3</span>
+                                    <p class="school-list__contacts">
+                                        <svg class="icon" width="10" height="16" aria-hidden="true">
+                                            <use xlink:href="static/img/svg-symbols.svg#phone"></use>
+                                        </svg>+7 495 125-35-24,
+                                        <br>+7 800 100-32-76,
+                                        <br>+7 495 125-35-24
+                                    </p>
+                                    <p class="school-list__education">Отдел корпоративного
+                                        <br>обучения:
+                                        <br>+7 495 984-97-10</p>
+                                    <a class="school-list__email" href="email:kolomenskaya@yescenter.ru">
+                                        <svg class="icon" width="16" height="12" aria-hidden="true">
+                                            <use xlink:href="static/img/svg-symbols.svg#mail"></use>
+                                        </svg>kolomenskaya@yescenter.ru</a>
+                                    <button class="school-list__btn-popup btn btn--grey" type="button">заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="school-list__map-canvas" id="map"></div>
+                    </div>
+                </div>
             </section>
             <section class="subscribe section">
                 <div class="container">
@@ -710,7 +746,8 @@
         <script>
             svg4everybody();
         </script>
-        <script src="static/js/main6chx2h.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+        <script src="static/js/mainhn87u7.js"></script>
     </body>
 
 </html>

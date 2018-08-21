@@ -4942,6 +4942,8 @@ object-assign
   });
 })();
 
+
+
 (function () {
   let lastItemReview;
   $('.js-reviews-list').on('change', function () {
@@ -4985,8 +4987,6 @@ object-assign
   });
 })();
 
-
-
 (function () {
   $('.js-departure-slider').slick({
     variableWidth: true,
@@ -5011,6 +5011,8 @@ object-assign
   });
 })();
 
+
+
 (function () {
   $('.js-slider-education').slick({
     arrows: false,
@@ -5033,8 +5035,6 @@ object-assign
     }]
   });
 })();
-
-
 
 
 (function () {
@@ -5263,6 +5263,8 @@ $('.js-select-lang-order').SumoSelect({
   });
 })();
 
+
+
 (function () {
   var TABLET_SIZE = 767;
   var newsSlider = $('.js-news-slide');
@@ -5310,6 +5312,8 @@ $('.js-select-lang-order').SumoSelect({
 
 
 
+
+
 (function () {
 
   $('.js-reviews-list').on('change', function () {
@@ -5331,22 +5335,25 @@ $(window).on('load', function () {
       autoHide: false,
       scrollbarMinSize: 5
     });
-    new SimpleBar($('.js-select-custom-scroll .options')[1], {
-      autoHide: false,
-      scrollbarMinSize: 5
-    });
-    new SimpleBar($('.js-select-custom-scroll .options')[2], {
-      autoHide: false,
-      scrollbarMinSize: 5
-    });
-    new SimpleBar($('.js-select-custom-scroll .options')[3], {
-      autoHide: false,
-      scrollbarMinSize: 5
-    });
-    new SimpleBar($('.js-select-custom-scroll .options')[4], {
-      autoHide: false,
-      scrollbarMinSize: 5
-    });
+    if ($('.js-select-custom-scroll .options').length > 4) {
+      new SimpleBar($('.js-select-custom-scroll .options')[1], {
+        autoHide: false,
+        scrollbarMinSize: 5
+      });
+      new SimpleBar($('.js-select-custom-scroll .options')[2], {
+        autoHide: false,
+        scrollbarMinSize: 5
+      });
+      new SimpleBar($('.js-select-custom-scroll .options')[3], {
+        autoHide: false,
+        scrollbarMinSize: 5
+      });
+      new SimpleBar($('.js-select-custom-scroll .options')[4], {
+        autoHide: false,
+        scrollbarMinSize: 5
+      });
+    }
+
   }
   var toggleTextButton = function () {
     $('.js-show-filter').on('click', function () {
@@ -5361,6 +5368,29 @@ $(window).on('load', function () {
 });
 
 
+
+(function () {
+  $('.js-school-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          slidesToShow: 2
+        }
+      }
+
+    ]
+  });
+})();
 
 
 
@@ -5493,6 +5523,12 @@ $(window).on('load', function () {
   });
 })();
 
+
+(function () {
+  $('.js-close-map-popup').on('click', function () {
+    $(this).parent('.js-map-popup').remove();
+  });
+})();
 
 
 

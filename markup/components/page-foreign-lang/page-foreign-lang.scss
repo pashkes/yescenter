@@ -6,6 +6,11 @@
   @include media-breakpoint-up(xl) {
     padding-top: 88px;
   }
+    &--no-title {
+      @include media-breakpoint-up(xl) {
+        padding-top: 110px;
+      }
+    }
   &__list {
     margin-bottom: 26px;
     @include media-breakpoint-up(md) {
