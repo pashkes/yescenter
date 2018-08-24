@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/mainw6jng.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="#{data.title}">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="500">
+        <meta property="og:image:height" content="300">
+        <meta property="twitter:description" content="">
+        <link rel="image_src" href="">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function (H) {
+              H.className = H.className.replace(/\bno-js\b/, 'js')
+            })(document.documentElement)
+        </script>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <form><span class="header__you-city">Ваш город:</span>
+                                    <select class="header__select-city js-select-location">
+                                        <option>Москва</option>
+                                        <option>Санкт-Перебург</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="col-auto d-xl-flex align-items-center">
+                                <ul class="header__additional-menu d-none d-xl-flex">
+                                    <li class="header__item-menu"><a class="header__link" href="#">Компаниям</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Франчайзинг</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Разговорный клуб</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Дистанционное обучение</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Онлайн тестирование</a>
+                                    </li>
+                                </ul>
+                                <form>
+                                    <label class="hidden" for="search">Поиск</label>
+                                    <input class="header__search" type="search" required id="search">
+                                    <button class="header__search-btn js-show-search text-hide">
+                                        <svg class="icon" width="16" height="16" aria-hidden="true">
+                                            <use xlink:href="static/img/svg-symbols.svg#search"></use>
+                                        </svg>Поиск
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center no-gutters">
+                            <div class="col-auto">
+                                <div class="header__logo-wrapper">
+                                    <a class="header__logo" href="index.html">
+                                        <img src="static/img/general/logo.svg" width="42" height="42" alt="Иностранные языки в Москве">
+                                    </a>
+                                    <h1 class="header__site-desc">Иностранные языки<br>в Москве</h1>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header__user-bar">
+                                    <div class="header__item header__item--contact d-none d-md-block"><span class="header__title-delivery d-block">Бесплатно по России</span><a class="header__tel" href="tel:+488005554477">8 800 555-44-77</a>
+                                    </div>
+                                    <div class="header__item d-none d-xl-block">
+                                        <button class="header__order-call btn btn--grey">заказать звонок</button>
+                                    </div>
+                                    <div class="header__item d-none d-md-block">
+                                        <button class="header__registered-course btn btn--red">записаться на курсы</button>
+                                    </div>
+                                    <div class="header__item d-xl-none">
+                                        <button class="header__toggle-menu js-show-main-menu text-hide" type="button">Показать меню</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="menu">
+                        <div class="menu__inner">
+                            <div class="container">
+                                <button class="menu__close btn-close text-hide d-none js-menu-close d-md-block d-xl-none" type="button">
+                                    <svg class="icon" width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                                    </svg>Закрыть
+                                </button>
+                                <ul class="menu__main">
+                                    <li class="menu__main-item active"><a class="menu__main-link" href="#">Иностранные языки</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="programs.html">Программы</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="eng.html">Расписание</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Цены</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Акции</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Школы</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="about.html">О компании</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Информация</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu__body d-xl-none">
+                                <div class="container">
+                                    <ul class="menu__additional">
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Компаниям</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Франчайзинг</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Разговорный клуб</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Дистанционное обучение</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Онлайн тестирование</a>
+                                        </li>
+                                    </ul>
+                                    <button class="menu__registration-course btn btn--red">записаться на курсы</button>
+                                    <div class="menu__footer">
+                                        <ul class="menu__contacts">
+                                            <li class="menu__contact"><a class="menu__tel" href="tel:+484953800520">8 495 380-05-20</a><span class="menu__desc d-block">Для Москвы, 09:00—18:00</span>
+                                            </li>
+                                            <li class="menu__contact"><a class="menu__tel" href="tel:+488005554477">8 800 555-44-77</a><span class="menu__desc d-block">Бесплатно по России</span>
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn--light-blue">заказать обратный звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item">Подготовка к экзаменам ЕГЭ и ОГЭ — эффективная программа для подростков</li>
+                </ul>
+            </div>
+            <section class="page-programs page-programs--preparation">
+                <div class="container">
+                    <h1 class="h2 page-programs__title">Подготовка к экзаменам ЕГЭ и ОГЭ — эффективная программа для подростков</h1>
+                    <p class="page-programs__subtitle subtitle">ЕГЭ по английскому, немецкому, испанскому и французскому языкам является одновременно выпускным экзаменом для школьников и вступительным в вуз. ОГЭ представляет собой выпускной экзамен для учащихся 9 классов. В 2015 году в экзамен
+                        была введена устная часть по выбору. При ее сдаче можно набрать не 80 баллов, как при обычном варианте, а 100. ЭГЭ и ОГЭ включают следующие части: аудирование, чтение, письмо, говорение.</p>
+                    <div class="page-programs__times">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="page-programs__time">
+                                    <svg class="icon" width="17" height="17" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#clock"></use>
+                                    </svg><span class="page-programs__text-red text-red">40 минут<br>на аудирование и&#160;чтение</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="page-programs__time">
+                                    <svg class="icon" width="17" height="17" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#clock"></use>
+                                    </svg><span class="page-programs__text-red text-red">80 минут<br>на&#160;письмо</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="page-programs__time">
+                                    <svg class="icon" width="17" height="17" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#clock"></use>
+                                    </svg><span class="page-programs__text-red text-red">15 минут<br>на говорение</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="preparation">
+                <div class="container">
+                    <h2 class="preparation__title h2">Что предполагает подготовка к ЕГЭ и ОГЭ?</h2>
+                    <p class="preparation__subtitle subtitle">В нашем обучающем центре для подготовки к ЕГЭ и ОГЭ мы используем самый современный письменный, аудио- и видеоматериал. База предназначена для детального изучения языка: развития коммуникативных навыков и заучивания грамматики на уровне
+                        его носителей.</p>
+                    <div class="preparation__duration"><strong>Продолжительность курса по&#160;ЕГЭ и&#160;ОГЭ — 9 месяцев.</strong><strong>Занятия 2 раза в неделю по 120 минут.</strong>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4 preparation__item">
+                            <div class="preparation__inner">
+                                <div class="preparation__icon">
+                                    <img src="static/img/general/pencil-2.svg" width="43" height="43" alt="Изложение материала в устной и письменной форме">
+                                </div>
+                                <p class="preparation__text">Изложение материала</br>в устной и письменной</br>форме</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 preparation__item">
+                            <div class="preparation__inner">
+                                <div class="preparation__icon">
+                                    <img src="static/img/general/handset.svg" width="46" height="44" alt="Развитие восприятия иностранной речи 
+на слух">
+                                </div>
+                                <p class="preparation__text">Развитие восприятия
+                                    <br>иностранной речи
+                                    <br>на слух</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 preparation__item">
+                            <div class="preparation__inner">
+                                <div class="preparation__icon">
+                                    <img src="static/img/general/vocabulary.svg" width="36" height="47" alt="Расширение 
+словарного 
+запаса
+">
+                                </div>
+                                <p class="preparation__text">Расширение
+                                    <br>словарного
+                                    <br>запаса</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 preparation__item">
+                            <div class="preparation__inner">
+                                <div class="preparation__icon">
+                                    <img src="static/img/general/pencil.svg" width="34" height="45" alt="Быстрое выполнение заданий, предлагаемых на госэкзаменах">
+                                </div>
+                                <p class="preparation__text">Быстрое выполнение
+                                    <br>заданий, предлагаемых
+                                    <br>на госэкзаменах</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 preparation__item">
+                            <div class="preparation__inner">
+                                <div class="preparation__icon">
+                                    <img src="static/img/general/books.svg" width="44" height="42" alt="Навыки быстрого поиска в тексте нужной информации">
+                                </div>
+                                <p class="preparation__text">Навыки быстрого
+                                    <br>поиска в тексте нужной
+                                    <br>информации</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 preparation__item">
+                            <div class="preparation__inner">
+                                <div class="preparation__icon">
+                                    <img src="static/img/general/head.svg" width="44" height="45" alt="Систематизация
+знаний, требуемых при сдаче ЕГЭ и ОГЭ">
+                                </div>
+                                <p class="preparation__text">Систематизация
+                                    <br>знаний, требуемых при
+                                    <br>сдаче ЕГЭ и ОГЭ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="section-text section section--grey section-text--preparation">
+                <div class="container"><span class="section-text__title h2">Зачем нужна дополнительная подготовка к тестам?</span>
+                    <p class="section-text__subtitle subtitle">Центр иностранных языков YES представляет специально разработанную программу, которая позволит достойно сдать ЕГЭ и ОГЭ и продолжить обучение в выбранном ВУЗе. Ограниченное время и непривычная атмосфера у многих вызывают стресс. Молодые
+                        люди могут забыть даже хорошо знакомый материал, растеряться, сделать ошибки, которые негативно скажутся на результатах тестирования.</p>
+                    <p class="section-text__red text-red">Основная цель курса подготовки к ЕГЭ и ОГЭ в Центре YES — ознакомление с форматом экзамена.</p>
+                    <p class="section-text__red text-red">Ребята развивают необходимые навыки для быстрого выполнения заданий, учатся справляться с волнением в условиях экзаменационной обстановки.</p><a class="section-text__btn btn btn--red" href="#">отправить заявку</a>
+                </div>
+            </section>
+            <div class="departure departure--padding-top">
+                <div class="departure__inner">
+                    <button class="departure__arrow slide-arrow slide-arrow--prev text-hide js-departure-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                        </svg>Предадущий слайд
+                    </button>
+                    <button class="departure__arrow slide-arrow slide-arrow--next text-hide js-departure-next-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                        </svg>Следующий слайд
+                    </button>
+                    <div class="container">
+                        <ul class="departure__slider js-departure-slider">
+                            <li class="departure__slide">
+                                <img src="static/img/content/departure-photo-1.jpg" alt="Преподавателей в штате">
+                            </li>
+                            <li class="departure__slide">
+                                <img src="static/img/content/exit-photo-1-ds.jpg" alt="Учеников занимаются по нашей методике">
+                            </li>
+                            <li class="departure__slide">
+                                <img src="static/img/content/slider.jpg" alt="Преподавателей в штате">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <section class="teachers section teachers--bb-none">
+                <div class="container">
+                    <h2 class="teachers__title h2">Наши преподаватели</h2>
+                    <p class="teachers__subtitle subtitle">Наши преподаватели в короткий срок подготовят Вас к сдаче выпускного экзамена ЕГЭ или ОГЭ. Они научат эффективно пополнять словарный запас и поставят произношение, с которым Вас поймут и носители языка.</p>
+                </div>
+                <div class="teachers__wrapper">
+                    <button class="teachers__arrow slide-arrow slide-arrow--prev text-hide js-techers-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                        </svg>Предадущий слайд
+                    </button>
+                    <button class="teachers__arrow slide-arrow slide-arrow--next text-hide js-techers-next-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                        </svg>Следующий слайд
+                    </button>
+                    <div class="container">
+                        <ul class="teachers__slider js-techers-slider">
+                            <li>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/teacher-2.jpg" width="166" heigh="166" alt="Теона Папава">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Теона Папава</cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Кузьминки</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/teacher-1.jpg" width="166" heigh="166" alt="Вера Литвинец">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Вера Литвинец</cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Кузьминки</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/teacher-3.jpg" width="166" heigh="166" alt="Елена Потапова">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Елена Потапова</cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Кузьминки</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/teacher-4.jpg" width="166" heigh="166" alt="Вероника Утешева ">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Вероника Утешева </cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Кузьминки</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/teacher-2.jpg" width="166" heigh="166" alt="Теона Папава">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Теона Папава</cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Кузьминки</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="teachers__footer">
+                        <div class="container">
+                            <div class="row align-items-md-center">
+                                <div class="col-md-auto d-xl-none">
+                                    <div class="teachers__dots"></div>
+                                </div>
+                                <div class="col-md-auto ml-md-auto text-center"><a class="show-all" href="#">все преподаватели<span>&nbsp;&rarr;</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-text section section--grey section-text--education">
+                <div class="container"><span class="section-text__title h2">В процессе обучения слушатели курса:</span>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <ul class="list">
+                                <li>Познакомятся с процедурой и требованиями к экзамену — это позволяет морально подготовиться к тестированию и чувствовать себя во время тестирования спокойно.</li>
+                                <li>Освоят навыки быстрого выполнения заданий, предлагаемых на госэкзаменах.</li>
+                                <li>Систематизируют знания, требуемые при сдаче ЕГЭ и ОГЭ.</li>
+                                <li>Научатся грамотно и быстро писать на иностранном языке.</li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-6">
+                            <ul class="list">
+                                <li>Овладеют навыками техники быстрого чтения и качественного понимания прочитанного и услышанного без словаря.</li>
+                                <li>Научатся быстрому поиску в тексте нужной информации.</li>
+                                <li>Подготовятся к аудированию, воспроизведению материала в устной форме.</li>
+                            </ul>
+                        </div>
+                    </div><a class="section-text__btn btn btn--red" href="#">отправить заявку</a>
+                </div>
+            </section>
+            <section class="reviews section pb-0">
+                <div class="container">
+                    <h2 class="reviews__title h2">отзывы о нашем центре</h2>
+                </div>
+                <div class="reviews__slider">
+                    <button class="reviews__arrow slide-arrow slide-arrow--prev text-hide js-reviews-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                        </svg>Предадущий слайд
+                    </button>
+                    <button class="reviews__arrow slide-arrow slide-arrow--next text-hide js-reviews-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                        </svg>Следующий слайд
+                    </button>
+                    <div class="container">
+                        <div class="row js-reviews-slider">
+                            <div class="col-auto">
+                                <div class="review reviews__item">
+                                    <div class="review__body">
+                                        <header class="review__top">
+                                            <div class="review__photo">
+                                                <img src="static/img/content/review-photo-1.jpg" width="80" height="80" alt="Мацакян Ваге">
+                                            </div>
+                                            <div class="reviews__info">
+                                                <cite class="review__name">Мацакян Ваге</cite><span class="review__school">Школа в Кузьминках</span>
+                                            </div>
+                                        </header>
+                                        <div class="review__message">
+                                            <p>Я учусь в YES еще с открытия школы. Я могу сказать, что это очень эффективные занятия, дополнительные курсы. Я в течении очень маленького периода времени обучился Я могу сказать, что это очень эффективные занятия,
+                                                дополнительные курсы. Я в течении очень маленького периода времени обучился</p>
+                                        </div>
+                                        <!--button(type="button").review__read-more читать отзыв-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="review reviews__item">
+                                    <div class="review__body">
+                                        <header class="review__top">
+                                            <div class="review__photo">
+                                                <img src="static/img/content/review-photo-2.jpg" width="80" height="80" alt="Настя Тарасюк">
+                                            </div>
+                                            <div class="reviews__info">
+                                                <cite class="review__name">Настя Тарасюк</cite><span class="review__school">Школа в Хорвино</span>
+                                            </div>
+                                        </header>
+                                        <div class="review__message">
+                                            <p>Больше всего мне нравится наш педагог, Екатерина Немцова. Она хорошо объясняет, добрая, отзывчивая. Мне нравятся люди, которые сидят на ресепшн, если что – подскажут. Она хорошо объясняет, добрая, отзывчивая.
+                                                Мне нравятся люди, которые сидят на ресепшн, если что – подскажут.</p>
+                                        </div>
+                                        <!--button(type="button").review__read-more читать отзыв-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="review reviews__item">
+                                    <div class="review__body">
+                                        <header class="review__top">
+                                            <div class="review__photo">
+                                                <img src="static/img/content/review-photo-3.jpg" width="80" height="80" alt="Павел">
+                                            </div>
+                                            <div class="reviews__info">
+                                                <cite class="review__name">Павел</cite><span class="review__school">Школа в Солнцево</span>
+                                            </div>
+                                        </header>
+                                        <div class="review__message">
+                                            <p>Прошел летний интенсив в Солнцево. Понравилось. Отдельное спасибо преподавателю Дарье, помогла преодолеть неуверенность в произношении на английском. Прошел летний интенсив в Солнцево. Понравилось.</p>
+                                        </div>
+                                        <!--button(type="button").review__read-more читать отзыв-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="review reviews__item">
+                                    <div class="review__body">
+                                        <header class="review__top">
+                                            <div class="review__photo">
+                                                <img src="static/img/content/review-photo-1.jpg" width="80" height="80" alt="Мацакян Ваге">
+                                            </div>
+                                            <div class="reviews__info">
+                                                <cite class="review__name">Мацакян Ваге</cite><span class="review__school">Школа в Кузьминках</span>
+                                            </div>
+                                        </header>
+                                        <div class="review__message">
+                                            <p>Я учусь в YES еще с открытия школы. Я могу сказать, что это очень эффективные занятия, дополнительные курсы. Я в течении очень маленького периода времени обучился ...</p>
+                                        </div>
+                                        <!--button(type="button").review__read-more читать отзыв-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__footer">
+                    <div class="container">
+                        <div class="row align-items-md-center">
+                            <div class="col-md-auto d-xl-none">
+                                <div class="reviews__dots"></div>
+                            </div>
+                            <div class="col-md-auto ml-md-auto text-center"><a class="show-all" href="#">читать все отзывы<span>&nbsp;&rarr;</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe section">
+                <div class="container">
+                    <form class="subscribe__inner form" id="subscribe">
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <div class="subscribe__img">
+                                    <img src="static/img/general/letter.png" alt="Подпишитесь на нашу новостную рассылку">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="subscribe__body">
+                                    <h3 class="subscribe__title"><span>Подпишитесь</span>на нашу новостную рассылку</h3>
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <label class="hidden" for="subscribe-email">Ваше имя и фамилия</label>
+                                            <input class="subscribe__field form__field" type="email" placeholder="Ваша электронная почта" name="email" required id="subscribe-email">
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <button class="subscribe__btn btn btn--red">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-md-7 col-xl-9">
+                                <div class="footer__inner-langs"><span class="footer__label-couses d-none d-xl-block">Курсы:</span>
+                                    <ul class="footer__lang-list">
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Английский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Немецкий</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Французский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Итальянский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Испанский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Китайский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Японский</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <button class="footer__btn btn btn--red" type="button">записаться на курсы</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__body">
+                        <div class="row justify-content-xl-start">
+                            <div class="col-7 d-none d-xl-block">
+                                <div class="row align-items-md-center align-items-xl-start">
+                                    <div class="col-3">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">О компании</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">база знаний</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Карта сайта</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Расписание</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Наши школы</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">цены</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">Иностранные языки детям</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">начинающим</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Подросткам</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Взрослым</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Корпоративное обучение</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Английский разговорный клуб</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">международные экзамены</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Франшиза</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">онлайн тестирование</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">YES MY LIFE</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="row justify-content-center justify-content-md-between justify-content-xl-start">
+                                    <div class="col-md-auto col-xl-6">
+                                        <div class="footer__contact"><a class="footer__tel" href="tel:+784953800520">8 495 380-05-20</a><span class="footer__sub-title">Для Москвы, 09:00—18:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-xl-6">
+                                        <div class="footer__contact"><a class="footer__tel" href="tel:+788005554477">8 800 555-44-77</a><span class="footer__sub-title">Бесплатно по России</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-xl-auto ml-xl-auto">
+                                        <button class="footer__btn btn btn--grey" type="button">заказать обратный звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-md-auto order-md-2">
+                                <ul class="social footer__social">
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="11" height="20" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#odnoklassniki"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="21" height="12" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="18" height="12" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#youtube"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="10" height="20" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#fb"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="18" height="18" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#insta"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md col-xl-9 order-md-1">
+                                <p class="footer__copy">&copy; 2001—2018 Центр иностранных языков Yes. «Yes» является зарегистрированным товарным знаком.<span>При использовании любых материалов сайта, включая фотографии и тексты, активная ссылка на&nbsp;<a href="#">&nbsp;www.yescenter.ru&nbsp;</a>обязательна.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+        <script src="static/js/mainw6jng.js"></script>
+    </body>
+
+</html>
