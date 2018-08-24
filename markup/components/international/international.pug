@@ -1,0 +1,62 @@
+mixin international(data)
+  section.international
+    form.international__top#international
+      .container
+        .row.align-items-xl-center
+          .col-xl
+            .js-select-custom-scroll.d-md-none
+              label(for="tests").hidden Наши школы
+              .form__select-custom.international__select
+                select(id="tests").js-select-defaul
+                  option Подготовка к YLE
+                  option Подготовка к KET
+                  option Подготовка к PET
+                  option Подготовка к FCE
+                  option Подготовка к CAE
+                  option Подготовка к CPE
+                  option Подготовка к IELTS
+                  option Подготовка к TOEFL
+            ul.international__filters.d-none.d-md-flex
+              li.international__filter
+                label.international__item-list
+                  input(type="radio" name="international-tests" checked)
+                  span.international__name-filter Подготовка к YLE
+              li.international__filter
+                label.international__item-list
+                  input(type="radio" name="international-tests")
+                  span.international__name-filter Подготовка к KET
+              li.international__filter
+                label.international__item-list
+                  input(type="radio" name="international-tests")
+                  span.international__name-filter Подготовка к PET
+              li.international__filter
+                label.international__item-list
+                  input(type="radio" name="international-tests")
+                  span.international__name-filter Подготовка к FCE
+              li.international__filter
+                label.international__item-list
+                  input(type="radio" name="international-tests")
+                  span.international__name-filter Подготовка к CAE
+              li.international__filter
+                label.international__item-list
+                  input(type="radio" name="international-tests")
+                  span.international__name-filter Подготовка к CPE
+              li.international__filter
+                label.international__item-list
+                  input(type="radio" name="international-tests")
+                  span.international__name-filter Подготовка к IELTS
+              li.international__filter
+                label.international__item-list
+                  input(type="radio" name="international-tests")
+                  span.international__name-filter Подготовка к TOEFL
+    .container
+      .row
+        each itemList in data.listCard
+          .col-md-6.col-xl-4.d-flex.align-content-stretch
+            .lang-card.page-eng__card.lang-card--border
+              h3.page-eng__title-card.lang-card__name
+                a(href="#") !{itemList.title}
+              span.page-eng__subtitle.grey !{itemList.info}
+              p.page-eng__desc.lang-card__desc !{itemList.desc}
+              a(href="#").lang-card__more.page-eng__more.btn.btn--border-red подробнее
+

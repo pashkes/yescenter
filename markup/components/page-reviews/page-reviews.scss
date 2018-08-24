@@ -7,6 +7,12 @@
     margin-bottom: -26px;
   }
   &__title {
+    padding-left: 24px;
+    @include media-breakpoint-up(sm) {
+    }
+    @include media-breakpoint-up(md) {
+      padding-left: 32px;
+    }
     @include media-breakpoint-up(xl) {
       margin-bottom: 0;
     }
@@ -17,6 +23,7 @@
     }
     .container {
       padding-right: 0;
+      padding-left: 0;
       @include media-breakpoint-up(sm) {
         max-width: 100%;
         margin-left: calc((100vw - 540px) / 2);
@@ -33,15 +40,19 @@
         max-width: 1216px;
       }
     }
-
   }
   &__nav {
     display: flex;
     margin-bottom: 32px;
+    padding-left: 24px;
     overflow-x: auto;
     flex-wrap: nowrap;
     border-top: solid 1px #e1e1e1;
     border-bottom: solid 1px #e1e1e1;
+    @include media-breakpoint-up(sm) {
+      padding-left: 0;
+      margin-left: 24px;
+    }
     @include media-breakpoint-up(md) {
       margin-top: 5px;
       border-radius: 20px;

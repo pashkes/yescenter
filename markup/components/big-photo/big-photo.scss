@@ -1,0 +1,154 @@
+.big-photo {
+  .modal-dialog {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
+  }
+  .modal-content {
+    pointer-events: auto;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    padding-top: 148px;
+    @include media-breakpoint-up(md) {
+      padding-top: 209px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 120px;
+    }
+  }
+  &__slider {
+    padding: 0;
+    margin: 0;
+  }
+  &__slide {
+    text-align: center;
+    font-size: 0;
+  }
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 24px;
+    }
+  }
+  &__img-inner {
+    position:relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $text-color;
+      opacity: .3;
+      transition: opacity 1s ease-out;
+    }
+  }
+  &__img {
+    display: inline-block !important;
+    vertical-align: top;
+    max-height: 58vh;
+    object-fit: cover;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      min-height: 545px;
+      width: auto;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 960px;
+      height: 672px;
+      max-height: 100%;
+    }
+  }
+  .slick-list {
+    margin-right: -16px;
+    margin-left: -16px;
+    @include media-breakpoint-up(xl) {
+      margin: 0;
+    }
+  }
+  .slick-slide {
+    margin-right: 16px;
+    margin-left: 16px;
+    @include media-breakpoint-up(xl) {
+      margin-right: 24px;
+      margin-left: 24px;
+      padding-bottom: 32px;
+    }
+  }
+  &__caption {
+    display: block;
+    font-size: 11px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  &__close {
+    position: absolute;
+    right: 24px;
+    top: 28px;
+    background-color: $secondary-red;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    &:hover {
+      .icon {
+        fill: #fff
+      }
+    }
+    @include media-breakpoint-up(md) {
+      top: 36px;
+      right: 36px;
+    }
+    @include media-breakpoint-up(xl) {
+      right: 32px;
+      top: 32px;
+    }
+    .icon {
+      fill: #fff
+    }
+  }
+  .slick-dots {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include media-breakpoint-up(md) {
+      padding-top: 40px;
+    }
+  }
+  &__inner {
+    position: relative;
+  }
+  &__arrow {
+    position: absolute;
+    top: 304px;
+  }
+  .modal.show {
+    padding-right: 0 !important;
+  }
+  .slick-slide {
+    position: relative;
+    opacity: 1;
+    transition:opacity 1s ease-out;
+  }
+
+  .slick-active {
+    opacity:1!important;
+    transition:opacity 1s ease-in;
+    .big-photo__img-inner::before {
+      opacity:0;
+      transition:opacity 1s ease-in;
+    }
+  }
+}
+.modal-backdrop.show {
+  opacity: .9;
+}

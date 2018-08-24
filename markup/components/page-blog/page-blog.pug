@@ -1,0 +1,66 @@
+mixin page-blog(data)
+  section.page-blog
+    header.page-blog__header
+      .container
+        .row.align-items-start
+          .col-xl
+            h1.page-blog__title.h2 Статьи
+          .col-xl-auto
+            div.page-blog__nav.nav
+              a(href="#").page-blog__tab все публикации
+              a(href="#").page-blog__tab Новости школ
+              a(href="#").page-blog__tab.active статьи
+              a(href="#").page-blog__tab Новости компании
+              a(href="#").page-blog__tab путешествия
+    form.page-blog__grey-sect#page-blog
+      .container
+        .page-blog__select-inner.d-md-none
+          label(for="page-blog-sections").page-blog__text-review.js-item-review
+            span.page-blog__name-review.js-name-list-reviews #{data.sections[0].name}
+            span.page-blog__amount-review.js-amount-list-reviews #{data.sections[0].amount}
+          select.page-blog__select.d-md-none.js-reviews-list#page-blog-sections
+            each itemReviews in data.sections
+              option(value=itemReviews.amount) #{itemReviews.name}
+        label(for="page-blog-years").hidden Сортировка по годам
+        select.form__select.d-md-none#page-blog-years
+          each itemReviews in data.years
+            option #{itemReviews.name}
+
+        ul.page-blog__filters.page-blog__filters--sections.d-none.d-md-flex.flex-md-wrap
+          each item in data.sections
+            li.page-blog__filter
+              label.page-blog__item-list
+                input(type="radio" name="page-blog-section" value=item.amount checked=item.checked)
+                span.page-blog__name-filter #{item.name}
+                span.page-blog__amount #{item.amount}
+        ul.page-blog__filters.d-none.d-md-flex.flex-md-wrap
+          each item in data.years
+            li.page-blog__filter
+              label.page-blog__item-list
+                input(type="radio" name="page-blog-years" checked=item.checked)
+                span.page-blog__name-filter #{item.name}
+    .container
+      .page-blog__articles
+        .row
+          .col-12.page-blog__col.page-blog__col--wide
+            article.page-blog__article
+              .page-blog__photo
+                img(src="%=static=%img/content/news-img-1.jpg" alt="Следуй плану, достигай цель!")
+              .page-blog__article-inner
+                h3.page-blog__name.h3
+                  a(href="#") Следуй плану, достигай цель!
+                cite.page-blog__author Автор: Афанаскина Екатерина Владимировна
+                p.page-blog__preview Хотелось бы выучить язык международного общения, но все как-то не складывается — командировки, загруженность на работе, маленький ребенок. Хотя, чаще всего, это только отговорки. На мой взгляд, если у человека есть четкое понимание, зачем ему нужен английский язык, то он найдет возможность им заняться, и не придется придумывать оправдания своей чрезмерной занятости. Просто надо шаг ...
+                a(href="#").page-blog__read-more читать статью
+          each article in data.articles
+            .col-md-6.col-xl-4.page-blog__col
+              article.page-blog__article
+                h3.page-blog__name
+                  a(href="#") #{article.title}
+                cite.page-blog__author #{article.author}
+                p.page-blog__preview #{article.text}
+                a(href="#").page-blog__read-more читать статью
+      .page-blog__footer
+        a(href="#").page-blog__show-more.btn.btn--grey показать еще
+
+

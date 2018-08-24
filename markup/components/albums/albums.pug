@@ -1,0 +1,21 @@
+mixin albums(data)
+  section.albums
+    .container
+      header.albums__header
+        .row.align-items-md-center
+          .col-md
+            h2.albums__title.h2 Фотоальбом
+          .col-md-auto
+            div.albums__nav.nav
+              a(href="#").albums__tab.active альбомы
+              a(href="#").albums__tab по категориям
+      .row
+        each album in data
+          .col-md-6.col-xl-4
+            figure.albums__item
+              a(href="#")
+                img(src="%=static=%img/content/"+album.src alt=album.caption)
+                figcaption.albums__caption #{album.caption}
+      footer.albums__footer.d-flex.justify-content-center
+        a(href="#").albums__show-more.btn.btn--grey показать еще
+

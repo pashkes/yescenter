@@ -3,6 +3,9 @@ mixin departure(data, title)
     if title
       .container
         h2.departure__title.h2 #{title}
+    if data.subtitle
+      .container
+        p.departure__subtitle.subtitle #{data.subtitle}
     .departure__inner
       button(type="button").departure__arrow.slide-arrow.slide-arrow--prev.text-hide.js-departure-prev-btn
         +icon('arrow-left', 12, 11)

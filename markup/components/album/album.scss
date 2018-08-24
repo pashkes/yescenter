@@ -1,0 +1,36 @@
+.album {
+  &__title {
+    margin-bottom: 28px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 48px;
+    }
+  }
+  &__item {
+    position:relative;
+    border: solid 1px #ebebeb;
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 32px;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+    a {
+      position:relative;
+      display: block;
+    }
+  }
+  &__footer {
+    padding-top: 16px;
+    @include media-breakpoint-up(md) {
+      padding-top: 0;
+    }
+  }
+  &__show-more {
+    color: $text-color;
+    @include media-breakpoint-up(md) {
+      max-width: 242px;
+    }
+  }
+}

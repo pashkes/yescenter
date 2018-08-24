@@ -1,0 +1,83 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/footer/footer.pug
+  include ../components/header/header
+  include ../components/breadcrumb/breadcrumb
+  include ../components/subscribe/subscribe
+  include ../components/reviews/reviews
+  include ../components/teachers/teachers
+  include ../components/departure/departure
+  include ../components/icon/icon
+  include ../components/preparation/preparation
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header()
+      .container
+        +breadcrumb(breadcrumb.preparationExams)
+      section.page-programs.page-programs--preparation
+        .container
+          h1.h2.page-programs__title Подготовка к экзаменам ЕГЭ и ОГЭ — эффективная программа для подростков
+          p.page-programs__subtitle.subtitle ЕГЭ по английскому, немецкому, испанскому и французскому языкам является одновременно выпускным экзаменом для школьников и вступительным в вуз. ОГЭ представляет собой выпускной экзамен для учащихся 9 классов. В 2015 году в экзамен была введена устная часть по выбору. При ее сдаче можно набрать не 80 баллов, как при обычном варианте, а 100. ЭГЭ и ОГЭ включают следующие части: аудирование, чтение, письмо, говорение.
+          .page-programs__times
+            .row
+              .col-md-4
+                .page-programs__time
+                  +icon('clock', 17, 17)
+                  span.page-programs__text-red.text-red
+                    | 40 минут
+                    br
+                    | на аудирование и&#160;чтение
+              .col-md-4
+                .page-programs__time
+                  +icon('clock', 17, 17)
+                  span.page-programs__text-red.text-red
+                    | 80 минут
+                    br
+                    | на&#160;письмо
+              .col-md-4
+                .page-programs__time
+                  +icon('clock', 17, 17)
+                  span.page-programs__text-red.text-red
+                    | 15 минут
+                    br
+                    | на говорение
+      +preparation(preparation)
+      section.section-text.section.section--grey.section-text--preparation
+        .container
+          span.section-text__title.h2 Зачем нужна дополнительная подготовка к тестам?
+          p.section-text__subtitle.subtitle Центр иностранных языков YES представляет специально разработанную программу, которая позволит достойно сдать ЕГЭ и ОГЭ и продолжить обучение в выбранном ВУЗе. Ограниченное время и непривычная атмосфера у многих вызывают стресс. Молодые люди могут забыть даже хорошо знакомый материал, растеряться, сделать ошибки, которые негативно скажутся на результатах тестирования.
+          p.section-text__red.text-red Основная цель курса подготовки к ЕГЭ и ОГЭ в Центре YES — ознакомление с форматом экзамена.
+          p.section-text__red.text-red Ребята развивают необходимые навыки для быстрого выполнения заданий, учатся справляться с волнением в условиях экзаменационной обстановки.
+          a(href="#").section-text__btn.btn.btn--red отправить заявку
+
+      +departure(departure).departure--padding-top
+      +teachers(teachersSecondary, true, 'Наши преподаватели').teachers--bb-none
+      section.section-text.section.section--grey.section-text--education
+        .container
+          span.section-text__title.h2 В процессе обучения слушатели курса:
+          .row
+            .col-xl-6
+              ul.list
+                li Познакомятся с процедурой и требованиями к экзамену — это позволяет морально подготовиться к тестированию и чувствовать себя во время тестирования спокойно.
+                li Освоят навыки быстрого выполнения заданий, предлагаемых на госэкзаменах.
+                li Систематизируют знания, требуемые при сдаче ЕГЭ и ОГЭ.
+                li Научатся грамотно и быстро писать на иностранном языке.
+            .col-xl-6
+              ul.list
+                li Овладеют навыками техники быстрого чтения и качественного понимания прочитанного и услышанного без словаря.
+                li Научатся быстрому поиску в тексте нужной информации.
+                li Подготовятся к аудированию, воспроизведению материала в устной форме.
+          a(href="#").section-text__btn.btn.btn--red отправить заявку
+      +reviews(reviews, 'отзывы о нашем центре').pb-0
+      +subscribe()
+      +footer()
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%.js')

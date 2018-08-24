@@ -222,6 +222,89 @@ const data = {
       {
         name: 'Наши акции'
       }
+    ],
+    preparationExams: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Подготовка к экзаменам ЕГЭ и ОГЭ — эффективная программа для подростков',
+      }
+    ],
+    base: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Информация',
+        link: 'index.html'
+      },
+      {
+        name: 'База знаний'
+      },
+    ],
+    playschool: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Британский детский садик'
+      }
+    ],
+    international: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Международные экзамены по английскому языку'
+      }
+    ],
+    blog: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Блог',
+        link: 'index.html'
+      },
+      {
+        name: 'Статьи',
+      }
+    ],
+    albums: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'О компании',
+        link: 'about.html'
+      },
+      {
+        name: 'Фотоальбом',
+      }
+    ],
+    album: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'О компании',
+        link: 'about.html'
+      },
+      {
+        name: 'Фотогалерея',
+        link: 'albums.html'
+      },
+      {
+        name: 'Лондон-Париж, весна 2013',
+      }
     ]
   }
 };

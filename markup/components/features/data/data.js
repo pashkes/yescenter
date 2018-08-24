@@ -124,6 +124,50 @@ const data = {
           classListColumn: 'col-md-6 col-xl'
         }
       ]
+    },
+    playschoolPage: {
+      list: [
+        {
+          imgSrc: 'light.svg',
+          width: '30',
+          height: '44',
+          desc: 'Уникальная авторская методика без зубрежки',
+          classIconClassName: 'features__img--light',
+          classListColumn: 'col-md-6 col-xl'
+        },
+        {
+          imgSrc: 'thumb.svg',
+          width: '40',
+          height: '44',
+          desc: 'Использование игрового подхода',
+          classIconClassName: 'features__img--thumb',
+          classListColumn: 'col-md-6 col-xl'
+        },
+        {
+          imgSrc: 'parachute.svg',
+          width: '46',
+          height: '44',
+          desc: 'Использование игрового подхода',
+          classIconClassName: 'features__img--parachute',
+          classListColumn: 'col-md-6 col-xl'
+        },
+        {
+          imgSrc: 'pencil.svg',
+          width: '34',
+          height: '45',
+          desc: 'Языковое погружение через различные методы',
+          classIconClassName: 'features__img--pencil',
+          classListColumn: 'col-md-6 col-xl'
+        },
+        {
+          imgSrc: 'children.svg',
+          width: '35',
+          height: '46',
+          desc: 'Обучение детей — наше приоритетное направление',
+          classIconClassName: 'features__img--children',
+          classListColumn: 'col-md-6 col-xl'
+        }
+      ]
     }
   }
 };

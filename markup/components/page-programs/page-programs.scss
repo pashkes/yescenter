@@ -2,12 +2,49 @@
   @include media-breakpoint-up(xl) {
     padding-bottom: 48px;
   }
+
   &__title {
     @include media-breakpoint-up(xl) {
-      margin-bottom: 30px;
+      margin-bottom: 36px;
     }
   }
   .subtitle {
     margin-bottom: 28px;
+  }
+  &__time {
+    display: flex;
+    margin-bottom: 22px;
+
+    .icon {
+      flex: none;
+      margin-top: 5px;
+      margin-right: 14px;
+    }
+  }
+  &__text-red {
+    line-height: 1.4;
+    font-size: 18px;
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+  &--preparation {
+    padding-bottom: 5px;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 24px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 60px;
+    }
+    .h2 {
+      max-width: 900px;
+    }
+    .subtitle {
+      margin-bottom: 23px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 37px;
+      }
+    }
   }
 }

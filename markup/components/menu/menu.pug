@@ -3,7 +3,7 @@ mixin menu(data)
   .menu
     .menu__inner
       .container
-        button.menu__close.btn-close.text-hide.d-none.js-menu-close.d-md-block.d-xl-none
+        button(type="button").menu__close.btn-close.text-hide.d-none.js-menu-close.d-md-block.d-xl-none
           +icon('close', 14, 14)
           |Закрыть
         ul.menu__main

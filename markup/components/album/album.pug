@@ -1,0 +1,13 @@
+mixin album(data)
+  section.album
+    .container
+      h1.album__title.h2 Лондон-Париж, весна 2013
+      .row
+        each album in data
+          .col-md-6.col-xl-4.js-photo
+            figure.album__item
+              // href - this big photo
+              a(href="%=static=%img/content/" + album.src).js-show-big-photo
+                img(src="%=static=%img/content/" + album.src alt=album.alt)
+      footer.album__footer.d-flex.justify-content-center
+        a(href="#").album__show-more.btn.btn--grey.js-show-all показать еще

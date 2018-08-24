@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/mainw6jng.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="#{data.title}">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="500">
+        <meta property="og:image:height" content="300">
+        <meta property="twitter:description" content="">
+        <link rel="image_src" href="">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function (H) {
+              H.className = H.className.replace(/\bno-js\b/, 'js')
+            })(document.documentElement)
+        </script>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <form><span class="header__you-city">Ваш город:</span>
+                                    <select class="header__select-city js-select-location">
+                                        <option>Москва</option>
+                                        <option>Санкт-Перебург</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="col-auto d-xl-flex align-items-center">
+                                <ul class="header__additional-menu d-none d-xl-flex">
+                                    <li class="header__item-menu"><a class="header__link" href="#">Компаниям</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Франчайзинг</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Разговорный клуб</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Дистанционное обучение</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Онлайн тестирование</a>
+                                    </li>
+                                </ul>
+                                <form>
+                                    <label class="hidden" for="search">Поиск</label>
+                                    <input class="header__search" type="search" required id="search">
+                                    <button class="header__search-btn js-show-search text-hide">
+                                        <svg class="icon" width="16" height="16" aria-hidden="true">
+                                            <use xlink:href="static/img/svg-symbols.svg#search"></use>
+                                        </svg>Поиск
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center no-gutters">
+                            <div class="col-auto">
+                                <div class="header__logo-wrapper">
+                                    <a class="header__logo" href="index.html">
+                                        <img src="static/img/general/logo.svg" width="42" height="42" alt="Иностранные языки в Москве">
+                                    </a>
+                                    <h1 class="header__site-desc">Иностранные языки<br>в Москве</h1>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header__user-bar">
+                                    <div class="header__item header__item--contact d-none d-md-block"><span class="header__title-delivery d-block">Бесплатно по России</span><a class="header__tel" href="tel:+488005554477">8 800 555-44-77</a>
+                                    </div>
+                                    <div class="header__item d-none d-xl-block">
+                                        <button class="header__order-call btn btn--grey">заказать звонок</button>
+                                    </div>
+                                    <div class="header__item d-none d-md-block">
+                                        <button class="header__registered-course btn btn--red">записаться на курсы</button>
+                                    </div>
+                                    <div class="header__item d-xl-none">
+                                        <button class="header__toggle-menu js-show-main-menu text-hide" type="button">Показать меню</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="menu">
+                        <div class="menu__inner">
+                            <div class="container">
+                                <button class="menu__close btn-close text-hide d-none js-menu-close d-md-block d-xl-none" type="button">
+                                    <svg class="icon" width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                                    </svg>Закрыть
+                                </button>
+                                <ul class="menu__main">
+                                    <li class="menu__main-item active"><a class="menu__main-link" href="#">Иностранные языки</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="programs.html">Программы</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="eng.html">Расписание</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Цены</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Акции</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Школы</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="about.html">О компании</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Информация</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu__body d-xl-none">
+                                <div class="container">
+                                    <ul class="menu__additional">
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Компаниям</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Франчайзинг</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Разговорный клуб</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Дистанционное обучение</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Онлайн тестирование</a>
+                                        </li>
+                                    </ul>
+                                    <button class="menu__registration-course btn btn--red">записаться на курсы</button>
+                                    <div class="menu__footer">
+                                        <ul class="menu__contacts">
+                                            <li class="menu__contact"><a class="menu__tel" href="tel:+484953800520">8 495 380-05-20</a><span class="menu__desc d-block">Для Москвы, 09:00—18:00</span>
+                                            </li>
+                                            <li class="menu__contact"><a class="menu__tel" href="tel:+488005554477">8 800 555-44-77</a><span class="menu__desc d-block">Бесплатно по России</span>
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn--light-blue">заказать обратный звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="about.html">О компании</a>
+                    </li>
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="albums.html">Фотогалерея</a>
+                    </li>
+                    <li class="breadcrumb__item">Лондон-Париж, весна 2013</li>
+                </ul>
+            </div>
+            <section class="album">
+                <div class="container">
+                    <h1 class="album__title h2">Лондон-Париж, весна 2013</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4 js-photo">
+                            <figure class="album__item">
+                                <!-- href - this big photo-->
+                                <a class="js-show-big-photo" href="static/img/content/album-1.jpg">
+                                    <img src="static/img/content/album-1.jpg" alt="Лондон. 18 — 25 марта 2017 года">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-xl-4 js-photo">
+                            <figure class="album__item">
+                                <!-- href - this big photo-->
+                                <a class="js-show-big-photo" href="static/img/content/album-2.jpg">
+                                    <img src="static/img/content/album-2.jpg" alt="Турция, лето 2010">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-xl-4 js-photo">
+                            <figure class="album__item">
+                                <!-- href - this big photo-->
+                                <a class="js-show-big-photo" href="static/img/content/album-3.jpg">
+                                    <img src="static/img/content/album-3.jpg" alt="Лондон, весна 2011">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-xl-4 js-photo">
+                            <figure class="album__item">
+                                <!-- href - this big photo-->
+                                <a class="js-show-big-photo" href="static/img/content/album-4.jpg">
+                                    <img src="static/img/content/album-4.jpg" alt="Открытие школы в Жуковском, 2012">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-xl-4 js-photo">
+                            <figure class="album__item">
+                                <!-- href - this big photo-->
+                                <a class="js-show-big-photo" href="static/img/content/album-5.jpg">
+                                    <img src="static/img/content/album-5.jpg" alt="Лондон-Париж, весна 2013">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-xl-4 js-photo">
+                            <figure class="album__item">
+                                <!-- href - this big photo-->
+                                <a class="js-show-big-photo" href="static/img/content/album-6.jpg">
+                                    <img src="static/img/content/album-6.jpg" alt="Канарские острова, лето 2013">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-xl-4 js-photo">
+                            <figure class="album__item">
+                                <!-- href - this big photo-->
+                                <a class="js-show-big-photo" href="static/img/content/album-7.jpg">
+                                    <img src="static/img/content/album-7.jpg" alt="Мальта, лето 2013">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-xl-4 js-photo">
+                            <figure class="album__item">
+                                <!-- href - this big photo-->
+                                <a class="js-show-big-photo" href="static/img/content/album-8.jpg">
+                                    <img src="static/img/content/album-8.jpg" alt="Масленица в Подольске, зима 2015">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-xl-4 js-photo">
+                            <figure class="album__item">
+                                <!-- href - this big photo-->
+                                <a class="js-show-big-photo" href="static/img/content/album-9.jpg">
+                                    <img src="static/img/content/album-9.jpg" alt="Новый год 2017">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    <footer class="album__footer d-flex justify-content-center"><a class="album__show-more btn btn--grey js-show-all" href="#">показать еще</a>
+                    </footer>
+                </div>
+            </section>
+            <section class="subscribe section">
+                <div class="container">
+                    <form class="subscribe__inner form" id="subscribe">
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <div class="subscribe__img">
+                                    <img src="static/img/general/letter.png" alt="Подпишитесь на нашу новостную рассылку">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="subscribe__body">
+                                    <h3 class="subscribe__title"><span>Подпишитесь</span>на нашу новостную рассылку</h3>
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <label class="hidden" for="subscribe-email">Ваше имя и фамилия</label>
+                                            <input class="subscribe__field form__field" type="email" placeholder="Ваша электронная почта" name="email" required id="subscribe-email">
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <button class="subscribe__btn btn btn--red">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-md-7 col-xl-9">
+                                <div class="footer__inner-langs"><span class="footer__label-couses d-none d-xl-block">Курсы:</span>
+                                    <ul class="footer__lang-list">
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Английский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Немецкий</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Французский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Итальянский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Испанский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Китайский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Японский</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <button class="footer__btn btn btn--red" type="button">записаться на курсы</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__body">
+                        <div class="row justify-content-xl-start">
+                            <div class="col-7 d-none d-xl-block">
+                                <div class="row align-items-md-center align-items-xl-start">
+                                    <div class="col-3">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">О компании</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">база знаний</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Карта сайта</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Расписание</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Наши школы</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">цены</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">Иностранные языки детям</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">начинающим</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Подросткам</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Взрослым</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Корпоративное обучение</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Английский разговорный клуб</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">международные экзамены</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Франшиза</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">онлайн тестирование</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">YES MY LIFE</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="row justify-content-center justify-content-md-between justify-content-xl-start">
+                                    <div class="col-md-auto col-xl-6">
+                                        <div class="footer__contact"><a class="footer__tel" href="tel:+784953800520">8 495 380-05-20</a><span class="footer__sub-title">Для Москвы, 09:00—18:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-xl-6">
+                                        <div class="footer__contact"><a class="footer__tel" href="tel:+788005554477">8 800 555-44-77</a><span class="footer__sub-title">Бесплатно по России</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-xl-auto ml-xl-auto">
+                                        <button class="footer__btn btn btn--grey" type="button">заказать обратный звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-md-auto order-md-2">
+                                <ul class="social footer__social">
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="11" height="20" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#odnoklassniki"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="21" height="12" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="18" height="12" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#youtube"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="10" height="20" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#fb"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="18" height="18" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#insta"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md col-xl-9 order-md-1">
+                                <p class="footer__copy">&copy; 2001—2018 Центр иностранных языков Yes. «Yes» является зарегистрированным товарным знаком.<span>При использовании любых материалов сайта, включая фотографии и тексты, активная ссылка на&nbsp;<a href="#">&nbsp;www.yescenter.ru&nbsp;</a>обязательна.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="big-photo">
+                <div class="modal" tabindex="-1" role="dialog" aria-labelledby="big-photo" aria-hidden="true" id="big-photo">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button class="big-photo__close btn-close text-hide" type="button" data-dismiss="modal" aria-label="Close">
+                                <svg class="icon" width="10" height="10" aria-hidden="true">
+                                    <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                                </svg>Закрыть
+                            </button>
+                            <div class="big-photo__inner">
+                                <button class="big-photo__arrow slide-arrow slide-arrow--prev text-hide js-big-photo-prev-btn" type="button">
+                                    <svg class="icon" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                                    </svg>Предадущий слайд
+                                </button>
+                                <button class="big-photo__arrow slide-arrow slide-arrow--next text-hide js-big-photo-next-btn" type="button">
+                                    <svg class="icon" width="12" height="11" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                                    </svg>Следующий слайд
+                                </button>
+                                <ul class="big-photo__slider js-big-photo"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+        <script src="static/js/mainw6jng.js"></script>
+    </body>
+
+</html>

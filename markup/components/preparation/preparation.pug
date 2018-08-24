@@ -1,0 +1,15 @@
+mixin preparation(data)
+  .preparation
+    .container
+      h2.preparation__title.h2 #{data.title}
+      p.preparation__subtitle.subtitle #{data.subtitle}
+      .preparation__duration
+        each itemStrong in data.duration
+          strong !{itemStrong}
+      .row
+        each item in data.list
+          .col-md-6.col-xl-4.preparation__item
+            .preparation__inner
+              .preparation__icon
+                img(src="%=static=%img/general/" + item.src width=item.width height=item.height alt=item.alt)
+              p.preparation__text !{item.text}

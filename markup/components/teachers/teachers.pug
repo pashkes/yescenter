@@ -4,7 +4,7 @@ mixin teachers(data, subtitle, title)
     .container
       h2.teachers__title.h2 #{title}
       if subtitle
-        p.teachers__subtitle.subtitle Приходите к нам учиться, и мы станем друзьями! Изучение нового языка в школе YES — это новые знакомства с интересными людьми, общение на актуальные темы и неформальная дружеская обстановка. Это поможет Вам получать и передавать новые знания и другую полезную информацию, выдавать новые идеи и творить.
+        p.teachers__subtitle.subtitle #{data.subtitlePrimary}
     .teachers__wrapper
       button(type="button").teachers__arrow.slide-arrow.slide-arrow--prev.text-hide.js-techers-prev-btn
         +icon('arrow-left', 12, 11)
@@ -14,7 +14,7 @@ mixin teachers(data, subtitle, title)
         | Следующий слайд
       .container
         ul.teachers__slider.js-techers-slider
-          each item in data
+          each item in data.list
             li
               +teacher(item).teachers__slide
       .teachers__footer

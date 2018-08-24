@@ -1,0 +1,18 @@
+mixin big-photo(data)
+  include ../icon/icon
+  .big-photo
+    div(tabindex="-1" role="dialog" aria-labelledby="big-photo" aria-hidden="true").modal#big-photo
+      div(role="document").modal-dialog
+        .modal-content
+          button(type="button" data-dismiss="modal" aria-label="Close").big-photo__close.btn-close.text-hide
+            +icon('close', 10, 10)
+            | Закрыть
+          .big-photo__inner
+            button(type="button").big-photo__arrow.slide-arrow.slide-arrow--prev.text-hide.js-big-photo-prev-btn
+              +icon('arrow-left', 12, 11)
+              | Предадущий слайд
+            button(type="button").big-photo__arrow.slide-arrow.slide-arrow--next.text-hide.js-big-photo-next-btn
+              +icon('arrow-right', 12, 11)
+              | Следующий слайд
+            ul.big-photo__slider.js-big-photo
+

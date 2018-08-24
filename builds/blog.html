@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/mainw6jng.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="#{data.title}">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="500">
+        <meta property="og:image:height" content="300">
+        <meta property="twitter:description" content="">
+        <link rel="image_src" href="">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function (H) {
+              H.className = H.className.replace(/\bno-js\b/, 'js')
+            })(document.documentElement)
+        </script>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <form><span class="header__you-city">Ваш город:</span>
+                                    <select class="header__select-city js-select-location">
+                                        <option>Москва</option>
+                                        <option>Санкт-Перебург</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="col-auto d-xl-flex align-items-center">
+                                <ul class="header__additional-menu d-none d-xl-flex">
+                                    <li class="header__item-menu"><a class="header__link" href="#">Компаниям</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Франчайзинг</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Разговорный клуб</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Дистанционное обучение</a>
+                                    </li>
+                                    <li class="header__item-menu"><a class="header__link" href="#">Онлайн тестирование</a>
+                                    </li>
+                                </ul>
+                                <form>
+                                    <label class="hidden" for="search">Поиск</label>
+                                    <input class="header__search" type="search" required id="search">
+                                    <button class="header__search-btn js-show-search text-hide">
+                                        <svg class="icon" width="16" height="16" aria-hidden="true">
+                                            <use xlink:href="static/img/svg-symbols.svg#search"></use>
+                                        </svg>Поиск
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center no-gutters">
+                            <div class="col-auto">
+                                <div class="header__logo-wrapper">
+                                    <a class="header__logo" href="index.html">
+                                        <img src="static/img/general/logo.svg" width="42" height="42" alt="Иностранные языки в Москве">
+                                    </a>
+                                    <h1 class="header__site-desc">Иностранные языки<br>в Москве</h1>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header__user-bar">
+                                    <div class="header__item header__item--contact d-none d-md-block"><span class="header__title-delivery d-block">Бесплатно по России</span><a class="header__tel" href="tel:+488005554477">8 800 555-44-77</a>
+                                    </div>
+                                    <div class="header__item d-none d-xl-block">
+                                        <button class="header__order-call btn btn--grey">заказать звонок</button>
+                                    </div>
+                                    <div class="header__item d-none d-md-block">
+                                        <button class="header__registered-course btn btn--red">записаться на курсы</button>
+                                    </div>
+                                    <div class="header__item d-xl-none">
+                                        <button class="header__toggle-menu js-show-main-menu text-hide" type="button">Показать меню</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="menu">
+                        <div class="menu__inner">
+                            <div class="container">
+                                <button class="menu__close btn-close text-hide d-none js-menu-close d-md-block d-xl-none" type="button">
+                                    <svg class="icon" width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                                    </svg>Закрыть
+                                </button>
+                                <ul class="menu__main">
+                                    <li class="menu__main-item active"><a class="menu__main-link" href="#">Иностранные языки</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="programs.html">Программы</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="eng.html">Расписание</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Цены</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Акции</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Школы</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="about.html">О компании</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Информация</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu__body d-xl-none">
+                                <div class="container">
+                                    <ul class="menu__additional">
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Компаниям</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Франчайзинг</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Разговорный клуб</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Дистанционное обучение</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Онлайн тестирование</a>
+                                        </li>
+                                    </ul>
+                                    <button class="menu__registration-course btn btn--red">записаться на курсы</button>
+                                    <div class="menu__footer">
+                                        <ul class="menu__contacts">
+                                            <li class="menu__contact"><a class="menu__tel" href="tel:+484953800520">8 495 380-05-20</a><span class="menu__desc d-block">Для Москвы, 09:00—18:00</span>
+                                            </li>
+                                            <li class="menu__contact"><a class="menu__tel" href="tel:+488005554477">8 800 555-44-77</a><span class="menu__desc d-block">Бесплатно по России</span>
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn--light-blue">заказать обратный звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Блог</a>
+                    </li>
+                    <li class="breadcrumb__item">Статьи</li>
+                </ul>
+            </div>
+            <section class="page-blog">
+                <header class="page-blog__header">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <div class="col-xl">
+                                <h1 class="page-blog__title h2">Статьи</h1>
+                            </div>
+                            <div class="col-xl-auto">
+                                <div class="page-blog__nav nav"><a class="page-blog__tab" href="#">все публикации</a><a class="page-blog__tab" href="#">Новости школ</a><a class="page-blog__tab active" href="#">статьи</a><a class="page-blog__tab" href="#">Новости компании</a><a class="page-blog__tab"
+                                    href="#">путешествия</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <form class="page-blog__grey-sect" id="page-blog">
+                    <div class="container">
+                        <div class="page-blog__select-inner d-md-none">
+                            <label class="page-blog__text-review js-item-review" for="page-blog-sections"><span class="page-blog__name-review js-name-list-reviews">Все разделы</span><span class="page-blog__amount-review js-amount-list-reviews">169</span>
+                            </label>
+                            <select class="page-blog__select d-md-none js-reviews-list" id="page-blog-sections">
+                                <option value="169">Все разделы</option>
+                                <option value="25">Изучающим языки</option>
+                                <option value="2">Истории студентов</option>
+                                <option value="7">Истории преподавателей</option>
+                                <option value="69">проекты</option>
+                                <option value="9">Преподавателям</option>
+                                <option value="12">полезное</option>
+                            </select>
+                        </div>
+                        <label class="hidden" for="page-blog-years">Сортировка по годам</label>
+                        <select class="form__select d-md-none" id="page-blog-years">
+                            <option>за все время</option>
+                            <option>2017</option>
+                            <option>2016</option>
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>
+                            <option>2012</option>
+                            <option>2011</option>
+                        </select>
+                        <ul class="page-blog__filters page-blog__filters--sections d-none d-md-flex flex-md-wrap">
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-section" value="169" checked="checked"><span class="page-blog__name-filter">Все разделы</span><span class="page-blog__amount">169</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-section" value="25"><span class="page-blog__name-filter">Изучающим языки</span><span class="page-blog__amount">25</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-section" value="2"><span class="page-blog__name-filter">Истории студентов</span><span class="page-blog__amount">2</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-section" value="7"><span class="page-blog__name-filter">Истории преподавателей</span><span class="page-blog__amount">7</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-section" value="69"><span class="page-blog__name-filter">проекты</span><span class="page-blog__amount">69</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-section" value="9"><span class="page-blog__name-filter">Преподавателям</span><span class="page-blog__amount">9</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-section" value="12"><span class="page-blog__name-filter">полезное</span><span class="page-blog__amount">12</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="page-blog__filters d-none d-md-flex flex-md-wrap">
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-years" checked="checked"><span class="page-blog__name-filter">за все время</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-years"><span class="page-blog__name-filter">2017</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-years"><span class="page-blog__name-filter">2016</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-years"><span class="page-blog__name-filter">2015</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-years"><span class="page-blog__name-filter">2014</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-years"><span class="page-blog__name-filter">2013</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-years"><span class="page-blog__name-filter">2012</span>
+                                </label>
+                            </li>
+                            <li class="page-blog__filter">
+                                <label class="page-blog__item-list">
+                                    <input type="radio" name="page-blog-years"><span class="page-blog__name-filter">2011</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                <div class="container">
+                    <div class="page-blog__articles">
+                        <div class="row">
+                            <div class="col-12 page-blog__col page-blog__col--wide">
+                                <article class="page-blog__article">
+                                    <div class="page-blog__photo">
+                                        <img src="static/img/content/news-img-1.jpg" alt="Следуй плану, достигай цель!">
+                                    </div>
+                                    <div class="page-blog__article-inner">
+                                        <h3 class="page-blog__name h3"><a href="#">Следуй плану, достигай цель!</a></h3>
+                                        <cite class="page-blog__author">Автор: Афанаскина Екатерина Владимировна</cite>
+                                        <p class="page-blog__preview">Хотелось бы выучить язык международного общения, но все как-то не складывается — командировки, загруженность на работе, маленький ребенок. Хотя, чаще всего, это только отговорки. На мой взгляд, если у человека есть
+                                            четкое понимание, зачем ему нужен английский язык, то он найдет возможность им заняться, и не придется придумывать оправдания своей чрезмерной занятости. Просто надо шаг ...</p><a class="page-blog__read-more"
+                                        href="#">читать статью</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-xl-4 page-blog__col">
+                                <article class="page-blog__article">
+                                    <h3 class="page-blog__name"><a href="#">Иностранный 
+язык для делового общения</a></h3>
+                                    <cite class="page-blog__author">Автор: Пищулина Галина Петровна</cite>
+                                    <p class="page-blog__preview">В наши дни для делового общения на иностранном языке требуется достаточно большой набор навыков, включающих как умение общаться устно, в том числе по телефону, в рамках тематики...</p><a class="page-blog__read-more"
+                                    href="#">читать статью</a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-xl-4 page-blog__col">
+                                <article class="page-blog__article">
+                                    <h3 class="page-blog__name"><a href="#">Предметно-языковая интеграция: прошлое и настоящее</a></h3>
+                                    <cite class="page-blog__author">Автор: Сиротова Анна</cite>
+                                    <p class="page-blog__preview">В своей статье я бы хотела рассказать об одном направлении в современной лингводидактике, которое сейчас является объектом моего изучения.</p><a class="page-blog__read-more" href="#">читать статью</a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-xl-4 page-blog__col">
+                                <article class="page-blog__article">
+                                    <h3 class="page-blog__name"><a href="#">Что выбрать: кальцонне или чуросса?</a></h3>
+                                    <cite class="page-blog__author">Автор: Афанаскина Екатерина Владимировна</cite>
+                                    <p class="page-blog__preview">Для начала хорошо бы определиться, какую страну вы хотите посетить — Италию или Испанию? Какой язык вы хотите выучить — итальянский или испанский? Парадокс, но многие ...</p><a class="page-blog__read-more" href="#">читать статью</a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-xl-4 page-blog__col">
+                                <article class="page-blog__article">
+                                    <h3 class="page-blog__name"><a href="#">Предметно-языковая интеграция: прошлое 
+и настоящее</a></h3>
+                                    <cite class="page-blog__author">Автор: Сиротова Анна</cite>
+                                    <p class="page-blog__preview">В своей статье я бы хотела рассказать об одном направлении в современной лингводидактике, которое сейчас является объектом моего изучения.</p><a class="page-blog__read-more" href="#">читать статью</a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-xl-4 page-blog__col">
+                                <article class="page-blog__article">
+                                    <h3 class="page-blog__name"><a href="#">Предметно-языковая интеграция: прошлое 
+и настоящее</a></h3>
+                                    <cite class="page-blog__author">Автор: Сиротова Анна</cite>
+                                    <p class="page-blog__preview">В своей статье я бы хотела рассказать об одном направлении в современной лингводидактике, которое сейчас является объектом моего изучения.</p><a class="page-blog__read-more" href="#">читать статью</a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-xl-4 page-blog__col">
+                                <article class="page-blog__article">
+                                    <h3 class="page-blog__name"><a href="#">Предметно-языковая интеграция: прошлое 
+и настоящее</a></h3>
+                                    <cite class="page-blog__author">Автор: Сиротова Анна</cite>
+                                    <p class="page-blog__preview">В своей статье я бы хотела рассказать об одном направлении в современной лингводидактике, которое сейчас является объектом моего изучения.</p><a class="page-blog__read-more" href="#">читать статью</a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-xl-4 page-blog__col">
+                                <article class="page-blog__article">
+                                    <h3 class="page-blog__name"><a href="#">Что выбрать: кальцонне или чуросса?</a></h3>
+                                    <cite class="page-blog__author">Автор: Афанаскина Екатерина Владимировна</cite>
+                                    <p class="page-blog__preview">Для начала хорошо бы определиться, какую страну вы хотите посетить — Италию или Испанию? Какой язык вы хотите выучить — итальянский или испанский? Парадокс, но многие ...</p><a class="page-blog__read-more" href="#">читать статью</a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-xl-4 page-blog__col">
+                                <article class="page-blog__article">
+                                    <h3 class="page-blog__name"><a href="#">Предметно-языковая интеграция: прошлое 
+и настоящее</a></h3>
+                                    <cite class="page-blog__author">Автор: Сиротова Анна</cite>
+                                    <p class="page-blog__preview">В своей статье я бы хотела рассказать об одном направлении в современной лингводидактике, которое сейчас является объектом моего изучения.</p><a class="page-blog__read-more" href="#">читать статью</a>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-xl-4 page-blog__col">
+                                <article class="page-blog__article">
+                                    <h3 class="page-blog__name"><a href="#">Предметно-языковая интеграция: прошлое 
+и настоящее</a></h3>
+                                    <cite class="page-blog__author">Автор: Сиротова Анна</cite>
+                                    <p class="page-blog__preview">В своей статье я бы хотела рассказать об одном направлении в современной лингводидактике, которое сейчас является объектом моего изучения.</p><a class="page-blog__read-more" href="#">читать статью</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-blog__footer"><a class="page-blog__show-more btn btn--grey" href="#">показать еще</a>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe section">
+                <div class="container">
+                    <form class="subscribe__inner form" id="subscribe">
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <div class="subscribe__img">
+                                    <img src="static/img/general/letter.png" alt="Подпишитесь на нашу новостную рассылку">
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="subscribe__body">
+                                    <h3 class="subscribe__title"><span>Подпишитесь</span>на нашу новостную рассылку</h3>
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <label class="hidden" for="subscribe-email">Ваше имя и фамилия</label>
+                                            <input class="subscribe__field form__field" type="email" placeholder="Ваша электронная почта" name="email" required id="subscribe-email">
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <button class="subscribe__btn btn btn--red">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-md-7 col-xl-9">
+                                <div class="footer__inner-langs"><span class="footer__label-couses d-none d-xl-block">Курсы:</span>
+                                    <ul class="footer__lang-list">
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Английский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Немецкий</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Французский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Итальянский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Испанский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Китайский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Японский</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <button class="footer__btn btn btn--red" type="button">записаться на курсы</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__body">
+                        <div class="row justify-content-xl-start">
+                            <div class="col-7 d-none d-xl-block">
+                                <div class="row align-items-md-center align-items-xl-start">
+                                    <div class="col-3">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">О компании</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">база знаний</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Карта сайта</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Расписание</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Наши школы</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">цены</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">Иностранные языки детям</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">начинающим</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Подросткам</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Взрослым</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Корпоративное обучение</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Английский разговорный клуб</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">международные экзамены</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Франшиза</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">онлайн тестирование</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">YES MY LIFE</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="row justify-content-center justify-content-md-between justify-content-xl-start">
+                                    <div class="col-md-auto col-xl-6">
+                                        <div class="footer__contact"><a class="footer__tel" href="tel:+784953800520">8 495 380-05-20</a><span class="footer__sub-title">Для Москвы, 09:00—18:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-xl-6">
+                                        <div class="footer__contact"><a class="footer__tel" href="tel:+788005554477">8 800 555-44-77</a><span class="footer__sub-title">Бесплатно по России</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-xl-auto ml-xl-auto">
+                                        <button class="footer__btn btn btn--grey" type="button">заказать обратный звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-md-auto order-md-2">
+                                <ul class="social footer__social">
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="11" height="20" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#odnoklassniki"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="21" height="12" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="18" height="12" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#youtube"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="10" height="20" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#fb"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon" width="18" height="18" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#insta"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md col-xl-9 order-md-1">
+                                <p class="footer__copy">&copy; 2001—2018 Центр иностранных языков Yes. «Yes» является зарегистрированным товарным знаком.<span>При использовании любых материалов сайта, включая фотографии и тексты, активная ссылка на&nbsp;<a href="#">&nbsp;www.yescenter.ru&nbsp;</a>обязательна.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+        <script src="static/js/mainw6jng.js"></script>
+    </body>
+
+</html>
