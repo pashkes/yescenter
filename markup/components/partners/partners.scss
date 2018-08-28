@@ -82,9 +82,11 @@
     justify-content: center;
     width: 128px;
     height: 128px;
+    padding: 16px;
     border: solid 1px #e1e1e1;
     background-color: #fff;
     @include media-breakpoint-up(md) {
+      padding: 0;
       width: 162px;
       height: 162px;
     }

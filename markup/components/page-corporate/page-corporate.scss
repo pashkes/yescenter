@@ -7,16 +7,22 @@
     padding-bottom: 50px;
   }
   &--fr {
-    .page-corporate__not-found {
+    @include media-breakpoint-up(xl) {
+      padding-top: 97px;
+    }
+     .page-corporate__not-found {
       border: solid 1px #e1e1e1;
       @include media-breakpoint-up(xl) {
         min-height: 104px;
-        padding-left: 344px;
+        padding-left: 341px;
+        background-position: 31px -36px;
+        background-size: 265px auto;
       }
       .lang-card__desc,
       .lang-card__name{
         color: $text-color;
       }
+
       &--short {
         .lang-card__desc,
         .lang-card__name{
@@ -63,15 +69,28 @@
   }
   &__not-found {
     overflow: hidden;
+
     @include media-breakpoint-up(md) {
+      padding-top: 27px;
       min-height: 170px;
       margin-bottom: 40px;
-      padding-left: 295px;
-      background-position: -10px -10px;
+      padding-left: 294px;
+      background-position: -8px -7px;
+      background-size: 268px auto;
     }
     @include media-breakpoint-up(xl) {
       color: #fff;
       min-height: 222px;
+    }
+    &.lang-card--bg .lang-card__name {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 1px;
+      }
+    }
+    &.lang-card--bg .lang-card__desc {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 20px;
+      }
     }
     .lang-card__desc {
       @include media-breakpoint-up(xl) {
@@ -102,7 +121,7 @@
     @include media-breakpoint-up(xl) {
       max-width: 100%;
       &:hover {
-        border-color: #fff;
+        border-color: #B82730;
         color: #fff;
       }
     }

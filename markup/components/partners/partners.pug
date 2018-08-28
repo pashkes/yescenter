@@ -13,5 +13,5 @@ mixin partners(data)
           ul(class="partners__slider "+data.classSlider)
             each item in data.list
               li
-                a(href="#").partners__slide
+                .partners__slide
                   img(src="%=static=%img/content/"+item.imgSrc alt=+item.name)

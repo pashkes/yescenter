@@ -25,6 +25,11 @@
   }
   &__section-item {
     margin-bottom: 24px;
+    &:first-of-type {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 41px;
+      }
+    }
     &:last-of-type {
       margin-bottom: 18px;
       @include media-breakpoint-up(md) {

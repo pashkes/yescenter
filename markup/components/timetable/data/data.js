@@ -112,7 +112,7 @@ const data = {
         dayLessons: '2 раза в нед.',
         timeLessons: '2 ак.ч',
         peopleAmount: '6—8',
-        duration: '168 ак.ч / 43 недель',
+        duration: '168 ак.ч / 43 нед.',
         cost: '330—470 руб.'
       },
       {
@@ -136,7 +136,7 @@ const data = {
         dayLessons: '2 раза в нед.',
         timeLessons: '3 ак.ч',
         peopleAmount: '6—8',
-        duration: '144 ак.ч / 42 недель',
+        duration: '144 ак.ч / 42 нед.',
         cost: '330—470 руб.'
       },
       {

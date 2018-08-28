@@ -2047,30 +2047,6 @@ object-assign
 })();
 
 (function () {
-  $('.js-departure-slider').slick({
-    variableWidth: true,
-    centerPadding: '0',
-    slidesToShow: 1,
-    dots: true,
-    mobileFirst: true,
-    arrows: false,
-    prevArrow: '.js-departure-prev-btn',
-    nextArrow: '.js-departure-next-btn',
-    responsive: [
-      {
-        breakpoint: 1343,
-        settings: {
-          arrows: true,
-          dots: false,
-          slidesToShow: 2
-        }
-      }
-
-    ]
-  });
-})();
-
-(function () {
   $('.js-slider-education').slick({
     arrows: false,
     dots: true,
@@ -2093,6 +2069,30 @@ object-assign
   });
 })();
 
+
+(function () {
+  $('.js-departure-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          dots: false,
+          slidesToShow: 2
+        }
+      }
+
+    ]
+  });
+})();
 
 
 
@@ -2401,6 +2401,29 @@ $('.js-select-lang-order').SumoSelect({
 })();
 
 (function () {
+  $('.js-school-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          slidesToShow: 2
+        }
+      }
+
+    ]
+  });
+})();
+
+(function () {
   $('.js-select-defaul').each(function () {
     $(this).SumoSelect();
   });
@@ -2444,29 +2467,6 @@ $(window).on('load', function () {
 });
 
 
-
-(function () {
-  $('.js-school-slider').slick({
-    variableWidth: true,
-    centerPadding: '0',
-    slidesToShow: 1,
-    dots: true,
-    mobileFirst: true,
-    arrows: false,
-    prevArrow: '.js-departure-prev-btn',
-    nextArrow: '.js-departure-next-btn',
-    responsive: [
-      {
-        breakpoint: 1343,
-        settings: {
-          arrows: true,
-          slidesToShow: 2
-        }
-      }
-
-    ]
-  });
-})();
 
 
 
@@ -2542,6 +2542,7 @@ $(window).on('load', function () {
 
 
 
+
 (function () {
   $('.js-promo-slider').slick({
     arrows: false,
@@ -2567,7 +2568,6 @@ $(window).on('load', function () {
     }]
   });
 })();
-
 
 (function () {
   var sliderReviews = $('.js-reviews-slider').slick({
@@ -2621,6 +2621,13 @@ $(window).on('load', function () {
 
 
 (function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
+  });
+})();
+
+(function () {
   $('.js-techers-slider').slick({
     dots: true,
     arrows: false,
@@ -2660,13 +2667,6 @@ $(window).on('load', function () {
 })();
 
 (function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
-  });
-})();
-
-(function () {
   $('.js-teachers-video').slick({
     dots: true,
     arrows: false,
@@ -2701,7 +2701,7 @@ $(window).on('load', function () {
     infinite: false,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 4
         }

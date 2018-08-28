@@ -154,7 +154,7 @@
   &__name {
     display: block;
     margin-bottom: 10px;
-    font-family: 'Open Sans', Intro, sans-serif;
+    font-family: Intro, sans-serif;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.4px;
@@ -221,11 +221,18 @@
   }
   &__contacts {
     margin-bottom: 23px;
+    align-items: flex-start;
     @include media-breakpoint-up(md) {
       margin-bottom: 26px;
     }
     @include media-breakpoint-up(xl) {
       margin-bottom: 0;
+    }
+    .icon {
+      margin-top: 2px;
+      @include media-breakpoint-up(md) {
+        margin-top: 5px;
+      }
     }
   }
   &__panel {

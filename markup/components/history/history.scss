@@ -24,6 +24,11 @@
         margin-bottom: 33px;
       }
     }
+    .history__desc {
+      @include media-breakpoint-up(xl) {
+        line-height: 22px;
+      }
+    }
     .history__item {
       margin-bottom: 32px;
     }

@@ -20,4 +20,30 @@
       margin-left: 0;
     }
   }
+  .timetable__table-d th:nth-last-child(2) {
+    text-align: left;
+  }
+  .timetable__table-d tbody td:nth-last-child(3) {
+    text-align: left;
+  }
+  .timetable__table-d .timetable__th {
+    &:nth-child(1) {
+      width: 135px;
+    }
+    &:nth-child(2) {
+      width: 192px;
+    }
+    &:nth-child(3) {
+      width: 162px;
+    }
+
+    &:nth-child(4) {
+      width: 168px;
+    }
+    &:nth-child(5) {
+      width: 226px;
+    }
+    &:nth-child(6) {
+    }
+  }
 }

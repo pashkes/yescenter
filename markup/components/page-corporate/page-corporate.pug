@@ -40,11 +40,11 @@ mixin page-corporate(data, notFoundLang, hasTextColumn)
               span.courses__name-lang Японский
         .foreign-course__list
           .page-corporate__not-found.lang-card.lang-card--bg
-            .row.align-items-xl-center
+            .row.align-items-xl-center.flex-grow-1
               .col-xl
                 h3.lang-card__name Не нашли нужный язык?
                 p.lang-card__desc Просто укажите желаемый язык и мы вам поможем.
-              .col-xl-auto
+              .col-xl-auto.mt-auto.mt-md-0
                 a(href="#").page-corporate__btn.lang-card__more.btn.btn--red Отправить заявку
         if hasTextColumn
           .page-corporate__text.page-corporate__text--not-found
