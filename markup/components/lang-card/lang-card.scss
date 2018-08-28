@@ -5,9 +5,10 @@
   min-height: 255px;
   padding: 24px 24px 32px;
   background-color: #ffffff;
+  width: 100%;
   transition: $transition-base;
   @include media-breakpoint-up(md) {
-    width: 263px;
+    //width: 263px;
     min-height: 316px;
   }
   @include media-breakpoint-up(xl) {
@@ -27,6 +28,9 @@
     border: solid 1px #e1e1e1;
     min-height: 257px;
     background: #fff url(%=static=%general/planet.png) -60px 120px no-repeat;
+    &:hover {
+      box-shadow: none  ;
+    }
     @include media-breakpoint-up(md) {
       min-height: 100%;
       width: 100%;
@@ -68,7 +72,6 @@
   }
   &__top {
     display: flex;
-    flex-wrap: wrap;
     @include media-breakpoint-up(md) {
       flex-direction: column;
     }

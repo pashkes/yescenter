@@ -52,6 +52,9 @@
       position: relative;
       bottom: 7px;
     }
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px #F0F2F3 inset;
+    }
   }
 
   &__img {

@@ -3,7 +3,7 @@ mixin features(data)
     .container
       if data.title
         h2.features__title.h2 #{data.title}
-      .row.justify-content-xl-between
+      div(class="row "+data.gutters)
         each item in data.list
           div(class=item.classListColumn)
             .features__item

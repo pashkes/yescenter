@@ -47,9 +47,9 @@ mixin courses(data, trailLessons)
         div(role="tabpanel").courses__panel.active.show#en
           .row.js-slider-course
             each item in data.items
-              .col-auto.col-xl-3
+              .col-auto.col-xl-3.d-flex.align-content-stretch
                 if(item.equalGroup)
-                  +lang-card(item, 'подробнее')(data-mh="my-group").courses__item
+                  +lang-card(item, 'подробнее').courses__item
                 else
                   +lang-card(item, 'подробнее').courses__item
     .container

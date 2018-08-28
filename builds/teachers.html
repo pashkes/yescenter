@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainw6jng.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainxskvgr.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -122,11 +122,11 @@
                                     </li>
                                     <li class="menu__main-item"><a class="menu__main-link" href="#">Акции</a>
                                     </li>
-                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Школы</a>
-                                    </li>
                                     <li class="menu__main-item"><a class="menu__main-link" href="about.html">О компании</a>
                                     </li>
                                     <li class="menu__main-item"><a class="menu__main-link" href="#">Информация</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Школы</a>
                                     </li>
                                 </ul>
                             </div>
@@ -181,22 +181,22 @@
                 <section class="forms-education section section--grey sectio--white page-teachers__found">
                     <div class="container">
                         <h2 class="forms-education__title h2"></h2>
-                        <div class="row js-form-education-slider">
-                            <div class="col-xl-4">
+                        <div class="forms-education__row js-form-education-slider">
+                            <div class="forms-education__col">
                                 <article class="forms-education__item">
                                     <h3 class="forms-education__subject">Кого мы ищем</h3>
                                     <p class="forms-education__text">Краткое текстовое описание, каким требованиям должен соответствовать преподаватель, чтобы быть принятым на работу в школу иностранных языков YES. Какие профессиональные и личностные качества у него должны быть, какой
                                         опыт преподавания.</p>
                                 </article>
                             </div>
-                            <div class="col-xl-4">
+                            <div class="forms-education__col">
                                 <article class="forms-education__item">
                                     <h3 class="forms-education__subject">Проверка профессионального уровня</h3>
                                     <p class="forms-education__text">Краткое текстовое описание, каким образом проверяется профессиональный уровень преподавателя при приеме на работу в школу иностранных языков YES. Текстовое описание, каким образом проверяется профессиональный уровень
                                         преподавателя при приеме на работу в школу иностранных языков.</p>
                                 </article>
                             </div>
-                            <div class="col-xl-4">
+                            <div class="forms-education__col">
                                 <article class="forms-education__item">
                                     <h3 class="forms-education__subject">Постоянное повышение квалификации</h3>
                                     <p class="forms-education__text">Краткое текстовое описание, каким образом повышается профессиональный уровень преподавателей в школе иностранных языков YES. Какие мероприятия проводятся, работают ли методисты, делятся ли опытные коллеги опытом, проводятся
@@ -268,18 +268,20 @@
                                     <h2 class="teachers-list__title h2">Давайте знакомиться</h2>
                                 </div>
                                 <div class="col-xl-auto">
-                                    <form class="teachers-list__select-inner" id="teachers-list">
+                                    <form class="teachers-list__select-inner form" id="teachers-list">
                                         <label class="teachers-list__label" for="teachers-list-select-school">Выберете школу</label>
-                                        <select class="teachers-list__select form__select" id="teachers-list-select-school">
-                                            <option>Раменское</option>
-                                            <option>Кузьминки</option>
-                                        </select>
+                                        <div class="form__select-custom teachers-list__select">
+                                            <select class="page-schedule__select js-select-defaul" id="teachers-list-select-school">
+                                                <option>Раменское</option>
+                                                <option>Кузьминки</option>
+                                            </select>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
                         </header>
-                        <div class="row justify-content-center teachers-list__list js-list-teachers justify-content-md-start">
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                        <div class="teachers-list__row teachers-list__list js-list-teachers">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -291,7 +293,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -303,7 +305,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -315,7 +317,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -327,7 +329,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -339,7 +341,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -351,7 +353,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -363,7 +365,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -375,7 +377,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -387,7 +389,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -399,7 +401,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto col-md-4 col-xl-3 teachers-list__num">
+                            <div class="teachers-list__col">
                                 <div class="teacher teachers-list__item">
                                     <div class="teacher__inner">
                                         <a class="teacher__img" href="teacher.html">
@@ -427,36 +429,35 @@
                     </section>
                 </section>
             </div>
-            <div class="education courses section page-teachers__educ">
+            <section class="interestring-education courses">
                 <div class="container">
-                    <h2 class="h2 courses__title">Меня интересует обучение</h2>
+                    <h2 class="interestring-education__title h2">Меня интересует обучение</h2>
                 </div>
-                <div class="courses__content">
+                <div class="courses__content courses__content--slider">
                     <div class="container">
-                        <div class="courses__panel active show" role="tabpanel" id="en">
-                            <div class="row js-slider-education">
-                                <div class="col-auto">
-                                    <div class="lang-card education__item">
-                                        <h3 class="lang-card__name"><a href="#">Для детей <br> (3-10 лет)</a></h3>
-                                        <p class="lang-card__desc">Занятия 2 раза в неделю
-                                            <br>От 380 руб. / академ. час</p><a class="lang-card__more btn btn--border-red" href="#">записаться</a>
+                        <div class="courses__panel active show">
+                            <div class="row js-slider-course">
+                                <div class="col-auto col-xl-3">
+                                    <div class="lang-card lang-card--border courses__item">
+                                        <h3 class="lang-card__name"><a href="#">Для детей</br>(3-10 лет)</a></h3>
+                                        <p class="lang-card__desc">Занятия 2 раза в неделю</br>От 380 руб. / академ. час</p><a class="lang-card__more btn btn--border-red" href="#">записаться</a>
                                     </div>
                                 </div>
-                                <div class="col-auto">
-                                    <div class="lang-card education__item">
+                                <div class="col-auto col-xl-3">
+                                    <div class="lang-card lang-card--border courses__item">
                                         <h3 class="lang-card__name"><a href="#">Для взрослых</a></h3>
-                                        <p class="lang-card__desc">Занятия 1—2 раза в неделю От 380 руб. / академ. час Нужен текст</p><a class="lang-card__more btn btn--border-red" href="#">записаться</a>
+                                        <p class="lang-card__desc">Занятия 1—2 раза в неделю</br>От 380 руб. / академ. час Нужен текст</p><a class="lang-card__more btn btn--border-red" href="#">записаться</a>
                                     </div>
                                 </div>
-                                <div class="col-auto">
-                                    <div class="lang-card education__item">
+                                <div class="col-auto col-xl-3">
+                                    <div class="lang-card lang-card--border courses__item">
                                         <h3 class="lang-card__name"><a href="#">Для подростков</a></h3>
-                                        <p class="lang-card__desc">Занятия 2 раза в неделю От 380 руб. / академ. час Нужен текст</p><a class="lang-card__more btn btn--border-red" href="#">записаться</a>
+                                        <p class="lang-card__desc">Занятия 2 раза в неделю</br>От 380 руб. / академ. час.Нужен текст</p><a class="lang-card__more btn btn--border-red" href="#">записаться</a>
                                     </div>
                                 </div>
-                                <div class="col-auto">
-                                    <div class="lang-card education__item">
-                                        <h3 class="lang-card__name"><a href="#">Корпоративный <br> английский</a></h3>
+                                <div class="col-auto col-xl-3">
+                                    <div class="lang-card lang-card--border courses__item">
+                                        <h3 class="lang-card__name"><a href="#">Корпоративный английский</a></h3>
                                         <p class="lang-card__desc">Все виды обучения — индивидуальное, групповое и дистанционное.</p><a class="lang-card__more btn btn--border-red" href="#">записаться</a>
                                     </div>
                                 </div>
@@ -464,7 +465,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="container">
+                    <div class="courses__dots"></div>
+                </div>
+            </section>
             <section class="subscribe section">
                 <div class="container">
                     <form class="subscribe__inner form" id="subscribe">
@@ -642,7 +646,7 @@
         <script>
             svg4everybody();
         </script>
-        <script src="static/js/mainw6jng.js"></script>
+        <script src="static/js/mainxskvgr.js"></script>
     </body>
 
 </html>

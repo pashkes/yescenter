@@ -1,5 +1,6 @@
 .video-data {
   padding-bottom: 21px;
+  overflow: hidden;
   @include media-breakpoint-up(md) {
     padding-bottom: 38px;
   }

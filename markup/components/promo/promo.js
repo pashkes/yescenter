@@ -18,8 +18,7 @@
       breakpoint: 1343,
       settings: {
         variableWidth: true,
-        arrows: true,
-        dots: false
+        arrows: true
       }
     }]
   });

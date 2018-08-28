@@ -1,7 +1,7 @@
 .review {
   display: flex;
   flex-direction: column;
-  min-height: 354px;
+  min-height: 341px;
   background-color: #ffffff;
   border: solid 1px #ebebeb;
   transition: $transition-base;
@@ -9,8 +9,17 @@
     min-height: 336px;
   }
   &--full {
+    @include media-breakpoint-up(xl) {
+      width: 552px;
+    }
+    .review__read-more {
+      @include media-breakpoint-up(md) {
+        margin-top: 28px;
+      }
+    }
     .review__top {
       margin-bottom: 22px;
+      align-items: center;
     }
     .review__school {
       line-height: 18px;
@@ -20,7 +29,7 @@
         margin-bottom: 0;
       }
       @include media-breakpoint-up(xl) {
-        max-height: 91px;
+        max-height: 94px;
       }
     }
   }
@@ -113,7 +122,7 @@
         max-height: 108px;
       }
       @include media-breakpoint-up(xl) {
-        max-height: 143px;
+        max-height: 144px;
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 0.3px;
@@ -159,6 +168,9 @@
     @include media-breakpoint-up(md) {
       text-align: right;
     }
+    @include media-breakpoint-up(xl) {
+      margin-left: 4px;
+    }
   }
   &__tags {
     display: flex;
@@ -167,9 +179,13 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
   }
   &__link-tag {
-    font-family: 'Open Sans', Intro, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.1px;

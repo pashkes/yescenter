@@ -22,7 +22,8 @@
         variableWidth: true,
         adaptiveHeight: false
       }
-    }]
+    }
+    ]
   };
   // включение слайдера на мобильном
   function slickMobile(slider, settings) {

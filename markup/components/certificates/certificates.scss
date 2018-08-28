@@ -1,0 +1,45 @@
+.certificates {
+  padding-top: 32px;
+  padding-bottom: 4px;
+  @include media-breakpoint-up(md) {
+    padding-top: 46px;
+    padding-bottom: 45px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+  &__item {
+    margin-bottom: 24px;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      margin-bottom: 0;
+    }
+    img {
+
+    }
+  }
+  &__img {
+    display: block;
+    margin-bottom: 24px;
+    flex: none;
+    @include media-breakpoint-up(xl) {
+      margin-right: 24px;
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    margin-bottom: 0;
+    text-align: left;
+    @include media-breakpoint-up(xl) {
+      margin-top: -5px;
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 0.3px;
+    }
+  }
+}

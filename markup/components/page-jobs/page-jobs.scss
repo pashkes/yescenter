@@ -50,6 +50,9 @@
 
   }
   &__teachers {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: -13px;
+    }
     .teachers__subtitle {
       @include media-breakpoint-up(md) {
         margin-bottom: 38px;
@@ -117,7 +120,7 @@
     display: block;
     width: 100%;
     border: none;
-    padding: 16px 48px 17px 0;
+    padding: 16px 10px 17px 0;
     border-bottom: 1px solid #ebebeb;
     background-color: transparent;
     text-align: left;
@@ -180,6 +183,11 @@
   &__content {
     padding-bottom: 32px;
     border-bottom: 1px solid #ebebeb;
+    &:last-of-type {
+      &.show {
+        border-bottom-color: transparent;
+      }
+    }
     @include media-breakpoint-up(md) {
       padding-bottom: 40px;
     }

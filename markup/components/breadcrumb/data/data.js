@@ -305,6 +305,32 @@ const data = {
       {
         name: 'Лондон-Париж, весна 2013',
       }
+    ],
+    certificates: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'О компании',
+        link: 'about.html'
+      },
+      {
+        name: 'Сертификаты',
+      }
+    ],
+    faq: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Информация  ',
+        link: '#'
+      },
+      {
+        name: 'Ваши вопросы',
+      }
     ]
   }
 };

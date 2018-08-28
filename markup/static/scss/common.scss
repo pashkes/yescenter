@@ -17,11 +17,14 @@ a {
     color: $primary-red;
   }
 }
-
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+  -webkit-text-fill-color: $text-color !important;
+}
 p {
   margin-top: 0;
   font: 14px/22px 'Open Sans', sans-serif;
-  color: #191919;
+  color: #252525;
 }
 
 

@@ -12,6 +12,7 @@ html(class="no-js", lang="ru")
   include ../components/map/map
   include ../components/subscribe/subscribe
   include ../components/partners/partners
+  include ../components/reviews/reviews
 
   head
     +head(head.defaults)
@@ -28,7 +29,7 @@ html(class="no-js", lang="ru")
       +additional(additionalText.pageProgram, 'Почему выбирают обучение в YES?')
       +departure(departure)
       +history(pageProgramsStatistics).history--no-line.history--bdt-line
-      +partners(partners.mainPage)
+      +reviews(reviews, 'отзывы наших учеников')
       +map()
       +subscribe()
       +footer()
@@ -36,4 +37,5 @@ html(class="no-js", lang="ru")
     script svg4everybody();
 
     //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
     script(src='%=static=%js/main%=hash=%.js')

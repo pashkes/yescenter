@@ -8,14 +8,15 @@ mixin teachers-list(data)
           .col-xl
             h2.teachers-list__title.h2 Давайте знакомиться
           .col-xl-auto
-            form.teachers-list__select-inner#teachers-list
+            form.teachers-list__select-inner.form#teachers-list
               label(for="teachers-list-select-school").teachers-list__label Выберете школу
-              select.teachers-list__select.form__select#teachers-list-select-school
-                option Раменское
-                option Кузьминки
-      .row.justify-content-center.teachers-list__list.js-list-teachers.justify-content-md-start
+              .form__select-custom.teachers-list__select
+                select(id="teachers-list-select-school").page-schedule__select.js-select-defaul
+                  option Раменское
+                  option Кузьминки
+      .teachers-list__row.teachers-list__list.js-list-teachers
         each item in data
-          .col-auto.col-md-4.col-xl-3.teachers-list__num
+          .teachers-list__col
             +teacher(item).teachers-list__item
       .teachers-list__footer
         button(type="button").teachers-list__show-more.btn.btn--grey.js-show-all-teachers.d-md-none показать еще

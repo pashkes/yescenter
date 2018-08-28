@@ -2,6 +2,33 @@
   @include media-breakpoint-up(xl) {
     padding-top: 87px;
   }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -32px;
+    margin-right: -32px;
+    @include media-breakpoint-up(xl) {
+      margin-right: -56px;
+      margin-left: -56px;
+    }
+  }
+  &__col {
+    width: 100%;
+    margin-right: 32px;
+    margin-left: 32px;
+    &:last-child, &:nth-child(4n) {
+      @include media-breakpoint-up(xl) {
+        width: 240px;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      width: 192px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-right: 56px;
+      margin-left: 56px;
+    }
+  }
   &__header {
     @include media-breakpoint-up(xl) {
       margin-bottom: 50px;
@@ -13,6 +40,22 @@
       margin-bottom: 27px;
     }
     @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+  .teacher__name cite {
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+    }
+  }
+  .teacher__name {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 8px;
+    }
+  }
+  .form .SumoSelect {
+    margin-bottom: 0;
+    @include media-breakpoint-up(md) {
       margin-bottom: 0;
     }
   }
@@ -45,6 +88,9 @@
   }
   &__select {
     @include media-breakpoint-up(md) {
+      width: 236px;
+    }
+    @include media-breakpoint-up(xl) {
       width: 255px;
     }
   }
@@ -56,18 +102,9 @@
   &__item {
     margin-bottom: 22px;
     text-align: center;
-    .teacher__inner {
-      max-width: 192px;
-      @include media-breakpoint-up(xl) {
-        max-width: 196px;
-      }
-    }
     @include media-breakpoint-up(md) {
       margin-bottom: 48px;
       text-align: left;
-    }
-    @include media-breakpoint-up(xl) {
-      margin-bottom: 54px;
     }
     .teacher__img {
       width: 192px;
@@ -91,7 +128,7 @@
   }
   &__list {
     @include media-breakpoint-up(xl) {
-      margin-bottom: 35px;
+      margin-bottom: 41px;
     }
     .teachers-list__num:nth-child(n+5) {
       display: none;
@@ -102,20 +139,6 @@
     &.active {
       .teachers-list__num:nth-child(n+5) {
         display: block;
-      }
-    }
-  }
-  &__num {
-    @include media-breakpoint-up(xl) {
-      &:nth-child(4n+2) .teachers-list__item, &:nth-child(4n+3) .teachers-list__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      &:nth-child(4n+4) .teachers-list__item {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
       }
     }
   }

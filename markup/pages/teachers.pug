@@ -6,7 +6,7 @@ html(class="no-js", lang="ru")
   include ../components/footer/footer.pug
   include ../components/subscribe/subscribe
   include ../components/breadcrumb/breadcrumb
-  include ../components/education/education
+  include ../components/interestring-education/interestring-education
   include ../components/page-teachers/page-teachers
   head
     +head(head.defaults)
@@ -16,7 +16,7 @@ html(class="no-js", lang="ru")
       .container
         +breadcrumb(breadcrumb.teachers)
       +page-teachers()
-      +education(education).page-teachers__educ
+      +interestring-education(interestingEducation)
       +subscribe()
       +footer()
 

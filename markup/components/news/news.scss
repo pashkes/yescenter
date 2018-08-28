@@ -3,7 +3,10 @@
     padding-bottom: 0;
   }
   @include media-breakpoint-up(md) {
-    padding-bottom: 36px;
+    padding-bottom: 12px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 0;
   }
   > .container {
     padding: 0;
@@ -69,7 +72,7 @@
       margin-bottom: 34px;
     }
     @include media-breakpoint-up(xl) {
-      margin-bottom: 65px;
+      margin-bottom: 34px;
     }
     li {
       &:first-child .news__item {
@@ -158,7 +161,7 @@
       padding-top: 35px;
     }
     @include media-breakpoint-up(xl) {
-      padding-top: 65px;
+      padding-top: 35px;
     }
   }
   .border-left-xl {

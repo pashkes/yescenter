@@ -2,12 +2,13 @@ const data = {
   features: {
     mainPage: {
       title: 'Наши преимущества',
+      gutters: '',
       list: [
         {
           imgSrc: 'light.svg',
           width: '30',
           height: '44',
-          desc: 'Уникальная авторская методика без зубрежки',
+          desc: 'Уникальная<br>авторская методика<br>без зубрежки',
           classIconClassName: 'features__img--light',
           classListColumn: 'col-md-6 col-xl'
         },
@@ -15,7 +16,7 @@ const data = {
           imgSrc: 'book.svg',
           width: '44',
           height: '43',
-          desc: 'Индивидуальный план по достижению ваших целий',
+          desc: 'Индивидуальный<br>план по достижению<br>ваших целий',
           classIconClassName: 'features__img--book',
           classListColumn: 'col-md-6 col-xl'
         },
@@ -23,7 +24,7 @@ const data = {
           imgSrc: 'cup.svg',
           width: '32',
           height: '42',
-          desc: 'Наши студенты успешно сдают международные экзамены',
+          desc: 'Наши студенты успешно<br>сдают международные<br>экзамены',
           classIconClassName: 'features__img--cup',
           classListColumn: 'col-md-6 col-xl'
         },
@@ -31,7 +32,7 @@ const data = {
           imgSrc: 'education.svg',
           width: '45',
           height: '42',
-          desc: 'Собственный учебно - методогический центр для преподавателей',
+          desc: 'Собственный учебно -<br>методогический<br>центр для<br>преподавателей',
           classIconClassName: 'features__img--education',
           classListColumn: 'col-md-6 col-xl'
         },
@@ -39,13 +40,14 @@ const data = {
           imgSrc: 'children.svg',
           width: '35',
           height: '46',
-          desc: 'Собственный учебно - методогический центр для преподавателей',
+          desc: 'Обучение детей —<br>наше приоритетное<br>направление',
           classIconClassName: 'features__img--children',
           classListColumn: 'col-md-6 col-xl'
         }
       ]
     },
     engPage: {
+      gutters: 'no-gutters',
       list: [
         {
           imgSrc: 'light.svg',
@@ -82,6 +84,7 @@ const data = {
       ]
     },
     forKidsPage: {
+      gutters: '',
       list: [
         {
           imgSrc: 'light.svg',
@@ -126,6 +129,7 @@ const data = {
       ]
     },
     playschoolPage: {
+      gutters: '',
       list: [
         {
           imgSrc: 'light.svg',

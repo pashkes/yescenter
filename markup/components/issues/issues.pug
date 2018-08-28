@@ -1,0 +1,61 @@
+mixin issues(data)
+  section.issues
+    .container
+      header.issues__header
+        .row.align-items-md-center
+          .col-md
+            h1.issues__title.h2.mb-md-0 Ваши вопросы
+          .col-md-auto
+            button(type="button").issues__btn.btn.btn--red задать вопрос
+      ul.issues__list
+        each item in data
+          li.issues__item
+            .issues__info
+              .row.no-gutters.align-items-md-baseline
+                .col-md-auto
+                  cite.issues__author #{item.author}
+                .col-md
+                  span.issues__date #{item.date}
+
+            p.issues__question #{item.question}
+            button(type="button").issues__read-more.text-red.js-toggle-answer читать ответ
+            p.issues__answer.js-issue-answer #{item.answer}
+      footer.issues__footer.d-flex.justify-content-center
+        a(href="#").issues__show-more.btn.btn--grey.text-defaul показать еще
+  section.ask-question.section.section--grey
+    .container
+      h2.ask-question__title.h2 задать вопрос
+      form.ask-question__form.form#ask-question
+        .ask-question__row-field
+          .ask-question__col-field
+            label(for="reg-for-course-full-name").hidden Ваше имя и фамилия
+            input(type="text" id="reg-for-course-full-name" placeholder="Ваше имя и фамилия *" required).ask-question__field.form__field
+          .ask-question__col-field
+            label(for="reg-for-course-email").hidden Электронная почта
+            input(type="email" id="reg-for-course-email" placeholder="Электронная почта").ask-question__field.form__field
+          .ask-question__col-field.ask-question__col-field--w100-md
+            label(for="order-lesson-language").hidden Выбрать филиал
+            select.js-select-lang-order#order-lesson-language
+              option(selected disabled) Выбрать филиал
+              option Английский
+              option Французкий
+              option Японский
+              option Китайский
+          .ask-question__col-field.w-100
+            label(for="reg-for-course-aim").hidden Напишите свой вопрос
+            input(type="text" id="reg-for-course-aim" placeholder="Напишите свой вопрос").ask-question__field.form__field
+        .ask-question__footer
+          .row.align-items-md-center.justify-content-xl-between
+            .col-md.col-xl-5
+              p.ask-question__polityca.d-xl-none Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
+                a(href="#") политикой конфиденциальности YES EDUCATION GROUP
+              label.ask-question__agree.form__checkbox.d-none.d-xl-flex
+                input(type="checkbox" required checked)
+                span
+                  +icon('check', 16, 16)
+                span С&#160;
+                  a(href="#") правилами&#160;
+                  | обработки и защиты персональных данных согласен.
+            .col-md-auto
+              button.ask-question__submit.btn.btn--red Отправить вопрос
+

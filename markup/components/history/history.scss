@@ -172,6 +172,7 @@
     margin-bottom: 0;
     line-height: 20px;
     letter-spacing: 0.3px;
+    font-family: Intro, sans-serif;
     @include media-breakpoint-up(md) {
       font-size: 16px;
       line-height: 22px;

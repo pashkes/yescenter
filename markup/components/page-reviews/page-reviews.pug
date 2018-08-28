@@ -30,9 +30,9 @@ mixin page-reviews(data)
     .page-reviews__body
       .container
         div(role="tabpanel").page-reviews__panel.active.show#reviews
-          .row
+          .row.justify-content-xl-between
             each comment in data.commentsList
-              .col-md-6
+              .col-md-6.col-xl-auto.d-flex.align-content-stretch
                 +review(comment).review--full.page-reviews__review
           .page-reviews__bottom
             a(href="#").page-reviews__show-more.btn.btn--grey показать еще

@@ -1974,6 +1974,8 @@ object-assign
 
 
 
+
+
 (function () {
   $('.js-certifications-slider').slick({
     arrows: false,
@@ -2024,7 +2026,8 @@ object-assign
         variableWidth: true,
         adaptiveHeight: false
       }
-    }]
+    }
+    ]
   };
   // включение слайдера на мобильном
   function slickMobile(slider, settings) {
@@ -2129,6 +2132,19 @@ object-assign
 
 
 
+
+
+(function () {
+  $('.js-toggle-answer').on('click', function () {
+    console.log($(this).next());
+    $(this).next().slideToggle();
+    if ($(this).text() === 'читать ответ') {
+      $(this).text('Скрыть ответ');
+    } else {
+      $(this).text('читать ответ');
+    }
+  });
+})();
 
 
 
@@ -2375,16 +2391,6 @@ $('.js-select-lang-order').SumoSelect({
 
 
 (function () {
-
-  $('.js-reviews-list').on('change', function () {
-    let amountReviews = $(this).find('option:selected').val();
-    let currentTextOption = $(this).find('option:selected').text();
-    $('.js-name-list-reviews').text(currentTextOption);
-    $('.js-amount-list-reviews').text(amountReviews);
-  });
-})();
-
-(function () {
   $('.js-select-defaul').each(function () {
     $(this).SumoSelect();
   });
@@ -2430,6 +2436,16 @@ $(window).on('load', function () {
 
 
 (function () {
+
+  $('.js-reviews-list').on('change', function () {
+    let amountReviews = $(this).find('option:selected').val();
+    let currentTextOption = $(this).find('option:selected').text();
+    $('.js-name-list-reviews').text(currentTextOption);
+    $('.js-amount-list-reviews').text(amountReviews);
+  });
+})();
+
+(function () {
   $('.js-school-slider').slick({
     variableWidth: true,
     centerPadding: '0',
@@ -2451,6 +2467,8 @@ $(window).on('load', function () {
     ]
   });
 })();
+
+
 
 
 
@@ -2525,36 +2543,6 @@ $(window).on('load', function () {
 
 
 (function () {
-  $('.js-promo-slider').slick({
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    centerPadding: '0',
-    appendDots: $('.promo__dots'),
-    prevArrow: $('.js-promo-prev-btn'),
-    nextArrow: $('.js-promo-next-btn'),
-
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        variableWidth: true
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        variableWidth: true,
-        arrows: true,
-        dots: false
-      }
-    }]
-  });
-})();
-
-
-
-
-(function () {
   var sliderReviews = $('.js-reviews-slider').slick({
     dots: true,
     arrows: false,
@@ -2574,18 +2562,46 @@ $(window).on('load', function () {
         arrows: true,
         slidesToShow: 3,
         prevArrow: $('.js-reviews-prev-btn'),
-        nextArrow: $('.js-reviews-prev-btn'),
+        nextArrow: $('.js-reviews-next-btn'),
         adaptiveHeight: true,
       }
-    }]
+    }
+      ]
   });
   $('.review__message p').readmore({
     moreLink: '<button type="button" class="review__read-more">читать отзыв</a>',
     lessLink: '<button type="button" class="review__read-more">Свернуть</a>',
-    collapsedHeight: 130
+
   });
-  $('.review__read-more').on('click', function () {
+  $('.review__message').on('click', function () {
     $('.js-reviews-slider').find('.slick-list').height('auto');
+  });
+})();
+
+
+(function () {
+  $('.js-promo-slider').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    centerPadding: '0',
+    appendDots: $('.promo__dots'),
+    prevArrow: $('.js-promo-prev-btn'),
+    nextArrow: $('.js-promo-next-btn'),
+
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        variableWidth: true,
+        arrows: true
+      }
+    }]
   });
 })();
 
@@ -2602,44 +2618,46 @@ $(window).on('load', function () {
 
 
 
+
+
 (function () {
   $('.js-techers-slider').slick({
     dots: true,
     arrows: false,
-    mobileFirst: true,
     variableWidth: true,
     adaptiveHeight: true,
+    mobileFirst: true,
+    slidesToShow: 2,
     appendDots: $('.teachers__dots'),
     responsive: [{
       breakpoint: 767,
       settings: {
         slidesToShow: 3,
         variableWidth: false,
-        adaptiveHeight: false
       }
     },
     {
       breakpoint: 991,
       settings: {
         slidesToShow: 4,
-        variableWidth: false
+        slidesToScroll: 4
       }
     },
     {
       breakpoint: 1343,
       settings: {
         slidesToShow: 4,
+        slidesToScroll: 1,
         arrows: true,
         dots: false,
         prevArrow: $('.js-techers-prev-btn'),
         nextArrow: $('.js-techers-next-btn'),
         variableWidth: true
       }
-    }]
+    }
+    ]
   });
 })();
-
-
 
 (function () {
   $('.js-show-all-teachers').on('click', function () {
@@ -2647,8 +2665,6 @@ $(window).on('load', function () {
     $(this).hide();
   });
 })();
-
-
 
 (function () {
   $('.js-teachers-video').slick({
@@ -2673,6 +2689,8 @@ $(window).on('load', function () {
     }]
   });
 })();
+
+
 
 (function () {
   $('.js-thanks-slider').slick({

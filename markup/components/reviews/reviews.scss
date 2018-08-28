@@ -34,6 +34,7 @@
   }
   &__slider {
     position: relative;
+    overflow: hidden;
     .container {
       @include media-breakpoint-up(md) {
         padding-right: 0;

@@ -32,7 +32,7 @@
     display: block;
     line-height: 26px;
     @include media-breakpoint-up(md) {
-      margin-bottom: 12px;
+      margin-bottom: 8px;
     }
     cite {
       font-style: normal;
@@ -49,5 +49,11 @@
     line-height: 20px;
     letter-spacing: 0.3px;
     color: rgba(0, 0, 0, 0.5);
+    @include media-breakpoint-up(md) {
+      line-height: 22px;
+    }
+    @include media-breakpoint-up(xl) {
+      line-height: 24px;
+    }
   }
 }

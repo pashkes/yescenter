@@ -52,5 +52,15 @@
     @include media-breakpoint-up(xl) {
       margin-bottom: 83px;
     }
+
+  }
+  .lang-card__lang-title span {
+    display: block;
+    @include media-breakpoint-up(md) {
+      display: inline;
+    }
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
   }
 }

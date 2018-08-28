@@ -1,5 +1,6 @@
 .page-reviews {
   padding-bottom: 0;
+  padding-top: 0;
   @include media-breakpoint-up(md) {
     padding-top: 0;
   }
@@ -43,12 +44,13 @@
   }
   &__nav {
     display: flex;
-    margin-bottom: 32px;
+    padding-bottom: 1px;
+    margin-bottom: 31px;
     padding-left: 24px;
     overflow-x: auto;
     flex-wrap: nowrap;
     border-top: solid 1px #e1e1e1;
-    border-bottom: solid 1px #e1e1e1;
+    box-shadow: inset 0 -1px 0 #e1e1e1;
     @include media-breakpoint-up(sm) {
       padding-left: 0;
       margin-left: 24px;
@@ -96,7 +98,7 @@
     &::before {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       right: 24px;
       left: 0;
       border-bottom: 3px solid transparent;

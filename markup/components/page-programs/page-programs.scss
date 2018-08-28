@@ -1,4 +1,7 @@
 .page-programs {
+  @include media-breakpoint-up(md) {
+    padding-bottom: 16px;
+  }
   @include media-breakpoint-up(xl) {
     padding-bottom: 48px;
   }

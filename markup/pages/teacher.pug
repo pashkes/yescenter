@@ -9,6 +9,7 @@ html(class="no-js", lang="ru")
     include ../components/education/education
     include ../components/page-teacher/page-teacher
     include ../components/trial-lesson/trial-lesson
+    include ../components/interestring-education/interestring-education
   head
     +head(head.defaults)
   body
@@ -18,7 +19,7 @@ html(class="no-js", lang="ru")
         +breadcrumb(breadcrumb.teacher)
       +page-teacher()
       +trial-lesson(true).page-teacher__trial-lesson.section
-      +education(education).page-teachers__educ
+      +interestring-education(interestingEducation)
       +subscribe()
       +footer()
 
