@@ -4,12 +4,11 @@ mixin review(data)
       header.review__top
         .review__photo
           img(src="%=static=%img/content/"+data.imgName width="80" height="80" alt=data.name)
-        .reviews__info
+        .review__info
           cite.review__name #{data.name}
           span.review__school #{data.school}
       .review__message
         p #{data.message}
-      //button(type="button").review__read-more читать отзыв
     if data.footer
       footer.review__bottom
         .row

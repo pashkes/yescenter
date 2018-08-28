@@ -84,13 +84,13 @@ const data = {
       ]
     },
     forKidsPage: {
-      gutters: '',
+      gutters: 'no-gutters',
       list: [
         {
           imgSrc: 'light.svg',
           width: '30',
           height: '44',
-          desc: 'Уникальная авторская методика без зубрежки',
+          desc: 'Уникальная<br>авторская методика<br>без зубрежки',
           classIconClassName: 'features__img--light',
           classListColumn: 'col-md-6 col-xl'
         },
@@ -98,7 +98,7 @@ const data = {
           imgSrc: 'thumb.svg',
           width: '40',
           height: '44',
-          desc: 'Использование игрового подхода',
+          desc: 'Использование<br>игрового подхода',
           classIconClassName: 'features__img--thumb',
           classListColumn: 'col-md-6 col-xl'
         },
@@ -106,7 +106,7 @@ const data = {
           imgSrc: 'parachute.svg',
           width: '46',
           height: '44',
-          desc: 'Вовлечение в процесс посредством визуализации',
+          desc: 'Вовлечение<br>в процесс посредством<br>визуализации',
           classIconClassName: 'features__img--parachute',
           classListColumn: 'col-md-6 col-xl'
         },
@@ -114,7 +114,7 @@ const data = {
           imgSrc: 'pencil.svg',
           width: '34',
           height: '45',
-          desc: 'Языковое погружение через различные методы',
+          desc: 'Языковое погружение<br>через различные<br>методы',
           classIconClassName: 'features__img--pencil',
           classListColumn: 'col-md-6 col-xl'
         },
@@ -122,7 +122,7 @@ const data = {
           imgSrc: 'children.svg',
           width: '35',
           height: '46',
-          desc: 'Обучение детей — наше приоритетное направление',
+          desc: 'Обучение детей —<br>наше приоритетное<br>направление',
           classIconClassName: 'features__img--children',
           classListColumn: 'col-md-6 col-xl'
         }

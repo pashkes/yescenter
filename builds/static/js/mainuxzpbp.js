@@ -1907,8 +1907,6 @@ object-assign
 
 
 
-
-
 (function () {
   let sliderStatus = 'no-initialize';
   let bigPhoto = $('.js-big-photo');
@@ -1971,6 +1969,8 @@ object-assign
     sliderStatus = 'no-initialize';
   });
 })();
+
+
 
 
 
@@ -2070,8 +2070,6 @@ object-assign
   });
 })();
 
-
-
 (function () {
   $('.js-slider-education').slick({
     arrows: false,
@@ -2094,6 +2092,8 @@ object-assign
     }]
   });
 })();
+
+
 
 
 (function () {
@@ -2660,6 +2660,13 @@ $(window).on('load', function () {
 })();
 
 (function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
+  });
+})();
+
+(function () {
   $('.js-teachers-video').slick({
     dots: true,
     arrows: false,
@@ -2684,13 +2691,6 @@ $(window).on('load', function () {
 })();
 
 
-
-(function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
-  });
-})();
 
 (function () {
   $('.js-thanks-slider').slick({

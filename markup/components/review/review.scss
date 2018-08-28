@@ -8,6 +8,12 @@
   @include media-breakpoint-up(md) {
     min-height: 336px;
   }
+  @include media-breakpoint-up(xl) {
+    min-height: 392px;
+  }
+  &:hover {
+    box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
+  }
   &--full {
     @include media-breakpoint-up(xl) {
       width: 552px;
@@ -21,6 +27,11 @@
       margin-bottom: 22px;
       align-items: center;
     }
+    .review__info {
+      @include media-breakpoint-up(md) {
+        padding-top: 0;
+      }
+    }
     .review__school {
       line-height: 18px;
     }
@@ -33,12 +44,8 @@
       }
     }
   }
-  @include media-breakpoint-up(xl) {
-    min-height: 392px;
-  }
-  &:hover {
-    box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
-  }
+
+
   &__body {
     display: flex;
     flex-direction: column;
@@ -46,11 +53,15 @@
     align-items: flex-start;
     flex-grow: 1;
     @include media-breakpoint-up(md) {
-      padding-right: 32px;
-      padding-left: 32px;
+      padding: 32px 32px 22px;
     }
     @include media-breakpoint-up(xl) {
-      padding: 50px 50px 42px 50px;
+      padding: 50px 50px 40px 50px;
+    }
+  }
+  &__info {
+    @include media-breakpoint-up(md) {
+      padding-top: 3px;
     }
   }
   &__top {
@@ -119,9 +130,10 @@
       transition: $transition-collapse;
       @include media-breakpoint-up(md) {
         margin-bottom: 23px;
-        max-height: 108px;
+        max-height: 132px;
       }
       @include media-breakpoint-up(xl) {
+        margin-bottom: 28px;
         max-height: 144px;
         font-size: 15px;
         line-height: 24px;

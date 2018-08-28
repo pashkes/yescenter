@@ -14163,6 +14163,12 @@ body.compensate-for-scrollbar {
   }
 }
 
+@media (min-width: 1344px) {
+  .kids-program-order__inner li {
+    font-size: 15px;
+  }
+}
+
 .kids-program-order__inner li b {
   font-weight: 600;
 }
@@ -19823,6 +19829,17 @@ body.show-menu .header__logo-wrapper {
 }
 
 @media (min-width: 1344px) {
+  .review {
+    min-height: 392px;
+  }
+}
+
+.review:hover {
+  -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1344px) {
   .review--full {
     width: 552px;
   }
@@ -19841,6 +19858,12 @@ body.show-menu .header__logo-wrapper {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .review--full .review__info {
+    padding-top: 0;
+  }
+}
+
 .review--full .review__school {
   line-height: 18px;
 }
@@ -19855,17 +19878,6 @@ body.show-menu .header__logo-wrapper {
   .review--full .review__message p {
     max-height: 94px;
   }
-}
-
-@media (min-width: 1344px) {
-  .review {
-    min-height: 392px;
-  }
-}
-
-.review:hover {
-  -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .review__body {
@@ -19887,14 +19899,19 @@ body.show-menu .header__logo-wrapper {
 
 @media (min-width: 768px) {
   .review__body {
-    padding-right: 32px;
-    padding-left: 32px;
+    padding: 32px 32px 22px;
   }
 }
 
 @media (min-width: 1344px) {
   .review__body {
-    padding: 50px 50px 42px 50px;
+    padding: 50px 50px 40px 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .review__info {
+    padding-top: 3px;
   }
 }
 
@@ -19998,12 +20015,13 @@ body.show-menu .header__logo-wrapper {
 @media (min-width: 768px) {
   .review__message p {
     margin-bottom: 23px;
-    max-height: 108px;
+    max-height: 132px;
   }
 }
 
 @media (min-width: 1344px) {
   .review__message p {
+    margin-bottom: 28px;
     max-height: 144px;
     font-size: 15px;
     line-height: 24px;
@@ -20209,7 +20227,7 @@ body.show-menu .header__logo-wrapper {
 
 @media (min-width: 768px) {
   .reviews__footer {
-    padding-top: 20px;
+    padding-top: 18px;
   }
 }
 
