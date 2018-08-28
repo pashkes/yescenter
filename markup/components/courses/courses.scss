@@ -33,6 +33,10 @@
     }
   }
   .slick-dots {
+    padding-top: 3px;
+    @include media-breakpoint-up(md) {
+      padding-top: 0;
+    }
     li{
       &:last-child button::before{
         width: 5px;
@@ -65,8 +69,10 @@
     }
   }
   &__item {
+    margin-bottom: 15px;
     @include media-breakpoint-up(md) {
       width: 263px !important;
+      margin-bottom: 0;
     }
     @include media-breakpoint-up(xl) {
       width: auto;

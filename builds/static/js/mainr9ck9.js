@@ -2132,8 +2132,6 @@ object-assign
 
 
 
-
-
 (function () {
   $('.js-toggle-answer').on('click', function () {
     console.log($(this).next());
@@ -2145,6 +2143,8 @@ object-assign
     }
   });
 })();
+
+
 
 
 
