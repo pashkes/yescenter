@@ -34,8 +34,10 @@
     }
   }
   &__footer {
-    display: flex;
-    align-items: center;
+    @include media-breakpoint-up(md) {
+      display: flex;
+      align-items: center;
+    }
   }
   &__text {
     margin-bottom: 0;

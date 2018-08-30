@@ -13,7 +13,7 @@ mixin albums(data)
         each album in data
           .col-md-6.col-xl-4
             figure.albums__item
-              a(href="#")
+              a(href="album.html")
                 img(src="%=static=%img/content/"+album.src alt=album.caption)
                 figcaption.albums__caption #{album.caption}
       footer.albums__footer.d-flex.justify-content-center

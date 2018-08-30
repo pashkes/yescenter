@@ -130,6 +130,14 @@
         margin-bottom: 40px;
       }
     }
+    .slick-dots {
+      margin-left: -24px;
+      margin-bottom: 24px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+        margin-left: -5px;
+      }
+    }
     .slick-slide img {
       max-height: 150px;
       @include media-breakpoint-up(md) {

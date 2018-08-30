@@ -2,6 +2,7 @@
   @include media-breakpoint-up(xl) {
     padding-bottom: 26px;
   }
+
   &__title {
     margin-bottom: 8px;
     @include media-breakpoint-up(md) {
@@ -31,7 +32,6 @@
   }
   .school-list__address {
     margin-bottom: 11px;
-    align-items: center;
     @include media-breakpoint-up(md) {
       margin-bottom: 9px;
       letter-spacing: 0;
@@ -131,6 +131,13 @@
     .page-school__btn {
       @include media-breakpoint-up(xl) {
         margin-top: 4px;
+      }
+    }
+  }
+  &--paveleckaya {
+    .school-list__email {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 8px;
       }
     }
   }

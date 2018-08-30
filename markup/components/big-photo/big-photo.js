@@ -40,8 +40,8 @@
               centerPadding: '120px',
               dots: false,
               arrows: true,
-              prevArrow: '.js-big-photo-prev-btn',
-              nextArrow: '.js-big-photo-next-btn',
+              prevArrow: $('.js-big-photo-prev-btn'),
+              nextArrow: $('.js-big-photo-next-btn'),
               variableWidth: true
             }
           }]

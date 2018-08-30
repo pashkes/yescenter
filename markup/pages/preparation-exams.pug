@@ -11,6 +11,7 @@ html(class="no-js", lang="ru")
   include ../components/departure/departure
   include ../components/icon/icon
   include ../components/preparation/preparation
+  include ../components/interestring-education/interestring-education
   head
     +head(head.defaults)
   body
@@ -72,7 +73,8 @@ html(class="no-js", lang="ru")
                 li Научатся быстрому поиску в тексте нужной информации.
                 li Подготовятся к аудированию, воспроизведению материала в устной форме.
           a(href="#").section-text__btn.btn.btn--red отправить заявку
-      +reviews(reviews, 'отзывы о нашем центре').pb-0
+      +reviews(reviews, 'отзывы о нашем центре')
+      +interestring-education(interestingEducation).interestring-education--padding-bottom.section--grey.mt-0
       +subscribe()
       +footer()
 

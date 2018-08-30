@@ -81,7 +81,6 @@
     align-items: center;
     justify-content: center;
     background-color: $secondary-red;
-    box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     @include media-breakpoint-up(md) {
       width: 128px;

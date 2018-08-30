@@ -56,6 +56,9 @@
       margin-bottom: 32px;
       margin-left: 32px;
       background-color: #fff;
+      box-shadow: inset 0 1px 0 #e1e1e1, inset 0 -1px 0 #e1e1e1;
+      overflow: auto;
+      border: none;
     }
     @include media-breakpoint-up(xl) {
       border-radius: 20px;
@@ -311,6 +314,12 @@
       }
     }
   }
+  &__panel {
+    display: none;
+    &.show.active {
+      display: block;
+    }
+  }
   &__article {
     display: flex;
     flex-direction: column;
@@ -320,6 +329,9 @@
     transition: $transition-base;
     &:hover {
       box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
+      .page-blog__name a{
+        color: #d52833;
+      }
     }
     @include media-breakpoint-up(md) {
       padding: 32px 32px 24px;
@@ -396,6 +408,7 @@
   }
   &__show-more {
     color: $text-color;
+    z-index: 2;
     @include media-breakpoint-up(md) {
       max-width: 214px;
     }

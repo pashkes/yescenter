@@ -1,6 +1,6 @@
 mixin page-school(data)
   include ../icon/icon
-  .page-school
+  .page-school&attributes(attributes)
     header.page-school__header
       .container
         .row
@@ -23,9 +23,9 @@ mixin page-school(data)
               +icon('phone', 10, 16)
               | +7&#160;495&#160;125-35-24, +7&#160;800&#160;100-32-76, +7&#160;495&#160;125-35-24
             p Отдел корпоративного обучения:&#160;+7&#160;495&#160;984-97-10
-            a(href="email:kuzminki@yescenter.ru").school-list__email.d-md-none
+            a(href="email:"+data.email).school-list__email.d-md-none
               +icon('mail', 16, 12)
-              | kuzminki@yescenter.ru
+              | #{data.email}
           .col-xl-auto
             button(type="button").page-school__btn.btn.btn--grey заказать звонок
     .page-school__map-wrapper

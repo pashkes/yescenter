@@ -109,6 +109,7 @@
     font-size: 15px;
     line-height: 22px;
     z-index: 1;
+    font-family: 'Open Sans', sans-serif;
     @include media-breakpoint-up(xl) {
       letter-spacing: 0.5px;
     }

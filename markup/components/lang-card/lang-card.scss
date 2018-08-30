@@ -18,6 +18,21 @@
   }
   &:hover {
     box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
+    .lang-card__lang-title a,
+    .lang-card__name a{
+      color: #d52833;
+    }
+  }
+  &--school {
+    min-height: 257px !important;
+    @include media-breakpoint-up(md) {
+      min-height: initial !important;
+    }
+    .lang-card__name span {
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+    }
   }
   &--border {
      border: solid 1px #ebebeb;

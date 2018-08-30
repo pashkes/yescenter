@@ -52,17 +52,16 @@
   &__img {
     display: inline-block !important;
     vertical-align: top;
-    max-height: 58vh;
-    object-fit: cover;
-    width: 100%;
+    height: 226px;
+
     @include media-breakpoint-up(md) {
       min-height: 545px;
       width: auto;
     }
     @include media-breakpoint-up(xl) {
-      width: 960px;
-      height: 672px;
-      max-height: 100%;
+      height: 75vh;
+      min-height: 500px;
+      max-height: 800px;
     }
   }
   .slick-list {
@@ -101,6 +100,7 @@
     height: 40px;
     border-radius: 50%;
     &:hover {
+      background-color: $primary-red;
       .icon {
         fill: #fff
       }
@@ -118,10 +118,21 @@
     }
   }
   .slick-dots {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 120px;
+    padding-bottom: 22px;
     @include media-breakpoint-up(md) {
-      padding-top: 40px;
+      padding-top: 180px;
+      padding-bottom: 32px;
+    }
+    li {
+      &:last-child button::before {
+        width: 5px;
+        height: 5px;
+      }
+      &:nth-last-child(2) button::before {
+        width: 7px;
+        height: 7px;
+      }
     }
   }
   &__inner {

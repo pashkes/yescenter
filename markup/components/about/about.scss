@@ -20,6 +20,11 @@
     .about__col {
       flex-direction: column;
       margin-bottom: 12px;
+      text-align: center;
+      @include media-breakpoint-up(md) {
+        text-align: left;
+        margin-right: 10px;
+      }
       @include media-breakpoint-up(xl) {
         margin-right: 0;
       }
@@ -27,6 +32,7 @@
     .about__photo {
       width: 176px;
       height: 176px;
+      margin-right: 0;
       @include media-breakpoint-up(md) {
         width: 192px;
         height: 192px;
