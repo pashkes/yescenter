@@ -1907,6 +1907,8 @@ object-assign
 
 
 
+
+
 (function () {
   let sliderStatus = 'no-initialize';
   let bigPhoto = $('.js-big-photo');
@@ -2122,13 +2124,13 @@ object-assign
   });
 })();
 
-
-
 (function () {
   $('.js-show-main-menu').on('click', function () {
     $('body').toggleClass('show-menu');
   });
 })();
+
+
 
 
 
@@ -2147,6 +2149,8 @@ object-assign
     }
   });
 })();
+
+
 
 
 
@@ -2331,15 +2335,11 @@ $('.js-select-lang-order').SumoSelect({
   captionFormat: '{0} Selected'
 });
 
-
-
 (function () {
   $('.js-menu-close').on('click', function () {
     $('body').removeClass('show-menu');
   });
 })();
-
-
 
 
 
@@ -2369,6 +2369,8 @@ $('.js-select-lang-order').SumoSelect({
     slickMobile(newsSlider, newsSliderSettigs);
   });
 })();
+
+
 
 
 
@@ -2694,6 +2696,8 @@ $(window).on('load', function () {
   });
 })();
 
+
+
 (function () {
   $('.js-thanks-slider').slick({
     arrows: false,
@@ -2721,8 +2725,6 @@ $(window).on('load', function () {
     ]
   });
 })();
-
-
 
 
 
