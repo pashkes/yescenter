@@ -52,8 +52,8 @@
     outline: none;
   }
   &:active {
-    background-color: darken(#b82730, 10%);
-    border-color: darken(#b82730, 10%);
+    background-color: #c6242e;
+    border-color: #c6242e;
   }
   &--red {
     border-color: $primary-red;
