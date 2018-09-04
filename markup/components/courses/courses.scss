@@ -37,16 +37,6 @@
     @include media-breakpoint-up(md) {
       padding-top: 0;
     }
-    li {
-      &:last-child button::before {
-        width: 5px;
-        height: 5px;
-      }
-      &:nth-last-child(2) button::before {
-        width: 7px;
-        height: 7px;
-      }
-    }
   }
   &__content {
     &--slider {
