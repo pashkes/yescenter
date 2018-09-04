@@ -22,7 +22,6 @@
     }
     .slick-dots {
       padding-top: 30px;
-      width: 100%;
     }
     .forms-education__title {
       @include media-breakpoint-up(md) {
@@ -99,5 +98,8 @@
       line-height: 24px;
       letter-spacing: 0.3px;
     }
+  }
+  .slick-dots {
+    width: 100%;
   }
 }
