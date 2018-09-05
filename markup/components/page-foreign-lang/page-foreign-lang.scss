@@ -20,6 +20,19 @@
       margin-bottom: 48px;
     }
   }
+  .lang-card__desc {
+    letter-spacing: 0.3px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 15px;
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+  .lang-card--bg .lang-card__name {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 3px;
+    }
+  }
   &__item {
     &.lang-card {
       min-height: 160px;
