@@ -99,6 +99,14 @@
       margin-bottom: 22px;
     }
   }
+  .teacher__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-up(md) {
+      align-items: flex-start;
+    }
+  }
   &__item {
     margin-bottom: 22px;
     text-align: center;

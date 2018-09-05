@@ -1907,8 +1907,6 @@ object-assign
 
 
 
-
-
 (function () {
   let sliderStatus = 'no-initialize';
   let bigPhoto = $('.js-big-photo');
@@ -1971,6 +1969,8 @@ object-assign
     sliderStatus = 'no-initialize';
   });
 })();
+
+
 
 
 
@@ -2072,6 +2072,8 @@ object-assign
   });
 })();
 
+
+
 (function () {
   $('.js-slider-education').slick({
     arrows: false,
@@ -2094,8 +2096,6 @@ object-assign
     }]
   });
 })();
-
-
 
 
 (function () {
@@ -2124,13 +2124,13 @@ object-assign
   });
 })();
 
+
+
 (function () {
   $('.js-show-main-menu').on('click', function () {
     $('body').toggleClass('show-menu');
   });
 })();
-
-
 
 
 
@@ -2341,8 +2341,6 @@ $('.js-select-lang-order').SumoSelect({
   });
 })();
 
-
-
 (function () {
   var TABLET_SIZE = 767;
   var newsSlider = $('.js-news-slide');
@@ -2394,6 +2392,8 @@ $('.js-select-lang-order').SumoSelect({
 
 
 
+
+
 (function () {
 
   $('.js-reviews-list').on('change', function () {
@@ -2403,6 +2403,57 @@ $('.js-select-lang-order').SumoSelect({
     $('.js-amount-list-reviews').text(amountReviews);
   });
 })();
+
+(function () {
+  $('.js-select-defaul').each(function () {
+    $(this).SumoSelect({    nativeOnDevice: ['Android', 'BlackBerry', 'iPhone', 'iPad', 'iPod', 'Opera Mini', 'IEMobile', 'Silk'],
+    });
+  });
+})();
+$(window).on('load', function () {
+  if ($('.js-select-custom-scroll .options').length) {
+    new SimpleBar($('.js-select-custom-scroll .options')[0], {
+      autoHide: false,
+      scrollbarMinSize: 5,
+          nativeOnDevice: ['Android', 'BlackBerry', 'iPhone', 'iPad', 'iPod', 'Opera Mini', 'IEMobile', 'Silk'],
+    });
+    if ($('.js-select-custom-scroll .options').length > 4) {
+      new SimpleBar($('.js-select-custom-scroll .options')[1], {
+        autoHide: false,
+        scrollbarMinSize: 5,
+            nativeOnDevice: ['Android', 'BlackBerry', 'iPhone', 'iPad', 'iPod', 'Opera Mini', 'IEMobile', 'Silk'],
+      });
+      new SimpleBar($('.js-select-custom-scroll .options')[2], {
+        autoHide: false,
+        scrollbarMinSize: 5,
+            nativeOnDevice: ['Android', 'BlackBerry', 'iPhone', 'iPad', 'iPod', 'Opera Mini', 'IEMobile', 'Silk'],
+      });
+      new SimpleBar($('.js-select-custom-scroll .options')[3], {
+        autoHide: false,
+        scrollbarMinSize: 5,
+            nativeOnDevice: ['Android', 'BlackBerry', 'iPhone', 'iPad', 'iPod', 'Opera Mini', 'IEMobile', 'Silk'],
+      });
+      new SimpleBar($('.js-select-custom-scroll .options')[4], {
+        autoHide: false,
+        scrollbarMinSize: 5,
+            nativeOnDevice: ['Android', 'BlackBerry', 'iPhone', 'iPad', 'iPod', 'Opera Mini', 'IEMobile', 'Silk'],
+      });
+    }
+
+  }
+  var toggleTextButton = function () {
+    $('.js-show-filter').on('click', function () {
+      var text = $(this).find('span').text();
+      $(this).find('span').text(function () {
+        return text === 'показать еще фильтры' ? 'Скрыть фильтры' : 'показать еще фильтры';
+      });
+      $('.js-filter').slideToggle('fast');
+    });
+  };
+  toggleTextButton();
+});
+
+
 
 (function () {
   $('.js-school-slider').slick({
@@ -2426,49 +2477,6 @@ $('.js-select-lang-order').SumoSelect({
     ]
   });
 })();
-
-(function () {
-  $('.js-select-defaul').each(function () {
-    $(this).SumoSelect();
-  });
-})();
-$(window).on('load', function () {
-  if ($('.js-select-custom-scroll .options').length) {
-    new SimpleBar($('.js-select-custom-scroll .options')[0], {
-      autoHide: false,
-      scrollbarMinSize: 5
-    });
-    if ($('.js-select-custom-scroll .options').length > 4) {
-      new SimpleBar($('.js-select-custom-scroll .options')[1], {
-        autoHide: false,
-        scrollbarMinSize: 5
-      });
-      new SimpleBar($('.js-select-custom-scroll .options')[2], {
-        autoHide: false,
-        scrollbarMinSize: 5
-      });
-      new SimpleBar($('.js-select-custom-scroll .options')[3], {
-        autoHide: false,
-        scrollbarMinSize: 5
-      });
-      new SimpleBar($('.js-select-custom-scroll .options')[4], {
-        autoHide: false,
-        scrollbarMinSize: 5
-      });
-    }
-
-  }
-  var toggleTextButton = function () {
-    $('.js-show-filter').on('click', function () {
-      var text = $(this).find('span').text();
-      $(this).find('span').text(function () {
-        return text === 'показать еще фильтры' ? 'Скрыть фильтры' : 'показать еще фильтры';
-      });
-      $('.js-filter').slideToggle('fast');
-    });
-  };
-  toggleTextButton();
-});
 
 
 
@@ -2544,8 +2552,6 @@ $(window).on('load', function () {
 
 
 
-
-
 (function () {
   $('.js-promo-slider').slick({
     arrows: false,
@@ -2572,12 +2578,6 @@ $(window).on('load', function () {
   });
 })();
 
-
-(function () {
-  $('.js-close-map-popup').on('click', function () {
-    $(this).parent('.js-map-popup').remove();
-  });
-})();
 
 (function () {
   var sliderReviews = $('.js-reviews-slider').slick({
@@ -2615,6 +2615,12 @@ $(window).on('load', function () {
   });
 })();
 
+
+(function () {
+  $('.js-close-map-popup').on('click', function () {
+    $(this).parent('.js-map-popup').remove();
+  });
+})();
 
 
 
