@@ -12478,7 +12478,6 @@ body.compensate-for-scrollbar {
 @media (min-width: 768px) {
   .education .education__item {
     min-height: 272px;
-    width: 263px;
     padding: 29px 30px 32px;
   }
 }

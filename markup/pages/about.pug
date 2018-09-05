@@ -12,7 +12,7 @@ html(class="no-js", lang="ru")
   include ../components/history/history
   include ../components/additional/additional
   include ../components/departure/departure
-  include ../components/education/education
+  include ../components/interestring-education/interestring-education
   head
     +head(head.defaults)
   body
@@ -26,7 +26,7 @@ html(class="no-js", lang="ru")
       +additional(additionalText.pageAbout)
       +departure(departure)
       +teachers(teachers, true, 'Наши преподаватели').teachers--bb-none
-      +education(education, true).section--grey
+      +interestring-education(interestingEducation).interestring-education--padding-bottom.section--grey
       +subscribe()
       +footer()
       script(src='%=static=%js/separate-js/svg4everybody.min.js')
