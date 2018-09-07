@@ -2049,30 +2049,6 @@ object-assign
 })();
 
 (function () {
-  $('.js-slider-education').slick({
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    adaptiveHeight: true,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        variableWidth: true,
-        adaptiveHeight: false
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        variableWidth: false,
-        slidesToShow: 4
-      }
-    }]
-  });
-})();
-
-
-(function () {
   $('.js-departure-slider').slick({
     variableWidth: true,
     centerPadding: '0',
@@ -2095,6 +2071,30 @@ object-assign
     ]
   });
 })();
+
+(function () {
+  $('.js-slider-education').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    adaptiveHeight: true,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        variableWidth: true,
+        adaptiveHeight: false
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        variableWidth: false,
+        slidesToShow: 4
+      }
+    }]
+  });
+})();
+
 
 
 
