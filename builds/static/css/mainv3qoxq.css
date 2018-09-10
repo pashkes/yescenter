@@ -11414,6 +11414,94 @@ body.compensate-for-scrollbar {
   opacity: .9;
 }
 
+.breadcrumb {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 20px 0 20px;
+}
+
+@media (min-width: 768px) {
+  .breadcrumb {
+    margin-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .breadcrumb {
+    margin-bottom: 21px;
+    padding-top: 26px;
+  }
+}
+
+.breadcrumb__item {
+  position: relative;
+  padding-right: 17px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  color: #aeaeae;
+  font-family: 'Open Sans', Intro, sans-serif;
+}
+
+.breadcrumb__item:last-child {
+  padding-right: 0;
+}
+
+@media (min-width: 1344px) {
+  .breadcrumb__item {
+    font-size: 13px;
+    padding-right: 20px;
+  }
+}
+
+.breadcrumb__item::after {
+  content: '/';
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 12px;
+  color: #aeaeae;
+}
+
+@media (min-width: 1344px) {
+  .breadcrumb__item::after {
+    font-size: 13px;
+    right: 6px;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.breadcrumb__item:last-child::after {
+  display: none;
+}
+
+.breadcrumb__link {
+  font-family: 'Open Sans', Intro, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  color: #d52833;
+}
+
+@media (min-width: 1344px) {
+  .breadcrumb__link {
+    font-size: 13px;
+  }
+}
+
 .causes {
   border-top: 1px solid #ebebeb;
 }
@@ -11510,94 +11598,6 @@ body.compensate-for-scrollbar {
 @media (min-width: 1344px) {
   .causes__item::before {
     left: 0;
-  }
-}
-
-.breadcrumb {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0;
-  padding: 20px 0 20px;
-}
-
-@media (min-width: 768px) {
-  .breadcrumb {
-    margin-bottom: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .breadcrumb {
-    margin-bottom: 21px;
-    padding-top: 26px;
-  }
-}
-
-.breadcrumb__item {
-  position: relative;
-  padding-right: 17px;
-  font-size: 12px;
-  letter-spacing: 0.4px;
-  color: #aeaeae;
-  font-family: 'Open Sans', Intro, sans-serif;
-}
-
-.breadcrumb__item:last-child {
-  padding-right: 0;
-}
-
-@media (min-width: 1344px) {
-  .breadcrumb__item {
-    font-size: 13px;
-    padding-right: 20px;
-  }
-}
-
-.breadcrumb__item::after {
-  content: '/';
-  position: absolute;
-  right: 4px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 12px;
-  color: #aeaeae;
-}
-
-@media (min-width: 1344px) {
-  .breadcrumb__item::after {
-    font-size: 13px;
-    right: 6px;
-    top: 0;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-.breadcrumb__item:last-child::after {
-  display: none;
-}
-
-.breadcrumb__link {
-  font-family: 'Open Sans', Intro, sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 0.4px;
-  color: #d52833;
-}
-
-@media (min-width: 1344px) {
-  .breadcrumb__link {
-    font-size: 13px;
   }
 }
 
@@ -12161,6 +12161,75 @@ body.compensate-for-scrollbar {
   }
 }
 
+@media (min-width: 768px) {
+  .education {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .education {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .education .courses__title {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .education .courses__title {
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: 768px) {
+  .education .courses__content {
+    margin-bottom: 27px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .education .courses__content {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .education .education__item {
+    min-height: 272px;
+    padding: 29px 30px 32px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .education .education__item {
+    min-height: 276px;
+    width: auto;
+    padding-bottom: 36px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .education .lang-card__name {
+    margin-bottom: 7px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .education .lang-card__name {
+    margin-bottom: 22px;
+  }
+}
+
+.education .slick-dots {
+  padding-top: 10px;
+  margin-left: 11px;
+}
+
 .departure {
   padding-bottom: 12px;
 }
@@ -12438,75 +12507,6 @@ body.compensate-for-scrollbar {
   .departure--has-subtitle .departure__title {
     margin-bottom: 28px;
   }
-}
-
-@media (min-width: 768px) {
-  .education {
-    padding-top: 60px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .education {
-    padding-top: 80px;
-  }
-}
-
-@media (min-width: 768px) {
-  .education .courses__title {
-    margin-bottom: 24px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .education .courses__title {
-    margin-bottom: 46px;
-  }
-}
-
-@media (min-width: 768px) {
-  .education .courses__content {
-    margin-bottom: 27px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .education .courses__content {
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 768px) {
-  .education .education__item {
-    min-height: 272px;
-    padding: 29px 30px 32px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .education .education__item {
-    min-height: 276px;
-    width: auto;
-    padding-bottom: 36px;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .education .lang-card__name {
-    margin-bottom: 7px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .education .lang-card__name {
-    margin-bottom: 22px;
-  }
-}
-
-.education .slick-dots {
-  padding-top: 10px;
-  margin-left: 11px;
 }
 
 .features {
@@ -16946,85 +16946,6 @@ body.show-menu .header__logo-wrapper {
   }
 }
 
-@media (min-width: 1344px) {
-  .page-for-kids-small.page-forKids {
-    padding-top: 80px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-for-kids-small.page-forKids .subtitle {
-    margin-bottom: 60px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-for-kids-small .timetable__title {
-    max-width: 740px;
-    margin-bottom: 38px;
-  }
-}
-
-.page-for-kids-small .additional {
-  padding-top: 26px;
-  background-color: #fff;
-}
-
-@media (min-width: 768px) {
-  .page-for-kids-small .additional {
-    padding-top: 42px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-for-kids-small .additional {
-    padding-top: 64px;
-    padding-bottom: 60px;
-  }
-}
-
-.page-for-kids-small .additional__title {
-  margin-bottom: 12px;
-}
-
-@media (min-width: 768px) {
-  .page-for-kids-small .additional__title {
-    margin-bottom: 17px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-for-kids-small .additional__title {
-    margin-bottom: 30px;
-  }
-}
-
-.page-for-kids-small .additional__sect {
-  margin-bottom: 12px;
-}
-
-@media (min-width: 768px) {
-  .page-for-kids-small .subtitle {
-    margin-bottom: 27px;
-  }
-}
-
-.page-for-kids-small .trial-lesson {
-  margin-bottom: 32px;
-}
-
-@media (min-width: 768px) {
-  .page-for-kids-small .trial-lesson {
-    margin-bottom: 48px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-for-kids-small .trial-lesson {
-    margin-bottom: 88px;
-  }
-}
-
 .page-eng {
   padding-bottom: 38px;
 }
@@ -17166,6 +17087,85 @@ body.show-menu .header__logo-wrapper {
 
 .page-eng .timetable__table-d .timetable__th:nth-child(6) {
   width: 172px;
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small.page-forKids {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small.page-forKids .subtitle {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small .timetable__title {
+    max-width: 740px;
+    margin-bottom: 38px;
+  }
+}
+
+.page-for-kids-small .additional {
+  padding-top: 26px;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .page-for-kids-small .additional {
+    padding-top: 42px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small .additional {
+    padding-top: 64px;
+    padding-bottom: 60px;
+  }
+}
+
+.page-for-kids-small .additional__title {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .page-for-kids-small .additional__title {
+    margin-bottom: 17px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small .additional__title {
+    margin-bottom: 30px;
+  }
+}
+
+.page-for-kids-small .additional__sect {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .page-for-kids-small .subtitle {
+    margin-bottom: 27px;
+  }
+}
+
+.page-for-kids-small .trial-lesson {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .page-for-kids-small .trial-lesson {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small .trial-lesson {
+    margin-bottom: 88px;
+  }
 }
 
 .foreign-course {
@@ -20174,64 +20174,6 @@ body.show-menu .header__logo-wrapper {
   }
 }
 
-.programs {
-  padding-top: 32px;
-}
-
-@media (min-width: 768px) {
-  .programs {
-    padding-top: 48px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .programs {
-    padding-top: 86px;
-    padding-bottom: 104px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .programs__title {
-    margin-bottom: 30px;
-  }
-}
-
-.programs__item {
-  min-height: 264px;
-  margin-bottom: 32px;
-}
-
-@media (min-width: 768px) {
-  .programs__item {
-    min-height: 248px;
-    padding: 31px 33px 32px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .programs__item {
-    min-height: 300px;
-  }
-}
-
-.programs__footer {
-  margin-bottom: 32px;
-}
-
-@media (min-width: 768px) {
-  .programs__footer {
-    margin-bottom: 48px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .programs__footer {
-    margin-bottom: 65px;
-    padding-top: 4px;
-  }
-}
-
 .promo {
   position: relative;
   padding-top: 32px;
@@ -20521,6 +20463,64 @@ body.show-menu .header__logo-wrapper {
 @media (min-width: 1344px) {
   .promo .slick-dots {
     padding-top: 0;
+  }
+}
+
+.programs {
+  padding-top: 32px;
+}
+
+@media (min-width: 768px) {
+  .programs {
+    padding-top: 48px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .programs {
+    padding-top: 86px;
+    padding-bottom: 104px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .programs__title {
+    margin-bottom: 30px;
+  }
+}
+
+.programs__item {
+  min-height: 264px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .programs__item {
+    min-height: 248px;
+    padding: 31px 33px 32px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .programs__item {
+    min-height: 300px;
+  }
+}
+
+.programs__footer {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .programs__footer {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .programs__footer {
+    margin-bottom: 65px;
+    padding-top: 4px;
   }
 }
 
@@ -20845,135 +20845,6 @@ body.show-menu .header__logo-wrapper {
 @media (min-width: 768px) {
   .review__link-tag {
     letter-spacing: .2px;
-  }
-}
-
-.reviews {
-  padding-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .reviews {
-    padding-bottom: 36px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .reviews {
-    padding-top: 81px;
-    padding-bottom: 77px;
-  }
-}
-
-.reviews--border-top {
-  border-top: 1px solid #ebebeb;
-}
-
-.reviews__item {
-  margin-bottom: 15px;
-}
-
-@media (min-width: 1344px) {
-  .reviews__item {
-    margin-bottom: 0;
-  }
-}
-
-.reviews__title {
-  margin-bottom: 27px;
-}
-
-@media (min-width: 768px) {
-  .reviews__title {
-    margin-bottom: 34px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .reviews__title {
-    margin-bottom: 38px;
-  }
-}
-
-@media (min-width: 768px) {
-  .reviews__item {
-    max-width: 320px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .reviews__item {
-    max-width: 362px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .reviews .slick-list {
-    padding-bottom: 15px;
-  }
-}
-
-.reviews__slider {
-  position: relative;
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .reviews__slider .container {
-    padding-right: 0;
-    margin-left: calc((100vw - 768px)/2);
-    max-width: calc(768px + (100vw - 768px / 2));
-  }
-}
-
-@media (min-width: 992px) {
-  .reviews__slider .container {
-    margin-left: calc((100vw - 960px)/2);
-    max-width: calc(960px + (100vw - 960px / 2));
-  }
-}
-
-@media (min-width: 1344px) {
-  .reviews__slider .container {
-    margin-left: auto;
-    max-width: 1216px;
-    padding-right: 32px;
-  }
-}
-
-.reviews__arrow {
-  position: absolute;
-  display: none;
-}
-
-@media (min-width: 1344px) {
-  .reviews__arrow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 160px;
-  }
-}
-
-.reviews .slick-dots {
-  padding-top: 3px;
-}
-
-@media (min-width: 768px) {
-  .reviews .slick-dots {
-    margin-left: -5px;
-  }
-}
-
-@media (min-width: 768px) {
-  .reviews__footer {
-    padding-top: 3px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .reviews__footer {
-    padding-top: 5px;
   }
 }
 
@@ -21469,6 +21340,135 @@ body.show-menu .header__logo-wrapper {
 
 .school-list__btn-popup {
   color: #252525;
+}
+
+.reviews {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .reviews {
+    padding-top: 81px;
+    padding-bottom: 77px;
+  }
+}
+
+.reviews--border-top {
+  border-top: 1px solid #ebebeb;
+}
+
+.reviews__item {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1344px) {
+  .reviews__item {
+    margin-bottom: 0;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 27px;
+}
+
+@media (min-width: 768px) {
+  .reviews__title {
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .reviews__title {
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__item {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .reviews__item {
+    max-width: 362px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .reviews .slick-list {
+    padding-bottom: 15px;
+  }
+}
+
+.reviews__slider {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .reviews__slider .container {
+    padding-right: 0;
+    margin-left: calc((100vw - 768px)/2);
+    max-width: calc(768px + (100vw - 768px / 2));
+  }
+}
+
+@media (min-width: 992px) {
+  .reviews__slider .container {
+    margin-left: calc((100vw - 960px)/2);
+    max-width: calc(960px + (100vw - 960px / 2));
+  }
+}
+
+@media (min-width: 1344px) {
+  .reviews__slider .container {
+    margin-left: auto;
+    max-width: 1216px;
+    padding-right: 32px;
+  }
+}
+
+.reviews__arrow {
+  position: absolute;
+  display: none;
+}
+
+@media (min-width: 1344px) {
+  .reviews__arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 160px;
+  }
+}
+
+.reviews .slick-dots {
+  padding-top: 3px;
+}
+
+@media (min-width: 768px) {
+  .reviews .slick-dots {
+    margin-left: -5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__footer {
+    padding-top: 3px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .reviews__footer {
+    padding-top: 5px;
+  }
 }
 
 .section-text {
