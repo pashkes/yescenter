@@ -14055,6 +14055,11 @@ body.compensate-for-scrollbar {
   }
 }
 
+.interestring-education .page-eng__title-card {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .interestring-education__title {
   margin-bottom: 28px;
   letter-spacing: 0.7px;
@@ -16020,7 +16025,7 @@ body.show-menu .header__logo-wrapper {
 @media (min-width: 768px) {
   .our-program .lang-card.our-program__corporate-card {
     height: 207px;
-    padding-top: 32px;
+    padding-top: 50px;
     padding-bottom: 32px;
   }
 }
@@ -16048,12 +16053,6 @@ body.show-menu .header__logo-wrapper {
     padding-left: 344px;
     margin-bottom: 0;
     background-position: 25px -37px;
-  }
-}
-
-@media (min-width: 768px) {
-  .our-program .foreign-course .lang-card__desc {
-    font-size: 13px;
   }
 }
 
@@ -17041,85 +17040,6 @@ body.show-menu .header__logo-wrapper {
   width: 172px;
 }
 
-@media (min-width: 1344px) {
-  .page-for-kids-small.page-forKids {
-    padding-top: 80px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-for-kids-small.page-forKids .subtitle {
-    margin-bottom: 60px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-for-kids-small .timetable__title {
-    max-width: 740px;
-    margin-bottom: 38px;
-  }
-}
-
-.page-for-kids-small .additional {
-  padding-top: 26px;
-  background-color: #fff;
-}
-
-@media (min-width: 768px) {
-  .page-for-kids-small .additional {
-    padding-top: 42px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-for-kids-small .additional {
-    padding-top: 64px;
-    padding-bottom: 60px;
-  }
-}
-
-.page-for-kids-small .additional__title {
-  margin-bottom: 12px;
-}
-
-@media (min-width: 768px) {
-  .page-for-kids-small .additional__title {
-    margin-bottom: 17px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-for-kids-small .additional__title {
-    margin-bottom: 30px;
-  }
-}
-
-.page-for-kids-small .additional__sect {
-  margin-bottom: 12px;
-}
-
-@media (min-width: 768px) {
-  .page-for-kids-small .subtitle {
-    margin-bottom: 27px;
-  }
-}
-
-.page-for-kids-small .trial-lesson {
-  margin-bottom: 32px;
-}
-
-@media (min-width: 768px) {
-  .page-for-kids-small .trial-lesson {
-    margin-bottom: 48px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-for-kids-small .trial-lesson {
-    margin-bottom: 88px;
-  }
-}
-
 .foreign-course {
   padding-top: 32px;
 }
@@ -17818,6 +17738,85 @@ body.show-menu .header__logo-wrapper {
 
 .page-price .timetable__table-d .timetable__th:nth-child(5) {
   width: 226px;
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small.page-forKids {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small.page-forKids .subtitle {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small .timetable__title {
+    max-width: 740px;
+    margin-bottom: 38px;
+  }
+}
+
+.page-for-kids-small .additional {
+  padding-top: 26px;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .page-for-kids-small .additional {
+    padding-top: 42px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small .additional {
+    padding-top: 64px;
+    padding-bottom: 60px;
+  }
+}
+
+.page-for-kids-small .additional__title {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .page-for-kids-small .additional__title {
+    margin-bottom: 17px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small .additional__title {
+    margin-bottom: 30px;
+  }
+}
+
+.page-for-kids-small .additional__sect {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .page-for-kids-small .subtitle {
+    margin-bottom: 27px;
+  }
+}
+
+.page-for-kids-small .trial-lesson {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .page-for-kids-small .trial-lesson {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-for-kids-small .trial-lesson {
+    margin-bottom: 88px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -21481,7 +21480,7 @@ body.show-menu .header__logo-wrapper {
 
 @media (min-width: 1344px) {
   .section-text .list li::before {
-    top: 8px;
+    top: 14px;
   }
 }
 
