@@ -1976,8 +1976,6 @@ object-assign
 
 
 
-
-
 (function () {
   $('.js-certifications-slider').slick({
     arrows: false,
@@ -2047,6 +2045,8 @@ object-assign
     slickMobile(langSlider, langSliderSettigs);
   });
 })();
+
+
 
 (function () {
   $('.js-departure-slider').slick({
@@ -2136,8 +2136,6 @@ object-assign
 
 
 
-
-
 (function () {
   $('.js-toggle-answer').on('click', function () {
     console.log($(this).next());
@@ -2149,6 +2147,8 @@ object-assign
     }
   });
 })();
+
+
 
 
 
@@ -2392,8 +2392,6 @@ $('.js-select-lang-order').SumoSelect({
 
 
 
-
-
 (function () {
 
   $('.js-reviews-list').on('change', function () {
@@ -2401,6 +2399,31 @@ $('.js-select-lang-order').SumoSelect({
     let currentTextOption = $(this).find('option:selected').text();
     $('.js-name-list-reviews').text(currentTextOption);
     $('.js-amount-list-reviews').text(amountReviews);
+  });
+})();
+
+
+
+(function () {
+  $('.js-school-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          slidesToShow: 2
+        }
+      }
+
+    ]
   });
 })();
 
@@ -2454,29 +2477,6 @@ $(window).on('load', function () {
 });
 
 
-
-(function () {
-  $('.js-school-slider').slick({
-    variableWidth: true,
-    centerPadding: '0',
-    slidesToShow: 1,
-    dots: true,
-    mobileFirst: true,
-    arrows: false,
-    prevArrow: '.js-departure-prev-btn',
-    nextArrow: '.js-departure-next-btn',
-    responsive: [
-      {
-        breakpoint: 1343,
-        settings: {
-          arrows: true,
-          slidesToShow: 2
-        }
-      }
-
-    ]
-  });
-})();
 
 
 
@@ -2672,13 +2672,6 @@ $(window).on('load', function () {
 })();
 
 (function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
-  });
-})();
-
-(function () {
   $('.js-teachers-video').slick({
     dots: true,
     arrows: false,
@@ -2699,6 +2692,13 @@ $(window).on('load', function () {
         nextArrow: $('.js-teachers-video-prev-btn')
       }
     }]
+  });
+})();
+
+(function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
   });
 })();
 
