@@ -2049,30 +2049,6 @@ object-assign
 })();
 
 (function () {
-  $('.js-departure-slider').slick({
-    variableWidth: true,
-    centerPadding: '0',
-    slidesToShow: 1,
-    dots: true,
-    mobileFirst: true,
-    arrows: false,
-    prevArrow: '.js-departure-prev-btn',
-    nextArrow: '.js-departure-next-btn',
-    responsive: [
-      {
-        breakpoint: 1343,
-        settings: {
-          arrows: true,
-          dots: false,
-          slidesToShow: 2
-        }
-      }
-
-    ]
-  });
-})();
-
-(function () {
   $('.js-slider-education').slick({
     arrows: false,
     dots: true,
@@ -2094,8 +2070,6 @@ object-assign
     }]
   });
 })();
-
-
 
 
 (function () {
@@ -2395,16 +2369,6 @@ $('.js-select-lang-order').SumoSelect({
 
 
 (function () {
-
-  $('.js-reviews-list').on('change', function () {
-    let amountReviews = $(this).find('option:selected').val();
-    let currentTextOption = $(this).find('option:selected').text();
-    $('.js-name-list-reviews').text(currentTextOption);
-    $('.js-amount-list-reviews').text(amountReviews);
-  });
-})();
-
-(function () {
   $('.js-select-defaul').each(function () {
     $(this).SumoSelect({    nativeOnDevice: ['Android', 'BlackBerry', 'iPhone', 'iPad', 'iPod', 'Opera Mini', 'IEMobile', 'Silk'],
     });
@@ -2456,6 +2420,16 @@ $(window).on('load', function () {
 
 
 (function () {
+
+  $('.js-reviews-list').on('change', function () {
+    let amountReviews = $(this).find('option:selected').val();
+    let currentTextOption = $(this).find('option:selected').text();
+    $('.js-name-list-reviews').text(currentTextOption);
+    $('.js-amount-list-reviews').text(amountReviews);
+  });
+})();
+
+(function () {
   $('.js-school-slider').slick({
     variableWidth: true,
     centerPadding: '0',
@@ -2482,71 +2456,33 @@ $(window).on('load', function () {
 
 
 
+
+
+
+
 (function () {
-  $('.js-partners-slider').slick({
-    arrows: false,
+  $('.js-departure-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
     dots: true,
     mobileFirst: true,
-    slidesToShow: 2,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 4
-      }
-    },
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 5
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        slidesToShow: 6,
-        dots: false,
-        arrows: true,
-        prevArrow: $('.js-partners-prev-btn'),
-        nextArrow: $('.js-partners-next-btn'),
-      }
-    }]
-  });
-
-  $('.js-partners-long-slider').slick({
     arrows: false,
-    dots: true,
-    mobileFirst: true,
-    slidesToShow: 2,
-    rows: 3,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 4
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          dots: false,
+          slidesToShow: 2
+        }
       }
-    },
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 5
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        slidesToShow: 6,
-        dots: false,
-        arrows: true,
-        prevArrow: $('.js-partners-prev-btn'),
-        nextArrow: $('.js-partners-next-btn'),
-      }
-    }]
-  });
 
+    ]
+  });
 })();
-
-
-
-
 
 
 
@@ -2677,6 +2613,70 @@ $(window).on('load', function () {
     $(this).hide();
   });
 })();
+
+(function () {
+  $('.js-partners-slider').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    slidesToShow: 2,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        slidesToShow: 6,
+        dots: false,
+        arrows: true,
+        prevArrow: $('.js-partners-prev-btn'),
+        nextArrow: $('.js-partners-next-btn'),
+      }
+    }]
+  });
+
+  $('.js-partners-long-slider').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    slidesToShow: 2,
+    rows: 3,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        slidesToShow: 6,
+        dots: false,
+        arrows: true,
+        prevArrow: $('.js-partners-prev-btn'),
+        nextArrow: $('.js-partners-next-btn'),
+      }
+    }]
+  });
+
+})();
+
+
 
 (function () {
   $('.js-teachers-video').slick({

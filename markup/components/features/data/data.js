@@ -3,6 +3,7 @@ const data = {
     mainPage: {
       title: 'Наши преимущества',
       gutters: '',
+      link: true,
       list: [
         {
           imgSrc: 'light.svg',

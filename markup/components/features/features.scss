@@ -198,4 +198,9 @@
       }
     }
   }
+  &--no-shadow {
+    .features__item:hover .features__img {
+      box-shadow: none;
+    }
+  }
 }
