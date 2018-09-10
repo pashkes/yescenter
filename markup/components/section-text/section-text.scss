@@ -34,8 +34,8 @@
     li {
       padding-left: 32px;
       &::before {
-        @include media-breakpoint-up(xl) {
-          top: 14px;
+        @include media-breakpoint-up(md) {
+          top: 8px;
         }
       }
       @include media-breakpoint-up(xl) {
