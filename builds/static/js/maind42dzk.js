@@ -1907,6 +1907,8 @@ object-assign
 
 
 
+
+
 (function () {
   let sliderStatus = 'no-initialize';
   let bigPhoto = $('.js-big-photo');
@@ -1969,8 +1971,6 @@ object-assign
     sliderStatus = 'no-initialize';
   });
 })();
-
-
 
 
 
@@ -2138,8 +2138,6 @@ object-assign
 
 
 
-
-
 (function () {
   $('.js-toggle-answer').on('click', function () {
     console.log($(this).next());
@@ -2151,6 +2149,8 @@ object-assign
     }
   });
 })();
+
+
 
 
 
@@ -2678,8 +2678,6 @@ $(window).on('load', function () {
   });
 })();
 
-
-
 (function () {
   $('.js-teachers-video').slick({
     dots: true,
@@ -2703,6 +2701,8 @@ $(window).on('load', function () {
     }]
   });
 })();
+
+
 
 (function () {
   $('.js-thanks-slider').slick({

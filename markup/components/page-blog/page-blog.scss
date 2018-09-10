@@ -13,6 +13,26 @@
     }
   }
   &__header {
+    position:relative;
+    &::before {
+      @include media-breakpoint-up(sm) {
+        content: '';
+        position: absolute;
+        bottom: 24px;
+        right: 0;
+        left: 0;
+        height: 40px;
+        border-bottom: 1px solid #e1e1e1;
+        border-top: 1px solid #e1e1e1;
+      }
+      @include media-breakpoint-up(md) {
+        bottom: 32px;
+      }
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+    }
+
     @include media-breakpoint-up(xl) {
       margin-bottom: 48px;
     }
@@ -305,6 +325,14 @@
     display: flex;
     align-content: stretch;
     margin-bottom: 32px;
+    &:last-child {
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+      @include media-breakpoint-up(xl) {
+        display: flex;
+      }
+    }
     &--wide {
       .page-blog__article {
         @include media-breakpoint-up(xl) {

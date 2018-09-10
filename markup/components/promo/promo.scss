@@ -178,7 +178,7 @@
   &__arrow {
     display: none;
     position: absolute;
-    top: 215px;
+    top: 230px;
     @include media-breakpoint-only(xl) {
       display: flex;
     }

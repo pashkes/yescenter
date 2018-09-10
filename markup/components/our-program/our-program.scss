@@ -25,11 +25,16 @@
   .lang-card__name {
     letter-spacing: 0;
   }
+  .lang-card__desc {
+    @include media-breakpoint-up(md) {
+      font-size: 14px !important;
+    }
+  }
   .lang-card__lang-title {
     span {
       display: block;
       @include media-breakpoint-up(md) {
-        display: inline;
+        display: block !important;
       }
     }
   }
@@ -38,7 +43,7 @@
       min-height: 184px;
       @include media-breakpoint-up(md) {
         height: 207px;
-        padding-top: 50px;
+        padding-top: 30px;
         padding-bottom: 32px;
       }
       @include media-breakpoint-up(xl) {
