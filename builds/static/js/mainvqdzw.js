@@ -1912,6 +1912,8 @@ object-assign
 })();
 
 
+
+
 (function () {
   let sliderStatus = 'no-initialize';
   let bigPhoto = $('.js-big-photo');
@@ -1974,8 +1976,6 @@ object-assign
     sliderStatus = 'no-initialize';
   });
 })();
-
-
 
 
 
@@ -2129,8 +2129,6 @@ object-assign
   });
 })();
 
-
-
 (function () {
   $('.js-show-main-menu').on('click', function () {
     $('body').toggleClass('show-menu');
@@ -2156,6 +2154,8 @@ object-assign
     }
   });
 })();
+
+
 
 
 
@@ -2346,6 +2346,8 @@ $('.js-select-lang-order').SumoSelect({
   });
 })();
 
+
+
 (function () {
   var TABLET_SIZE = 767;
   var newsSlider = $('.js-news-slide');
@@ -2372,8 +2374,6 @@ $('.js-select-lang-order').SumoSelect({
     slickMobile(newsSlider, newsSliderSettigs);
   });
 })();
-
-
 
 
 
@@ -2460,10 +2460,6 @@ $(window).on('load', function () {
 
 
 
-
-
-
-
 (function () {
   $('.js-school-slider').slick({
     variableWidth: true,
@@ -2486,6 +2482,10 @@ $(window).on('load', function () {
     ]
   });
 })();
+
+
+
+
 
 (function () {
   $('.js-partners-slider').slick({
@@ -2583,6 +2583,7 @@ $(window).on('load', function () {
   });
 })();
 
+
 (function () {
   var sliderReviews = $('.js-reviews-slider').slick({
     dots: true,
@@ -2620,7 +2621,6 @@ $(window).on('load', function () {
 })();
 
 
-
 (function () {
   $('.js-close-map-popup').on('click', function () {
     $(this).parent('.js-map-popup').remove();
@@ -2636,13 +2636,6 @@ $(window).on('load', function () {
 
 
 
-
-(function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
-  });
-})();
 
 (function () {
   $('.js-techers-slider').slick({
@@ -2680,6 +2673,13 @@ $(window).on('load', function () {
       }
     }
     ]
+  });
+})();
+
+(function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
   });
 })();
 

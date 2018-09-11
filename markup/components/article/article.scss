@@ -9,16 +9,13 @@
     }
   }
   &__intro {
-    margin-bottom: 24px;
     padding-top: 26px;
     padding-bottom: 26px;
     @include media-breakpoint-up(md) {
-      margin-bottom: 38px;
       padding-top: 43px;
       padding-bottom: 45px;
     }
     @include media-breakpoint-up(xl) {
-      margin-bottom: 0;
       padding-top: 84px;
       padding-bottom: 48px;
     }

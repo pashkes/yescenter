@@ -10846,14 +10846,12 @@ body.compensate-for-scrollbar {
 }
 
 .article__intro {
-  margin-bottom: 24px;
   padding-top: 26px;
   padding-bottom: 26px;
 }
 
 @media (min-width: 768px) {
   .article__intro {
-    margin-bottom: 38px;
     padding-top: 43px;
     padding-bottom: 45px;
   }
@@ -10861,7 +10859,6 @@ body.compensate-for-scrollbar {
 
 @media (min-width: 1344px) {
   .article__intro {
-    margin-bottom: 0;
     padding-top: 84px;
     padding-bottom: 48px;
   }
