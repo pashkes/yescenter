@@ -6,16 +6,25 @@ mixin albums(data)
           .col-md
             h2.albums__title.h2 Фотоальбом
           .col-md-auto
-            div.albums__nav.nav
-              a(href="#").albums__tab.active альбомы
-              a(href="#").albums__tab по категориям
-      .row
-        each album in data
-          .col-md-6.col-xl-4
-            figure.albums__item
-              a(href="album.html")
-                img(src="%=static=%img/content/"+album.src alt=album.caption)
-                figcaption.albums__caption #{album.caption}
+            div(role="tablist").albums__nav.nav
+              a(href="#albums" role="tab" aria-selected="true" data-toggle="tab").albums__tab.active альбомы
+              a(href="#albums-categories" role="tab" aria-selected="true" data-toggle="tab").albums__tab по категориям
+      div(role="tabpanel").active.show#albums
+        .row
+          each album in data
+            .col-md-6.col-xl-4
+              figure.albums__item
+                a(href="album.html")
+                  img(src="%=static=%img/content/"+album.src alt=album.caption)
+                  figcaption.albums__caption #{album.caption}
+      div(role="tabpanel")#albums-categories
+        .row
+          each album in data
+            .col-md-6.col-xl-4
+              figure.albums__item
+                a(href="album.html")
+                  img(src="%=static=%img/content/" + album.src alt=album.caption)
+                  figcaption.albums__caption #{album.caption}
       footer.albums__footer.d-flex.justify-content-center
         a(href="#").albums__show-more.btn.btn--grey показать еще
 
