@@ -130,7 +130,8 @@
   }
   &__arrow {
     position: absolute;
-    top: 304px;
+    top: calc(78vh / 2);
+    margin-top: -40px;
   }
   .modal.show {
     padding-right: 0 !important;
