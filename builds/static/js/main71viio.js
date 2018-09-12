@@ -1905,13 +1905,13 @@ object-assign
 
 
 
+
+
 (function () {
   $('.js-sub-menu-article').on('change', function () {
     window.location.href = $(this).val();
   });
 })();
-
-
 
 
 (function () {
@@ -2007,8 +2007,6 @@ object-assign
   });
 })();
 
-
-
 (function () {
   let lastItemReview;
   $('.js-reviews-list').on('change', function () {
@@ -2052,6 +2050,8 @@ object-assign
     slickMobile(langSlider, langSliderSettigs);
   });
 })();
+
+
 
 (function () {
   $('.js-departure-slider').slick({
@@ -2340,12 +2340,6 @@ $('.js-select-lang-order').SumoSelect({
   captionFormat: '{0} Selected'
 });
 
-(function () {
-  $('.js-menu-close').on('click', function () {
-    $('body').removeClass('show-menu');
-  });
-})();
-
 
 
 (function () {
@@ -2375,7 +2369,11 @@ $('.js-select-lang-order').SumoSelect({
   });
 })();
 
-
+(function () {
+  $('.js-menu-close').on('click', function () {
+    $('body').removeClass('show-menu');
+  });
+})();
 
 
 
@@ -2406,6 +2404,31 @@ $('.js-select-lang-order').SumoSelect({
     let currentTextOption = $(this).find('option:selected').text();
     $('.js-name-list-reviews').text(currentTextOption);
     $('.js-amount-list-reviews').text(amountReviews);
+  });
+})();
+
+
+
+(function () {
+  $('.js-school-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          slidesToShow: 2
+        }
+      }
+
+    ]
   });
 })();
 
@@ -2459,29 +2482,6 @@ $(window).on('load', function () {
 });
 
 
-
-(function () {
-  $('.js-school-slider').slick({
-    variableWidth: true,
-    centerPadding: '0',
-    slidesToShow: 1,
-    dots: true,
-    mobileFirst: true,
-    arrows: false,
-    prevArrow: '.js-departure-prev-btn',
-    nextArrow: '.js-departure-next-btn',
-    responsive: [
-      {
-        breakpoint: 1343,
-        settings: {
-          arrows: true,
-          slidesToShow: 2
-        }
-      }
-
-    ]
-  });
-})();
 
 
 
@@ -2638,6 +2638,13 @@ $(window).on('load', function () {
 
 
 (function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
+  });
+})();
+
+(function () {
   $('.js-techers-slider').slick({
     dots: true,
     arrows: false,
@@ -2673,13 +2680,6 @@ $(window).on('load', function () {
       }
     }
     ]
-  });
-})();
-
-(function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
   });
 })();
 

@@ -10,4 +10,7 @@ mixin features(data)
               div(class="features__img "+item.classIconClassName)
                 img(src="%=static=%img/general/"+item.imgSrc width=item.width height=item.height alt=item.desc)
               h3.features__name
-                a(href="#") !{item.desc}
+                if data.link
+                  a(href="#") !{item.desc}
+                else
+                  | !{item.desc}
