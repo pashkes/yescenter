@@ -49,6 +49,7 @@ const data = {
     },
     engPage: {
       gutters: 'no-gutters',
+      link: false,
       list: [
         {
           imgSrc: 'light.svg',
@@ -86,6 +87,7 @@ const data = {
     },
     forKidsPage: {
       gutters: 'no-gutters',
+      link: false,
       list: [
         {
           imgSrc: 'light.svg',
@@ -131,6 +133,7 @@ const data = {
     },
     playschoolPage: {
       gutters: '',
+      link: false,
       list: [
         {
           imgSrc: 'light.svg',

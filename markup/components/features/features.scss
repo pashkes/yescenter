@@ -202,5 +202,12 @@
     .features__item:hover .features__img {
       box-shadow: none;
     }
+    .features__name {
+      line-height: 20px;
+      font-size: 15px;
+      @include media-breakpoint-up(md) {
+        font-size: 16px;
+      }
+    }
   }
 }
