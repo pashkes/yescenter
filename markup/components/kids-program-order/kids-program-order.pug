@@ -12,7 +12,7 @@ mixin kids-program-order(container)
               b Yes-лагерь
               | &nbsp;для детей 8—12 лет, занятия по 2,5 академических часа в день
 
-          button.kids-program-order__btn.btn.btn--red Отправить заявку
+          button(type="button" data-toggle="modal" data-target="#order-course").kids-program-order__btn.btn.btn--red Отправить заявку
     else
       .kids-program-order__inner
         h2.kids-program-order__title Летние программы для детей
@@ -25,5 +25,5 @@ mixin kids-program-order(container)
             | &nbsp;для детей 8—12 лет, занятия по 2,5 академических часа в день
         .kids-program-order__bottom
           span.d-block Возможность провести&#160;каникулы с пользой!
-          button.kids-program-order__btn.btn.btn--red Отправить заявку
+          button(data-toggle="modal" data-target="#order-course").kids-program-order__btn.btn.btn--red Отправить заявку
 

@@ -10,7 +10,10 @@ html(class="no-js", lang="ru")
     include ../components/forms-education/forms-education
     include ../components/departure/departure
     include ../components/teachers/teachers
-
+    include ../components/modal-job/modal-job
+    include ../components/callback/callback
+    include ../components/modal-search/modal-search
+    include ../components/modal-location/modal-location
   head
     +head(head.defaults)
   body
@@ -24,7 +27,10 @@ html(class="no-js", lang="ru")
       +teachers(teachers, true, 'Наши преподаватели').pb-0.page-jobs__teachers.teachers--bb-none
       +subscribe()
       +footer()
-
+    +modal-job()
+    +callback()
+    +modal-search()
+    +modal-location()
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
 

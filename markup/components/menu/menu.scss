@@ -7,7 +7,8 @@
   left: 0;
   right: 0;
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   visibility: hidden;
   z-index: -1;
   @include media-breakpoint-up(md) {
@@ -83,35 +84,29 @@
   }
   &__main-item {
     position: relative;
-    @include media-breakpoint-up(xl) {
-      &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        right: 17px;
-        left: 17px;
-        border-bottom: 3px solid transparent;
-        transition: $transition-base;
-      }
-    }
+
     &:hover {
       position: relative;
+      .menu__submenu--second-level {
+        opacity: 1;
+        visibility: visible;
+      }
       .menu__main-link {
         color: $primary-red !important;
-      }
-      @include media-breakpoint-up(xl) {
-        &::before {
-          border-bottom-color: $secondary-red !important;
+        @include media-breakpoint-up(xl) {
+          &::before {
+            border-bottom-color: $secondary-red !important;
+          }
         }
       }
     }
     &.active {
       .menu__main-link {
         color: $primary-red;
-      }
-      @include media-breakpoint-up(xl) {
-        &::before {
-          border-bottom-color: $secondary-red;
+        @include media-breakpoint-up(xl) {
+          &::before {
+            border-bottom-color: $secondary-red;
+          }
         }
       }
     }
@@ -133,10 +128,16 @@
       padding-bottom: 9px;
     }
     @include media-breakpoint-up(xl) {
-      padding-top: 17px;
-      padding-bottom: 17px;
-      padding-right: 16px;
-      padding-left: 16px;
+      padding: 17px 16px;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 17px;
+        left: 17px;
+        border-bottom: 3px solid transparent;
+        transition: $transition-base;
+      }
     }
   }
   &__footer {
@@ -224,6 +225,52 @@
     letter-spacing: 0.3px;
     text-align: left;
     color: #959595;
+  }
+  &__submenu {
+    position: absolute;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    min-width: 200px;
+    opacity: 0;
+    transition: $transition-base;
+    visibility: hidden;
+    &--second-level {
+      top: 100%;
+    }
+    &--third-level {
+      left: 100%;
+      top: 0;
+    }
+  }
+  &__subitem {
+    position: relative;
+    &:hover {
+      .menu__submenu--third-level {
+        opacity: 1;
+        visibility: visible;
+      }
+      > .menu__sublink {
+        color: $primary-red;
+      }
+    }
+    &:first-child {
+      > .menu__sublink {
+        padding-top: 16px;
+      }
+    }
+  }
+  &__sublink {
+    display: block;
+    vertical-align: top;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    text-transform: uppercase;
   }
 }
 

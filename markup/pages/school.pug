@@ -11,6 +11,9 @@ html(class="no-js", lang="ru")
   include ../components/interestring-education/interestring-education
   include ../components/page-foreign-lang/page-foreign-lang
   include ../components/page-school/page-school
+  include ../components/callback/callback
+  include ../components/modal-search/modal-search
+  include ../components/modal-location/modal-location
   head
     +head(head.defaults)
   body
@@ -50,7 +53,9 @@ html(class="no-js", lang="ru")
       +subscribe()
       +interestring-education(interestingEducation).pt-0.interestring-education--padding-bottom
       +footer()
-
+    +callback()
+    +modal-search()
+    +modal-location()
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
 

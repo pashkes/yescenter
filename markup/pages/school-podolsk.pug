@@ -18,6 +18,9 @@ html(class="no-js", lang="ru")
   include ../components/forms-education/forms-education
   include ../components/subscribe/subscribe
   include ../components/section-text/section-text
+  include ../components/callback/callback
+  include ../components/modal-search/modal-search
+  include ../components/modal-location/modal-location
   head
     +head(head.defaults)
   body
@@ -36,9 +39,12 @@ html(class="no-js", lang="ru")
       +section-text()
       +subscribe()
       +footer()
-      script(src='%=static=%js/separate-js/svg4everybody.min.js')
-      script svg4everybody();
+    +callback()
+    +modal-search()
+    +modal-location()
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
 
-      //- Main scripts. You can replace it, but I recommend you to leave it here
-      script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
-      script(src='%=static=%js/main%=hash=%.js')
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+    script(src='%=static=%js/main%=hash=%.js')

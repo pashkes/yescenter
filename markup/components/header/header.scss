@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 1;
   &__top {
     color: #fff;
     background-color: $dark-blue;
@@ -8,9 +10,15 @@
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 0.2px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
     @include media-breakpoint-up(xl) {
       font-size: 13px;
     }
+  }
+  &__city{
+    border-bottom: 1px dashed #3E4656;
   }
   &__select-wrapper {
     border-bottom: 1px dashed #25344A;

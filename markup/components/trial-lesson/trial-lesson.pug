@@ -5,9 +5,9 @@ mixin   trial-lesson(container)
         .trial-lesson__inner
           h2.trial-lesson__title Пробный урок в подарок
           p.trial-lesson__subtitle Посетите пробное занятие в нашей школе совершенно бесплатно! Это целый час активного общения и полезной языковой практики.
-          button.trial-lesson__btn.btn.btn--red Отправить заявку
+          button(type="button" data-toggle="modal" data-target="#order-course").trial-lesson__btn.btn.btn--red Отправить заявку
     else
       .trial-lesson__inner
         h2.trial-lesson__title Пробный урок в подарок
         p.trial-lesson__subtitle Посетите пробное занятие в нашей школе совершенно бесплатно! Это целый час активного общения и полезной языковой практики.
-        button.trial-lesson__btn.btn.btn--red Отправить заявку
+        button(type="button" data-toggle="modal" data-target="#order-course").trial-lesson__btn.btn.btn--red Отправить заявку

@@ -7,10 +7,9 @@ mixin header(data)
         .row.justify-content-between.align-items-center
           .col-auto
             form
-              span.header__you-city Ваш город:
-              select.header__select-city.js-select-location
-                option Москва
-                option Санкт-Перебург
+              button(type="button" data-toggle="modal" data-target="#modal-location").header__you-city
+                | Ваш город:&#160;
+                span.header__city Москва
           .col-auto.d-xl-flex.align-items-center
             ul.header__additional-menu.d-none.d-xl-flex
               li.header__item-menu
@@ -23,12 +22,10 @@ mixin header(data)
                 a(href="#").header__link Дистанционное обучение
               li.header__item-menu
                 a(href="#").header__link Онлайн тестирование
-            form
-              label(for="search").hidden Поиск
-              input(type="search" required).header__search#search
-              button.header__search-btn.js-show-search.text-hide
-                +icon('search', 16, 16)
-                | Поиск
+
+            button(type="button" data-toggle="modal" data-target="#modal-search").header__search-btn.text-hide
+              +icon('search', 16, 16)
+              | Поиск
     .header__bottom
       .container
         .row.justify-content-between.align-items-center.no-gutters
@@ -45,9 +42,9 @@ mixin header(data)
                 span.header__title-delivery.d-block Бесплатно по России
                 a(href="tel:+488005554477").header__tel 8 800 555-44-77
               .header__item.d-none.d-xl-block
-                button.header__order-call.btn.btn--grey заказать звонок
+                button(type="button" data-toggle="modal" data-target="#callback").header__order-call.btn.btn--grey заказать звонок
               .header__item.d-none.d-md-block
-                button.header__registered-course.btn.btn--red записаться на курсы
+                button(type="button" data-toggle="modal" data-target="#order-course").header__registered-course.btn.btn--red записаться на курсы
               .header__item.d-xl-none
                 button(type="button").header__toggle-menu.js-show-main-menu.text-hide Показать меню
     .header__menu

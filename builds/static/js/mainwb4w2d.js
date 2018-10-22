@@ -1903,15 +1903,15 @@ object-assign
 
 
 
-
-
-
-
 (function () {
   $('.js-sub-menu-article').on('change', function () {
     window.location.href = $(this).val();
   });
 })();
+
+
+
+
 
 
 (function () {
@@ -1979,6 +1979,35 @@ object-assign
 
 
 
+$('#callback-form').on('submit', function (event) {
+  event.preventDefault();
+  $('#callback').modal('hide');
+  setTimeout(function () {
+    $('#success-sended').modal('show');
+  }, 1000);
+});
+$('#order-course-form').on('submit', function (event) {
+  event.preventDefault();
+  $('#order-course').modal('hide');
+  setTimeout(function () {
+    $('#success-sended').modal('show');
+  }, 1000);
+});
+$('#trial-lesson').on('submit', function (event) {
+  event.preventDefault();
+  $('#trial-lesson').modal('hide');
+  setTimeout(function () {
+    $('#success-sended').modal('show');
+  }, 1000);
+});
+(function () {
+  $('.js-open-agreement').on('click', function () {
+    setTimeout(function () {
+      $('body').addClass('modal-open');
+    }, 500);
+  });
+})();
+
 
 
 
@@ -2006,6 +2035,8 @@ object-assign
     }]
   });
 })();
+
+
 
 (function () {
   let lastItemReview;
@@ -2050,8 +2081,6 @@ object-assign
     slickMobile(langSlider, langSliderSettigs);
   });
 })();
-
-
 
 (function () {
   $('.js-departure-slider').slick({
@@ -2340,6 +2369,43 @@ $('.js-select-lang-order').SumoSelect({
   captionFormat: '{0} Selected'
 });
 
+$('.js-select-time').SumoSelect({
+  captionFormat: '{0} Selected'
+});
+
+(function () {
+  $('.js-menu-close').on('click', function () {
+    $('body').removeClass('show-menu');
+  });
+})();
+
+
+
+(function () {
+  function addEventFileRemove() {
+    $(this).css('z-index', '-1');
+    $('.js-attach-file').find('span').addClass('grey');
+    $(this).removeClass('remove-icon');
+    $(this).addClass('attach-icon');
+    $('.js-attach-file').find('span').text('Прикрепить резюме');
+    $('.js-select-remove-file').off('click', addEventFileRemove);
+  }
+
+  $('.js-file-field').on('change', function (e) {
+    if (!e.target.files[0]) {
+      return false;
+    }
+    var fileName = e.target.files[0].name;
+    $(this).prev().removeClass('grey');
+    $(this).prev().text(fileName);
+    $('.js-select-remove-file').css('z-index', '1');
+    $('.js-select-remove-file').addClass('remove-icon');
+    $('.js-select-remove-file').on('click', addEventFileRemove);
+  });
+})();
+
+
+
 
 
 (function () {
@@ -2369,11 +2435,7 @@ $('.js-select-lang-order').SumoSelect({
   });
 })();
 
-(function () {
-  $('.js-menu-close').on('click', function () {
-    $('body').removeClass('show-menu');
-  });
-})();
+
 
 
 
@@ -2404,31 +2466,6 @@ $('.js-select-lang-order').SumoSelect({
     let currentTextOption = $(this).find('option:selected').text();
     $('.js-name-list-reviews').text(currentTextOption);
     $('.js-amount-list-reviews').text(amountReviews);
-  });
-})();
-
-
-
-(function () {
-  $('.js-school-slider').slick({
-    variableWidth: true,
-    centerPadding: '0',
-    slidesToShow: 1,
-    dots: true,
-    mobileFirst: true,
-    arrows: false,
-    prevArrow: '.js-departure-prev-btn',
-    nextArrow: '.js-departure-next-btn',
-    responsive: [
-      {
-        breakpoint: 1343,
-        settings: {
-          arrows: true,
-          slidesToShow: 2
-        }
-      }
-
-    ]
   });
 })();
 
@@ -2482,6 +2519,29 @@ $(window).on('load', function () {
 });
 
 
+
+(function () {
+  $('.js-school-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          slidesToShow: 2
+        }
+      }
+
+    ]
+  });
+})();
 
 
 
@@ -2555,8 +2615,6 @@ $(window).on('load', function () {
 
 
 
-
-
 (function () {
   $('.js-promo-slider').slick({
     arrows: false,
@@ -2582,6 +2640,7 @@ $(window).on('load', function () {
     }]
   });
 })();
+
 
 
 (function () {
@@ -2621,6 +2680,7 @@ $(window).on('load', function () {
 })();
 
 
+
 (function () {
   $('.js-close-map-popup').on('click', function () {
     $(this).parent('.js-map-popup').remove();
@@ -2633,16 +2693,18 @@ $(window).on('load', function () {
 
 
 
-
-
-
-
 (function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
+  $('.subscribe').on('submit', function (evt) {
+    evt.preventDefault();
+    $('#subscribe').modal('hide');
+    setTimeout(function () {
+      $('#order-success').modal('show');
+    }, 1000);
   });
 })();
+
+
+
 
 (function () {
   $('.js-techers-slider').slick({
@@ -2680,6 +2742,13 @@ $(window).on('load', function () {
       }
     }
     ]
+  });
+})();
+
+(function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
   });
 })();
 

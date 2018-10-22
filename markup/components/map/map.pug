@@ -24,7 +24,7 @@ mixin map(data)
         label(for="order-lesson-comment").hidden Комментарии
         input(placeholder="Комментарии" name="comments").form__field#order-lesson-comment
         p.map__conf Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
-          a(href="#") политикой конфиденциальности YES EDUCATION GROUP
+          a(href="#" data-toggle="modal" data-target="#agreement") политикой конфиденциальности YES EDUCATION GROUP
         button.map__btn.btn.btn--red Отправить заявку
     .map__wrapper
       .map__canvas#map

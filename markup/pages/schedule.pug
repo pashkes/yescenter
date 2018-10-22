@@ -8,6 +8,9 @@ html(class="no-js", lang="ru")
   include ../components/subscribe/subscribe
   include ../components/interestring-education/interestring-education
   include ../components/page-schedule/page-schedule
+  include ../components/callback/callback
+  include ../components/modal-search/modal-search
+  include ../components/modal-location/modal-location
   head
     +head(head.defaults)
   body
@@ -23,7 +26,9 @@ html(class="no-js", lang="ru")
       +interestring-education(interestingEducation)
       +subscribe()
       +footer()
-
+    +callback()
+    +modal-search()
+    +modal-location()
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
 

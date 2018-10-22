@@ -82,7 +82,7 @@ mixin school-list(data)
                         | Отдел корпоративного обучения:&#160;+7&#160;495&#160;984-97-10
 
                 .col-xl-auto
-                  button(type="button").school-list__btn.btn.btn--grey заказать звонок
+                  button(type="button" data-toggle="modal" data-target="#callback").school-list__btn.btn.btn--grey заказать звонок
 
     div(role="tabpanel").school-list__panel#on-map
       .school-list__map-wrapper
@@ -119,5 +119,5 @@ mixin school-list(data)
               a(href="email:kolomenskaya@yescenter.ru").school-list__email
                 +icon('mail', 16, 12)
                 | kolomenskaya@yescenter.ru
-              button(type="button").school-list__btn-popup.btn.btn--grey заказать звонок
+              button(type="button" data-toggle="modal" data-target="#callback").school-list__btn-popup.btn.btn--grey заказать звонок
         .school-list__map-canvas#map

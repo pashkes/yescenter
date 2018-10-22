@@ -1,0 +1,153 @@
+mixin callback(data)
+  div(tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true").callback.modal.fade#callback
+    div(role="document").modal-dialog.d-flex.justify-content-center
+      form.modal-conten.form.map__form#callback-form
+        button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
+          +icon('close', 14, 14)
+          | Закрыть
+        p.map__title.modal-title.title Оставьте ваш номер
+        p.form__subtitle и мы перезвоним в удобное для вас время
+        label(for="callback-name").hidden Представьтесь, пожалуйста *
+        input(placeholder="Представьтесь, пожалуйста *" name="name" required).form__field#callback-name
+        label(for="callback-phone").hidden Контактный номер телефона *
+        input(type="tel" placeholder="Контактный номер телефона *"  name="phone" required).form__field.callback__phone#callback-phone
+        .callback__row
+          .callback__col
+            span.callback__line
+            label(for="callback-time-first").callback__label.d-block Время
+              select.js-select-time#callback-time-first
+                option 10:00
+                option 11:00
+                option 12:00
+                option 13:00
+                option 14:00
+                option 15:00
+                option 16:00
+                option 17:00
+                option 18:00
+                option 19:00
+          .callback__col.d-flex.align-items-end
+            label(for="callback-time").hidden Время
+            select.js-select-time#callback-time
+              option 10:00
+              option(selected) 11:00
+              option 12:00
+              option 13:00
+              option 14:00
+              option 15:00
+              option 16:00
+              option 17:00
+              option 18:00
+              option 19:00
+        p.map__conf Нажимая на кнопку «Перезвоните мне», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
+          a(href="#" class="js-open-agreement" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement") политикой конфиденциальности
+        button.btn.btn--red.w-100.js-succes-send перезвоните мне
+  div(tabindex="-1" role="dialog" aria-labelledby="callbackSuccessLabel" aria-hidden="true").callback.modal.fade#success-sended
+    div(role="document").modal-dialog.d-flex.justify-content-center
+      .modal-conten.map__form
+        button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
+          +icon('close', 14, 14)
+          | Закрыть
+        p.map__title.callback__title-success Спасибо, Ваша заявка отправлена
+        p.callback__subtitle-success Ближайшее время наш&#160;менедер свяжется с вами.
+        button(data-dismiss="modal" aria-label="Close"  type="button").btn.btn--red.w-100 Закрыть
+  .agreement
+    div(tabindex="-1" role="dialog" aria-labelledby="callbackSuccessLabel" aria-hidden="true").callback.modal#agreement
+      div(role="document").modal-dialog.d-flex.justify-content-center.modal-dialog-centered
+        .modal-content
+          button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
+            +icon('close', 14, 14)
+            | Закрыть
+          p.agreement__title.map__title Соглашение о защите прав и информации. Условия и правила использования данных.
+          div(data-simplebar data-simplebar-auto-hide="false").agreement__content#agreement-content
+            .agreement__content-inner
+              h3 1. ВАШЕ СОГЛАСИЕ
+              p Предоставив Ваши персональные данные на сайте&#160;
+                a(href="www.yescenter.ru") www.yescenter.ru&#160;
+                | ЧОУ ДО Школа английского языка «ЕС» (далее YES), Вы автоматически соглашаетесь с тем, что указанные Вами данные могут быть использованы YES или аффилированными лицами YES в информационной и рекламной рассылке, в том числе по email и SMS, и Ваши данные охраняются в рамках Соглашения о защите прав. Вы можете отказаться от получения рекламной информации YES и аффилированных лиц YES, связавшись с нашим контактным центром по номеру телефона 8-800 555-44-77 или по электронному адресу&#160;
+                a(href="mail:media@yescenter.ru") media@yescenter.ru.
+              h3 2. ВАШИ КОНТАКТНЫЕ ДАННЫЕ
+              p При бронировании курса или оформлении запроса на бесплатный тест на нашем сайте, нам необходимо узнать Ваши персональные данные - такие, как Ваше имя, эл. адрес, номер телефона и место жительства. Мы не разглашаем Ваши персональные данные за пределами организации.
+
+              h3 3. ИНФОРМАЦИЯ О ПОСЕТИТЕЛЯХ САЙТА www.yescenter.ru
+              p
+                | YES может получить доступ к информации о посещаемости от&#160;
+                a(href="www.yescenter.ru") www.yescenter.ru&#160;
+                | , например, о количестве и частоте посещаемости на нашем вебсайте. Эти данные используются только в суммарном виде и не содержат никакой персональной идентификационной информации.
+              h3 4. ИСПОЛЬЗОВАНИЕ COOKIES
+              p YES применяет так называемую технологию "cookies". Сookies - это информационные файлы, которые передаются с вебсайта на жесткий диск Вашего компьютера в целях хранения данной информации. Они предоставляют нам информацию о том как, когда и каким количеством людей посещаются страницы нашего вебсайта.
+
+
+  div(tabindex="-1" role="dialog" aria-labelledby="orderCourceModalLabel" aria-hidden="true").callback.modal.fade.order-course#order-course
+    div(role="document").modal-dialog.d-flex.justify-content-center
+      form.modal-conten.form.map__form#order-course-form
+        button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
+          +icon('close', 14, 14)
+          | Закрыть
+        p.map__title.modal-title Записаться
+          br
+          | на курсы
+        label(for="order-course-form-name").hidden Представьтесь, пожалуйста *
+        input(placeholder="Представьтесь, пожалуйста *" name="name" required).form__field#order-course-form-name
+        label(for="order-course-phone").hidden Контактный номер телефона *
+        input(type="tel" placeholder="Контактный номер телефона *"  name="phone" required).form__field.callback__phone#order-course-phone
+        label(for="order-course-time-first").hidden Выберите язык для изучения *
+        select(required).js-select-lang-order#order-course-select-course
+          option(selected disabled) Выберите язык для изучения *
+          option Английский язык
+          option Немецкий язык
+          option Французкий язык
+          option Испанский язык
+          option Итальянский язык
+          option Китайский язык
+          option Японский язык
+          option Другой (укажите в комментариях)
+        label(for="order-course-form-message").hidden Комментарий
+        input(placeholder="Комментарий" name="name").form__field#order-course-form-message
+        p.map__conf Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
+          a(href="#" class="js-open-agreement" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement") политикой конфиденциальности
+        button.btn.btn--red.w-100.js-succes-send Отправить заявку
+  div(tabindex="-1" role="dialog" aria-labelledby="orderCourceModalLabel" aria-hidden="true").callback.modal.fade.order-course#trial-lesson
+    div(role="document").modal-dialog.d-flex.justify-content-center
+      form.modal-conten.form.map__form#trial-lesson
+        button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
+          +icon('close', 14, 14)
+          | Закрыть
+        p.map__title.modal-title Пробный урок
+          br
+          | в подарок!
+        label(for="trial-lesson-name").hidden Представьтесь, пожалуйста *
+        input(placeholder="Представьтесь, пожалуйста *" name="name" required).form__field#trial-lesson-name
+        label(for="trial-lesson-phone").hidden Контактный номер телефона *
+        input(type="tel" placeholder="Контактный номер телефона *"  name="phone" required).form__field.callback__phone#trial-lesson-phone
+        label(for="trial-lesson-select-course").hidden Выберите язык для изучения *
+        select(required).js-select-lang-order#trial-lesson-select-course
+          option(selected disabled) Выберите язык для изучения *
+          option Английский язык
+          option Немецкий язык
+          option Французкий язык
+          option Испанский язык
+          option Итальянский язык
+          option Китайский язык
+          option Японский язык
+          option Другой (укажите в комментариях)
+        label(for="trial-lesson-message").hidden Комментарий
+        input(placeholder="Комментарий" name="name").form__field#trial-lesson-message
+        p.map__conf Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
+          a(href="#" class="js-open-agreement" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement") политикой конфиденциальности
+        button.btn.btn--red.w-100.js-succes-send Отправить заявку
+  div(tabindex="-1" role="dialog" aria-labelledby="orderSuccessLabel" aria-hidden="true").callback.modal.fade#order-success
+    div(role="document").modal-dialog.d-flex.justify-content-center
+      .modal-conten.map__form
+        button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
+          +icon('close', 14, 14)
+          | Закрыть
+        p.map__title.callback__title-success Поздравляем!
+          br
+          | теперь Вы подписаны
+          br
+          | на новостную
+          br
+          | рассылку.
+        p.callback__subtitle-success Теперь вы всегда будете первыми узнавать о последних новстях и акциях нашей школы! Нужен текст.
+        button(data-dismiss="modal" aria-label="Close"  type="button").btn.btn--red.w-100 Закрыть
