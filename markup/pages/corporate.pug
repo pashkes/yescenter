@@ -15,6 +15,9 @@ html(class="no-js", lang="ru")
   include ../components/thanks/thanks
   include ../components/page-corporate/page-corporate
   include ../components/corporate-education/corporate-education
+  include ../components/callback/callback
+  include ../components/modal-search/modal-search
+  include ../components/modal-location/modal-location
   head
     +head(head.defaults)
   body
@@ -33,7 +36,9 @@ html(class="no-js", lang="ru")
       +map()
       +subscribe()
       +footer()
-
+    +callback()
+    +modal-search()
+    +modal-location()
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
 

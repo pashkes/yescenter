@@ -14,6 +14,6 @@ mixin subscribe(data)
               .row
                 .col-xl-6
                   label(for="subscribe-email").hidden Ваше имя и фамилия
-                  input(type="email" placeholder="Ваша электронная почта" name="email" required).subscribe__field.form__field#subscribe-email
+                  input(type="email" placeholder="Ваша электронная почта" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}$" required).subscribe__field.form__field#subscribe-email
                 .col-xl-6
                   button.subscribe__btn.btn.btn--red Отправить

@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main71viio.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/maina99aer.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script>
@@ -30,11 +30,9 @@
                     <div class="container">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto">
-                                <form><span class="header__you-city">Ваш город:</span>
-                                    <select class="header__select-city js-select-location">
-                                        <option>Москва</option>
-                                        <option>Санкт-Перебург</option>
-                                    </select>
+                                <form>
+                                    <button class="header__you-city" type="button" data-toggle="modal" data-target="#modal-location">Ваш город:&#160;<span class="header__city">Москва</span>
+                                    </button>
                                 </form>
                             </div>
                             <div class="col-auto d-xl-flex align-items-center">
@@ -50,15 +48,11 @@
                                     <li class="header__item-menu"><a class="header__link" href="#">Онлайн тестирование</a>
                                     </li>
                                 </ul>
-                                <form>
-                                    <label class="hidden" for="search">Поиск</label>
-                                    <input class="header__search" type="search" required id="search">
-                                    <button class="header__search-btn js-show-search text-hide">
-                                        <svg class="icon" width="16" height="16" aria-hidden="true">
-                                            <use xlink:href="static/img/svg-symbols.svg#search"></use>
-                                        </svg>Поиск
-                                    </button>
-                                </form>
+                                <button class="header__search-btn text-hide" type="button" data-toggle="modal" data-target="#modal-search">
+                                    <svg class="icon" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#search"></use>
+                                    </svg>Поиск
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -79,10 +73,10 @@
                                     <div class="header__item header__item--contact d-none d-md-block"><span class="header__title-delivery d-block">Бесплатно по России</span><a class="header__tel" href="tel:+488005554477">8 800 555-44-77</a>
                                     </div>
                                     <div class="header__item d-none d-xl-block">
-                                        <button class="header__order-call btn btn--grey">заказать звонок</button>
+                                        <button class="header__order-call btn btn--grey" type="button" data-toggle="modal" data-target="#callback">заказать звонок</button>
                                     </div>
                                     <div class="header__item d-none d-md-block">
-                                        <button class="header__registered-course btn btn--red">записаться на курсы</button>
+                                        <button class="header__registered-course btn btn--red" type="button" data-toggle="modal" data-target="#order-course">записаться на курсы</button>
                                     </div>
                                     <div class="header__item d-xl-none">
                                         <button class="header__toggle-menu js-show-main-menu text-hide" type="button">Показать меню</button>
@@ -103,12 +97,54 @@
                                 </button>
                                 <ul class="menu__main">
                                     <li class="menu__main-item active"><a class="menu__main-link" href="#">Иностранные языки</a>
+                                        <ul class="menu__submenu menu__submenu--second-level">
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Анлийский язык</a>
+                                                <ul class="menu__submenu menu__submenu--third-level">
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                                    </li>
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="menu__main-item"><a class="menu__main-link" href="programs.html">Программы</a>
+                                        <ul class="menu__submenu menu__submenu--second-level">
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Курсы подготовки к экзамену IELTS</a>
+                                                <ul class="menu__submenu menu__submenu--third-level">
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                                    </li>
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="menu__main-item"><a class="menu__main-link" href="eng.html">Расписание</a>
                                     </li>
                                     <li class="menu__main-item"><a class="menu__main-link" href="#">Цены</a>
+                                        <ul class="menu__submenu menu__submenu--second-level">
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Анлийский язык</a>
+                                                <ul class="menu__submenu menu__submenu--third-level">
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                                    </li>
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="menu__main-item"><a class="menu__main-link" href="#">Акции</a>
                                     </li>
@@ -134,7 +170,7 @@
                                         <li class="menu__additional-item"><a class="menu__additional-link" href="#">Онлайн тестирование</a>
                                         </li>
                                     </ul>
-                                    <button class="menu__registration-course btn btn--red">записаться на курсы</button>
+                                    <button class="menu__registration-course btn btn--red" type="button" data-toggle="modal" data-target="#order-course">записаться на курсы</button>
                                     <div class="menu__footer">
                                         <ul class="menu__contacts">
                                             <li class="menu__contact"><a class="menu__tel" href="tel:+484953800520">8 495 380-05-20</a><span class="menu__desc d-block">Для Москвы, 09:00—18:00</span>
@@ -142,7 +178,7 @@
                                             <li class="menu__contact"><a class="menu__tel" href="tel:+488005554477">8 800 555-44-77</a><span class="menu__desc d-block">Бесплатно по России</span>
                                             </li>
                                         </ul>
-                                        <button class="btn btn--light-blue">заказать обратный звонок</button>
+                                        <button class="btn btn--light-blue" data-toggle="modal" data-target="#callback">заказать обратный звонок</button>
                                     </div>
                                 </div>
                             </div>
@@ -391,7 +427,7 @@
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <label class="hidden" for="subscribe-email">Ваше имя и фамилия</label>
-                                            <input class="subscribe__field form__field" type="email" placeholder="Ваша электронная почта" name="email" required id="subscribe-email">
+                                            <input class="subscribe__field form__field" type="email" placeholder="Ваша электронная почта" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required id="subscribe-email">
                                         </div>
                                         <div class="col-xl-6">
                                             <button class="subscribe__btn btn btn--red">Отправить</button>
@@ -428,7 +464,7 @@
                                 </div>
                             </div>
                             <div class="col-md-auto">
-                                <button class="footer__btn btn btn--red" type="button">записаться на курсы</button>
+                                <button class="footer__btn btn btn--red" type="button" data-toggle="modal" data-target="#order-course">записаться на курсы</button>
                             </div>
                         </div>
                     </div>
@@ -493,7 +529,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-auto col-xl-auto ml-xl-auto">
-                                        <button class="footer__btn btn btn--grey" type="button">заказать обратный звонок</button>
+                                        <button class="footer__btn btn btn--grey" type="button" data-toggle="modal" data-target="#callback">заказать обратный звонок</button>
                                     </div>
                                 </div>
                             </div>
@@ -549,11 +585,345 @@
                 </div>
             </footer>
         </div>
+        <div class="callback modal fade" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true" id="callback">
+            <div class="modal-dialog d-flex justify-content-center" role="document">
+                <form class="modal-conten form map__form" id="callback-form">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title modal-title title">Оставьте ваш номер</p>
+                    <p class="form__subtitle">и мы перезвоним в удобное для вас время</p>
+                    <label class="hidden" for="callback-name">Представьтесь, пожалуйста *</label>
+                    <input class="form__field" placeholder="Представьтесь, пожалуйста *" name="name" required id="callback-name">
+                    <label class="hidden" for="callback-phone">Контактный номер телефона *</label>
+                    <input class="form__field callback__phone" type="tel" placeholder="Контактный номер телефона *" name="phone" required id="callback-phone">
+                    <div class="callback__row">
+                        <div class="callback__col"><span class="callback__line"></span>
+                            <label class="callback__label d-block" for="callback-time-first">Время
+                                <select class="js-select-time" id="callback-time-first">
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                    <option>18:00</option>
+                                    <option>19:00</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="callback__col d-flex align-items-end">
+                            <label class="hidden" for="callback-time">Время</label>
+                            <select class="js-select-time" id="callback-time">
+                                <option>10:00</option>
+                                <option selected>11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p class="map__conf">Нажимая на кнопку «Перезвоните мне», я даю согласие на обработку персональных данных и соглашаюсь c&#160;<a class="js-open-agreement" href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement">политикой конфиденциальности</a>
+                    </p>
+                    <button class="btn btn--red w-100 js-succes-send">перезвоните мне</button>
+                </form>
+            </div>
+        </div>
+        <div class="callback modal fade" tabindex="-1" role="dialog" aria-labelledby="callbackSuccessLabel" aria-hidden="true" id="success-sended">
+            <div class="modal-dialog d-flex justify-content-center" role="document">
+                <div class="modal-conten map__form">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title callback__title-success">Спасибо, Ваша заявка отправлена</p>
+                    <p class="callback__subtitle-success">Ближайшее время наш&#160;менедер свяжется с вами.</p>
+                    <button class="btn btn--red w-100" data-dismiss="modal" aria-label="Close" type="button">Закрыть</button>
+                </div>
+            </div>
+        </div>
+        <div class="agreement">
+            <div class="callback modal" tabindex="-1" role="dialog" aria-labelledby="callbackSuccessLabel" aria-hidden="true" id="agreement">
+                <div class="modal-dialog d-flex justify-content-center modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                            <svg class="icon" width="14" height="14" aria-hidden="true">
+                                <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                            </svg>Закрыть
+                        </button>
+                        <p class="agreement__title map__title">Соглашение о защите прав и информации. Условия и правила использования данных.</p>
+                        <div class="agreement__content" data-simplebar data-simplebar-auto-hide="false" id="agreement-content">
+                            <div class="agreement__content-inner">
+                                <h3>1. ВАШЕ СОГЛАСИЕ</h3>
+                                <p>Предоставив Ваши персональные данные на сайте&#160;<a href="www.yescenter.ru">www.yescenter.ru&#160;</a>ЧОУ ДО Школа английского языка «ЕС» (далее YES), Вы автоматически соглашаетесь с тем, что указанные Вами данные могут
+                                    быть использованы YES или аффилированными лицами YES в информационной и рекламной рассылке, в том числе по email и SMS, и Ваши данные охраняются в рамках Соглашения о защите прав. Вы можете отказаться от получения рекламной
+                                    информации YES и аффилированных лиц YES, связавшись с нашим контактным центром по номеру телефона 8-800 555-44-77 или по электронному адресу&#160;<a href="mail:media@yescenter.ru">media@yescenter.ru.</a>
+                                </p>
+                                <h3>2. ВАШИ КОНТАКТНЫЕ ДАННЫЕ</h3>
+                                <p>При бронировании курса или оформлении запроса на бесплатный тест на нашем сайте, нам необходимо узнать Ваши персональные данные - такие, как Ваше имя, эл. адрес, номер телефона и место жительства. Мы не разглашаем Ваши
+                                    персональные данные за пределами организации.</p>
+                                <h3>3. ИНФОРМАЦИЯ О ПОСЕТИТЕЛЯХ САЙТА www.yescenter.ru</h3>
+                                <p>YES может получить доступ к информации о посещаемости от&#160;<a href="www.yescenter.ru">www.yescenter.ru&#160;</a>, например, о количестве и частоте посещаемости на нашем вебсайте. Эти данные используются только в суммарном
+                                    виде и не содержат никакой персональной идентификационной информации.</p>
+                                <h3>4. ИСПОЛЬЗОВАНИЕ COOKIES</h3>
+                                <p>YES применяет так называемую технологию "cookies". Сookies - это информационные файлы, которые передаются с вебсайта на жесткий диск Вашего компьютера в целях хранения данной информации. Они предоставляют нам информацию
+                                    о том как, когда и каким количеством людей посещаются страницы нашего вебсайта.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="callback modal fade order-course" tabindex="-1" role="dialog" aria-labelledby="orderCourceModalLabel" aria-hidden="true" id="order-course">
+            <div class="modal-dialog d-flex justify-content-center" role="document">
+                <form class="modal-conten form map__form" id="order-course-form">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title modal-title">Записаться
+                        <br>на курсы</p>
+                    <label class="hidden" for="order-course-form-name">Представьтесь, пожалуйста *</label>
+                    <input class="form__field" placeholder="Представьтесь, пожалуйста *" name="name" required id="order-course-form-name">
+                    <label class="hidden" for="order-course-phone">Контактный номер телефона *</label>
+                    <input class="form__field callback__phone" type="tel" placeholder="Контактный номер телефона *" name="phone" required id="order-course-phone">
+                    <label class="hidden" for="order-course-time-first">Выберите язык для изучения *</label>
+                    <select class="js-select-lang-order" required id="order-course-select-course">
+                        <option selected disabled>Выберите язык для изучения *</option>
+                        <option>Английский язык</option>
+                        <option>Немецкий язык</option>
+                        <option>Французкий язык</option>
+                        <option>Испанский язык</option>
+                        <option>Итальянский язык</option>
+                        <option>Китайский язык</option>
+                        <option>Японский язык</option>
+                        <option>Другой (укажите в комментариях)</option>
+                    </select>
+                    <label class="hidden" for="order-course-form-message">Комментарий</label>
+                    <input class="form__field" placeholder="Комментарий" name="name" id="order-course-form-message">
+                    <p class="map__conf">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;<a class="js-open-agreement" href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement">политикой конфиденциальности</a>
+                    </p>
+                    <button class="btn btn--red w-100 js-succes-send">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+        <div class="callback modal fade order-course" tabindex="-1" role="dialog" aria-labelledby="orderCourceModalLabel" aria-hidden="true" id="trial-lesson">
+            <div class="modal-dialog d-flex justify-content-center" role="document">
+                <form class="modal-conten form map__form" id="trial-lesson">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title modal-title">Пробный урок
+                        <br>в подарок!</p>
+                    <label class="hidden" for="trial-lesson-name">Представьтесь, пожалуйста *</label>
+                    <input class="form__field" placeholder="Представьтесь, пожалуйста *" name="name" required id="trial-lesson-name">
+                    <label class="hidden" for="trial-lesson-phone">Контактный номер телефона *</label>
+                    <input class="form__field callback__phone" type="tel" placeholder="Контактный номер телефона *" name="phone" required id="trial-lesson-phone">
+                    <label class="hidden" for="trial-lesson-select-course">Выберите язык для изучения *</label>
+                    <select class="js-select-lang-order" required id="trial-lesson-select-course">
+                        <option selected disabled>Выберите язык для изучения *</option>
+                        <option>Английский язык</option>
+                        <option>Немецкий язык</option>
+                        <option>Французкий язык</option>
+                        <option>Испанский язык</option>
+                        <option>Итальянский язык</option>
+                        <option>Китайский язык</option>
+                        <option>Японский язык</option>
+                        <option>Другой (укажите в комментариях)</option>
+                    </select>
+                    <label class="hidden" for="trial-lesson-message">Комментарий</label>
+                    <input class="form__field" placeholder="Комментарий" name="name" id="trial-lesson-message">
+                    <p class="map__conf">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;<a class="js-open-agreement" href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement">политикой конфиденциальности</a>
+                    </p>
+                    <button class="btn btn--red w-100 js-succes-send">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+        <div class="callback modal fade" tabindex="-1" role="dialog" aria-labelledby="orderSuccessLabel" aria-hidden="true" id="order-success">
+            <div class="modal-dialog d-flex justify-content-center" role="document">
+                <div class="modal-conten map__form">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title callback__title-success">Поздравляем!
+                        <br>теперь Вы подписаны
+                        <br>на новостную
+                        <br>рассылку.</p>
+                    <p class="callback__subtitle-success">Теперь вы всегда будете первыми узнавать о последних новстях и акциях нашей школы! Нужен текст.</p>
+                    <button class="btn btn--red w-100" data-dismiss="modal" aria-label="Close" type="button">Закрыть</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-search">
+            <div class="callback modal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true" id="modal-search">
+                <div class="modal-dialog d-flex justify-content-center modal-dialog-centered" role="document">
+                    <form class="modal-conten map__form form" id="search">
+                        <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                            <svg class="icon" width="14" height="14" aria-hidden="true">
+                                <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                            </svg>Закрыть
+                        </button>
+                        <p class="map__title modal-title title">Поиск по сайту</p>
+                        <div class="row no-gutters">
+                            <div class="col-sm d-flex"><span class="modal-search__icon">
+                      <svg class="icon" width="16" height="16" aria-hidden="true">
+                        <use xlink:href="static/img/svg-symbols.svg#search"></use>
+                      </svg></span>
+                                <label class="hidden" for="search-field">Поиск по сайту</label>
+                                <input class="form__field flex-grow-1" type="search" placeholder="Я ищу, папример: курсы анлийского языка для детей">
+                            </div>
+                            <div class="col-sm-auto">
+                                <button class="modal-search__btn btn btn--red">найти</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-location">
+            <div class="callback modal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true" id="modal-location">
+                <div class="modal-dialog d-flex justify-content-center modal-dialog-centered" role="document">
+                    <form class="modal-conten map__form">
+                        <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                            <svg class="icon" width="14" height="14" aria-hidden="true">
+                                <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                            </svg>Закрыть
+                        </button>
+                        <p class="map__title modal-title title">Выберите ваш город</p>
+                        <div class="modal-location__row">
+                            <div class="modal-location__container">
+                                <div class="modal-location__city-col"><span class="modal-location__city">Москва</span>
+                                </div>
+                                <div class="modal-location__col-list">
+                                    <ul class="modal-location__list">
+                                        <li><a href="#">Москва</a>
+                                        </li>
+                                        <li><a href="#">Солнцево</a>
+                                        </li>
+                                        <li><a href="#">Хорвино</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-location__col-list">
+                                    <ul class="modal-location__list">
+                                        <li><a href="#">Метро Кузьминки</a>
+                                        </li>
+                                        <li><a href="#">Метро Павелецкая</a>
+                                        </li>
+                                        <li><a href="#">Метро Перово</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-location__col-list">
+                                    <ul class="modal-location__list">
+                                        <li><a href="#">Метро Каховская</a>
+                                        </li>
+                                        <li><a href="#">Метро Топарево</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-location__row">
+                            <div class="modal-location__container">
+                                <div class="modal-location__city-col">Московская
+                                    <br>область</div>
+                                <div class="modal-location__col-list">
+                                    <ul class="modal-location__list">
+                                        <li><a href="#">Люберцы</a>
+                                        </li>
+                                        <li><a href="#">Рамеское</a>
+                                        </li>
+                                        <li><a href="#">Жуковский</a>
+                                        </li>
+                                        <li><a href="#">Балашиха</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-location__col-list">
+                                    <ul class="modal-location__list">
+                                        <li><a href="#">Волокаламск</a>
+                                        </li>
+                                        <li><a href="#">Латкарино</a>
+                                        </li>
+                                        <li><a href="#">Егорьевск</a>
+                                        </li>
+                                        <li><a href="#">Щелково</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-location__col-list">
+                                    <ul class="modal-location__list">
+                                        <li><a href="#">Подольск</a>
+                                        </li>
+                                        <li><a href="#">Пушкино</a>
+                                        </li>
+                                        <li><a href="#">Коломна</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-location__row">
+                            <div class="modal-location__container">
+                                <div class="modal-location__city-col">Ленинградская
+                                    <br>область</div>
+                                <div class="modal-location__col-list">
+                                    <ul class="modal-location__list">
+                                        <li><a href="#">Санкт-Петербург</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-location__row">
+                            <div class="modal-location__container">
+                                <div class="modal-location__city-col">Тульская
+                                    <br>область</div>
+                                <div class="modal-location__col-list">
+                                    <ul class="modal-location__list">
+                                        <li><a href="#">Тула</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-location__row">
+                            <div class="modal-location__container">
+                                <div class="modal-location__city-col">Владимирская
+                                    <br>область</div>
+                                <div class="modal-location__col-list">
+                                    <ul class="modal-location__list">
+                                        <li><a href="#">Александров</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <script src="static/js/separate-js/svg4everybody.min.js"></script>
         <script>
             svg4everybody();
         </script>
-        <script src="static/js/main71viio.js"></script>
+        <script src="static/js/maina99aer.js"></script>
     </body>
 
 </html>

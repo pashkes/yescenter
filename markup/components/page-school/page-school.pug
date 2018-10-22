@@ -27,7 +27,7 @@ mixin page-school(data)
               +icon('mail', 16, 12)
               | #{data.email}
           .col-xl-auto
-            button(type="button").page-school__btn.btn.btn--grey заказать звонок
+            button(type="button" data-toggle="modal" data-target="#callback").page-school__btn.btn.btn--grey заказать звонок
     .page-school__map-wrapper
       .page-school__map-inner#map
     footer.page-school__footer

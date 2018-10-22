@@ -177,3 +177,7 @@ $('.js-select-lang-order').SumoSelect({
   placeholder: 'Выберите язык для изучения',
   captionFormat: '{0} Selected'
 });
+
+$('.js-select-time').SumoSelect({
+  captionFormat: '{0} Selected'
+});

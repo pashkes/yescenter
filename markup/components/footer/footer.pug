@@ -23,7 +23,7 @@ mixin footer(data)
                 li.footer__lang
                   a(href="#").footer__link-lang Японский
           .col-md-auto
-            button(type="button").footer__btn.btn.btn--red записаться на курсы
+            button(type="button" data-toggle="modal" data-target="#order-course").footer__btn.btn.btn--red записаться на курсы
       .footer__body
         .row.justify-content-xl-start
           .col-7.d-none.d-xl-block
@@ -77,7 +77,7 @@ mixin footer(data)
                   a(href="tel:+788005554477").footer__tel 8 800 555-44-77
                   span.footer__sub-title Бесплатно по России
               .col-md-auto.col-xl-auto.ml-xl-auto
-                button(type="button").footer__btn.btn.btn--grey заказать обратный звонок
+                button(type="button" data-toggle="modal" data-target="#callback").footer__btn.btn.btn--grey заказать обратный звонок
       .footer__bottom
         .row.justify-content-md-between.align-items-md-center
           .col-md-auto.order-md-2

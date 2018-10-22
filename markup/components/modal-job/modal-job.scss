@@ -1,0 +1,40 @@
+.modal-job {
+  &__file {
+    position: relative;
+    label.form__field {
+      margin-bottom: 24px !important;
+    }
+    .grey {
+      opacity: 0.6;
+      line-height: 19px;
+      color: rgba(54, 54, 54, 0.6);
+    }
+  }
+  &__btn {
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    padding: 0;
+    font-size: 0;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(%=static=%general/attach-file.svg);
+    z-index: -1;
+    background-size: 20px 11px;
+    &:focus {
+      outline: none;
+    }
+    &.attach-icon {
+      background-image: url(%=static=%general/attach-file.svg);
+      background-size: 20px 11px;
+    }
+    &.remove-icon {
+      background-image: url(%=static=%general/cross-red.svg);
+      background-size: 11px 11px;
+    }
+  }
+}

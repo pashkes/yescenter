@@ -117,6 +117,7 @@ h1, h2, h3 {
   margin: 0 auto;
   overflow: hidden;
   @include media-breakpoint-up(xl) {
+    overflow: auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
 }
@@ -134,4 +135,12 @@ img {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+.modal-dialog {
+  .map__form {
+    pointer-events: auto;
+  }
+}
+.modal-backdrop.show {
+  background-color: #252525;
 }

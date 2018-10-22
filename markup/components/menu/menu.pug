@@ -9,12 +9,48 @@ mixin menu(data)
         ul.menu__main
           li.menu__main-item.active
             a(href="#").menu__main-link Иностранные языки
+            ul.menu__submenu.menu__submenu--second-level
+              li.menu__subitem
+                a(href="#").menu__sublink Анлийский язык
+                ul.menu__submenu.menu__submenu--third-level
+                  li.menu__subitem
+                    a(href="#").menu__sublink Немецкий язык
+                  li.menu__subitem
+                    a(href="#").menu__sublink Французкий язык
+              li.menu__subitem
+                a(href="#").menu__sublink Немецкий язык
+              li.menu__subitem
+                a(href="#").menu__sublink Французкий язык
           li.menu__main-item
             a(href="programs.html").menu__main-link Программы
+            ul.menu__submenu.menu__submenu--second-level
+              li.menu__subitem
+                a(href="#").menu__sublink Курсы подготовки к экзамену IELTS
+                ul.menu__submenu.menu__submenu--third-level
+                  li.menu__subitem
+                    a(href="#").menu__sublink Немецкий язык
+                  li.menu__subitem
+                    a(href="#").menu__sublink Французкий язык
+              li.menu__subitem
+                a(href="#").menu__sublink Немецкий язык
+              li.menu__subitem
+                a(href="#").menu__sublink Французкий язык
           li.menu__main-item
             a(href="eng.html").menu__main-link Расписание
           li.menu__main-item
             a(href="#").menu__main-link Цены
+            ul.menu__submenu.menu__submenu--second-level
+              li.menu__subitem
+                a(href="#").menu__sublink Анлийский язык
+                ul.menu__submenu.menu__submenu--third-level
+                  li.menu__subitem
+                    a(href="#").menu__sublink Немецкий язык
+                  li.menu__subitem
+                    a(href="#").menu__sublink Французкий язык
+              li.menu__subitem
+                a(href="#").menu__sublink Немецкий язык
+              li.menu__subitem
+                a(href="#").menu__sublink Французкий язык
           li.menu__main-item
             a(href="#").menu__main-link Акции
           li.menu__main-item
@@ -36,7 +72,7 @@ mixin menu(data)
               a(href="#").menu__additional-link Дистанционное обучение
             li.menu__additional-item
               a(href="#").menu__additional-link Онлайн тестирование
-          button.menu__registration-course.btn.btn--red записаться на курсы
+          button(type="button" data-toggle="modal" data-target="#order-course").menu__registration-course.btn.btn--red записаться на курсы
           .menu__footer
             ul.menu__contacts
               li.menu__contact
@@ -45,5 +81,5 @@ mixin menu(data)
               li.menu__contact
                 a(href="tel:+488005554477").menu__tel 8 800 555-44-77
                 span.menu__desc.d-block Бесплатно по России
-            button.btn.btn--light-blue заказать обратный звонок
+            button(data-toggle="modal" data-target="#callback").btn.btn--light-blue заказать обратный звонок
 

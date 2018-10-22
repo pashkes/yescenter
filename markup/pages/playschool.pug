@@ -12,6 +12,9 @@ html(class="no-js", lang="ru")
   include ../components/forms-education/forms-education
   include ../components/features/features
   include ../components/playschool/playschool
+  include ../components/callback/callback
+  include ../components/modal-search/modal-search
+  include ../components/modal-location/modal-location
   head
     +head(head.defaults)
   body
@@ -42,7 +45,9 @@ html(class="no-js", lang="ru")
       +map()
       +subscribe()
       +footer()
-
+    +callback()
+    +modal-search()
+    +modal-location()
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
 
