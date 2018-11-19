@@ -386,6 +386,40 @@ const data = {
       {
         name: 'Числительные'
       }
+    ],
+    test: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: 'Онлайн тестирование'
+      }
+    ],
+    onlineLesson: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        link: '#',
+        name: 'Информация'
+      },
+      {
+        link: '#',
+        name: 'База знаний'
+      },
+      {
+        link: '#',
+        name: 'Английский язык'
+      },
+      {
+        link: '#',
+        name: 'Уроки онлайн'
+      },
+      {
+        name: 'King\'s Speech (Broadcast)'
+      }
     ]
   }
 };

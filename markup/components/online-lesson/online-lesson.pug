@@ -1,0 +1,215 @@
+mixin offline-lesson
+  section.article.online-lesson
+    .container
+      h1.h2 King's Speech (Broadcast)
+    .article-menu.section--grey
+      .container
+        .article-menu__mobile.d-md-none
+          label(for="lang").hidden язык
+          select.form__select#lang.js-sub-menu-article.mb-4
+            option(value="page-url") Английский
+            option(value="page-url") Немецкий
+            option(value="page-url") Французкий
+            option(value="page-url") Итальянский
+            option(value="page-url") Испанский
+            option(value="page-url") Китайский
+            option(value="page-url") Японский
+          label(for="section-menu").hidden Раздел
+          select.form__select#section-menu.js-sub-menu-article
+            option(value="page-url") Фонетика
+            option(value="page-url") Грамматика
+            option(value="page-url") Видеоуроки
+            option(value="page-url") Пословицы и поговорки
+            option(value="page-url") Афоризмы
+            option(value="page-url") Анекдоты
+            option(value="page-url") Видео
+            option(value="page-url") Книги
+            option(value="page-url") С чего начать изучение языка
+            option(value="page-url") Изучение языка
+            option(value="page-url" selected) Уроки онлайн
+      .article-menu__row.d-none.d-md-block
+        .container
+          .row
+            .col-auto
+              span язык
+            .col
+              ul.article-menu__list
+                li.active
+                  a(href="#") Английский
+                li
+                  a(href="#") Немецкий
+                li
+                  a(href="#") французкий
+                li
+                  a(href="#") итальянский
+                li
+                  a(href="#") испанский
+                li
+                  a(href="#") китайский
+                li
+                  a(href="#") японский
+      .article-menu__row.d-none.d-md-block
+        .container
+          .row
+            .col-auto
+              span Раздел
+            .col
+              ul.article-menu__list
+                li
+                  a(href="#") Алфавит
+                li
+                  a(href="#") Фонетика
+                li
+                  a(href="#") Грамматика
+                li
+                  a(href="#") Видеоуроки
+                li
+                  a(href="#") Пословицы и поговорки
+                li
+                  a(href="#") Афоризмы
+                li
+                  a(href="#") Анекдоты
+                li
+                  a(href="#") Видео
+                li
+                  a(href="#") Книги
+                li
+                  a(href="#") С чего начать
+                li
+                  a(href="#") изучение языка
+                li.active
+                  a(href="#") Уроки онлайн
+    .container
+      .article__content
+        p Известно, что регулярный просмотр фильмов на&nbsp;английском языке очень помогает в&nbsp;изучении этого самого языка. Но&nbsp;как здесь обойтись без грамотного наставника? Ведь далеко не&nbsp;всё можно понять из&nbsp;речи персонажей. Позвольте предложить вам вместе со&nbsp;мной окунуться в&nbsp;мир зарубежного кино, в&nbsp;котором я&nbsp;постараюсь стать для вас таким проводником.
+        video(controls)
+          source(src="https://interactive-examples.mdn.mozilla.net/media/examples/flower.mp4"
+        type="video/mp4")
+        p Итак, перед нами отрывок из&nbsp;фильма &lsquo;King&rsquo;s Speech&rsquo;. Посмотрите его внимательно. А&nbsp;теперь приступим
+          | к&nbsp;разбору интересных моментов.
+        p.text-block &minus; This is&nbsp;the BBC National Programme and Empire Service
+          i &#160;taking&#160;
+          | you to&nbsp;Wembley Stadium for the Closing Ceremony
+          | of&nbsp;the Empire Exhibition
+        p Глаголы с&nbsp;ing-овым суффиксом можно переводить русскими причастиями. В&nbsp;данном случае,
+          i &#160;&lsquo;taking&rsquo; &mdash;&#160;
+          | берущая вас на&nbsp;стадион. Литературно можно заменить на&nbsp;&laquo;приглашающая&raquo;
+        p.text-block &minus; Where His
+          i &#160;Royal Highness the Duke of&nbsp;York will&#160;
+          | read a&nbsp;
+          i &#160;message&#160;
+          | from his Father,
+          i &#160;his Majesty,&#160;
+          | King George
+          i &#160;the Fifth.
+        p К&nbsp;сыновьям английских королей принято обращаться
+          i &#160&lsquo;You Royal Highness&rsquo;&#160
+          | &mdash; Ваше высочество. &lsquo;
+          i &#160The Duke of&nbsp;York&rsquo;&#160
+          | &mdash; принц Йоркский. А&nbsp;вот у&nbsp;самого короля уже &laquo;величество&raquo;&nbsp;&mdash;
+          i &#160&lsquo;Majesty&rsquo;&#160
+          | , не&nbsp;перепутайте, если придётся общаться с&nbsp;обоими.
+        ul
+          li
+            i &lsquo;Will (read)&rsquo;&#160
+            | &mdash; одна из&nbsp;форм образования будущего времени. Вам о&nbsp;ней ещё в&nbsp;школе должны были рассказывать.
+          li
+            i &lsquo;Message&rsquo;&#160
+            | &mdash; послание.
+          li
+            i &lsquo;The Fifth&rsquo;&#160
+            | &mdash; пятый. Здесь три момента. Первый: определённый артикль &lsquo;the&rsquo;. Второй: суффикс &lsquo;th&rsquo;. Третий: прочтение и&nbsp;написание слова отличается от &lsquo;five&rsquo;.
+        p.text-block &minus; 58&nbsp;British Colonies and Dominions
+          i &#160;have taken part
+          | , mak
+          i ing&#160;
+          | this
+          i &#160;the&#160;
+          | larg
+          i est&#160;
+          | Exhibition stag
+          i ed&#160;
+          | anywhere in&nbsp;the world.
+          | of&nbsp;the Empire Exhibition
+        ul
+          li
+            i &lsquo;Have taken part&rsquo;&#160;
+            | &mdash; колонии и&nbsp;доминионы приняли участие в&nbsp;Present Perfect и&nbsp;в&nbsp;выставке одновременно.
+            br
+            | И&nbsp;снова причастный оборот, речь-то официальная!
+          li
+            i &lsquo;The largest&rsquo;&#160;
+            | &mdash; крупнейшая. Превосходная степень односложного прилагательного &lsquo;large&rsquo;, окаймлённая определённым артиклем &lsquo;the&rsquo; и&nbsp;суффиксом &lsquo;est&rsquo;.
+          li
+            i &lsquo;Staged&rsquo;
+            | &mdash; поставленная. Выставку представляют по&nbsp;всему миру, используя страдательную форму причастия.
+            br
+            | В&nbsp;английском это делается при помощи третьей формы глаголы.
+        p.text-block − Remember, Sir, three
+          | &#160;flashes.
+        ul
+          li
+            i ‘Flash’&#160;
+            | — вспышка, сигнал. Не путать с ‘flesh’ — плоть!
+        p.text-block − Then
+          i &#160;steady&#160;
+          | ‘red’ means you are
+          i &#160;live.
+        p (Затем постоянный красный значит, что вы в прямом эфире.)
+        ul
+          li
+            i ‘Steady’&#160;
+            | — устойчивый, постоянный.
+          li
+            i &lsquo;live&rsquo;&#160;
+            | &mdash; живой, реальный. Это слово часто используют на&nbsp;телевидении, когда хотят подчеркнуть, что идёт прямой эфир. Это прилагательное, а&nbsp;не&nbsp;глагол. И&nbsp;читать его следует иначе&nbsp;&mdash; [ˈlaɪv].
+          li
+        p.text-block &minus; Using the new
+          i invention&#160;
+          | of&nbsp;radio, the Opening Ceremony was the first time his Majesty the King
+          i &#160;addressed&#160;
+          | his subjects
+          i &#160;on&nbsp;the wireless.
+        ul
+          li
+            i ‘Invention’&#160;
+            | — изобретение.
+          li
+            i ‘Address’&#160;
+            | — обращаться. Слово знакомое большинству, но многие делают ошибку в ударении. Она ставится
+            | на второй слог!
+          li
+            i &lsquo;On the wireless&rsquo;&#160;
+            | &mdash; по&nbsp;беспроводной связи. Потому что &lsquo;wire&rsquo; &mdash; провод, а&nbsp;суффикс &lsquo;less&rsquo; означает &laquo;без&raquo;.
+        p.text-block
+          i &minus; At&nbsp;the close&#160;
+          | of&nbsp;the first Season, the
+          i &#160;heir&#160;
+          | to&nbsp;the throne His Royal Highness the Prince of&nbsp;Wales, made his first
+          i broadcast.
+        ul
+          li
+            i &lsquo;At the close&rsquo;&#160;
+            | &mdash; в&nbsp;конце. Получается, как&nbsp;бы на&nbsp;закрытии.
+          li
+            i &lsquo;Heir&rsquo;&#160;
+            | &mdash; наследник. Внимательней с&nbsp;произношением!
+          li
+            i &lsquo;Broadcast&rsquo;&#160;
+            | &mdash; передача, радиовещание. Глагол означает то&nbsp;же самое. А&nbsp;в&nbsp;прошедшем времени имеет целых две формы:
+            i &#160;&lsquo;broadcast&rsquo;&#160;
+            | и
+            i &#160;&lsquo;broadcasted&rsquo;.
+        p.text-block &minus; And today, his
+          i &#160;younger&#160;
+          | brother His Royal Highness, the Duke of&nbsp;York will give his
+          i inaugural&#160;
+          | to&nbsp;the nation and the world.
+        ul
+          li
+            i &lsquo;Younger&rsquo;&#160;
+            | &mdash; младший, сравнительная степень прилагательного. Кстати, &lsquo;g&rsquo; озвончается.
+          li
+            i &lsquo;Inaugural&rsquo;&#160;
+            | &mdash; инаугурационная речь. Такого в&nbsp;русском языке нет, поэтому мы&nbsp;просто переняли это страшное слово.
+        p.author &copy;&nbsp;Илья Манышин

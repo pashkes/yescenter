@@ -1,0 +1,101 @@
+
+mixin test(data)
+  section.page-programs.test-promo
+    .container
+      h1.h2.page-programs__title Тесты на&nbsp;уровень знания иностранных языков
+      p.page-programs__subtitle.subtitle Успех изучения иностранного языка закладывается на&nbsp;первом этапе. Вступительное испытание определит уровень знаний, поможет подобрать
+        | для вас группу и&nbsp;формат занятий.
+  section.test.section--grey
+    .container
+      .test__inner
+        h2.test__title.h2 Дистанционное тестирование на&nbsp;уровень владения иностранными языками
+        p Для предварительной оценки ваших знаний, пройдите тесты на&nbsp;определение уровня владения иностранными языками:
+        ul.list
+          li выберите язык для тестировния
+          li укажите возраст
+          li укажите ваше имя, электронную почту и контактный номер телефона.
+        p Для 100% результата необходимо пройти собеседование в любой из школ YES.
+          br
+          | Результаты используются для формирования групп с&nbsp;равным уровнем, интересами и&nbsp;целями для максимально эффективного обучения.
+          | Не&nbsp;пользуйтесь учебниками и&nbsp;пособиями при прохождении тестирования онлайн. Чем честнее будет результат, тем больше мы&nbsp;вам сможем дать.
+      form.page-reg.form#reg-for-course.js-test-langs
+        .page-reg__section.page-reg__section--select-lang
+          h3.page-reg__title Выберите язык для тестирования
+          .row.no-gutters
+            .col-md-4.col-xl.page-reg__col
+              label.page-reg__item
+                img(src="%=static=%img/general/uk.svg" width="40" heihgt="26" alt="Английский язык").page-reg__country-flag
+                input(type="radio" name="select-lang" checked).page-reg__radio.js-lang-select
+                span.page-reg__name Английский
+                  br
+                  | язык
+            .col-md-4.col-xl.page-reg__col
+              label.page-reg__item
+                img(src="%=static=%img/general/germany.svg" width="40" heihgt="26" alt="Немецкий язык").page-reg__country-flag
+                input(type="radio" name="select-lang").page-reg__radio.js-lang-select
+                span.page-reg__name Немецкий
+                  br
+                  | язык
+
+            .col-md-4.col-xl.page-reg__col
+              label.page-reg__item
+                img(src="%=static=%img/general/france.svg" width="40" heihgt="26" alt="Французкий язык").page-reg__country-flag
+                input(type="radio" name="select-lang").page-reg__radio.js-lang-select
+                span.page-reg__name Французкий
+                  br
+                  | язык
+
+            .col-md-4.col-xl.page-reg__col
+              label.page-reg__item
+                img(src="%=static=%img/general/Italy.svg" width="40" heihgt="26" alt="Итальянский язык").page-reg__country-flag
+                input(type="radio" name="select-lang").page-reg__radio.js-lang-select
+                span.page-reg__name Итальянский
+                  br
+                  | язык
+
+            .col-md-4.col-xl.page-reg__col
+              label.page-reg__item
+                img(src="%=static=%img/general/spain.svg" width="40" heihgt="26" alt="Испанский язык").page-reg__country-flag
+                input(type="radio" name="select-lang" value="spain").page-reg__radio.js-lang-select
+                span.page-reg__name Испанский
+                  br
+                  | язык
+        .page-reg__section.page-reg__section--type-education.js-old
+          h3.page-reg__title Выберите возраст
+          .row.no-gutters
+            .col-md-4.col-xl.page-reg__col
+              label.page-reg__item
+                input(type="radio" name="select-type-education").page-reg__radio
+                span.page-reg__name Для взрослых
+            .col-md-4.col-xl.page-reg__col
+              label.page-reg__item
+                input(type="radio" name="select-type-education" checked).page-reg__radio
+                span.page-reg__name Для подростков
+            .col-xl
+            .col-xl
+            .col-xl
+        .page-reg__section.page-reg__section--fields
+          h3.page-reg__title Контактная информация
+          .page-reg__row-field
+            .page-reg__col-field
+              label(for="reg-for-course-full-name").hidden Ваше имя и фамилия
+              input(type="text" id="reg-for-course-full-name" placeholder="Ваше имя и фамилия *" required).page-reg__field.form__field
+            .page-reg__col-field
+              label(for="reg-for-course-email").hidden Электронная почта
+              input(type="email" id="reg-for-course-email" placeholder="Электронная почта *" required).page-reg__field.form__field
+            .page-reg__col-field
+              label(for="reg-for-course-tel").hidden Номер телефона
+              input(type="tel" id="reg-for-course-tel" placeholder="Номер телефона" required).page-reg__field.form__field
+          .page-reg__footer
+            .row.align-items-md-center
+              .col-md
+                p.page-reg__polityca Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
+                  a(href="#" data-toggle="modal" data-target="#agreement") политикой конфиденциальности
+              .col-md-auto
+                button.page-reg__submit.btn.btn--red Начать тестирование
+  section.page-programs.uses
+    .container
+      h1.h2.page-programs__title Где используются результаты тестирования?
+      p.page-programs__subtitle.subtitle Исходя из&nbsp;результатов тестирования, мы&nbsp;формируем учебные группы, объединяющие людей по&nbsp;интересам, общим целям, и, конечно, по&nbsp;степени подготовки. Это обуславливает высокую вовлеченность в&nbsp;процесс обучения с&nbsp;самых первых занятий и&nbsp;максимальную эффективность усилий, вложенных в&nbsp;изучение иностранного языка.
+      p Сразу после тестирования&nbsp;Вы можете записаться на&nbsp;пробное занятие. На&nbsp;нем преподаватель выяснит ваши приоритеты, цели и&nbsp;составит индивидуальный план&nbsp;&mdash; траекторию обучения, ведущую к&nbsp;успеху кратчайшим путем.
+

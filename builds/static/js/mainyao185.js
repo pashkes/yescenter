@@ -1903,13 +1903,13 @@ object-assign
 
 
 
+
+
 (function () {
   $('.js-sub-menu-article').on('change', function () {
     window.location.href = $(this).val();
   });
 })();
-
-
 
 
 
@@ -2615,6 +2615,8 @@ $(window).on('load', function () {
 
 
 
+
+
 (function () {
   $('.js-promo-slider').slick({
     arrows: false,
@@ -2640,7 +2642,6 @@ $(window).on('load', function () {
     }]
   });
 })();
-
 
 
 (function () {
@@ -2678,7 +2679,6 @@ $(window).on('load', function () {
     $('.js-reviews-slider').find('.slick-list').height('auto');
   });
 })();
-
 
 
 (function () {
@@ -2773,6 +2773,21 @@ $(window).on('load', function () {
         nextArrow: $('.js-teachers-video-prev-btn')
       }
     }]
+  });
+})();
+
+(function () {
+  var langs = Array.from(document.querySelectorAll('.js-lang-select'));
+  var oldSection = document.querySelector('.js-old');
+  langs.forEach((element)=>{
+    element.addEventListener('change', function (evt) {
+        var value = evt.target.value;
+        if (value !== 'spain') {
+          oldSection.style.display = 'block';
+        } else  {
+          oldSection.style.display = 'none';
+        }
+      })
   });
 })();
 
