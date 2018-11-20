@@ -4,7 +4,7 @@
   langs.forEach((element)=>{
     element.addEventListener('change', function (evt) {
         var value = evt.target.value;
-        if (value !== 'spain') {
+        if (value !== 'italian') {
           oldSection.style.display = 'block';
         } else  {
           oldSection.style.display = 'none';
