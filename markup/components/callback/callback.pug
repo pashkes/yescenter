@@ -107,9 +107,9 @@ mixin callback(data)
         p.map__conf Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
           a(href="#" class="js-open-agreement" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement") политикой конфиденциальности
         button.btn.btn--red.w-100.js-succes-send Отправить заявку
-  div(tabindex="-1" role="dialog" aria-labelledby="orderCourceModalLabel" aria-hidden="true").callback.modal.fade.order-course#trial-lesson
+  div(tabindex="-1" role="dialog" aria-labelledby="orderCourceModalLabel" aria-hidden="true").callback.modal.fade.order-course#trial-lesson-modal
     div(role="document").modal-dialog.d-flex.justify-content-center
-      form.modal-conten.form.map__form#trial-lesson
+      form.modal-conten.form.map__form
         button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
           +icon('close', 14, 14)
           | Закрыть

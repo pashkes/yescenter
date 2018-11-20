@@ -10,10 +10,10 @@ mixin promo(data)
         button(type="button").promo__arrow.slide-arrow.slide-arrow--next.text-hide.js-promo-next-btn
           +icon('arrow-right', 12, 11)
           | Следующий слайд
-        ul.promo__slider.js-promo-slider
+        div.promo__slider.js-promo-slider
           each slide in data.list
             if slide.textColor
-              li(class="promo__slide "+slide.textColor)
+              section(class="promo__slide "+slide.textColor)
                 div.promo__bg-image
                   img(src="%=static=%img/content/"+slide.urlImg width="671" height="408" alt=slide.alt)
                   .promo__body
@@ -21,7 +21,7 @@ mixin promo(data)
                     p.promo__subtitle !{slide.subtitle}
                     a(href="#").promo__btn.btn.btn--border-white #{slide.btnTitle}
             else
-              li(class="promo__slide")
+              section(class="promo__slide")
                 div.promo__bg-image
                   img(src="%=static=%img/content/" + slide.urlImg width="671" height="408" alt=slide.alt)
                   .promo__body

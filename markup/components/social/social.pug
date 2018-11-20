@@ -3,5 +3,5 @@ mixin social(data)
   ul.social&attributes(attributes)
     each item in data
       li.social__item
-        a(href="#").social__link
+        a(href="#" title=data.name).social__link
           +icon(item.iconName, item.iconWidth, item.iconHeight)

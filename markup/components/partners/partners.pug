@@ -8,10 +8,10 @@ mixin partners(data)
           | Предадущий слайд
         button(type="button").partners__arrow.slide-arrow.slide-arrow--next.text-hide.js-partners-next-btn
           +icon('arrow-right', 12, 11)
-          | Следующий слайд
+          | Следующий слайд"Настя Тарасюк"
         .container
-          ul(class="partners__slider "+data.classSlider)
+          div(class="partners__slider "+data.classSlider)
             each item in data.list
-              li
+              div
                 .partners__slide
                   img(src="%=static=%img/content/"+item.imgSrc alt=+item.name)

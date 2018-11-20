@@ -1912,6 +1912,8 @@ object-assign
 })();
 
 
+
+
 (function () {
   let sliderStatus = 'no-initialize';
   let bigPhoto = $('.js-big-photo');
@@ -1974,8 +1976,6 @@ object-assign
     sliderStatus = 'no-initialize';
   });
 })();
-
-
 
 
 
@@ -2681,13 +2681,13 @@ $(window).on('load', function () {
 })();
 
 
-
-
 (function () {
   $('.js-close-map-popup').on('click', function () {
     $(this).parent('.js-map-popup').remove();
   });
 })();
+
+
 
 
 
@@ -2753,21 +2753,6 @@ $(window).on('load', function () {
 })();
 
 (function () {
-  var langs = Array.from(document.querySelectorAll('.js-lang-select'));
-  var oldSection = document.querySelector('.js-old');
-  langs.forEach(function(element){
-    element.addEventListener('change', function (evt) {
-        var value = evt.target.value;
-        if (value !== 'italian') {
-          oldSection.style.display = 'block';
-        } else  {
-          oldSection.style.display = 'none';
-        }
-      })
-  });
-})();
-
-(function () {
   $('.js-teachers-video').slick({
     dots: true,
     arrows: false,
@@ -2788,6 +2773,21 @@ $(window).on('load', function () {
         nextArrow: $('.js-teachers-video-prev-btn')
       }
     }]
+  });
+})();
+
+(function () {
+  var langs = Array.from(document.querySelectorAll('.js-lang-select'));
+  var oldSection = document.querySelector('.js-old');
+  langs.forEach(function(element){
+    element.addEventListener('change', function (evt) {
+        var value = evt.target.value;
+        if (value !== 'italian') {
+          oldSection.style.display = 'block';
+        } else  {
+          oldSection.style.display = 'none';
+        }
+      })
   });
 })();
 
