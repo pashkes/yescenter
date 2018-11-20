@@ -1,6 +1,7 @@
 .thanks {
   padding-top: 35px;
   padding-bottom: 25px;
+  overflow: hidden;
   @include media-breakpoint-up(md) {
     padding-top: 37px;
     padding-bottom: 40px

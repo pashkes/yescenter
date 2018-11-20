@@ -1,5 +1,6 @@
 .teachers-video {
   padding-bottom: 14px;
+  overflow: hidden;
   @include media-breakpoint-up(md) {
     padding-bottom: 43px;
   }

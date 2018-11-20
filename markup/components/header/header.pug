@@ -9,23 +9,36 @@ mixin header(data)
             form
               button(type="button" data-toggle="modal" data-target="#modal-location").header__you-city
                 | Ваш город:&#160;
-                span.header__city Москва
+                if !data.lytcarinoCity
+                  span.header__city Москва
+                else
+                  span.header__city #{data.lytcarinoCity}
           .col-auto.d-xl-flex.align-items-center
             ul.header__additional-menu.d-none.d-xl-flex
-              li.header__item-menu
-                a(href="#").header__link Компаниям
-              li.header__item-menu
-                a(href="#").header__link Франчайзинг
-              li.header__item-menu
-                a(href="#").header__link Разговорный клуб
-              li.header__item-menu
-                a(href="#").header__link Дистанционное обучение
-              li.header__item-menu
-                a(href="#").header__link Онлайн тестирование
-
-            button(type="button" data-toggle="modal" data-target="#modal-search").header__search-btn.text-hide
-              +icon('search', 16, 16)
-              | Поиск
+              if !data.contacts
+                li.header__item-menu
+                  a(href="#").header__link Компаниям
+                li.header__item-menu
+                  a(href="#").header__link Франчайзинг
+                li.header__item-menu
+                  a(href="#").header__link Разговорный клуб
+                li.header__item-menu
+                  a(href="#").header__link Дистанционное обучение
+                li.header__item-menu
+                  a(href="#").header__link Онлайн тестирование
+              else
+                li.header__item-menu
+                  span.header__link.pr-0.pl-0 Московская область, Лыткарино, Советская, 14б /
+                li.header__item-menu
+                  span.header__link.pr-0.pl-0 Пн-Пт 10:00—22:00 /
+                li.header__item-menu
+                  span.header__link.pr-0.pl-0 Сб-Вс 10:00—16:00 /
+                li.header__item-menu
+                  a(href="mail:lytkarino@yescenter.ru").header__link lytkarino@yescenter.ru
+            if !data.contacts
+              button(type="button" data-toggle="modal" data-target="#modal-search").header__search-btn.text-hide
+                +icon('search', 16, 16)
+                | Поиск
     .header__bottom
       .container
         .row.justify-content-between.align-items-center.no-gutters

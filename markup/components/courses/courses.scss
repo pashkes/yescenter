@@ -139,7 +139,7 @@
     border: none;
     appearance: none;
     background-color: transparent;
-    font: 15px 'Open Sans', Intro sans-serif;
+    font: 15px 'Open Sans', Intro, sans-serif;
     letter-spacing: 0.3px;
     color: #252525;
     &::-ms-expand {
@@ -159,9 +159,10 @@
     margin-left: -10px;
   }
   &__name-lang {
-    font-family: 'Open Sans', Intro sans-serif;
+    font-family: 'Open Sans', Intro, sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 40px;
+    vertical-align: middle;
     letter-spacing: 0.3px;
     color: $black;
   }

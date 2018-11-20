@@ -1,0 +1,143 @@
+mixin filters(data)
+  form.page-schedule__section#select-lang
+    .page-schedule__section-item
+      if data.titleOfSelectLands
+        h3.page-reg__title #{data.title}
+      .row.no-gutters
+        .col-md-6.col-xl-3.page-reg__col
+          label.page-reg__item
+            img(src="%=static=%img/general/uk.svg" width="40" heihgt="26" alt="Английский язык").page-reg__country-flag
+            input(type="radio" name="select-lang" checked).page-reg__radio
+            span.page-reg__name Английский язык
+        .col-md-6.col-xl-3.page-reg__col
+          label.page-reg__item
+            img(src="%=static=%img/general/germany.svg" width="40" heihgt="26" alt="Немецкий язык").page-reg__country-flag
+            input(type="radio" name="select-lang").page-reg__radio
+            span.page-reg__name Немецкий язык
+
+        .col-md-6.col-xl-3.page-reg__col
+          label.page-reg__item
+            img(src="%=static=%img/general/france.svg" width="40" heihgt="26" alt="Французкий язык").page-reg__country-flag
+            input(type="radio" name="select-lang").page-reg__radio
+            span.page-reg__name Французкий язык
+
+        .col-md-6.col-xl-3.page-reg__col
+          label.page-reg__item
+            img(src="%=static=%img/general/Italy.svg" width="40" heihgt="26" alt="Итальянский язык").page-reg__country-flag
+            input(type="radio" name="select-lang").page-reg__radio
+            span.page-reg__name Итальянский язык
+
+        .col-md-6.col-xl-3.page-reg__col
+          label.page-reg__item
+            img(src="%=static=%img/general/spain.svg" width="40" heihgt="26" alt="Испанский язык").page-reg__country-flag
+            input(type="radio" name="select-lang").page-reg__radio
+            span.page-reg__name Испанский язык
+
+        .col-md-6.col-xl-3.page-reg__col
+          label.page-reg__item
+            img(src="%=static=%img/general/china.svg" width="40" heihgt="26" alt="Китайский язык").page-reg__country-flag
+            input(type="radio" name="select-lang").page-reg__radio
+            span.page-reg__name Китайский язык
+
+        .col-md-6.col-xl-3.page-reg__col
+          label.page-reg__item
+            img(src="%=static=%img/general/japan.svg" width="40" heihgt="26" alt="Японский язык").page-reg__country-flag
+            input(type="radio" name="select-lang").page-reg__radio
+            span.page-reg__name Японский язык
+
+        .col-md-6.col-xl-3.page-reg__col
+          label.page-reg__item
+            input(type="radio" name="select-lang").page-reg__radio
+            span.page-reg__name Другой язык
+    if data.selectGroup
+      .page-schedule__section-item
+        h3.page-reg__title Какая группа вас интересует?
+        .row.no-gutters
+          .col-3.col-md.col-xl-auto.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education" ).page-reg__radio
+              span.page-reg__name A1
+          .col-6.col-md-auto.col-xl-auto.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name A1-A2
+          .col-3.col-md.col-xl-auto.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name A2
+          .col-3.col-md.col-xl-auto.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name B1
+          .col-3.col-md.col-xl-auto.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name B1+
+          .col-3.col-md.col-xl-auto.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name B2
+          .col-3.col-md.col-xl-auto.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name C1
+          .w-100.d-none.d-md-block.d-xl-none
+          .col-6.col-md.col-xl-auto.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name Elementary
+          .col-6.col-md.col-xl-auto.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name Pre-starter
+          .col-6.col-md.col-xl.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education").page-reg__radio
+              span.page-reg__name Starter
+          .col-6.col-md.col-xl.page-schedule__col
+            label.page-schedule__item
+              input(type="radio" name="select-type-education" checked).page-reg__radio
+              span.page-reg__name Разговорный
+    button(type="button").page-schedule__show-filter.js-show-filter
+      span показать еще фильтры
+    .page-schedule__filter.js-filter
+      .page-schedule__filter-inner
+        .page-schedule__filter-item.js-select-custom-scroll
+          label(for="select-lang-school").page-schedule__label.form__label #{data.select.label}
+          .form__select-custom
+            select(id="select-lang-school").page-schedule__select.js-select-defaul
+              each item in data.select.options
+                option #{item}
+        .page-schedule__filter-item.js-select-custom-scroll
+          label(for="select-lang-old").page-schedule__label.form__label возраст
+          .form__select-custom
+            select(id="select-lang-old").page-schedule__select.js-select-defaul
+              option Взрослые
+              option 3—6 лет
+              option 7—8 лет
+              option 9—10 лет
+              option 11—12 лет
+        .page-schedule__filter-item.js-select-custom-scroll
+          label(for="select-lang-day").page-schedule__label.form__label День нед.
+          .form__select-custom
+            select(id="select-lang-day").page-schedule__select.js-select-defaul
+              option Все
+              option Будни
+              option Выходные
+        .page-schedule__filter-item.js-select-custom-scroll
+          label(for="select-lang-time").page-schedule__label.form__label время
+          .form__select-custom
+            select(id="select-lang-time").page-schedule__select.js-select-defaul
+              option 18:20—19:20
+              option 18:20—19:20
+              option 18:20—19:20
+              option 18:20—19:20
+              option 18:20—19:20
+              option 18:20—19:20
+        .page-schedule__filter-item.js-select-custom-scroll
+          label(for="select-lang-status").page-schedule__label.form__label статус
+          .form__select-custom
+            select(id="select-lang-status").page-schedule__select.js-select-defaul
+              option Идет набор
+              option Формируется
+              option Запущена

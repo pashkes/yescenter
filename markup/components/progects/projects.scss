@@ -10,6 +10,7 @@
   }
   &__title {
     margin-bottom: 26px;
+    width: 100%;
     @include media-breakpoint-up(md) {
       margin-bottom: 42px;
     }
@@ -36,6 +37,7 @@
   &__item {
     display: flex;
     flex-direction: column;
+    width: 100%;
     img {
       align-self: center;
       margin-bottom: 24px;

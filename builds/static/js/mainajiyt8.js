@@ -1912,8 +1912,6 @@ object-assign
 })();
 
 
-
-
 (function () {
   let sliderStatus = 'no-initialize';
   let bigPhoto = $('.js-big-photo');
@@ -1979,6 +1977,8 @@ object-assign
 
 
 
+
+
 $('#callback-form').on('submit', function (event) {
   event.preventDefault();
   $('#callback').modal('hide');
@@ -2011,6 +2011,30 @@ $('#trial-lesson').on('submit', function (event) {
 
 
 
+
+(function () {
+  $('.js-certifications-slider').slick({
+    arrows: false,
+    mobileFirst: true,
+    dots: true,
+    centerMode: false,
+    centerPadding: false,
+    infinite: false,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+})();
 
 
 
@@ -2055,30 +2079,6 @@ $('#trial-lesson').on('submit', function (event) {
   }
   $(window).on('load resize', function () {
     slickMobile(langSlider, langSliderSettigs);
-  });
-})();
-
-(function () {
-  $('.js-certifications-slider').slick({
-    arrows: false,
-    mobileFirst: true,
-    dots: true,
-    centerMode: false,
-    centerPadding: false,
-    infinite: false,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 3,
-        variableWidth: true
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
   });
 })();
 
@@ -2457,6 +2457,8 @@ $('.js-select-time').SumoSelect({
 
 
 
+
+
 (function () {
 
   $('.js-reviews-list').on('change', function () {
@@ -2466,8 +2468,6 @@ $('.js-select-time').SumoSelect({
     $('.js-amount-list-reviews').text(amountReviews);
   });
 })();
-
-
 
 (function () {
   $('.js-select-defaul').each(function () {
@@ -2545,6 +2545,8 @@ $(window).on('load', function () {
 
 
 
+
+
 (function () {
   $('.js-partners-slider').slick({
     arrows: false,
@@ -2615,7 +2617,31 @@ $(window).on('load', function () {
 
 
 
+(function () {
+  $('.js-promo-slider').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    centerPadding: '0',
+    appendDots: $('.promo__dots'),
+    prevArrow: $('.js-promo-prev-btn'),
+    nextArrow: $('.js-promo-next-btn'),
 
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        variableWidth: true,
+        arrows: true
+      }
+    }]
+  });
+})();
 
 
 (function () {
@@ -2655,34 +2681,6 @@ $(window).on('load', function () {
 })();
 
 
-(function () {
-  $('.js-promo-slider').slick({
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    centerPadding: '0',
-    appendDots: $('.promo__dots'),
-    prevArrow: $('.js-promo-prev-btn'),
-    nextArrow: $('.js-promo-next-btn'),
-
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        variableWidth: true
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        variableWidth: true,
-        arrows: true
-      }
-    }]
-  });
-})();
-
-
-
 
 
 (function () {
@@ -2704,6 +2702,8 @@ $(window).on('load', function () {
     }, 1000);
   });
 })();
+
+
 
 
 (function () {
@@ -2753,6 +2753,21 @@ $(window).on('load', function () {
 })();
 
 (function () {
+  var langs = Array.from(document.querySelectorAll('.js-lang-select'));
+  var oldSection = document.querySelector('.js-old');
+  langs.forEach(function(element){
+    element.addEventListener('change', function (evt) {
+        var value = evt.target.value;
+        if (value !== 'italian') {
+          oldSection.style.display = 'block';
+        } else  {
+          oldSection.style.display = 'none';
+        }
+      })
+  });
+})();
+
+(function () {
   $('.js-teachers-video').slick({
     dots: true,
     arrows: false,
@@ -2776,20 +2791,7 @@ $(window).on('load', function () {
   });
 })();
 
-(function () {
-  var langs = Array.from(document.querySelectorAll('.js-lang-select'));
-  var oldSection = document.querySelector('.js-old');
-  langs.forEach((element)=>{
-    element.addEventListener('change', function (evt) {
-        var value = evt.target.value;
-        if (value !== 'italian') {
-          oldSection.style.display = 'block';
-        } else  {
-          oldSection.style.display = 'none';
-        }
-      })
-  });
-})();
+
 
 (function () {
   $('.js-thanks-slider').slick({
@@ -2821,6 +2823,8 @@ $(window).on('load', function () {
 
 
 
+
+
 (function () {
   $('.js-video-data-slider').slick({
     arrows: false,
@@ -2844,7 +2848,3 @@ $(window).on('load', function () {
     }]
   });
 })();
-
-
-
-

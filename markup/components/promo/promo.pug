@@ -1,7 +1,7 @@
 mixin promo(data)
   include ../icon/icon
 
-  section.promo
+  section.promo&attributes(attributes)
     .container-fluid
       .promo__slider-wrapper
         button(type="button").promo__arrow.slide-arrow.slide-arrow--prev.text-hide.js-promo-prev-btn
@@ -11,49 +11,30 @@ mixin promo(data)
           +icon('arrow-right', 12, 11)
           | Следующий слайд
         ul.promo__slider.js-promo-slider
-          li.promo__slide
-            div.promo__bg-image
-              img(src="%=static=%img/content/promo-1@2x.jpg" width="671" height="408" alt="Английская школа актерского мастерства")
-              .promo__body
-                h3.promo__title Английская
-                  br
-                  | школа актерского
-                  br
-                  | мастерства
-                p.promo__subtitle Вырабатывает навык
-                  br
-                  | изъясняться на английском языке красиво&nbsp;и&nbsp;правильно.
-                a(href="#").promo__btn.btn.btn--border-white Подробнее
-          li.promo__slide
-            div.promo__bg-image
-              img(src="%=static=%img/content/promo-2@2x.jpg" width="671" height="408" alt="Интенсивный языковой практикум в Лондоне")
-            .promo__body
-                h3.promo__title Интенсивный
-                  br
-                  | языковой практикум
-                  br
-                  | в Лондоне
-                p.promo__subtitle 18—21 марта
-                  br
-                  | Успейте записаться!
-                a(href="#").promo__btn.btn.btn--border-white Подробнее
-          li.promo__slide
-            div.promo__bg-image
-              img(src="%=static=%img/content/promo-1@2x.jpg" width="671" height="408" alt="Английская школа актерского мастерства")
-              .promo__body
-                h3.promo__title Английская
-                  br
-                  | школа актерского
-                  br
-                  | мастерства
-                p.promo__subtitle Вырабатывает навык изъясняться на английскомязыке красиво и правильно.
-                a(href="#").promo__btn.btn.btn--border-white Подробнее
+          each slide in data.list
+            if slide.textColor
+              li(class="promo__slide "+slide.textColor)
+                div.promo__bg-image
+                  img(src="%=static=%img/content/"+slide.urlImg width="671" height="408" alt=slide.alt)
+                  .promo__body
+                    h3.promo__title !{slide.title}
+                    p.promo__subtitle !{slide.subtitle}
+                    a(href="#").promo__btn.btn.btn--border-white #{slide.btnTitle}
+            else
+              li(class="promo__slide")
+                div.promo__bg-image
+                  img(src="%=static=%img/content/" + slide.urlImg width="671" height="408" alt=slide.alt)
+                  .promo__body
+                    h3.promo__title !{slide.title}
+                    p.promo__subtitle !{slide.subtitle}
+                    a(href="#").promo__btn.btn.btn--border-white #{slide.btnTitle}
     .promo__footer
       .container
         .promo__footer
           .row.justify-content-md-between.align-items-center
             .col-md-auto
               .promo__dots
-            .col-md-auto.text-center
-              a(href="#").show-all Показать все акции
-               span &nbsp;&rarr;
+            if data.showAllLessons
+              .col-md-auto.text-center
+                a(href="#").show-all Показать все акции
+                 span &nbsp;&rarr;

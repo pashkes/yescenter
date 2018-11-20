@@ -24,8 +24,10 @@
   }
   .lang-card__name {
     letter-spacing: 0;
+    width: 100%;
   }
   .lang-card__desc {
+    width: 100%;
     @include media-breakpoint-up(md) {
       font-size: 14px !important;
     }

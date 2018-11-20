@@ -46,6 +46,7 @@
   }
   &__subtitle {
     margin-bottom: 12px;
+    width: 100%;
     @include media-breakpoint-up(md) {
       margin-bottom: 18px;
     }

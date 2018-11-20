@@ -103,6 +103,7 @@
     }
   }
   .page-eng__desc {
+    width: 100%;
     @include media-breakpoint-up(md) {
       margin-bottom: 45px;
     }

@@ -57,6 +57,10 @@
     flex-wrap: wrap;
     margin-right: -25px;
     margin-left: -25px;
+    @include media-breakpoint-up(xl) {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
   &__item-inner {
     @include media-breakpoint-up(md) {

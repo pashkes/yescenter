@@ -6,7 +6,7 @@
     background-color: $dark-blue;
   }
   &__you-city {
-    font-family: 'Open Sans', Intro sans-serif;
+    font-family: 'Open Sans', Intro, sans-serif;
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 0.2px;
@@ -24,7 +24,7 @@
     border-bottom: 1px dashed #25344A;
   }
   &__select-city {
-    font: 12px 'Open Sans', Intro sans-serif;
+    font: 12px 'Open Sans', Intro, sans-serif;
     letter-spacing: 0.2px;
     text-align: left;
     appearance: none;
@@ -163,7 +163,7 @@
     color: $text-color;
   }
   &__title-delivery {
-    font-family: 'Open Sans', Intro sans-serif;
+    font-family: 'Open Sans', Intro, sans-serif;
     font-size: 13px;
     line-height: 1.69;
     letter-spacing: 0.3px;
