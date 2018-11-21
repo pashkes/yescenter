@@ -1,5 +1,5 @@
 mixin thanks(data)
-  section.thanks
+  section.thanks&attributes(attributes)
     .container
       h2.thanks__title.h2 #{data.title}
     .thanks__wrapper-slider
@@ -10,7 +10,7 @@ mixin thanks(data)
         +icon('arrow-right', 12, 11)
         | Следующий слайд
       .container
-        ul.thanks__slider.js-thanks-slider
+        ul(class="thanks__slider "+data.classSlider)
           - var i = 1
           each slide in data.list
             li

@@ -5,7 +5,7 @@ mixin page-school(data)
       .container
         .row
           .col-xl
-            h1.page-school__title.h2 #{data.title}
+            h2.page-school__title.h2 #{data.title}
           .col-xl-auto
             span.school-list__time-work Пн-Пт 10:00 — 22:00, Сб-Вс&#160;10:00&#160;—&#160;16:00
         .row
@@ -16,14 +16,14 @@ mixin page-school(data)
                   +icon('picker', 11, 16)
                   | !{data.address}
               .col-md.d-none.d-md-block
-                a(href="email:"+data.email).school-list__email
+                a(href="mailto:"+data.email).school-list__email
                   +icon('mail', 16, 12)
                   | #{data.email}
             p.school-list__contacts
               +icon('phone', 10, 16)
               | +7&#160;495&#160;125-35-24, +7&#160;800&#160;100-32-76, +7&#160;495&#160;125-35-24
             p Отдел корпоративного обучения:&#160;+7&#160;495&#160;984-97-10
-            a(href="email:"+data.email).school-list__email.d-md-none
+            a(href="mailto:"+data.email).school-list__email.d-md-none
               +icon('mail', 16, 12)
               | #{data.email}
           .col-xl-auto

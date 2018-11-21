@@ -16,12 +16,12 @@ html(class="no-js", lang="ru")
     +head(head.defaults)
   body
     .page-wrapper
-      +header(header)
+      +header(headerDefault)
       .container
         +breadcrumb(breadcrumb.price)
       section.page-programs
         .container
-          h1.h2.page-programs__title Стоимость курсов изучения иностранных языков
+          h2.h2.page-programs__title Стоимость курсов изучения иностранных языков
           p.page-programs__subtitle.subtitle Стоимость обучения иностранным языкам может быть различной, Она зависит, в первую очередь, от выбранной формы обучения, а также от курса и изучаемого языка. Цена также определяется, исходя из таких факторов, как содержание и длительность учебного процесса. Ниже представлена примерная стоимость обучения в Центре YES для разных возрастных категорий.
       +page-price(timetablePrice).section--grey
       +interestring-education(interestingEducation)

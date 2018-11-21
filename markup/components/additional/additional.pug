@@ -1,13 +1,23 @@
-mixin additional(data, title)
+mixin additional(data, title, valueColumns)
   section.additional.section&attributes(attributes)
     .container
       if title
         h2.h2.additional__title #{title}
-      .row
-        each sect in data
-          .col-xl-6
+        if valueColumns !== 'single'
+          .row
+            each sect in data
+              .col-xl-6
+                .additional__text
+                  each item in sect
+                    article.additional__sect
+                      if item.title
+                        h3.h3.additional__subtitle !{item.title}
+                      div !{item.text}
+        else
+          each sect in data
             .additional__text
               each item in sect
-                .additional__sect
-                  h3.h3.additional__subtitle !{item.title}
+                article.additional__sect
+                  if item.title
+                    h3.h3.additional__subtitle !{item.title}
                   div !{item.text}

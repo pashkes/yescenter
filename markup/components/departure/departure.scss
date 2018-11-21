@@ -186,4 +186,11 @@
       }
     }
   }
+  &__text-bottom {
+    @include media-breakpoint-up(xl) {
+      max-width: 1110px;
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
 }

@@ -1,10 +1,10 @@
-mixin teachers(data, subtitle, title)
+mixin teachers(data, subtitle, title, noFooter)
   section.teachers.section&attributes(attributes)
     include ../teacher/teacher
     .container
-      h2.teachers__title.h2 #{title}
+      h2.teachers__title.h2 !{title}
       if subtitle
-        p.teachers__subtitle.subtitle #{data.subtitlePrimary}
+        p.teachers__subtitle.subtitle !{data.subtitlePrimary}
     .teachers__wrapper
       button(type="button").teachers__arrow.slide-arrow.slide-arrow--prev.text-hide.js-techers-prev-btn
         +icon('arrow-left', 12, 11)
@@ -13,17 +13,19 @@ mixin teachers(data, subtitle, title)
         +icon('arrow-right', 12, 11)
         | Следующий слайд
       .container
-        ul.teachers__slider.js-techers-slider
+        div.teachers__slider.js-techers-slider
           each item in data.list
-            li
+            div
               +teacher(item).teachers__slide
+
     .teachers__footer
       .container
         .row.align-items-md-center
           .col-md-auto.d-xl-none
             .teachers__dots
-          .col-md-auto.ml-md-auto.text-center
-            a(href="#").show-all все преподаватели
-              span &nbsp;&rarr;
+          if noFooter !== 'no-footer'
+            .col-md-auto.ml-md-auto.text-center
+              a(href="#").show-all все преподаватели
+                span &nbsp;&rarr;
 
 

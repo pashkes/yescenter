@@ -1,6 +1,10 @@
 const data = {
-  header: {
-    lytcarinoCity: 'Лыткарино',
+  headerDefault: {
+    city: 'Москва',
     contacts: true,
+  },
+  headerLytcarino: {
+    city: 'Лыткарино',
+    contacts: false,
   }
 };

@@ -17,6 +17,11 @@
     @include media-breakpoint-up(xl) {
       margin-bottom: 31px;
     }
+    span {
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+    }
   }
   .timetable__table-d {
     .timetable__th {

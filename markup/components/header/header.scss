@@ -48,6 +48,27 @@
     padding: 0;
     list-style-type: none;
   }
+  &__item-menu {
+    &:last-child {
+      .header__link.contacts {
+        padding-right: 0;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 16px;
+          left: 9px;
+          right: 0;
+          border-bottom: 1px solid #3E4656;
+          transition: $transition-base;
+        }
+      }
+    }
+    &:first-child {
+      .contacts::before {
+        display: none;
+      }
+    }
+  }
   &__link {
     display: block;
     padding: 14px 16px;
@@ -56,6 +77,27 @@
     line-height: 1.69;
     letter-spacing: 0.3px;
     color: #ffffff;
+    &.contacts {
+      position:relative;
+      padding-right: 9px;
+      padding-left: 9px;
+      &:hover {
+        &::before {
+          color: #fff;
+        }
+        &::after {
+          opacity: 0;
+        }
+      }
+      &::before {
+        content:'/';
+        position: absolute;
+        left: -2px;
+        top: 14px;
+        transition: $transition-base;
+      }
+
+    }
   }
   &__search {
     display: none;

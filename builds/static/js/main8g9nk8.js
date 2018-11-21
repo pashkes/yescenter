@@ -1903,8 +1903,6 @@ object-assign
 
 
 
-
-
 (function () {
   $('.js-sub-menu-article').on('change', function () {
     window.location.href = $(this).val();
@@ -1976,6 +1974,8 @@ object-assign
     sliderStatus = 'no-initialize';
   });
 })();
+
+
 
 
 
@@ -2099,6 +2099,29 @@ $('#trial-lesson').on('submit', function (event) {
           arrows: true,
           dots: false,
           slidesToShow: 2
+        }
+      }
+
+    ]
+  });
+})();
+(function () {
+  $('.js-lytkarino-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          dots: false
         }
       }
 
@@ -2373,13 +2396,13 @@ $('.js-select-time').SumoSelect({
   captionFormat: '{0} Selected'
 });
 
+
+
 (function () {
   $('.js-menu-close').on('click', function () {
     $('body').removeClass('show-menu');
   });
 })();
-
-
 
 (function () {
   function addEventFileRemove() {
@@ -2693,6 +2716,8 @@ $(window).on('load', function () {
 
 
 
+
+
 (function () {
   $('.subscribe').on('submit', function (evt) {
     evt.preventDefault();
@@ -2702,8 +2727,6 @@ $(window).on('load', function () {
     }, 1000);
   });
 })();
-
-
 
 
 (function () {
@@ -2793,6 +2816,8 @@ $(window).on('load', function () {
 
 
 
+
+
 (function () {
   $('.js-thanks-slider').slick({
     arrows: false,
@@ -2820,8 +2845,32 @@ $(window).on('load', function () {
     ]
   });
 })();
-
-
+(function () {
+  $('.js-sert-slider').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1343,
+        settings: {
+          slidesToShow: 4,
+          arrows: true,
+          dots: false,
+          prevArrow: $('.js-thanks-prev-btn'),
+          nextArrow: $('.js-thanks-next-btn')
+        }
+      }
+    ]
+  });
+})();
 
 
 

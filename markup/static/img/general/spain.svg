@@ -1,49 +1,11 @@
-<svg id="Spain" xmlns="http://www.w3.org/2000/svg" width="70" height="47" viewBox="0 0 70 47">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<defs>
+<svg xmlns="http://www.w3.org/2000/svg" id="Spain" width="70" height="47">
+  <defs>
     <style>
-      .cls-1 {
-        fill: #ffce54;
-      }
-
-      .cls-2, .cls-3 {
-        fill: #d91616;
-      }
-
-      .cls-3 {
-        fill-rule: evenodd;
-      }
+      .cls-2{fill:#d91616}
     </style>
   </defs>
-  <rect id="Rounded_Rectangle_7_copy" data-name="Rounded Rectangle 7 copy" class="cls-1" width="70" height="47" rx="6.364" ry="6.364"/>
-  <rect id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-2" width="70" height="10"/>
-  <rect id="Rectangle_1_copy_13" data-name="Rectangle 1 copy 13" class="cls-2" y="37" width="70" height="10"/>
-  <path class="cls-3" d="M16.758,17.5a4.278,4.278,0,0,1-3.25-1.5,4.291,4.291,0,0,1-3.254,1.5A5.11,5.11,0,0,1,7,16.255v8.155C7.059,29.78,13.5,32,13.5,32S20,29.78,20,24.409V16.255A5.06,5.06,0,0,1,16.758,17.5Z"/>
+  <rect id="Rounded_Rectangle_7_copy" width="70" height="47" fill="#ffce54" data-name="Rounded Rectangle 7 copy" rx="6.36" ry="6.36"/>
+  <path id="Rectangle_1_copy" d="M0 0h70v10H0z" class="cls-2" data-name="Rectangle 1 copy"/>
+  <path id="Rectangle_1_copy_13" d="M0 37h70v10H0z" class="cls-2" data-name="Rectangle 1 copy 13"/>
+  <path fill="#d91616" fill-rule="evenodd" d="M16.76 17.5A4.28 4.28 0 0 1 13.5 16a4.3 4.3 0 0 1-3.26 1.5A5.11 5.11 0 0 1 7 16.25v8.16c.06 5.37 6.5 7.59 6.5 7.59s6.5-2.22 6.5-7.6v-8.14a5.06 5.06 0 0 1-3.24 1.24z"/>
 </svg>

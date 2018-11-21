@@ -65,7 +65,7 @@ mixin callback(data)
               p Предоставив Ваши персональные данные на сайте&#160;
                 a(href="www.yescenter.ru") www.yescenter.ru&#160;
                 | ЧОУ ДО Школа английского языка «ЕС» (далее YES), Вы автоматически соглашаетесь с тем, что указанные Вами данные могут быть использованы YES или аффилированными лицами YES в информационной и рекламной рассылке, в том числе по email и SMS, и Ваши данные охраняются в рамках Соглашения о защите прав. Вы можете отказаться от получения рекламной информации YES и аффилированных лиц YES, связавшись с нашим контактным центром по номеру телефона 8-800 555-44-77 или по электронному адресу&#160;
-                a(href="mail:media@yescenter.ru") media@yescenter.ru.
+                a(href="mailto:media@yescenter.ru") media@yescenter.ru.
               h3 2. ВАШИ КОНТАКТНЫЕ ДАННЫЕ
               p При бронировании курса или оформлении запроса на бесплатный тест на нашем сайте, нам необходимо узнать Ваши персональные данные - такие, как Ваше имя, эл. адрес, номер телефона и место жительства. Мы не разглашаем Ваши персональные данные за пределами организации.
 
@@ -92,7 +92,7 @@ mixin callback(data)
         label(for="order-course-phone").hidden Контактный номер телефона *
         input(type="tel" placeholder="Контактный номер телефона *"  name="phone" required).form__field.callback__phone#order-course-phone
         label(for="order-course-time-first").hidden Выберите язык для изучения *
-        select(required).js-select-lang-order#order-course-select-course
+        select(required).js-select-lang-order#order-course-time-first
           option(selected disabled) Выберите язык для изучения *
           option Английский язык
           option Немецкий язык

@@ -17,12 +17,12 @@ html(class="no-js", lang="ru")
     +head(head.defaults)
   body
     .page-wrapper
-      +header(header)
+      +header(headerDefault)
       .container
         +breadcrumb(breadcrumb.foreign)
       section.page-programs
         .container
-          h1.h2.page-programs__title Курсы иностранных языков
+          h2.h2.page-programs__title Курсы иностранных языков
           p.page-programs__subtitle.subtitle Хотите получить образование международного уровня? Мечтаете в совершенстве овладеть иностранным языком в короткие сроки? Обращайтесь в лингвистический центр YES! Школа YES — это инновационные учебные материалы, эффективные программы, профессиональный преподавательский состав и 100% гарантия успешного изучения иностранного языка. Благодаря уникальной методике FlashCom вы легко освоите иностранный язык и в дальнейшем сможете самостоятельно использовать навыки для совершенствования полученных знаний!
       +page-foreign-lang(pageForeignLang.list)
       +additional(additionalText.pageProgram, 'Почему выбирают обучение в YES?')

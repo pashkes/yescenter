@@ -1,19 +1,31 @@
 mixin forms-education(data, noContainer)
   section.forms-education.section.section--grey&attributes(attributes)
     if noContainer
-      h2.forms-education__title.h2 #{data.title}
+      h2.forms-education__title.h2 !{data.title}
       .forms-education__row.js-form-education-slider
         each item in data.list
           .forms-education__col
             article.forms-education__item
-              h3.forms-education__subject #{item.subtitle}
+              h3.forms-education__subject !{item.subtitle}
               p.forms-education__text !{item.text}
     else
       .container
-        h2.forms-education__title.h2 #{data.title}
-        .forms-education__row.js-form-education-slider
+        h2.forms-education__title.h2 !{data.title}
+        div(class="forms-education__row "+data.classSlider)
           each item in data.list
             .forms-education__col
               article.forms-education__item
-                h3.forms-education__subject #{item.subtitle}
+                h3.forms-education__subject !{item.subtitle}
                 p.forms-education__text !{item.text}
+mixin forms-education-lytkyno(data)
+  section.forms-education.section--grey&attributes(attributes)
+    .container
+      h2.forms-education__title.h2 !{data.title}
+      div(class="forms-education__row "+data.classSlider)
+        .row
+          each item in data.list
+            .col-xl-4
+              .forms-education__col
+                article.forms-education__item
+                  h3.forms-education__subject !{item.subtitle}
+                  p.forms-education__text !{item.text}

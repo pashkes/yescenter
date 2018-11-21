@@ -10,12 +10,12 @@ mixin header(data)
               button(type="button" data-toggle="modal" data-target="#modal-location").header__you-city
                 | Ваш город:&#160;
                 if !data.lytcarinoCity
-                  span.header__city Москва
+                  span.header__city #{data.city}
                 else
                   span.header__city #{data.lytcarinoCity}
           .col-auto.d-xl-flex.align-items-center
             ul.header__additional-menu.d-none.d-xl-flex
-              if !data.contacts
+              if data.contacts
                 li.header__item-menu
                   a(href="#").header__link Компаниям
                 li.header__item-menu
@@ -28,17 +28,16 @@ mixin header(data)
                   a(href="#").header__link Онлайн тестирование
               else
                 li.header__item-menu
-                  span.header__link.pr-0.pl-0 Московская область, Лыткарино, Советская, 14б /
+                  span.header__link.contacts Московская область, Лыткарино, Советская, 14б
                 li.header__item-menu
-                  span.header__link.pr-0.pl-0 Пн-Пт 10:00—22:00 /
+                  span.header__link.contacts Пн-Пт 10:00—22:00
                 li.header__item-menu
-                  span.header__link.pr-0.pl-0 Сб-Вс 10:00—16:00 /
+                  span.header__link.contacts Сб-Вс 10:00—16:00
                 li.header__item-menu
-                  a(href="mail:lytkarino@yescenter.ru").header__link lytkarino@yescenter.ru
-            if !data.contacts
-              button(type="button" data-toggle="modal" data-target="#modal-search").header__search-btn.text-hide
-                +icon('search', 16, 16)
-                | Поиск
+                  a(href="mailto:lytkarino@yescenter.ru").header__link.contacts lytkarino@yescenter.ru
+            button(type="button" data-toggle="modal" data-target="#modal-search").header__search-btn.text-hide
+              +icon('search', 16, 16)
+              | Поиск
     .header__bottom
       .container
         .row.justify-content-between.align-items-center.no-gutters

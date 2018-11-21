@@ -5,7 +5,7 @@ mixin school-list(data)
       .container
         .row.align-items-md-center
           .col-md
-            h1.school-list__title.h2 Наши школы
+            h2.school-list__title.h2 Наши школы
           .col-md-auto.d-none.d-md-block.d-xl-none
             div(role="tablist").school-list__nav.nav
               a(href="#map-list-w" role="tab" aria-selected="true" data-toggle="tab").school-list__tab.active списком
@@ -71,7 +71,7 @@ mixin school-list(data)
                             +icon('picker', 11, 16)
                             | #{item.address}
                         .col-xl
-                          a(href="email:" + item.email).school-list__email
+                          a(href="mailto:" + item.email).school-list__email
                             +icon('mail', 16, 12)
                             | #{item.email}
                     .col-12
@@ -116,7 +116,7 @@ mixin school-list(data)
                 | обучения:
                 br
                 | +7 495 984-97-10
-              a(href="email:kolomenskaya@yescenter.ru").school-list__email
+              a(href="mailto:kolomenskaya@yescenter.ru").school-list__email
                 +icon('mail', 16, 12)
                 | kolomenskaya@yescenter.ru
               button(type="button" data-toggle="modal" data-target="#callback").school-list__btn-popup.btn.btn--grey заказать звонок

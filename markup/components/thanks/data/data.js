@@ -1,6 +1,7 @@
 const data = {
   thanks: {
     title: 'Благодарности',
+    classSlider: 'js-thanks-slider',
     list: [
       {
         imgSrc: 'thanks-1.png'
@@ -24,6 +25,31 @@ const data = {
         imgSrc: 'thanks-3.png'
       }
     ]
+  },
+  sert: {
+    title: 'отзывы о нашем центре',
+    classSlider: 'js-sert-slider',
+    list: [
+      {
+        imgSrc: 'review-cursive-1.jpg'
+      },
+      {
+        imgSrc: 'review-cursive-2.jpg'
+      },
+      {
+        imgSrc: 'review-cursive-3.jpg'
+      },
+      {
+        imgSrc: 'review-cursive-4.jpg'
+      },
+      {
+        imgSrc: 'review-cursive-1.jpg'
+      },
+      {
+        imgSrc: 'review-cursive-2.jpg'
+      }
+    ]
   }
+
 };
 

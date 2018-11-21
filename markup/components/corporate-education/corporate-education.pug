@@ -2,7 +2,7 @@ mixin corporate-education (data)
   include ../icon/icon
   section.corporate-education
     .container
-      h1.corporate-education__title.h2 !{data.title}
+      h2.corporate-education__title.h2 !{data.title}
       img(src="%=static=%img/content/single-photo.jpg" alt="Корпоративное обучение иностранным языкам").corporate-education__img
       h2.corporate-education__subtitle Корпоративное изучение иностранных языков по Москве и Московской области:
       p.corporate-education__text Информацию о цене курса можно узнать по нашему телефону или написать нам по электронной почте, и мы подберем подходящий вам вариант и рассчитаем стоимость.
@@ -12,7 +12,7 @@ mixin corporate-education (data)
           | +7 495 984-97-10,
         a(href="tel:+79260796779") +7 926 079-67-79
 
-        a(href="mail:corporate@yescenter.ru").d-flex
+        a(href="mailto:corporate@yescenter.ru").d-flex
           +icon('mail', 16, 12)
           | corporate@yescenter.ru
       a(href="#").corporate-education__btn.btn.btn--red #{data.btnText}

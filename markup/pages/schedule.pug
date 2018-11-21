@@ -15,12 +15,12 @@ html(class="no-js", lang="ru")
     +head(head.defaults)
   body
     .page-wrapper
-      +header(header)
+      +header(headerDefault)
       .container
         +breadcrumb(breadcrumb.schedule)
       section.page-programs
         .container
-          h1.h2.page-programs__title Расписание групп в Москве
+          h2.h2.page-programs__title Расписание групп в Москве
           p.page-programs__subtitle.subtitle В любую группу в Центре YES всегда можно добавиться, или подобрать оптимальную по возрасту и уровню. Постоянно открываются новые группы, поэтому, если вы не нашли подходящую для вас группу, позвоните и оставьте заявку!
       +page-schedule(schedule)
       +interestring-education(interestingEducation)

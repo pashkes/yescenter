@@ -1,7 +1,7 @@
 mixin promo(data)
   include ../icon/icon
 
-  section.promo&attributes(attributes)
+  .promo&attributes(attributes)
     .container-fluid
       .promo__slider-wrapper
         button(type="button").promo__arrow.slide-arrow.slide-arrow--prev.text-hide.js-promo-prev-btn
@@ -13,19 +13,19 @@ mixin promo(data)
         div.promo__slider.js-promo-slider
           each slide in data.list
             if slide.textColor
-              section(class="promo__slide "+slide.textColor)
+              article(class="promo__slide "+slide.textColor)
                 div.promo__bg-image
                   img(src="%=static=%img/content/"+slide.urlImg width="671" height="408" alt=slide.alt)
                   .promo__body
-                    h3.promo__title !{slide.title}
+                    h2.promo__title !{slide.title}
                     p.promo__subtitle !{slide.subtitle}
                     a(href="#").promo__btn.btn.btn--border-white #{slide.btnTitle}
             else
-              section(class="promo__slide")
+              article(class="promo__slide")
                 div.promo__bg-image
                   img(src="%=static=%img/content/" + slide.urlImg width="671" height="408" alt=slide.alt)
                   .promo__body
-                    h3.promo__title !{slide.title}
+                    h2.promo__title !{slide.title}
                     p.promo__subtitle !{slide.subtitle}
                     a(href="#").promo__btn.btn.btn--border-white #{slide.btnTitle}
     .promo__footer

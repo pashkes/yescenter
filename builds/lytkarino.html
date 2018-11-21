@@ -10,10 +10,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;amp;subset=cyrillic-ext" rel="stylesheet">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainzjb3j.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main8g9nk8.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script>
@@ -37,15 +37,20 @@
                             </div>
                             <div class="col-auto d-xl-flex align-items-center">
                                 <ul class="header__additional-menu d-none d-xl-flex">
-                                    <li class="header__item-menu"><span class="header__link pr-0 pl-0">Московская область, Лыткарино, Советская, 14б /</span>
+                                    <li class="header__item-menu"><span class="header__link contacts">Московская область, Лыткарино, Советская, 14б</span>
                                     </li>
-                                    <li class="header__item-menu"><span class="header__link pr-0 pl-0">Пн-Пт 10:00—22:00 /</span>
+                                    <li class="header__item-menu"><span class="header__link contacts">Пн-Пт 10:00—22:00</span>
                                     </li>
-                                    <li class="header__item-menu"><span class="header__link pr-0 pl-0">Сб-Вс 10:00—16:00 /</span>
+                                    <li class="header__item-menu"><span class="header__link contacts">Сб-Вс 10:00—16:00</span>
                                     </li>
-                                    <li class="header__item-menu"><a class="header__link" href="mail:lytkarino@yescenter.ru">lytkarino@yescenter.ru</a>
+                                    <li class="header__item-menu"><a class="header__link contacts" href="mailto:lytkarino@yescenter.ru">lytkarino@yescenter.ru</a>
                                     </li>
                                 </ul>
+                                <button class="header__search-btn text-hide" type="button" data-toggle="modal" data-target="#modal-search">
+                                    <svg class="icon" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#search"></use>
+                                    </svg>Поиск
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -179,7 +184,7 @@
                     </div>
                 </div>
             </header>
-            <section class="promo">
+            <div class="promo">
                 <div class="container-fluid">
                     <div class="promo__slider-wrapper">
                         <button class="promo__arrow slide-arrow slide-arrow--prev text-hide js-promo-prev-btn" type="button">
@@ -193,36 +198,36 @@
                             </svg>Следующий слайд
                         </button>
                         <div class="promo__slider js-promo-slider">
-                            <section class="promo__slide promo__slide--black-text">
+                            <article class="promo__slide promo__slide--black-text">
                                 <div class="promo__bg-image">
                                     <img src="static/img/content/lytkarino-photo-1.jpg" width="671" height="408" alt="Летний английский язык для дошколят">
                                     <div class="promo__body">
-                                        <h3 class="promo__title">Летний <br/> английский язык<br/> для дошколят</h3>
+                                        <h2 class="promo__title">Летний <br/> английский язык<br/> для дошколят</h2>
                                         <p class="promo__subtitle">Английское лето маленьким YESятам!
                                             <br/>Скидка -20%, только в апреле.</p><a class="promo__btn btn btn--border-white" href="#">записаться</a>
                                     </div>
                                 </div>
-                            </section>
-                            <section class="promo__slide">
+                            </article>
+                            <article class="promo__slide">
                                 <div class="promo__bg-image">
                                     <img src="static/img/content/lytkarino-photo-2.jpg" width="671" height="408" alt="Английский для путешественников">
                                     <div class="promo__body">
-                                        <h3 class="promo__title">Английский для <br/>путешественников</h3>
+                                        <h2 class="promo__title">Английский для <br/>путешественников</h2>
                                         <p class="promo__subtitle">Летний интенсив на 4 недели
                                             <br/>Скидка -20% только в апреле</p><a class="promo__btn btn btn--border-white" href="#">записаться</a>
                                     </div>
                                 </div>
-                            </section>
-                            <section class="promo__slide promo__slide--black-text">
+                            </article>
+                            <article class="promo__slide promo__slide--black-text">
                                 <div class="promo__bg-image">
                                     <img src="static/img/content/lytkarino-photo-1.jpg" width="671" height="408" alt="Летний английский язык для дошколят">
                                     <div class="promo__body">
-                                        <h3 class="promo__title">Летний <br/> английский язык<br/> для дошколят</h3>
+                                        <h2 class="promo__title">Летний <br/> английский язык<br/> для дошколят</h2>
                                         <p class="promo__subtitle">Английское лето маленьким YESятам!
                                             <br/>Скидка -20%, только в апреле.</p><a class="promo__btn btn btn--border-white" href="#">записаться</a>
                                     </div>
                                 </div>
-                            </section>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -237,10 +242,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <section class="lytkarino-filters section--grey">
                 <div class="container">
-                    <h2 class="lytkarino-filters__title h2">Центр иностранных языков YES в&nbsp;Лыткарино приглашает на&nbsp;обучение!</h2>
+                    <h2 class="lytkarino-filters__title h2">Центр иностранных языков YES в&nbsp;Лыткарино<span>приглашает на&nbsp;обучение!</span></h2>
                     <p class="lytkarino-filters__subtitle subtitle">Изучение иностранных языков стоит на&nbsp;одном из&nbsp;первых мест в&nbsp;системе образования. На&nbsp;сегодняшний день знание языков необходимо каждому человеку, будь&nbsp;то студент иностранного вуза или рядовой менеджер в&nbsp;компании.
                         Уже трудно представить успешного человека, занимающего высокое положение, не&nbsp;владеющего хотя&nbsp;бы одним иностранным языком. И&nbsp;каждая крупная компания, набирающая в&nbsp;штат сотрудников, проводит тщательный отбор кандидатов
                         с&nbsp;высоким уровнем знания иностранных языков. Но&nbsp;языки необходимы не&nbsp;только для продвижения по&nbsp;карьерной лестнице, а&nbsp;также для сдачи международных экзаменов и&nbsp;поступлению в&nbsp;зарубежный вуз. Выучить
@@ -251,43 +256,43 @@
                             <div class="row no-gutters">
                                 <div class="col-md-6 col-xl-3 page-reg__col">
                                     <label class="page-reg__item">
-                                        <img class="page-reg__country-flag" src="static/img/general/uk.svg" width="40" heihgt="26" alt="Английский язык">
+                                        <img class="page-reg__country-flag" src="static/img/general/uk.svg" width="40" height="26" alt="Английский язык">
                                         <input class="page-reg__radio" type="radio" name="select-lang" checked><span class="page-reg__name">Английский язык</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-xl-3 page-reg__col">
                                     <label class="page-reg__item">
-                                        <img class="page-reg__country-flag" src="static/img/general/germany.svg" width="40" heihgt="26" alt="Немецкий язык">
+                                        <img class="page-reg__country-flag" src="static/img/general/germany.svg" width="40" height="26" alt="Немецкий язык">
                                         <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Немецкий язык</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-xl-3 page-reg__col">
                                     <label class="page-reg__item">
-                                        <img class="page-reg__country-flag" src="static/img/general/france.svg" width="40" heihgt="26" alt="Французкий язык">
+                                        <img class="page-reg__country-flag" src="static/img/general/france.svg" width="40" height="26" alt="Французкий язык">
                                         <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Французкий язык</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-xl-3 page-reg__col">
                                     <label class="page-reg__item">
-                                        <img class="page-reg__country-flag" src="static/img/general/Italy.svg" width="40" heihgt="26" alt="Итальянский язык">
+                                        <img class="page-reg__country-flag" src="static/img/general/Italy.svg" width="40" height="26" alt="Итальянский язык">
                                         <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Итальянский язык</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-xl-3 page-reg__col">
                                     <label class="page-reg__item">
-                                        <img class="page-reg__country-flag" src="static/img/general/spain.svg" width="40" heihgt="26" alt="Испанский язык">
+                                        <img class="page-reg__country-flag" src="static/img/general/spain.svg" width="40" height="26" alt="Испанский язык">
                                         <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Испанский язык</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-xl-3 page-reg__col">
                                     <label class="page-reg__item">
-                                        <img class="page-reg__country-flag" src="static/img/general/china.svg" width="40" heihgt="26" alt="Китайский язык">
+                                        <img class="page-reg__country-flag" src="static/img/general/china.svg" width="40" height="26" alt="Китайский язык">
                                         <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Китайский язык</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-xl-3 page-reg__col">
                                     <label class="page-reg__item">
-                                        <img class="page-reg__country-flag" src="static/img/general/japan.svg" width="40" heihgt="26" alt="Японский язык">
+                                        <img class="page-reg__country-flag" src="static/img/general/japan.svg" width="40" height="26" alt="Японский язык">
                                         <input class="page-reg__radio" type="radio" name="select-lang"><span class="page-reg__name">Японский язык</span>
                                     </label>
                                 </div>
@@ -707,6 +712,458 @@
                     </section>
                 </div>
             </section>
+            <section class="lytkarino-section text-section border-top-0">
+                <div class="container">
+                    <h2 class="text-section__title h2">YES в Лыткарино</h2>
+                    <div class="text-section__content">
+                        <p>Центр иностранных языков YES существует более 15&#160;лет. За&#160;это время нашу школу успешно закончили несколько тысяч студентов, огромное количество выпускников YES поступили в&#160;зарубежные вузы, сдали международные экзамены
+                            и&#160;повысили уровень владения иностранным языком.</p>
+                        <p>Центр иностранных языков в&#160;Лыткарино предлагает обучение иностранным языкам людям любого возраста и&#160;уровня подготовки. Языковые курсы в&#160;нашем центре позволят каждому студенту чувствовать себя &#171;в&#160;своей тарелке&#187;,
+                            независимо от&#160;того, учится человек в&#160;группе или посещает индивидуальные занятия. Посетив хотя&#160;бы одно занятие в&#160;YES, Вам не&#160;захочется изучать языки где-то еще. Обучение в&#160;нашей школе доступно каждому.
+                            Мы&#160;предлагаем изучать язык по&#160;привлекательным ценам, а&#160;также в&#160;нашем центре есть бонусы и&#160;скидки для студентов</p>
+                    </div>
+                </div>
+            </section>
+            <section class="features">
+                <div class="container">
+                    <h2 class="features__title h2">Наши преимущества</h2>
+                    <div class="row ">
+                        <div class="col-md-6 col-xl">
+                            <div class="features__item">
+                                <div class="features__img features__img--light">
+                                    <img src="static/img/general/light.svg" width="30" height="44" alt="Уникальная&lt;br&gt;авторская методика&lt;br&gt;без зубрежки">
+                                </div>
+                                <h3 class="features__name"><a href="#">Уникальная<br>авторская методика<br>без зубрежки</a>
+                  </h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl">
+                            <div class="features__item">
+                                <div class="features__img features__img--book">
+                                    <img src="static/img/general/book.svg" width="44" height="43" alt="Индивидуальный&lt;br&gt;план по достижению&lt;br&gt;ваших целий">
+                                </div>
+                                <h3 class="features__name"><a href="#">Индивидуальный<br>план по достижению<br>ваших целий</a>
+                  </h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl">
+                            <div class="features__item">
+                                <div class="features__img features__img--cup">
+                                    <img src="static/img/general/cup.svg" width="32" height="42" alt="Наши студенты успешно&lt;br&gt;сдают международные&lt;br&gt;экзамены">
+                                </div>
+                                <h3 class="features__name"><a href="#">Наши студенты успешно<br>сдают международные<br>экзамены</a>
+                  </h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl">
+                            <div class="features__item">
+                                <div class="features__img features__img--education">
+                                    <img src="static/img/general/education.svg" width="45" height="42" alt="Собственный учебно -&lt;br&gt;методогический&lt;br&gt;центр для&lt;br&gt;преподавателей">
+                                </div>
+                                <h3 class="features__name"><a href="#">Собственный учебно -<br>методогический<br>центр для<br>преподавателей</a>
+                  </h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl">
+                            <div class="features__item">
+                                <div class="features__img features__img--children">
+                                    <img src="static/img/general/children.svg" width="35" height="46" alt="Обучение детей —&lt;br&gt;наше приоритетное&lt;br&gt;направление">
+                                </div>
+                                <h3 class="features__name"><a href="#">Обучение детей —<br>наше приоритетное<br>направление</a>
+                  </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="departure lytkarino-slider departure--has-subtitle">
+                <div class="container">
+                    <h2 class="departure__title h2">YES в Лыткарино предлагает:</h2>
+                </div>
+                <div class="container">
+                    <p class="departure__subtitle subtitle">Школа английского языка в&#160;Лыткарино существует уже несколько лет. За&#160;это время Центр иностранных языков зарекомендовал себя как учебное заведение высокого класса, где обучаются дети и&#160;взрослые, повышая уровень знаний
+                        и&#160;достигая поставленной цели.</p>
+                    <p class="departure__subtitle subtitle">Обучение иностранным языкам в&#160;YES проходит по&#160;уникальной коммуникативной методике, которая позволяет студентам погрузиться в&#160;языковую практику прямо на&#160;занятии. В&#160;кратчайшие сроки наши ученики преодолевают
+                        языковой барьер и&#160;начинают думать на&#160;изучаемом языке. Каждый ученик, посещающий занятия в&#160;YES, для нас неповторим и&#160;уникален. Поэтому в&#160;нашем центре разработан индивидуальный план обучения, который позволяет
+                        студенту достичь желаемого результата легко и&#160;быстро.</p>
+                </div>
+                <div class="departure__inner">
+                    <button class="departure__arrow slide-arrow slide-arrow--prev text-hide js-departure-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                        </svg>Предадущий слайд
+                    </button>
+                    <button class="departure__arrow slide-arrow slide-arrow--next text-hide js-departure-next-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                        </svg>Следующий слайд
+                    </button>
+                    <div class="container">
+                        <ul class="departure__slider js-lytkarino-slider">
+                            <li class="departure__slide">
+                                <img src="static/img/content/offers-photo-1.jpg" alt="фото школы 1">
+                            </li>
+                            <li class="departure__slide">
+                                <img src="static/img/content/offers-photo-1.jpg" alt="фото школы 1">
+                            </li>
+                            <li class="departure__slide">
+                                <img src="static/img/content/offers-photo-2.jpg" alt="фото школы 2">
+                            </li>
+                        </ul>
+                        <p class="departure__text-bottom">Выбрав курсы английского языка в&#160;Лыткарино, Вы&#160;попадете в&#160;профессиональную команду, где будет комфортно осваивать учебный материал, готовиться к&#160;сдаче экзаменов, изучить специфическую лексику технических специальностей,
+                            повысить уровень коммуникации. А&#160;также приятным бонусом станет участие в&#160;открытых уроках, промомероприятиях, мастер-классах и&#160;специальных курсах от&#160;Центра иностранных языков YES в&#160;Лыткарино.</p>
+                    </div>
+                </div>
+            </div>
+            <article class="quote-block section--grey">
+                <div class="container">
+                    <div class="row no-gutters align-items-xl-center">
+                        <div class="col-md-4 col-lg-3">
+                            <div class="row no-gutters">
+                                <div class="col-auto col-md-auto">
+                                    <div class="quote-block__photo">
+                                        <img src="static/img/content/julia-korshunova.jpg" alt="Юлия Коршунова">
+                                    </div>
+                                </div>
+                                <div class="w-100 d-none d-md-block"></div>
+                                <div class="col col-md-auto d-xl-none">
+                                    <h3 class="quote-block__name">
+                      <cite>Юлия Коршунова</cite>
+                    </h3>
+                                    <p class="quote-block__position">Управляющая YES&#160;Лыткарино</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <blockquote class="quote-block__text">
+                                Язык&#160;&#8212; это живой и&#160;гибкий организм, основная цель которого, дать людям возможность общаться. Основная проблема у&#160;изучающих язык&#160;&#8212; языковой барьер. Хороший учитель иностранного языка&#160;&#8212; это человек, готовый к&#160;изменениям,
+                                постоянно развивающийся в&#160;своем предмете и&#160;в&#160;методике преподавания. И&#160;конечно профессиональный учитель иностранного языка учит детей в&#160;обстановке и&#160;методами, полностью исключающими формирование
+                                языкового барьера. В&#160;нашем центре преподают только такие профессионалы, влюбленные в&#160;свое дело! Поэтому результат гарантирова!
+                            </blockquote>
+                            <h3 class="quote-block__name d-none d-xl-block">
+                  <cite>Юлия Коршунова</cite>
+                </h3>
+                            <p class="quote-block__position d-none d-xl-block">Управляющая YES Лыткарино</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <section class="forms-education section--grey page-jobs__about lytkarino-about">
+                <div class="container">
+                    <h2 class="forms-education__title h2">Мы&#160;обучаем студентов любого возраста </br> и&#160;уровня подготовки</h2>
+                    <div class="forms-education__row ">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="forms-education__col">
+                                    <article class="forms-education__item">
+                                        <h3 class="forms-education__subject">Дети 3-10 лет</h3>
+                                        <p class="forms-education__text">
+                                            <ul class="list">
+                                                <li>Дети знакомятся с&#160;новым языком через сюжетно-ролевую игру.</li>
+                                                <li>У&#160;детей развиваются коммуникативные навыки, они учатся взаимодействовать с&#160;другими детьми и&#160;работать в&#160;команде.</li>
+                                                <li>Дети знакомятся с&#160;новым языком через сюжетно-ролевую игру.</li>
+                                            </ul>
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="forms-education__col">
+                                    <article class="forms-education__item">
+                                        <h3 class="forms-education__subject">Дети 10-17 лет</h3>
+                                        <p class="forms-education__text">
+                                            <ul class="list">
+                                                <li>Темы занятий подбираются с&#160;учетом интересов современной молодежи.</li>
+                                                <li>Подготовка к&#160;ЕГЭ, ОГЭ, международным экзаменам, поступлению в&#160;российские и&#160;зарубежные вузы.</li>
+                                                <li>Творческие занятия для самовыражения.</li>
+                                            </ul>
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="forms-education__col">
+                                    <article class="forms-education__item">
+                                        <h3 class="forms-education__subject">От&#160;18&#160;лет и&#160;старше</h3>
+                                        <p class="forms-education__text">
+                                            <ul class="list">
+                                                <li>Развитие навыков общения на&#160;примере ситуаций из&#160;реально жизни.</li>
+                                                <li>Подготовка к&#160;международным экзаменам.</li>
+                                                <li>Проведение курсов для карьерного роста.</li>
+                                                <li>Изучение лексики, необходимой для беспрепятственного общения за&#160;границей.</li>
+                                            </ul>
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="thanks lytkarino-cert">
+                <div class="container">
+                    <h2 class="thanks__title h2">отзывы о нашем центре</h2>
+                </div>
+                <div class="thanks__wrapper-slider">
+                    <button class="thanks__arrow slide-arrow slide-arrow--prev text-hide js-thanks-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                        </svg>Предадущий слайд
+                    </button>
+                    <button class="thanks__arrow slide-arrow slide-arrow--next text-hide js-thanks-next-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                        </svg>Следующий слайд
+                    </button>
+                    <div class="container">
+                        <ul class="thanks__slider js-sert-slider">
+                            <li>
+                                <a class="thanks__slide" href="static/img/content/review-cursive-1.jpg" data-fancybox="gallery">
+                                    <img src="static/img/content/review-cursive-1.jpg" alt="thanks-1">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thanks__slide" href="static/img/content/review-cursive-2.jpg" data-fancybox="gallery">
+                                    <img src="static/img/content/review-cursive-2.jpg" alt="thanks-2">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thanks__slide" href="static/img/content/review-cursive-3.jpg" data-fancybox="gallery">
+                                    <img src="static/img/content/review-cursive-3.jpg" alt="thanks-3">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thanks__slide" href="static/img/content/review-cursive-4.jpg" data-fancybox="gallery">
+                                    <img src="static/img/content/review-cursive-4.jpg" alt="thanks-4">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thanks__slide" href="static/img/content/review-cursive-1.jpg" data-fancybox="gallery">
+                                    <img src="static/img/content/review-cursive-1.jpg" alt="thanks-5">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thanks__slide" href="static/img/content/review-cursive-2.jpg" data-fancybox="gallery">
+                                    <img src="static/img/content/review-cursive-2.jpg" alt="thanks-6">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="teachers section lytkarino-teachers">
+                <div class="container">
+                    <h2 class="teachers__title h2">Наши преподаватели</h2>
+                    <p class="teachers__subtitle subtitle">Приходите к&#160;нам учиться, и&#160;мы&#160;станем друзьями! Изучение нового языка в&#160;школе YES&#160;&#8212; это новые знакомства с&#160;интересными людьми, общение на&#160;актуальные темы и&#160;неформальная дружеская обстановка.
+                        Это поможет Вам получать и&#160;передавать новые знания и&#160;другую полезную информацию, выдавать новые идеи и&#160;творить.</p>
+                </div>
+                <div class="teachers__wrapper">
+                    <button class="teachers__arrow slide-arrow slide-arrow--prev text-hide js-techers-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                        </svg>Предадущий слайд
+                    </button>
+                    <button class="teachers__arrow slide-arrow slide-arrow--next text-hide js-techers-next-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                        </svg>Следующий слайд
+                    </button>
+                    <div class="container">
+                        <div class="teachers__slider js-techers-slider">
+                            <div>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/lytkarino-teacher-1.jpg" width="166" height="166" alt="Беленкова &lt;span&gt;Юлия&lt;/span&gt;">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Беленкова <span>Юлия</span></cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Лыткарино</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/lytkarino-teacher-2.jpg" width="166" height="166" alt="Бескровных &lt;span&gt;Сергей&lt;/span&gt;">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Бескровных <span>Сергей</span></cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Лыткарино</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/lytkarino-teacher-3.jpg" width="166" height="166" alt="Брежнева &lt;span&gt;Светлана&lt;/span&gt;">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Брежнева <span>Светлана</span></cite>
+                                        </a><span class="teacher__grey-text">Английский, Немецкий язык<br>Лыткарино</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="teacher teachers__slide">
+                                    <div class="teacher__inner">
+                                        <a class="teacher__img" href="teacher.html">
+                                            <img src="static/img/content/lytkarino-teacher-4.jpg" width="166" height="166" alt="Мясникова &lt;span&gt;Анна&lt;/span&gt;">
+                                        </a>
+                                        <a class="teacher__name" href="teacher.html">
+                                            <cite>Мясникова <span>Анна</span></cite>
+                                        </a><span class="teacher__grey-text">Английский язык<br>Лыткарино</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__footer">
+                    <div class="container">
+                        <div class="row align-items-md-center">
+                            <div class="col-md-auto d-xl-none">
+                                <div class="teachers__dots"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="news__section">
+                                <div class="container">
+                                    <h2 class="news__title h2">Новости и события</h2>
+                                    <ul class="news__slide js-news-slide">
+                                        <li>
+                                            <article class="news__item">
+                                                <h3 class="news__name"><a href="#">Открытие новой школы в Кунцево</a></h3><span class="news__sub-name">11 сентября 2017</span>
+                                                <p class="news__preview-text">В прошлую субботу, 2 сентября, в Центре иностранных языков YES состоялось торжественное открытие новой школы в Кунцево. Оно превратилось в настоящий праздник.</p>
+                                            </article>
+                                        </li>
+                                        <li>
+                                            <article class="news__item">
+                                                <h3 class="news__name"><a href="#">Поздравляем с началом нового учебного года!</a></h3><span class="news__sub-name">1 сентября 2017</span>
+                                                <p class="news__preview-text">Центр иностранных языков YES поздравляет всех учащихся с началом нового учебного года! Мы от всей души желаем всем вам успешного старта для последующего успешного завершения учебного года.</p>
+                                            </article>
+                                        </li>
+                                        <li>
+                                            <article class="news__item">
+                                                <h3 class="news__name"><a href="#">Английская королева YES</a></h3><span class="news__sub-name">25 мая 2017</span>
+                                                <p class="news__preview-text">Фестиваль "Невесты Подмосковья" ежегодно проходит на территории городского округа Подольск. В нем принимают участие девушки из различных городов Московской области.</p>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                    <div class="row justify-content-center justify-content-md-end justify-content-xl-start">
+                                        <div class="col-md d-xl-none">
+                                            <div class="news__dots"></div>
+                                        </div>
+                                        <div class="col-md-auto text-center"><a class="show-all" href="#">в архив новостей<span>&nbsp;&rarr;</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 border-left-xl">
+                            <div class="news__section news__section--single-news">
+                                <div class="container">
+                                    <h2 class="news__title h2">познавательные Статьи</h2>
+                                    <article class="news__item">
+                                        <a class="news__img" href="#">
+                                            <img src="static/img/content/news-img.jpg" width="272" height="176" alt="Следуй плану, достигай цель!">
+                                        </a>
+                                        <h3 class="news__name"><a href="#">Следуй плану, достигай цель!</a></h3><span class="news__sub-name">Автор: Афанаскина Екатерина Владимировна</span>
+                                        <p class="news__preview-text">Хотелось бы выучить язык международного общения, но все как-то не складывается — командировки, загруженность на работе, маленький ребенок. Хотя, чаще всего, это только отговорки. На мой взгляд, если у человека есть
+                                            четкое понимание, зачем ему нужен английский язык, то он найдет возможность им заняться, и не придется придумывать оправдания своей чрезмерной ...</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="news__footer">
+                                <div class="container">
+                                    <div class="row justify-content-center justify-content-md-end justify-content-xl-start">
+                                        <div class="col-auto"><a class="show-all" href="#">читать больше статей<span>&nbsp;&rarr;</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="map">
+                <div class="container">
+                    <form class="map__form form" id="order-lesson">
+                        <p class="map__title">Ждём вас
+                            <br>на бесплатном
+                            <br>занятии!</p>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <label class="hidden" for="order-lesson-full-name">Ваше имя и фамилия</label>
+                                <input class="form__field" placeholder="Ваше имя и фамилия" name="name" required id="order-lesson-full-name">
+                            </div>
+                            <div class="col-xl-6">
+                                <label class="hidden" for="order-lesson-phone">Ваш номер телефона</label>
+                                <input class="form__field" type="tel" placeholder="Ваш номер телефона" name="phone" required id="order-lesson-phone">
+                            </div>
+                        </div>
+                        <label class="hidden" for="order-lesson-language">Выберите язык для изучения</label>
+                        <select class="js-select-lang-order" id="order-lesson-language">
+                            <option selected disabled>Выберите язык для изучения</option>
+                            <option>Английский</option>
+                            <option>Французкий</option>
+                            <option>Японский</option>
+                            <option>Китайский</option>
+                        </select>
+                        <label class="hidden" for="order-lesson-comment">Комментарии</label>
+                        <input class="form__field" placeholder="Комментарии" name="comments" id="order-lesson-comment">
+                        <p class="map__conf">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;<a href="#" data-toggle="modal" data-target="#agreement">политикой конфиденциальности YES EDUCATION GROUP</a>
+                        </p>
+                        <button class="map__btn btn btn--red">Отправить заявку</button>
+                    </form>
+                </div>
+                <div class="map__wrapper">
+                    <div class="map__canvas" id="map"></div>
+                </div>
+            </div>
+            <section class="additional section lytkarino-add-text">
+                <div class="container">
+                    <h2 class="h2 additional__title">От английского до японского</h2>
+                    <div class="additional__text">
+                        <article class="additional__sect">
+                            <div>
+                                <p>Конечно, самым распространенным иностранным языком, который начинают изучать студенты, является английский. Английский язык&#160;&#8212; международный. Именно он&#160;активно используется практически во&#160;всех странах
+                                    и&#160;изучается наравне с&#160;родным языком. Но&#160;Центр YES предлагает своим действующим и&#160;потенциальным студентам расширить кругозор, выбрав к&#160;изучению и&#160;другие иностранные языки. В&#160;нашей школе&#160;Вы
+                                    можете изучить английский, немецкий, французский, испанский, итальянский, китайский и&#160;японский языки</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="additional section lytkarino-add-text border-bottom-0 last">
+                <div class="container">
+                    <h2 class="h2 additional__title">Присоединяйтесь к команде!</h2>
+                    <div class="additional__text">
+                        <article class="additional__sect">
+                            <div>
+                                <p>Стать студентом Центра иностранных языков YES в&#160;Лыткарино просто. Для этого необходимо определиться с&#160;языком, который&#160;Вы хотите изучать. Прийти в&#160;Центр YES в&#160;Лыткарино, пройти бесплатное тестирование,
+                                    выявляющее уровень знаний, посетить пробное занятие и&#160;записаться в&#160;группу, которая соответствует Вашему уровню знаний и&#160;выбранной Вами цели.</p>
+                                <p>Обучение иностранным языкам в&#160;группе&#160;&#8212; один из&#160;самых удобных и&#160;доступных методов освоения языка. На&#160;групповых занятиях&#160;Вы сможете окунуться в&#160;атмосферу изучаемого иностранного языка,
+                                    ведь практически весь учебный процесс построен на&#160;коммуникации преподавателя и&#160;студентов именно на&#160;иностранном языке. Наши педагоги находят подход к&#160;каждому студенту и&#160;могут заинтересовать любого
+                                    ученика. Если по&#160;каким-либо причинам Вы&#160;не&#160;готовы учиться в&#160;группе, в&#160;YES Вы&#160;можете посещать индивидуальные занятия с&#160;преподавателем, где&#160;Вы самостоятельно определяете время занятий
+                                    и&#160;их&#160;длительность.</p>
+                                <p>Центр YES дает гарантию результата! Первые успехи&#160;Вы увидите уже после нескольких занятий, а&#160;через 5,5-6 месяцев&#160;Вы перейдете на&#160;новый, более высокий, уровень. Коммуникативный процесс обучения быстро
+                                    захватит Вас и&#160;позволит закрепить приобретенные знания на&#160;уровне подсознания. Вместе с&#160;YES Вы&#160;сможете не&#160;только повысить свой уровень знаний, научиться думать на&#160;иностранном языке, получить
+                                    высокие баллы и&#160;оценки на&#160;экзаменах, аттестационных тестах, а&#160;еще&#160;Вы найдете настоящих единомышленников, которые подарят Вам дополнительную мотивацию для изучения иностранных языков. Иностранные
+                                    языки&#160;&#8212; это возможность, которая открывает перед каждым человеком радужные перспективы. Пора ею&#160;воспользоваться вместе с&#160;Центром YES в&#160;Лыткарино.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
             <section class="subscribe section">
                 <div class="container">
                     <form class="subscribe__inner form" id="subscribe">
@@ -836,35 +1293,35 @@
                                 <ul class="social footer__social">
                                     <li class="social__item">
                                         <a class="social__link" href="#">
-                                            <svg class="icon" width="11" height="20" aria-hidden="true">
+                                            <svg class="icon" width="11" aria-hidden="true">
                                                 <use xlink:href="static/img/svg-symbols.svg#odnoklassniki"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a class="social__link" href="#">
-                                            <svg class="icon" width="21" height="12" aria-hidden="true">
+                                            <svg class="icon" width="21" aria-hidden="true">
                                                 <use xlink:href="static/img/svg-symbols.svg#vk"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a class="social__link" href="#">
-                                            <svg class="icon" width="18" height="12" aria-hidden="true">
+                                            <svg class="icon" width="18" aria-hidden="true">
                                                 <use xlink:href="static/img/svg-symbols.svg#youtube"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a class="social__link" href="#">
-                                            <svg class="icon" width="10" height="20" aria-hidden="true">
+                                            <svg class="icon" width="10" aria-hidden="true">
                                                 <use xlink:href="static/img/svg-symbols.svg#fb"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a class="social__link" href="#">
-                                            <svg class="icon" width="18" height="18" aria-hidden="true">
+                                            <svg class="icon" width="18" aria-hidden="true">
                                                 <use xlink:href="static/img/svg-symbols.svg#insta"></use>
                                             </svg>
                                         </a>
@@ -962,7 +1419,7 @@
                                 <h3>1. ВАШЕ СОГЛАСИЕ</h3>
                                 <p>Предоставив Ваши персональные данные на сайте&#160;<a href="www.yescenter.ru">www.yescenter.ru&#160;</a>ЧОУ ДО Школа английского языка «ЕС» (далее YES), Вы автоматически соглашаетесь с тем, что указанные Вами данные могут
                                     быть использованы YES или аффилированными лицами YES в информационной и рекламной рассылке, в том числе по email и SMS, и Ваши данные охраняются в рамках Соглашения о защите прав. Вы можете отказаться от получения рекламной
-                                    информации YES и аффилированных лиц YES, связавшись с нашим контактным центром по номеру телефона 8-800 555-44-77 или по электронному адресу&#160;<a href="mail:media@yescenter.ru">media@yescenter.ru.</a>
+                                    информации YES и аффилированных лиц YES, связавшись с нашим контактным центром по номеру телефона 8-800 555-44-77 или по электронному адресу&#160;<a href="mailto:media@yescenter.ru">media@yescenter.ru.</a>
                                 </p>
                                 <h3>2. ВАШИ КОНТАКТНЫЕ ДАННЫЕ</h3>
                                 <p>При бронировании курса или оформлении запроса на бесплатный тест на нашем сайте, нам необходимо узнать Ваши персональные данные - такие, как Ваше имя, эл. адрес, номер телефона и место жительства. Мы не разглашаем Ваши
@@ -994,7 +1451,7 @@
                     <label class="hidden" for="order-course-phone">Контактный номер телефона *</label>
                     <input class="form__field callback__phone" type="tel" placeholder="Контактный номер телефона *" name="phone" required id="order-course-phone">
                     <label class="hidden" for="order-course-time-first">Выберите язык для изучения *</label>
-                    <select class="js-select-lang-order" required id="order-course-select-course">
+                    <select class="js-select-lang-order" required id="order-course-time-first">
                         <option selected disabled>Выберите язык для изучения *</option>
                         <option>Английский язык</option>
                         <option>Немецкий язык</option>
@@ -1061,6 +1518,32 @@
                         <br>рассылку.</p>
                     <p class="callback__subtitle-success">Теперь вы всегда будете первыми узнавать о последних новстях и акциях нашей школы! Нужен текст.</p>
                     <button class="btn btn--red w-100" data-dismiss="modal" aria-label="Close" type="button">Закрыть</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-search">
+            <div class="callback modal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true" id="modal-search">
+                <div class="modal-dialog d-flex justify-content-center modal-dialog-centered" role="document">
+                    <form class="modal-conten map__form form" id="search">
+                        <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                            <svg class="icon" width="14" height="14" aria-hidden="true">
+                                <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                            </svg>Закрыть
+                        </button>
+                        <p class="map__title modal-title title">Поиск по сайту</p>
+                        <div class="row no-gutters">
+                            <div class="col-sm d-flex"><span class="modal-search__icon">
+                      <svg class="icon" width="16" height="16" aria-hidden="true">
+                        <use xlink:href="static/img/svg-symbols.svg#search"></use>
+                      </svg></span>
+                                <label class="hidden" for="search-field">Поиск по сайту</label>
+                                <input class="form__field flex-grow-1" type="search" placeholder="Я ищу, папример: курсы анлийского языка для детей" id="search-field">
+                            </div>
+                            <div class="col-sm-auto">
+                                <button class="modal-search__btn btn btn--red">найти</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1192,7 +1675,8 @@
         <script>
             svg4everybody();
         </script>
-        <script src="static/js/mainzjb3j.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+        <script src="static/js/main8g9nk8.js"></script>
     </body>
 
 </html>

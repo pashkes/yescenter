@@ -9,19 +9,47 @@ html(class="no-js", lang="ru")
   include ../components/modal-location/modal-location
   include ../components/promo/promo
   include ../components/lytkarino-filters/lytkarino-filters
+  include ../components/features/features
+  include ../components/departure/departure
+  include ../components/quote-block/quote-block
+  include ../components/forms-education/forms-education
+  include ../components/thanks/thanks
+  include ../components/map/map
+  include ../components/news/news
+  include ../components/teachers/teachers
+  include ../components/additional/additional
+  include ../components/modal-search/modal-search
+
   head
     +head(head.defaults)
   body
     .page-wrapper
-      +header(header)
+      +header(headerLytcarino)
       +promo(lytkarino)
       +lytkarino-filters()
+      section.lytkarino-section.text-section.border-top-0
+        .container
+          h2.text-section__title.h2 YES в Лыткарино
+          .text-section__content
+            | <p>Центр иностранных языков YES существует более 15&#160;лет. За&#160;это время нашу школу успешно закончили несколько тысяч студентов, огромное количество выпускников YES поступили в&#160;зарубежные вузы, сдали международные экзамены и&#160;повысили уровень владения иностранным языком.</p>
+            <p>Центр иностранных языков в&#160;Лыткарино предлагает обучение иностранным языкам людям любого возраста и&#160;уровня подготовки. Языковые курсы в&#160;нашем центре позволят каждому студенту чувствовать себя &#171;в&#160;своей тарелке&#187;, независимо от&#160;того, учится человек в&#160;группе или посещает индивидуальные занятия. Посетив хотя&#160;бы одно занятие в&#160;YES, Вам не&#160;захочется изучать языки где-то еще. Обучение в&#160;нашей школе доступно каждому. Мы&#160;предлагаем изучать язык по&#160;привлекательным ценам, а&#160;также в&#160;нашем центре есть бонусы и&#160;скидки для студентов</p>
+      +features(features.mainPage)
+      +departure(departureLytkarino, 'YES в Лыткарино предлагает:').lytkarino-slider.departure--has-subtitle
+      +quote-block()
+      +forms-education-lytkyno(educationOld).page-jobs__about.lytkarino-about
+      +thanks(sert).lytkarino-cert
+      +teachers(teachersLytkarino, true, 'Наши преподаватели', 'no-footer').lytkarino-teachers
+      +news()
+      +map()
+      +additional(additionalText.pageLytkyno1, 'От английского до японского', 'single').lytkarino-add-text
+      +additional(additionalText.pageLytkyno2, 'Присоединяйтесь к команде!', 'single').lytkarino-add-text.border-bottom-0.last
       +subscribe()
       +footer()
     +callback()
+    +modal-search()
     +modal-location()
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
-
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
     //- Main scripts. You can replace it, but I recommend you to leave it here
     script(src='%=static=%js/main%=hash=%.js')

@@ -1,6 +1,6 @@
 // Common styles of the project
 body {
-font: 15px/1.6 Intro, Arial sans-serif;
+  font: 15px/1.6 Intro, Arial sans-serif;
   color: $text-color;
   letter-spacing: 0.3px;
   min-width: 320px;
@@ -17,16 +17,17 @@ a {
     color: $primary-red;
   }
 }
+
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
   -webkit-text-fill-color: $text-color !important;
 }
+
 p {
   margin-top: 0;
   font: 14px/22px 'Open Sans', sans-serif;
   color: #252525;
 }
-
 
 .subtitle {
   margin-bottom: 28px;
@@ -43,6 +44,7 @@ p {
     letter-spacing: 0.3px;
   }
 }
+
 .container,
 .container-fluid {
   padding-right: 24px;
@@ -66,6 +68,7 @@ h1, h2, h3 {
   font-style: normal;
   font-weight: 400;
 }
+
 .h2 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -83,6 +86,7 @@ h1, h2, h3 {
     letter-spacing: 1.1px;
   }
 }
+
 .h3 {
   margin-bottom: 12px;
   font-size: 18px;
@@ -97,6 +101,7 @@ h1, h2, h3 {
     margin-bottom: 25px;
   }
 }
+
 .section {
   padding-top: 26px;
   padding-bottom: 32px;
@@ -112,35 +117,248 @@ h1, h2, h3 {
     padding-bottom: 88px;
   }
 }
+
 .page-wrapper {
   max-width: 1344px;
   margin: 0 auto;
   overflow: hidden;
   @include media-breakpoint-up(xl) {
-    overflow: auto;
+    overflow: inherit;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
 }
+
 .icon {
   transition: $transition-base;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
-.hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
+
 .modal-dialog {
   .map__form {
     pointer-events: auto;
   }
 }
+
 .modal-backdrop.show {
   background-color: #252525;
+}
+
+.text-section.lytkarino-section {
+  padding-top: 34px;
+  border-bottom: 1px solid #ebebeb;
+  @include media-breakpoint-up(md) {
+    padding-top: 41px;
+    padding-bottom: 23px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 78px;
+    padding-bottom: 74px;
+    border-bottom: none;
+  }
+  .text-section__title {
+    margin-bottom: 11px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 18px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 33px;
+    }
+  }
+  .text-section__content p {
+    margin-bottom: 22px;
+    @include media-breakpoint-up(xl) {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+}
+
+.lytkarino-slider.departure {
+  padding-top: 34px;
+  @include media-breakpoint-up(md) {
+    padding-top: 41px;
+    padding-bottom: 26px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+    padding-bottom: 65px;
+  }
+  .subtitle {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 46px;
+    }
+    &:last-of-type {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 36px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 41px;
+      }
+    }
+    &:first-of-type {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 22px;
+      }
+    }
+  }
+  .departure__slider {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 40px;
+    }
+  }
+  .slick-dots {
+    margin-bottom: 16px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 34px;
+      padding-top: 34px;
+    }
+  }
+  .slick-slide {
+    @include media-breakpoint-up(md) {
+      margin-right: 40px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-right: 48px;
+    }
+  }
+  .slick-slide img {
+    @include media-breakpoint-up(md) {
+      min-height: 392px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 440px;
+    }
+  }
+}
+.page-jobs__about.lytkarino-about {
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+}
+section.lytkarino-about {
+  margin-bottom: 0;
+  padding-top: 35px;
+  padding-bottom: 21px;
+  @include media-breakpoint-up(md) {
+    padding-top: 40px;
+    padding-bottom: 7px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+    padding-bottom: 61px;
+  }
+  .forms-education__title {
+    margin-bottom: 15px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 26px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 36px;
+    }
+  }
+  .forms-education__subject {
+    margin-bottom: 11px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 18px;
+    }
+  }
+  .forms-education__col {
+    margin-bottom: 18px;
+  }
+  .list li {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 19px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 17px;
+      line-height: 24px;
+    }
+  }
+  .forms-education__col {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .forms-education__row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.lytkarino-teachers.teachers {
+  padding-top: 35px;
+  @include media-breakpoint-up(xl) {
+    padding-top: 71px;
+    padding-bottom: 65px;
+  }
+  .teachers__title {
+    margin-bottom: 18px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.lytkarino-cert {
+  .thanks__title {
+    margin-bottom: 19px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 42px;
+    }
+  }
+
+   .slick-slide {
+    @include media-breakpoint-up(md) {
+      margin-right: 14px;
+      margin-left: 14px;
+    }
+     @include media-breakpoint-up(xl) {
+       margin-right: 16px;
+       margin-left: 16px;
+     }
+  }
+  .slick-dots {
+    padding-top: 12px;
+  }
+}
+.additional.lytkarino-add-text {
+  padding-top: 34px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #ebebeb;
+  @include media-breakpoint-up(md) {
+    padding-top: 46px;
+    padding-bottom: 43px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 35px;
+    padding-bottom: 81px;
+  }
+  &.last {
+    padding-bottom: 0;
+    margin-bottom: 8px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+  .additional__title {
+    margin-bottom: 8px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 32px;
+      padding-top: 30px;
+    }
+  }
+  .additional__text {
+    max-width: 100%;
+  }
+  .additional__sect {
+    margin-bottom: 0;
+  }
+  .additional__sect p {
+    margin-bottom: 23px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }

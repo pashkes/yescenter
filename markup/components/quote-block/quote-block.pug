@@ -1,0 +1,25 @@
+mixin quote-block()
+  article.quote-block.section--grey
+    .container
+      .row.no-gutters.align-items-xl-center
+        .col-md-4.col-lg-3
+          .row.no-gutters
+            .col-auto.col-md-auto
+              .quote-block__photo
+                img(src="%=static=%img/content/julia-korshunova.jpg" alt="Юлия Коршунова")
+            .w-100.d-none.d-md-block
+            .col.col-md-auto.d-xl-none
+              h3.quote-block__name
+                cite Юлия Коршунова
+              p.quote-block__position Управляющая YES&#160;Лыткарино
+        .col-md
+          blockquote.quote-block__text
+            | Язык&#160;&#8212; это живой и&#160;гибкий организм, основная цель которого, дать людям возможность общаться.
+            | Основная проблема у&#160;изучающих
+            | язык&#160;&#8212; языковой барьер. Хороший учитель иностранного языка&#160;&#8212;
+            | это человек, готовый к&#160;изменениям, постоянно развивающийся в&#160;своем предмете и&#160;в&#160;методике преподавания. И&#160;конечно профессиональный учитель иностранного языка учит детей
+            | в&#160;обстановке и&#160;методами, полностью исключающими формирование языкового барьера. В&#160;нашем центре преподают только такие профессионалы, влюбленные в&#160;свое дело! Поэтому результат гарантирова!
+          h3.quote-block__name.d-none.d-xl-block
+            cite Юлия Коршунова
+          p.quote-block__position.d-none.d-xl-block Управляющая YES Лыткарино
+

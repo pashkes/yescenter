@@ -25,3 +25,29 @@
     ]
   });
 })();
+(function () {
+  $('.js-sert-slider').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1343,
+        settings: {
+          slidesToShow: 4,
+          arrows: true,
+          dots: false,
+          prevArrow: $('.js-thanks-prev-btn'),
+          nextArrow: $('.js-thanks-next-btn')
+        }
+      }
+    ]
+  });
+})();

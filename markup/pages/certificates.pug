@@ -14,12 +14,12 @@ html(class="no-js", lang="ru")
     +head(head.defaults)
   body
     .page-wrapper
-      +header(header)
+      +header(headerDefault)
       .container
         +breadcrumb(breadcrumb.certificates)
       section.page-programs
         .container
-          h1.h2.page-programs__title Сертификаты
+          h2.h2.page-programs__title Сертификаты
           p.page-programs__subtitle.subtitle Нужно немного текста с информацией что это за раздел. Информацию о цене курса можно узнать по нашему телефону или написать нам по электронной почте, и мы подберем подходящий вам вариант и рассчитаем стоимость.
       +certificates()
       +subscribe()

@@ -5,7 +5,8 @@ mixin departure(data, title)
         h2.departure__title.h2 #{title}
     if data.subtitle
       .container
-        p.departure__subtitle.subtitle #{data.subtitle}
+        each subtitle in data.subtitle
+          p.departure__subtitle.subtitle !{subtitle}
     .departure__inner
       button(type="button").departure__arrow.slide-arrow.slide-arrow--prev.text-hide.js-departure-prev-btn
         +icon('arrow-left', 12, 11)
@@ -18,3 +19,5 @@ mixin departure(data, title)
           each item in data.images
             li.departure__slide
               img(src="%=static=%img/content/"+item.src alt=item.alt)
+        if data.textBottom
+          p.departure__text-bottom !{data.textBottom}
