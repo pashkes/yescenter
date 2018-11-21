@@ -1903,6 +1903,8 @@ object-assign
 
 
 
+
+
 (function () {
   $('.js-sub-menu-article').on('change', function () {
     window.location.href = $(this).val();
@@ -1974,8 +1976,6 @@ object-assign
     sliderStatus = 'no-initialize';
   });
 })();
-
-
 
 
 
@@ -2396,13 +2396,13 @@ $('.js-select-time').SumoSelect({
   captionFormat: '{0} Selected'
 });
 
-
-
 (function () {
   $('.js-menu-close').on('click', function () {
     $('body').removeClass('show-menu');
   });
 })();
+
+
 
 (function () {
   function addEventFileRemove() {
@@ -2716,8 +2716,6 @@ $(window).on('load', function () {
 
 
 
-
-
 (function () {
   $('.subscribe').on('submit', function (evt) {
     evt.preventDefault();
@@ -2727,6 +2725,8 @@ $(window).on('load', function () {
     }, 1000);
   });
 })();
+
+
 
 
 (function () {
@@ -2816,8 +2816,6 @@ $(window).on('load', function () {
 
 
 
-
-
 (function () {
   $('.js-thanks-slider').slick({
     arrows: false,
@@ -2871,6 +2869,8 @@ $(window).on('load', function () {
     ]
   });
 })();
+
+
 
 
 

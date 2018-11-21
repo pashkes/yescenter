@@ -234,10 +234,12 @@ img {
     }
   }
 }
+
 .page-jobs__about.lytkarino-about {
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
 }
+
 section.lytkarino-about {
   margin-bottom: 0;
   padding-top: 35px;
@@ -249,6 +251,9 @@ section.lytkarino-about {
   @include media-breakpoint-up(xl) {
     padding-top: 80px;
     padding-bottom: 61px;
+  }
+  .forms-education__row {
+    display: block;
   }
   .forms-education__title {
     margin-bottom: 15px;
@@ -288,6 +293,7 @@ section.lytkarino-about {
     margin-left: 0;
   }
 }
+
 .lytkarino-teachers.teachers {
   padding-top: 35px;
   @include media-breakpoint-up(xl) {
@@ -301,6 +307,7 @@ section.lytkarino-about {
     }
   }
 }
+
 .lytkarino-cert {
   .thanks__title {
     margin-bottom: 19px;
@@ -309,20 +316,21 @@ section.lytkarino-about {
     }
   }
 
-   .slick-slide {
+  .slick-slide {
     @include media-breakpoint-up(md) {
       margin-right: 14px;
       margin-left: 14px;
     }
-     @include media-breakpoint-up(xl) {
-       margin-right: 16px;
-       margin-left: 16px;
-     }
+    @include media-breakpoint-up(xl) {
+      margin-right: 16px;
+      margin-left: 16px;
+    }
   }
   .slick-dots {
     padding-top: 12px;
   }
 }
+
 .additional.lytkarino-add-text {
   padding-top: 34px;
   padding-bottom: 36px;

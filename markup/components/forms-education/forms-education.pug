@@ -7,7 +7,8 @@ mixin forms-education(data, noContainer)
           .forms-education__col
             article.forms-education__item
               h3.forms-education__subject !{item.subtitle}
-              p.forms-education__text !{item.text}
+              if item.text
+                | !{item.text}
     else
       .container
         h2.forms-education__title.h2 !{data.title}
@@ -16,7 +17,8 @@ mixin forms-education(data, noContainer)
             .forms-education__col
               article.forms-education__item
                 h3.forms-education__subject !{item.subtitle}
-                p.forms-education__text !{item.text}
+                if item.text
+                  | !{item.text}
 mixin forms-education-lytkyno(data)
   section.forms-education.section--grey&attributes(attributes)
     .container
@@ -28,4 +30,5 @@ mixin forms-education-lytkyno(data)
               .forms-education__col
                 article.forms-education__item
                   h3.forms-education__subject !{item.subtitle}
-                  p.forms-education__text !{item.text}
+                  if item.text
+                    | !{item.text}
