@@ -1903,13 +1903,13 @@ object-assign
 
 
 
+
+
 (function () {
   $('.js-sub-menu-article').on('change', function () {
     window.location.href = $(this).val();
   });
 })();
-
-
 
 
 
@@ -1979,6 +1979,8 @@ object-assign
 
 
 
+
+
 $('#callback-form').on('submit', function (event) {
   event.preventDefault();
   $('#callback').modal('hide');
@@ -2007,8 +2009,6 @@ $('#trial-lesson').on('submit', function (event) {
     }, 500);
   });
 })();
-
-
 
 
 
@@ -2154,56 +2154,6 @@ $('#trial-lesson').on('submit', function (event) {
 })();
 
 (function () {
-  $('.js-examps-define-slider').slick({
-    arrows: false,
-    dots: true,
-    appendDots: $('.js-examps-dots')
-  });
-})();
-
-
-
-(function () {
-  var TABLET_SCREEN = 767;
-  var langSlider = $('.js-form-education-slider');
-  var langSliderSettigs = {
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    adaptiveHeight: true
-  };
-  // включение слайдера на мобильном
-  function slickMobile(slider, settings) {
-    if ($(window).width() > TABLET_SCREEN) {
-      if (slider.hasClass('slick-initialized')) {
-        slider.slick('unslick');
-      }
-      return false;
-    }
-    if (!slider.hasClass('slick-initialized')) {
-      return slider.slick(settings);
-    }
-  }
-  $(window).on('load resize', function () {
-    slickMobile(langSlider, langSliderSettigs);
-  });
-})();
-
-(function () {
-  $('.js-show-main-menu').on('click', function () {
-    $('body').toggleClass('show-menu');
-  });
-})();
-
-
-
-
-
-
-
-
-
-(function () {
   $('.js-examp-first-slider').slick({
     dots: true,
     arrows: false,
@@ -2257,6 +2207,56 @@ $('#trial-lesson').on('submit', function (event) {
     ]
   });
 })();
+
+(function () {
+  $('.js-examps-define-slider').slick({
+    arrows: false,
+    dots: true,
+    appendDots: $('.js-examps-dots')
+  });
+})();
+
+
+
+(function () {
+  var TABLET_SCREEN = 767;
+  var langSlider = $('.js-form-education-slider');
+  var langSliderSettigs = {
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    adaptiveHeight: true
+  };
+  // включение слайдера на мобильном
+  function slickMobile(slider, settings) {
+    if ($(window).width() > TABLET_SCREEN) {
+      if (slider.hasClass('slick-initialized')) {
+        slider.slick('unslick');
+      }
+      return false;
+    }
+    if (!slider.hasClass('slick-initialized')) {
+      return slider.slick(settings);
+    }
+  }
+  $(window).on('load resize', function () {
+    slickMobile(langSlider, langSliderSettigs);
+  });
+})();
+
+(function () {
+  $('.js-show-main-menu').on('click', function () {
+    $('body').toggleClass('show-menu');
+  });
+})();
+
+
+
+
+
+
+
+
 
 (function () {
   $('.js-toggle-answer').on('click', function () {
@@ -2701,6 +2701,8 @@ $(window).on('load', function () {
 
 
 
+
+
 (function () {
   $('.js-promo-slider').slick({
     arrows: false,
@@ -2726,8 +2728,6 @@ $(window).on('load', function () {
     }]
   });
 })();
-
-
 
 
 (function () {
