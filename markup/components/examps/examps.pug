@@ -1,0 +1,46 @@
+include ../trial-lesson/trial-lesson
+mixin card(data)
+  examps__header
+    article.examps__card
+      .examps__card-header
+        .row.no-gutters.align-items-center.align-items-xl-start
+          .col-auto
+            .examps__logo
+              img(src="%=static=%img/content/"+data.img alt=data.name)
+          .col
+            h3.examps__card-title
+              a(href="#") #{data.title}
+      .examps__main
+        p !{data.desc}
+      a(href="#").show-all Перейти в раздел
+        span &nbsp;&rarr;
+mixin examps(data)
+  section.examps
+    .container
+      h2.examps__title.h2
+        a(href="#") Экзамены YLE (Young Learners English)
+    .examps__wrapper
+      button(type="button").examps__arrow.slide-arrow.slide-arrow--prev.text-hide.js-slider1-examp-prev-btn
+        +icon('arrow-left', 12, 11)
+        | Предадущий слайд
+      button(type="button").examps__arrow.slide-arrow.slide-arrow--next.text-hide.js-slider1-examp-next-btn
+        +icon('arrow-right', 12, 11)
+        | Следующий слайд
+      .container
+        .examps__slider.js-examp-first-slider
+          each slide in data.firstSlider
+            .examps__slide
+              +card(slide)
+    .examps__wrapper
+      button(type="button").examps__arrow.slide-arrow.slide-arrow--prev.text-hide.js-slider2-examp-prev-btn
+        +icon('arrow-left', 12, 11)
+        | Предадущий слайд
+      button(type="button").examps__arrow.slide-arrow.slide-arrow--next.text-hide.js-slider2-examp-next-btn
+        +icon('arrow-right', 12, 11)
+        | Следующий слайд
+      .container
+        .examps__slider.js-examp-second-slider
+          each slide in data.secondSlider
+            .examps__slide
+              +card(slide)
+    +trial-lesson(true)

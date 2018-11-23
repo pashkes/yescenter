@@ -1,0 +1,156 @@
+.examps {
+  padding-top: 25px;
+  padding-bottom: 32px;
+  background-color: rgba(#eaecee, .8);
+  overflow: hidden;
+  @include media-breakpoint-up(md) {
+    padding-top: 45px;
+    padding-bottom: 48px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+    padding-bottom: 88px;
+  }
+  &__title {
+    margin-bottom: 26px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 34px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 38px;
+    }
+    a {
+      font-size: 18px;
+      line-height: 1.44;
+      letter-spacing: 0.7px;
+      box-shadow: inset 0 -3px 0 #eef0f1,
+      inset 0 -4px 0 rgba(56, 56, 56, 0.2);
+      &:hover {
+        box-shadow: none;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 28px;
+        line-height: 1.5;
+        letter-spacing: 1.1px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 30px;
+        line-height: 1.4;
+        letter-spacing: 1.2px;
+      }
+
+    }
+  }
+  &__wrapper {
+    position: relative;
+    &:first-of-type .examps__slider {
+      margin-bottom: 70px;
+    }
+    &:last-of-type .examps__slider {
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 42px;
+      }
+      .examps__card {
+        min-height: 582px;
+        @include media-breakpoint-up(xl) {
+          min-height: 647px;
+        }
+      }
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+  }
+  &__slider {
+    margin-bottom: 25px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 47px;
+    }
+  }
+  .slick-list {
+    @include media-breakpoint-up(md) {
+      margin-right: -16px;
+      margin-left: -16px;
+    }
+  }
+  .slick-slide {
+    @include media-breakpoint-up(md) {
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 100%;
+    padding: 24px;
+    background-color: #fff;
+    @include media-breakpoint-up(md) {
+      min-height: 544px;
+      padding: 32px 32px 44px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 600px;
+      padding: 32px 48px 37px 48px;
+    }
+  }
+  &__header {
+    margin-bottom: 14px;
+  }
+  &__card-header {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 22px;
+    }
+  }
+  &__logo {
+    margin-right: 24px;
+    @include media-breakpoint-up(md) {
+      margin-right: 32px;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 0;
+    @include media-breakpoint-up(xl) {
+      padding-top: 20px;
+    }
+    a {
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+        line-height: 1.08;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 24px;
+        line-height: 1.08;
+      }
+    }
+  }
+  &__main {
+    p {
+      margin-bottom: 12px;
+      @include media-breakpoint-up(md) {
+        line-height: 22px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 15px;
+        line-height: 1.6;
+      }
+    }
+  }
+  .slick-dots {
+    margin-bottom: 0;
+    padding-top: 20px;
+    @include media-breakpoint-up(md) {
+      justify-content: flex-start;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 32px;
+    }
+  }
+  .show-all {
+    margin-top: auto;
+  }
+}

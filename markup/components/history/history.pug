@@ -1,7 +1,8 @@
 mixin history(data)
   section.history.section&attributes(attributes)
     .container
-      h2.history__title.h2 #{data.title}
+      if data.title
+        h2.history__title.h2 #{data.title}
       if data.subtitle
         p.history__subtitle.subtitle #{data.subtitle}
       .history__inner

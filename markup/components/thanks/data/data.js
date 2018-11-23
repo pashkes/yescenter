@@ -31,22 +31,22 @@ const data = {
     classSlider: 'js-sert-slider',
     list: [
       {
-        imgSrc: 'review-cursive-1.jpg'
+        imgSrc: 'review-cursive-1.png'
       },
       {
-        imgSrc: 'review-cursive-2.jpg'
+        imgSrc: 'review-cursive-2.png'
       },
       {
-        imgSrc: 'review-cursive-3.jpg'
+        imgSrc: 'review-cursive-3.png'
       },
       {
-        imgSrc: 'review-cursive-4.jpg'
+        imgSrc: 'review-cursive-4.png'
       },
       {
-        imgSrc: 'review-cursive-1.jpg'
+        imgSrc: 'review-cursive-1.png'
       },
       {
-        imgSrc: 'review-cursive-2.jpg'
+        imgSrc: 'review-cursive-2.png'
       }
     ]
   }

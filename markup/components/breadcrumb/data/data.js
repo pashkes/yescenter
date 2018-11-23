@@ -420,6 +420,19 @@ const data = {
       {
         name: 'King\'s Speech (Broadcast)'
       }
+    ],
+    examps: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        link: '#',
+        name: 'Международные экзамены по английскому языку'
+      },
+      {
+        name: 'Кембриджские экзамены\n'
+      }
     ]
   }
 };

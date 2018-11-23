@@ -1,0 +1,73 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/footer/footer.pug
+  include ../components/header/header
+  include ../components/breadcrumb/breadcrumb
+  include ../components/subscribe/subscribe
+  include ../components/callback/callback
+  include ../components/modal-search/modal-search
+  include ../components/modal-location/modal-location
+  include ../components/examps-define/examps-define
+  include ../components/examps/examps
+  include ../components/map/map
+  include ../components/news/news
+  include ../components/reviews/reviews
+  include ../components/teachers/teachers
+  include ../components/additional/additional
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header(headerDefault)
+      .container
+        +breadcrumb(breadcrumb.examps)
+      section.examps-intro
+        .container
+          h2.examps-intro__title.h2 Кембриджские экзамены по&#160;английскому языку
+          p.examps-intro__subtitle Один из&#160;самых распространенных вариантов проверки знаний английского языка и&#160;умения использовать его в&#160;жизни&#160;&#8212; кембриджские экзамены. Официальный сайт, на&#160;котором можно найти всю информацию об&#160;испытаниях,
+            a(href="#") &#160;cambridgeenglish.org.ru.
+            |Результаты тестов являются бессрочными
+            | и&#160;принимаются в&#160;большинстве англоязычных стран.
+          .examps-intro__main
+            .row.justify-content-between
+              .col-md
+                .embed-responsive.embed-responsive-16by9.examps-intro__video
+                  iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0").embed-responsive-item
+              .col-md-auto
+                .examps-intro__cert
+                  img(src="%=static=%img/content/cert.jpg" alt="Сертификат")
+      +examps-define()
+      +examps(exampes)
+      +additional(additionalText.pageLytkyno1, 'Международный кембриджский экзамен по&#160;английскому в&#160;Москве', 'single').lytkarino-add-text
+      section.history.section.history--no-line.exam-stat
+        .container
+          .history__inner
+            .row.no-gutters.justify-content-md-between
+              div(class="col-md-auto col-xl-4")
+                div(class="history__item history__item--first")
+                  span.history__year 25&#160;000
+                  p.history__desc Наших слушателей ежегодно сдают Кембриджские экзамены.
+              div(class="col-md-auto col-xl-4")
+                div(class="history__item history__item--second")
+                  span.history__year 97,8&#160;%
+                  p.history__desc Студентов успешно сдают Кембриджские экзамены с&#160;первого раза.
+              div(class="col-md-auto col-xl-4")
+                div(class="history__item history__item--third")
+                  span.history__year 13
+                  p.history__desc Программ подготовки к&#160;Кембриджским экзаменам используется в&#160;нашем центре
+      +reviews(reviews, 'отзывы наших учеников')
+      +teachers(teachers, true, 'Наши преподаватели')
+      +news()
+      +map()
+      +subscribe()
+      +footer()
+    +callback()
+    +modal-search()
+    +modal-location()
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%.js')

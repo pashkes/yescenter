@@ -1,0 +1,181 @@
+mixin row(course, label)
+  tr
+    td !{course}
+    if label
+      td.have
+        div #{label}
+    else
+      td
+
+mixin examps-define()
+  section.examps-define
+    .container
+      h2.examps-define__title.h2 В&#160;Yes готовят ко&#160;всем  видам Кембриджских экзаменов
+      p.examps-define__subtitle Существуют пять основных видов испытаний, сложность которых зависит от&#160;степени владения языком: KET (базовое владение), PET (среднее), FCE (уверенное), CAE (высокое), CPE (профессиональное). Первые три типа тестов делятся на&#160;взрослые и&#160;подростковые (для детей 11-14&#160;лет). Кроме того, есть специальные и&#160;профессиональные экзамены, определяющие степень владения языком в&#160;области права и&#160;юриспруденции, бухгалтерии или бизнес-английского.
+      p.examps-define__subtitle Отдельно выделяют испытания для детей в&#160;возрасте 7-12&#160;лет. Кембриджский экзамен для школьников этого возраста носит название YLE. Он&#160;имеет три уровня: Starters, Movers и&#160;Flyers.
+      .examps-define__mobile-slider.js-examps-define-slider.d-md-none
+        .examps-define__slide
+          table.examps-define__table
+            thead
+              tr
+                th.examps-define__label-col Языковые уровни
+                th.examps-define__label-col Кембриджские экзамены для детей
+            tbody
+              tr
+                td.right Pre-A1
+                td.have.top.right.bottom.left YLE Starters
+              tr
+                td.right A1
+                  br
+                  | (Beginner)
+                td.have.right.bottom.left YLE Movers
+              tr
+                td.right
+                  | A2
+                  br
+                  | (Elementary)
+                td.have.right.bottom.left YLE Flyers
+              tr
+                td B1
+                  br
+                  | (Intermediate)
+                td
+              tr
+                td B2 (Upper-Intermediate)
+                td
+              tr
+                td C1
+                  br
+                  | (Advanced)
+                td
+              tr
+                td C1
+                  br
+                  | (Advanced)
+                td
+        .examps-define__slide
+          table.examps-define__table
+            thead
+              tr
+                th.examps-define__label-col Языковые уровни
+                th.examps-define__label-col Кембриджские экзамены для взрослых
+            tbody
+              tr
+                td Pre-A1
+                td
+              tr
+                td A1
+                  br
+                  | (Beginner)
+                td
+              tr
+                td.right
+                  | A2
+                  br
+                  | (Elementary)
+                td.have.right.bottom.top KET
+              tr
+                td.right B1
+                  br
+                  | (Intermediate)
+                td.have.right.bottom PET
+              tr
+                td.right B2 (Upper-Intermediate)
+                td.have.right.bottom FCE
+              tr
+                td.right C1
+                  br
+                  | (Advanced)
+                td.have.right.bottom CAE
+              tr
+                td.right C1
+                  br
+                  | (Advanced)
+                td.have.right.bottom CPE
+        .examps-define__slide
+          table.examps-define__table
+            thead
+              tr
+                th.examps-define__label-col Языковые уровни
+                th.examps-define__label-col Кембриджские экзамены бизнес-английский
+            tbody
+              tr
+                td Pre-A1
+                td
+              tr
+                td A1
+                  br
+                  | (Beginner)
+                td
+              tr
+                td
+                  | A2
+                  br
+                  | (Elementary)
+                td
+              tr
+                td.right B1
+                  br
+                  | (Intermediate)
+                td.have.right.bottom.top BEC Preliminary
+              tr
+                td.right B2 (Upper-Intermediate)
+                td.have.right.bottom BEC Vantage
+              tr
+                td.right C1
+                  br
+                  | (Advanced)
+                td.have.right.bottom BEC Higer
+              tr
+                td C1
+                  br
+                  | (Advanced)
+                td
+      .js-examps-dots.d-md-none
+      table.examps-define__table.d-none.d-md-table
+        thead
+          tr
+            th(rowspan="2").examps-define__label-col Языковые
+              span.d-md-block уровни
+            th(colspan="3").examps-define__label-col.w-auto.wide Кембриджские экзамены
+          tr
+            th().examps-define__label-col.category Для детей
+            th().examps-define__label-col.category Для взрослых
+            th().examps-define__label-col.category Бизнес-английский
+        tbody
+          tr
+            td.right Pre-A1
+            td.have.right.bottom.top.left  YLE Starters
+            td
+            td
+          tr
+            td.right A1 (Beginner)
+            td.have.right.bottom YLE Movers
+            td
+            td
+          tr
+            td.right A2 (Elementary)
+            td.have.right.bottom YLE Flyers
+            td.have.right.bottom.top KET
+            td
+          tr
+            td B1 (Intermediate)
+            td.right
+            td.have.right.bottom PET
+            td.have.top.bottom.right BEC Preliminary
+          tr
+            td B2 (Upper-Intermediate)
+            td.right
+            td.have.right.bottom FCE
+            td.have.bottom.right BEC Vantage
+          tr
+            td C1 (Advanced)
+            td.right
+            td.have.right.bottom CAE
+            td.have.bottom.right BEC Higer
+          tr
+            td C2 (Proficiency)
+            td.right
+            td.have.right.bottom.right CPE
+            td
+

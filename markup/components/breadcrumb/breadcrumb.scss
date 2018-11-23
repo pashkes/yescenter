@@ -31,10 +31,9 @@
     }
     &::after {
       content: '/';
-      position: absolute;
-      right: 4px;
-      top: 50%;
-      transform: translateY(-50%);
+      position: relative;
+      top: 1px;
+      left: 9px;
       font-size: 12px;
       color: #aeaeae;
       @include media-breakpoint-up(xl) {

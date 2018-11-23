@@ -2,7 +2,7 @@ mixin additional(data, title, valueColumns)
   section.additional.section&attributes(attributes)
     .container
       if title
-        h2.h2.additional__title #{title}
+        h2.h2.additional__title !{title}
         if valueColumns !== 'single'
           .row
             each sect in data
