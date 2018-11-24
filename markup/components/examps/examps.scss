@@ -45,10 +45,13 @@
     position: relative;
     &:first-of-type .examps__slider {
       margin-bottom: 70px;
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 55px;
+      }
     }
     &:last-of-type .examps__slider {
       @include media-breakpoint-up(xl) {
-        margin-bottom: 42px;
+        margin-bottom: 27px;
       }
       .examps__card {
         min-height: 582px;
@@ -88,6 +91,15 @@
     width: 100%;
     padding: 24px;
     background-color: #fff;
+    transition: $transition-base;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 15px;
+    }
+    &:hover {
+      @include media-breakpoint-up(xl) {
+        box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
     @include media-breakpoint-up(md) {
       min-height: 544px;
       padding: 32px 32px 44px;

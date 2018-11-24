@@ -10,9 +10,9 @@
         variableWidth: true
       }
     },
-    {
-      breakpoint: 1343,
-      settings: {
+      {
+        breakpoint: 1343,
+        settings: {
         arrows: true,
         variableWidth: true,
         prevArrow: $('.js-video-prev-btn'),
