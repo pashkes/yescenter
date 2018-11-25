@@ -31,6 +31,7 @@
 
     var image = new Image();
     image.src = source;
+    image.alt = youtube[i].dataset.title;
     image.addEventListener( "load", function() {
       youtube[ i ].appendChild( image );
     }( i ) );
