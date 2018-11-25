@@ -12840,6 +12840,7 @@ body.compensate-for-scrollbar {
 @media (min-width: 1344px) {
   .courses__item {
     width: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -15574,6 +15575,87 @@ body.compensate-for-scrollbar {
   }
 }
 
+.interestring-education {
+  padding-top: 28px;
+}
+
+@media (min-width: 768px) {
+  .interestring-education {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .interestring-education {
+    padding-top: 82px;
+    padding-bottom: 4px;
+  }
+}
+
+.interestring-education--padding-bottom {
+  padding-bottom: 28px;
+}
+
+@media (min-width: 768px) {
+  .interestring-education--padding-bottom {
+    padding-bottom: 40px;
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .interestring-education--padding-bottom {
+    margin-top: -18px;
+    padding-bottom: 100px;
+  }
+}
+
+.interestring-education .page-eng__title-card {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.interestring-education__title {
+  margin-bottom: 28px;
+  letter-spacing: 0.7px;
+}
+
+@media (min-width: 768px) {
+  .interestring-education__title {
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .interestring-education__title {
+    margin-bottom: 50px;
+  }
+}
+
+.interestring-education .lang-card {
+  min-height: 272px;
+}
+
+@media (min-width: 1344px) {
+  .interestring-education .lang-card {
+    margin-bottom: 0;
+    min-height: 276px;
+  }
+}
+
+.interestring-education .slick-dots {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .interestring-education .slick-dots {
+    margin-top: 10px;
+  }
+}
+
 .info__title {
   margin-bottom: 20px;
 }
@@ -15722,87 +15804,6 @@ body.compensate-for-scrollbar {
 @media (min-width: 768px) {
   .info__btn {
     max-width: 198px;
-  }
-}
-
-.interestring-education {
-  padding-top: 28px;
-}
-
-@media (min-width: 768px) {
-  .interestring-education {
-    padding-top: 40px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .interestring-education {
-    padding-top: 82px;
-    padding-bottom: 4px;
-  }
-}
-
-.interestring-education--padding-bottom {
-  padding-bottom: 28px;
-}
-
-@media (min-width: 768px) {
-  .interestring-education--padding-bottom {
-    padding-bottom: 40px;
-    margin-top: -10px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .interestring-education--padding-bottom {
-    margin-top: -18px;
-    padding-bottom: 100px;
-  }
-}
-
-.interestring-education .page-eng__title-card {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-.interestring-education__title {
-  margin-bottom: 28px;
-  letter-spacing: 0.7px;
-}
-
-@media (min-width: 768px) {
-  .interestring-education__title {
-    margin-bottom: 24px;
-    font-size: 30px;
-    line-height: 42px;
-    letter-spacing: 1.5px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .interestring-education__title {
-    margin-bottom: 50px;
-  }
-}
-
-.interestring-education .lang-card {
-  min-height: 272px;
-}
-
-@media (min-width: 1344px) {
-  .interestring-education .lang-card {
-    margin-bottom: 0;
-    min-height: 276px;
-  }
-}
-
-.interestring-education .slick-dots {
-  margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  .interestring-education .slick-dots {
-    margin-top: 10px;
   }
 }
 
@@ -25985,7 +25986,7 @@ body.show-menu .header__logo-wrapper {
 @media (min-width: 1344px) {
   .trial-lesson__subtitle {
     margin-bottom: 29px;
-    max-width: 500px;
+    max-width: 520px;
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 0.3px;

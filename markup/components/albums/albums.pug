@@ -13,18 +13,18 @@ mixin albums(data)
         .row
           each album in data
             .col-md-6.col-xl-4
-              figure.albums__item
+              .albums__item
                 a(href="album.html")
                   img(src="%=static=%img/content/"+album.src alt=album.caption)
-                  figcaption.albums__caption #{album.caption}
+                  span.albums__caption #{album.caption}
       div(role="tabpanel")#albums-categories
         .row
           each album in data
             .col-md-6.col-xl-4
-              figure.albums__item
+              .albums__item
                 a(href="album.html")
                   img(src="%=static=%img/content/" + album.src alt=album.caption)
-                  figcaption.albums__caption #{album.caption}
+                  span.albums__caption #{album.caption}
       footer.albums__footer.d-flex.justify-content-center
         a(href="#").albums__show-more.btn.btn--grey показать еще
 

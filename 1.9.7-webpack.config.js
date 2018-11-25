@@ -149,5 +149,5 @@ module.exports = {
 
     eslint: {
         configFile: `${cwd}/.eslintrc`
-    }
+    }.trial-lesson
 };

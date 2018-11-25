@@ -1,10 +1,10 @@
 mixin base(data)
-  .base.courses.section.section--grey.foreign-course&attributes(attributes)
+  section.base.courses.section.section--grey.foreign-course&attributes(attributes)
     .container
       .row
         each item in data.list
           .col-md-6.col-xl-3
-            arcticle.lang-card
+            .lang-card
               .lang-card__top
                 .lang-card__flag
                   img(src="%=static=%img/general/" + item.countryImg width="40" height="26" alt=item.countryNameAlt)

@@ -1904,13 +1904,13 @@ object-assign
 
 
 
+
+
 (function () {
   $('.js-sub-menu-article').on('change', function () {
     window.location.href = $(this).val();
   });
 })();
-
-
 
 
 (function () {
@@ -1978,6 +1978,14 @@ object-assign
 
 
 
+
+
+
+
+
+
+
+
 $('#callback-form').on('submit', function (event) {
   event.preventDefault();
   $('#callback').modal('hide');
@@ -2007,11 +2015,29 @@ $('#trial-lesson').on('submit', function (event) {
   });
 })();
 
-
-
-
-
-
+(function () {
+  $('.js-certifications-slider').slick({
+    arrows: false,
+    mobileFirst: true,
+    dots: true,
+    centerMode: false,
+    centerPadding: false,
+    infinite: false,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+})();
 
 
 
@@ -2060,32 +2086,6 @@ $('#trial-lesson').on('submit', function (event) {
 })();
 
 (function () {
-  $('.js-certifications-slider').slick({
-    arrows: false,
-    mobileFirst: true,
-    dots: true,
-    centerMode: false,
-    centerPadding: false,
-    infinite: false,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 3,
-        variableWidth: true
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
-  });
-})();
-
-
-
-(function () {
   $('.js-departure-slider').slick({
     variableWidth: true,
     centerPadding: '0',
@@ -2131,76 +2131,6 @@ $('#trial-lesson').on('submit', function (event) {
     ]
   });
 })();
-
-(function () {
-  $('.js-examps-define-slider').slick({
-    arrows: false,
-    dots: true,
-    appendDots: $('.js-examps-dots')
-  });
-})();
-
-
-
-(function () {
-  var TABLET_SCREEN = 767;
-  var langSlider = $('.js-form-education-slider');
-  var langSliderSettigs = {
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    adaptiveHeight: true
-  };
-  // включение слайдера на мобильном
-  function slickMobile(slider, settings) {
-    if ($(window).width() > TABLET_SCREEN) {
-      if (slider.hasClass('slick-initialized')) {
-        slider.slick('unslick');
-      }
-      return false;
-    }
-    if (!slider.hasClass('slick-initialized')) {
-      return slider.slick(settings);
-    }
-  }
-  $(window).on('load resize', function () {
-    slickMobile(langSlider, langSliderSettigs);
-  });
-})();
-
-(function () {
-  $('.js-show-main-menu').on('click', function () {
-    $('body').toggleClass('show-menu');
-  });
-})();
-
-
-
-
-
-(function () {
-  $('.js-slider-education').slick({
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    adaptiveHeight: true,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        variableWidth: true,
-        adaptiveHeight: false
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        variableWidth: false,
-        slidesToShow: 4
-      }
-    }]
-  });
-})();
-
 
 (function () {
   $('.js-examp-first-slider').slick({
@@ -2260,6 +2190,44 @@ $('#trial-lesson').on('submit', function (event) {
 
 
 (function () {
+  var TABLET_SCREEN = 767;
+  var langSlider = $('.js-form-education-slider');
+  var langSliderSettigs = {
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    adaptiveHeight: true
+  };
+  // включение слайдера на мобильном
+  function slickMobile(slider, settings) {
+    if ($(window).width() > TABLET_SCREEN) {
+      if (slider.hasClass('slick-initialized')) {
+        slider.slick('unslick');
+      }
+      return false;
+    }
+    if (!slider.hasClass('slick-initialized')) {
+      return slider.slick(settings);
+    }
+  }
+  $(window).on('load resize', function () {
+    slickMobile(langSlider, langSliderSettigs);
+  });
+})();
+
+(function () {
+  $('.js-show-main-menu').on('click', function () {
+    $('body').toggleClass('show-menu');
+  });
+})();
+
+
+
+
+
+
+
+(function () {
   $('.js-toggle-answer').on('click', function () {
     console.log($(this).next());
     $(this).next().slideToggle();
@@ -2270,6 +2238,8 @@ $('#trial-lesson').on('submit', function (event) {
     }
   });
 })();
+
+
 
 
 
@@ -2536,6 +2506,38 @@ $('.js-select-time').SumoSelect({
 
 
 
+(function () {
+  $('.js-slider-education').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    adaptiveHeight: true,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        variableWidth: true,
+        adaptiveHeight: false
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        variableWidth: false,
+        slidesToShow: 4
+      }
+    }]
+  });
+})();
+
+
+(function () {
+  $('.js-examps-define-slider').slick({
+    arrows: false,
+    dots: true,
+    appendDots: $('.js-examps-dots')
+  });
+})();
+
 
 
 
@@ -2634,40 +2636,6 @@ $(window).on('load', function () {
 
 
 
-
-
-
-
-
-
-
-
-(function () {
-  $('.js-promo-slider').slick({
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    centerPadding: '0',
-    appendDots: $('.promo__dots'),
-    prevArrow: $('.js-promo-prev-btn'),
-    nextArrow: $('.js-promo-next-btn'),
-
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        variableWidth: true
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        variableWidth: true,
-        arrows: true
-      }
-    }]
-  });
-})();
-
 (function () {
   $('.js-partners-slider').slick({
     arrows: false,
@@ -2738,6 +2706,32 @@ $(window).on('load', function () {
 
 
 
+(function () {
+  $('.js-promo-slider').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    centerPadding: '0',
+    appendDots: $('.promo__dots'),
+    prevArrow: $('.js-promo-prev-btn'),
+    nextArrow: $('.js-promo-next-btn'),
+
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        variableWidth: true,
+        arrows: true
+      }
+    }]
+  });
+})();
+
 
 (function () {
   var sliderReviews = $('.js-reviews-slider').slick({
@@ -2777,6 +2771,18 @@ $(window).on('load', function () {
 
 
 (function () {
+  $('.js-close-map-popup').on('click', function () {
+    $(this).parent('.js-map-popup').remove();
+  });
+})();
+
+
+
+
+
+
+
+(function () {
   $('.subscribe').on('submit', function (evt) {
     evt.preventDefault();
     $('#subscribe').modal('hide');
@@ -2785,8 +2791,6 @@ $(window).on('load', function () {
     }, 1000);
   });
 })();
-
-
 
 
 (function () {
@@ -2825,6 +2829,15 @@ $(window).on('load', function () {
       }
     }
     ]
+  });
+})();
+
+
+
+(function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
   });
 })();
 
@@ -2868,12 +2881,6 @@ $(window).on('load', function () {
 })();
 
 
-
-(function () {
-  $('.js-close-map-popup').on('click', function () {
-    $(this).parent('.js-map-popup').remove();
-  });
-})();
 
 (function () {
   $('.js-thanks-slider').slick({
@@ -2929,12 +2936,7 @@ $(window).on('load', function () {
   });
 })();
 
-(function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
-  });
-})();
+
 
 
 
@@ -2961,5 +2963,3 @@ $(window).on('load', function () {
     }]
   });
 })();
-
-

@@ -66,6 +66,7 @@
     }
     @include media-breakpoint-up(xl) {
       width: auto;
+      margin-bottom: auto;
     }
   }
   &__select {

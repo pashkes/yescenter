@@ -1,12 +1,12 @@
 mixin modal-job(data)
     .modal-job
-      div(tabindex="-1" role="dialog" aria-labelledby="orderCourceModalLabel" aria-hidden="true").callback.modal.fade.order-course#modal-job
+      div(tabindex="-1" role="dialog" aria-labelledby="job-title" aria-hidden="true").callback.modal.fade.order-course#modal-job
         div(role="document").modal-dialog.d-flex.justify-content-center
           form.modal-conten.form.map__form#modal-job-form
             button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
               +icon('close', 14, 14)
               | Закрыть
-            p.map__title.modal-title Откликнуться
+            p.map__title.modal-title#job-title Откликнуться
               br
               | на вакансию
             label(for="modal-job-form-name").hidden Представьтесь, пожалуйста *

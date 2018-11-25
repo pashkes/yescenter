@@ -1,11 +1,11 @@
 mixin callback(data)
-  div(tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true").callback.modal.fade#callback
+  div(tabindex="-1" role="dialog" aria-labelledby="callback-title" aria-hidden="true").callback.modal.fade#callback
     div(role="document").modal-dialog.d-flex.justify-content-center
       form.modal-conten.form.map__form#callback-form
         button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
           +icon('close', 14, 14)
           | Закрыть
-        p.map__title.modal-title.title Оставьте ваш номер
+        p.map__title.modal-title.title#callback-title Оставьте ваш номер
         p.form__subtitle и мы перезвоним в удобное для вас время
         label(for="callback-name").hidden Представьтесь, пожалуйста *
         input(placeholder="Представьтесь, пожалуйста *" name="name" required).form__field#callback-name
@@ -42,23 +42,23 @@ mixin callback(data)
         p.map__conf Нажимая на кнопку «Перезвоните мне», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
           a(href="#" class="js-open-agreement" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement") политикой конфиденциальности
         button.btn.btn--red.w-100.js-succes-send перезвоните мне
-  div(tabindex="-1" role="dialog" aria-labelledby="callbackSuccessLabel" aria-hidden="true").callback.modal.fade#success-sended
+  div(tabindex="-1" role="dialog" aria-labelledby="success-sent" aria-hidden="true").callback.modal.fade#success-sended
     div(role="document").modal-dialog.d-flex.justify-content-center
       .modal-conten.map__form
         button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
           +icon('close', 14, 14)
           | Закрыть
-        p.map__title.callback__title-success Спасибо, Ваша заявка отправлена
+        p.map__title.callback__title-success#success-sent Спасибо, Ваша заявка отправлена
         p.callback__subtitle-success Ближайшее время наш&#160;менедер свяжется с вами.
         button(data-dismiss="modal" aria-label="Close"  type="button").btn.btn--red.w-100 Закрыть
   .agreement
-    div(tabindex="-1" role="dialog" aria-labelledby="callbackSuccessLabel" aria-hidden="true").callback.modal#agreement
+    div(tabindex="-1" role="dialog" aria-labelledby="add-info" aria-hidden="true").callback.modal#agreement
       div(role="document").modal-dialog.d-flex.justify-content-center.modal-dialog-centered
         .modal-content
           button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
             +icon('close', 14, 14)
             | Закрыть
-          p.agreement__title.map__title Соглашение о защите прав и информации. Условия и правила использования данных.
+          p.agreement__title.map__title#add-info Соглашение о защите прав и информации. Условия и правила использования данных.
           div(data-simplebar data-simplebar-auto-hide="false").agreement__content#agreement-content
             .agreement__content-inner
               h3 1. ВАШЕ СОГЛАСИЕ
@@ -78,13 +78,13 @@ mixin callback(data)
               p YES применяет так называемую технологию "cookies". Сookies - это информационные файлы, которые передаются с вебсайта на жесткий диск Вашего компьютера в целях хранения данной информации. Они предоставляют нам информацию о том как, когда и каким количеством людей посещаются страницы нашего вебсайта.
 
 
-  div(tabindex="-1" role="dialog" aria-labelledby="orderCourceModalLabel" aria-hidden="true").callback.modal.fade.order-course#order-course
+  div(tabindex="-1" role="dialog" aria-labelledby="write-course" aria-hidden="true").callback.modal.fade.order-course#order-course
     div(role="document").modal-dialog.d-flex.justify-content-center
       form.modal-conten.form.map__form#order-course-form
         button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
           +icon('close', 14, 14)
           | Закрыть
-        p.map__title.modal-title Записаться
+        p.map__title.modal-title#write-course Записаться
           br
           | на курсы
         label(for="order-course-form-name").hidden Представьтесь, пожалуйста *
@@ -92,7 +92,7 @@ mixin callback(data)
         label(for="order-course-phone").hidden Контактный номер телефона *
         input(type="tel" placeholder="Контактный номер телефона *"  name="phone" required).form__field.callback__phone#order-course-phone
         label(for="order-course-time-first").hidden Выберите язык для изучения *
-        select(required).js-select-lang-order#order-course-time-first
+        select.js-select-lang-order#order-course-time-first
           option(selected disabled) Выберите язык для изучения *
           option Английский язык
           option Немецкий язык
@@ -107,13 +107,13 @@ mixin callback(data)
         p.map__conf Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
           a(href="#" class="js-open-agreement" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement") политикой конфиденциальности
         button.btn.btn--red.w-100.js-succes-send Отправить заявку
-  div(tabindex="-1" role="dialog" aria-labelledby="orderCourceModalLabel" aria-hidden="true").callback.modal.fade.order-course#trial-lesson-modal
+  div(tabindex="-1" role="dialog" aria-labelledby="trial-lesson-title" aria-hidden="true").callback.modal.fade.order-course#trial-lesson-modal
     div(role="document").modal-dialog.d-flex.justify-content-center
       form.modal-conten.form.map__form
         button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
           +icon('close', 14, 14)
           | Закрыть
-        p.map__title.modal-title Пробный урок
+        p.map__title.modal-title#trial-lesson-title Пробный урок
           br
           | в подарок!
         label(for="trial-lesson-name").hidden Представьтесь, пожалуйста *
@@ -121,9 +121,9 @@ mixin callback(data)
         label(for="trial-lesson-phone").hidden Контактный номер телефона *
         input(type="tel" placeholder="Контактный номер телефона *"  name="phone" required).form__field.callback__phone#trial-lesson-phone
         label(for="trial-lesson-select-course").hidden Выберите язык для изучения *
-        select(required).js-select-lang-order#trial-lesson-select-course
-          option(selected disabled) Выберите язык для изучения *
+        select.js-select-lang-order#trial-lesson-select-course
           option Английский язык
+          option(selected disabled) Выберите язык для изучения *
           option Немецкий язык
           option Французкий язык
           option Испанский язык
@@ -142,11 +142,11 @@ mixin callback(data)
         button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
           +icon('close', 14, 14)
           | Закрыть
-        p.map__title.callback__title-success Поздравляем!
+        p.map__title.callback__title-success#orderSuccessLabel Поздравляем!
           br
           | теперь Вы подписаны
           br
-          | на новостную
+          | на новостнуюq
           br
           | рассылку.
         p.callback__subtitle-success Теперь вы всегда будете первыми узнавать о последних новстях и акциях нашей школы! Нужен текст.

@@ -40,7 +40,7 @@ mixin page-blog(data)
                 input(type="radio" name="page-blog-years" checked=item.checked)
                 span.page-blog__name-filter #{item.name}
     .container
-      div(role="tabpanel").page-blog__panel#all-public
+      div(role="tabpanel").page-blog__panel
         .page-blog__articles
           .row
             .col-12.page-blog__col.page-blog__col--wide
@@ -62,7 +62,7 @@ mixin page-blog(data)
                   p.page-blog__preview #{article.text}
         .page-blog__footer
           a(href="#").page-blog__show-more.btn.btn--grey показать еще
-      div(role="tabpanel").page-blog__panel#all-public
+      div(role="tabpanel").page-blog__panel
         .page-blog__articles
           .row
             .col-12.page-blog__col.page-blog__col--wide
