@@ -168,7 +168,7 @@ const data = {
     ],
     reviewsVideo: [
       {
-        src: 'https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0',
+        src: 'https://www.youtube.com/embed/.page-reviews__photo.page-reviews__photo--no-border',
         name: 'Мацакян Ваге',
         school: 'Школа в Кузьминках '
       },

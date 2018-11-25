@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;amp;subset=cyrillic-ext" rel="preload" as="font">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main10asvs.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainqww04x.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script>
@@ -301,7 +301,7 @@
                                         <div class="review__body">
                                             <header class="review__top">
                                                 <div class="review__photo">
-                                                    <img src="static/img/content/review-photo-1.jpg" width="80" height="80" alt="Мацакян Ваге">
+                                                    <img class="lazyload blur-up" data-src="static/img/content/review-photo-1.jpg" width="80" height="80" alt="Мацакян Ваге">
                                                 </div>
                                                 <div class="review__info">
                                                     <cite class="review__name">Мацакян Ваге</cite><span class="review__school">Школа в Кузьминках</span>
@@ -331,7 +331,7 @@
                                         <div class="review__body">
                                             <header class="review__top">
                                                 <div class="review__photo">
-                                                    <img src="static/img/content/review-photo-2.jpg" width="80" height="80" alt="Настя Тарасюк">
+                                                    <img class="lazyload blur-up" data-src="static/img/content/review-photo-2.jpg" width="80" height="80" alt="Настя Тарасюк">
                                                 </div>
                                                 <div class="review__info">
                                                     <cite class="review__name">Настя Тарасюк</cite><span class="review__school">Школа в Хорвино</span>
@@ -364,7 +364,7 @@
                                         <div class="review__body">
                                             <header class="review__top">
                                                 <div class="review__photo">
-                                                    <img src="static/img/content/review-photo-3.jpg" width="80" height="80" alt="Павел">
+                                                    <img class="lazyload blur-up" data-src="static/img/content/review-photo-3.jpg" width="80" height="80" alt="Павел">
                                                 </div>
                                                 <div class="review__info">
                                                     <cite class="review__name">Павел</cite><span class="review__school">Школа в Солнцево</span>
@@ -393,7 +393,7 @@
                                         <div class="review__body">
                                             <header class="review__top">
                                                 <div class="review__photo">
-                                                    <img src="static/img/content/review-photo-4.jpg" width="80" height="80" alt="Иванов Михаил">
+                                                    <img class="lazyload blur-up" data-src="static/img/content/review-photo-4.jpg" width="80" height="80" alt="Иванов Михаил">
                                                 </div>
                                                 <div class="review__info">
                                                     <cite class="review__name">Иванов Михаил</cite><span class="review__school">Школа в Кузьминках</span>
@@ -423,7 +423,7 @@
                                         <div class="review__body">
                                             <header class="review__top">
                                                 <div class="review__photo">
-                                                    <img src="static/img/content/review-photo-5.jpg" width="80" height="80" alt="Настя Тарасюк">
+                                                    <img class="lazyload blur-up" data-src="static/img/content/review-photo-5.jpg" width="80" height="80" alt="Настя Тарасюк">
                                                 </div>
                                                 <div class="review__info">
                                                     <cite class="review__name">Настя Тарасюк</cite><span class="review__school">Школа в Хорвино</span>
@@ -453,7 +453,7 @@
                                         <div class="review__body">
                                             <header class="review__top">
                                                 <div class="review__photo">
-                                                    <img src="static/img/content/review-photo-6.jpg" width="80" height="80" alt="Иван">
+                                                    <img class="lazyload blur-up" data-src="static/img/content/review-photo-6.jpg" width="80" height="80" alt="Иван">
                                                 </div>
                                                 <div class="review__info">
                                                     <cite class="review__name">Иван</cite><span class="review__school">Школа в Солнцево</span>
@@ -483,7 +483,7 @@
                                         <div class="review__body">
                                             <header class="review__top">
                                                 <div class="review__photo">
-                                                    <img src="static/img/content/review-photo-7.jpg" width="80" height="80" alt="Смирнова Елена">
+                                                    <img class="lazyload blur-up" data-src="static/img/content/review-photo-7.jpg" width="80" height="80" alt="Смирнова Елена">
                                                 </div>
                                                 <div class="review__info">
                                                     <cite class="review__name">Смирнова Елена</cite><span class="review__school">Школа в Кузьминках</span>
@@ -513,7 +513,7 @@
                                         <div class="review__body">
                                             <header class="review__top">
                                                 <div class="review__photo">
-                                                    <img src="static/img/content/review-photo-8.jpg" width="80" height="80" alt="Петровченко Стас">
+                                                    <img class="lazyload blur-up" data-src="static/img/content/review-photo-8.jpg" width="80" height="80" alt="Петровченко Стас">
                                                 </div>
                                                 <div class="review__info">
                                                     <cite class="review__name">Петровченко Стас</cite><span class="review__school">Школа в Хорвино</span>
@@ -548,64 +548,80 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="page-reviews__writer">
-                                        <div class="embed-responsive embed-responsive-16by9 page-reviews__photo page-reviews__photo--no-border">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" title="название видео"></iframe>
+                                        <div class="wrapper page-reviews__photo page-reviews__photo--no-border">
+                                            <div class="embed-responsive embed-responsive-16by9 youtube embed-responsive-item" data-embed="fUYKHUH1VvI" title="название видео">
+                                                <button class="youtube__play-button" type="button">Воспроизвести видео</button>
+                                            </div>
                                         </div>
                                         <cite class="page-reviews__name">Мацакян Ваге</cite><span class="page-reviews__school">Школа в Кузьминках </span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="page-reviews__writer">
-                                        <div class="embed-responsive embed-responsive-16by9 page-reviews__photo page-reviews__photo--no-border">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" title="название видео"></iframe>
+                                        <div class="wrapper page-reviews__photo page-reviews__photo--no-border">
+                                            <div class="embed-responsive embed-responsive-16by9 youtube embed-responsive-item" data-embed="fUYKHUH1VvI" title="название видео">
+                                                <button class="youtube__play-button" type="button">Воспроизвести видео</button>
+                                            </div>
                                         </div>
                                         <cite class="page-reviews__name">Настя Тарасюк</cite><span class="page-reviews__school">Школа в Хорвино </span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="page-reviews__writer">
-                                        <div class="embed-responsive embed-responsive-16by9 page-reviews__photo page-reviews__photo--no-border">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" title="название видео"></iframe>
+                                        <div class="wrapper page-reviews__photo page-reviews__photo--no-border">
+                                            <div class="embed-responsive embed-responsive-16by9 youtube embed-responsive-item" data-embed="fUYKHUH1VvI" title="название видео">
+                                                <button class="youtube__play-button" type="button">Воспроизвести видео</button>
+                                            </div>
                                         </div>
                                         <cite class="page-reviews__name">Павел</cite><span class="page-reviews__school">Школа в Солнцево</span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="page-reviews__writer">
-                                        <div class="embed-responsive embed-responsive-16by9 page-reviews__photo page-reviews__photo--no-border">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" title="название видео"></iframe>
+                                        <div class="wrapper page-reviews__photo page-reviews__photo--no-border">
+                                            <div class="embed-responsive embed-responsive-16by9 youtube embed-responsive-item" data-embed="fUYKHUH1VvI" title="название видео">
+                                                <button class="youtube__play-button" type="button">Воспроизвести видео</button>
+                                            </div>
                                         </div>
                                         <cite class="page-reviews__name">Ирина Цыганова</cite><span class="page-reviews__school">Школа в Солнцево</span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="page-reviews__writer">
-                                        <div class="embed-responsive embed-responsive-16by9 page-reviews__photo page-reviews__photo--no-border">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" title="название видео"></iframe>
+                                        <div class="wrapper page-reviews__photo page-reviews__photo--no-border">
+                                            <div class="embed-responsive embed-responsive-16by9 youtube embed-responsive-item" data-embed="fUYKHUH1VvI" title="название видео">
+                                                <button class="youtube__play-button" type="button">Воспроизвести видео</button>
+                                            </div>
                                         </div>
                                         <cite class="page-reviews__name">Мацакян Ваге</cite><span class="page-reviews__school">Школа в Кузьминках</span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="page-reviews__writer">
-                                        <div class="embed-responsive embed-responsive-16by9 page-reviews__photo page-reviews__photo--no-border">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" title="название видео"></iframe>
+                                        <div class="wrapper page-reviews__photo page-reviews__photo--no-border">
+                                            <div class="embed-responsive embed-responsive-16by9 youtube embed-responsive-item" data-embed="fUYKHUH1VvI" title="название видео">
+                                                <button class="youtube__play-button" type="button">Воспроизвести видео</button>
+                                            </div>
                                         </div>
                                         <cite class="page-reviews__name">Настя Тарасюк</cite><span class="page-reviews__school">Школа в Хорвино</span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="page-reviews__writer">
-                                        <div class="embed-responsive embed-responsive-16by9 page-reviews__photo page-reviews__photo--no-border">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" title="название видео"></iframe>
+                                        <div class="wrapper page-reviews__photo page-reviews__photo--no-border">
+                                            <div class="embed-responsive embed-responsive-16by9 youtube embed-responsive-item" data-embed="fUYKHUH1VvI" title="название видео">
+                                                <button class="youtube__play-button" type="button">Воспроизвести видео</button>
+                                            </div>
                                         </div>
                                         <cite class="page-reviews__name">Павел</cite><span class="page-reviews__school">Школа в Солнцево</span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="page-reviews__writer">
-                                        <div class="embed-responsive embed-responsive-16by9 page-reviews__photo page-reviews__photo--no-border">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" title="название видео"></iframe>
+                                        <div class="wrapper page-reviews__photo page-reviews__photo--no-border">
+                                            <div class="embed-responsive embed-responsive-16by9 youtube embed-responsive-item" data-embed="fUYKHUH1VvI" title="название видео">
+                                                <button class="youtube__play-button" type="button">Воспроизвести видео</button>
+                                            </div>
                                         </div>
                                         <cite class="page-reviews__name">Ирина Цыганова</cite><span class="page-reviews__school">Школа в Солнцево</span>
                                     </div>
@@ -725,7 +741,7 @@
                         <div class="row">
                             <div class="col-md-auto">
                                 <div class="subscribe__img">
-                                    <img src="static/img/general/letter.png" alt="Подпишитесь на нашу новостную рассылку">
+                                    <img class="lazyload blur-up" data-src="static/img/general/letter.png" alt="Подпишитесь на нашу новостную рассылку" aria-hidden="true">
                                 </div>
                             </div>
                             <div class="col-md">
@@ -1232,7 +1248,7 @@
             svg4everybody();
         </script>
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-        <script src="static/js/main10asvs.js"></script>
+        <script src="static/js/mainqww04x.js"></script>
     </body>
 
 </html>

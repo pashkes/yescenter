@@ -6,7 +6,7 @@ mixin page-corporate(data, notFoundLang, hasTextColumn)
       .container
         .page-corporate__header.courses__header
           .courses__select.d-md-none
-            span.courses__flag.en.js-current-lang
+            span(aria-hidden="true").courses__flag.en.js-current-lang
             select.courses__select-lang.js-reviews-list
               option(value="en") Английский
               option(value="de") Немецкий
@@ -18,26 +18,26 @@ mixin page-corporate(data, notFoundLang, hasTextColumn)
             +icon('arrow-bottom', 12, 8)
           div.courses__langs.d-none.d-md-flex.nav
             a(href="#").courses__select
-              span.courses__flag.en
+              span(aria-hidden="true").courses__flag.en
               span.courses__name-lang Английский
             a(href="#").courses__select
-              span.courses__flag.de
+              span(aria-hidden="true").courses__flag.de
               span.courses__name-lang Немецкий
             a(href="#").courses__select
-              span.courses__flag.fr
+              span(aria-hidden="true").courses__flag.fr
               span.courses__name-lang Французкий
             a(href="#").courses__select
-              span.courses__flag.it
+              span(aria-hidden="true").courses__flag.it
               span.courses__name-lang Итальянский
             a(href="#").courses__select
-              span.courses__flag.es
+              span(aria-hidden="true").courses__flag.es
               span.courses__name-lang Испанский
             a(href="#").courses__select
-              span.courses__flag.zht
-              span.courses__name-lang Китайский
+              span(aria-hidden="true").courses__flag.zht
+              span(aria-hidden="true").courses__name-lang Китайский
             a(href="#").courses__select
-              span.courses__flag.ja
-              span.courses__name-lang Японский
+              span(aria-hidden="true").courses__flag.ja
+              span(aria-hidden="true").courses__name-lang Японский
         .foreign-course__list
           .page-corporate__not-found.lang-card.lang-card--bg
             .row.align-items-xl-center.flex-grow-1
@@ -59,7 +59,7 @@ mixin page-corporate(data, notFoundLang, hasTextColumn)
       .container
         .page-corporate__header.courses__header.d-xl-none
           .courses__select.d-md-none
-            span.courses__flag.en.js-current-lang
+            span(aria-hidden="true").courses__flag.en.js-current-lang
             select.courses__select-lang.js-reviews-list
               option(value="en") Английский
               option(value="de") Немецкий
@@ -71,25 +71,25 @@ mixin page-corporate(data, notFoundLang, hasTextColumn)
             +icon('arrow-bottom', 12, 8)
           div.courses__langs.d-none.d-md-flex.nav
             a(href="#").courses__select
-              span.courses__flag.en
+              span(aria-hidden="true").courses__flag.en
               span.courses__name-lang Английский
             a(href="#").courses__select
-              span.courses__flag.de
+              span(aria-hidden="true").courses__flag.de
               span.courses__name-lang Немецкий
             a(href="#").courses__select
-              span.courses__flag.fr
+              span(aria-hidden="true").courses__flag.fr
               span.courses__name-lang Французкий
             a(href="#").courses__select
-              span.courses__flag.it
+              span(aria-hidden="true").courses__flag.it
               span.courses__name-lang Итальянский
             a(href="#").courses__select
-              span.courses__flag.es
+              span(aria-hidden="true").courses__flag.es
               span.courses__name-lang Испанский
             a(href="#").courses__select
-              span.courses__flag.zht
+              span(aria-hidden="true").courses__flag.zht
               span.courses__name-lang Китайский
             a(href="#").courses__select
-              span.courses__flag.ja
+              span(aria-hidden="true").courses__flag.ja
               span.courses__name-lang Японский
         .foreign-course__list
           .row.d-none.d-xl-flex

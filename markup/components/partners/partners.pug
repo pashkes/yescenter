@@ -14,4 +14,4 @@ mixin partners(data)
             each item in data.list
               div
                 .partners__slide
-                  img(src="%=static=%img/content/"+item.imgSrc alt=+item.name)
+                  img(data-src="%=static=%img/content/"+item.imgSrc alt=+item.name).lazyload.blur-up

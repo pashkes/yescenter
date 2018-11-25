@@ -3,7 +3,7 @@ mixin review(data)
     .review__body
       header.review__top
         .review__photo
-          img(src="%=static=%img/content/"+data.imgName width="80" height="80" alt=data.name)
+          img(data-src="%=static=%img/content/"+data.imgName width="80" height="80" alt=data.name).lazyload.blur-up
         .review__info
           cite.review__name #{data.name}
           span.review__school #{data.school}

@@ -10,7 +10,7 @@ mixin courses(data, trailLessons)
       if data.hasHeader
         .courses__header
           .courses__select.d-md-none
-            span.courses__flag.en.js-current-lang
+            span(aria-hidden="true").courses__flag.en.js-current-lang
             select.courses__select-lang.js-reviews-list
               option(value="en") Английский
               option(value="de") Немецкий
@@ -22,26 +22,26 @@ mixin courses(data, trailLessons)
             +icon('arrow-bottom', 12, 8)
           div(role="tablist").courses__langs.d-none.d-md-flex.nav
             a(href="#en" role="tab" aria-selected="true" data-toggle="tab").courses__select.active
-              span.courses__flag.en
+              span(aria-hidden="true").courses__flag.en
               span.courses__name-lang Английский
             a(href="#de" role="tab" aria-selected="false" data-toggle="tab").courses__select
-              span.courses__flag.de
+              span(aria-hidden="true").courses__flag.de
               span.courses__name-lang Немецкий
             a(href="#fr" role="tab" aria-selected="false" data-toggle="tab").courses__select
-              span.courses__flag.fr
+              span(aria-hidden="true").courses__flag.fr
               span.courses__name-lang Французкий
             a(href="#it" role="tab" aria-selected="false" data-toggle="tab").courses__select
-              span.courses__flag.it
+              span(aria-hidden="true").courses__flag.it
               span.courses__name-lang Итальянский
             a(href="#es" role="tab" aria-selected="false" data-toggle="tab").courses__select
-              span.courses__flag.es
+              span(aria-hidden="true").courses__flag.es
               span.courses__name-lang Испанский
             a(href="#zht" role="tab" aria-selected="false" data-toggle="tab").courses__select
-              span.courses__flag.zht
-              span.courses__name-lang Китайский
+              span(aria-hidden="true").courses__flag.zht
+              span(aria-hidden="true").courses__name-lang Китайский
             a(href="#ja" role="tab" aria-selected="false" data-toggle="tab").courses__select
-              span.courses__flag.ja
-              span.courses__name-lang Японский
+              span(aria-hidden="true").courses__flag.ja
+              span(aria-hidden="true").courses__name-lang Японский
     .courses__content.courses__content--slider
       .container
         div(role="tabpanel").courses__panel.active.show#en

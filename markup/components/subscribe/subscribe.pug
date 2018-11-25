@@ -5,7 +5,7 @@ mixin subscribe(data)
         .row
           .col-md-auto
             .subscribe__img
-              img(src="%=static=%img/general/letter.png" alt="Подпишитесь на нашу новостную рассылку")
+              img(data-src="%=static=%img/general/letter.png" alt="Подпишитесь на нашу новостную рассылку" aria-hidden="true").lazyload.blur-up
           .col-md
             .subscribe__body
               h2.subscribe__title

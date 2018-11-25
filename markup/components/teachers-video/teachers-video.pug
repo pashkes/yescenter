@@ -10,25 +10,28 @@ mixin teachers-video(data)
         +icon('arrow-right', 12, 11)
         | Следующий слайд
       .container
-        ul.teachers-video__slider.js-teachers-video
-          li
+        div.teachers-video__slider.js-teachers-video
+          div
             .teachers-video__slide
-              .embed-responsive.embed-responsive-16by9.teachers-video__video.page-reviews__photo--no-border
-                iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0" title="Наши учителя о себе и школе YES").embed-responsive-item
+              div.wrapper.teachers-video__video.page-reviews__photo--no-border
+                div(data-embed="5D0OyvlDV6U").embed-responsive.embed-responsive-16by9.youtube.embed-responsive-item
+                  button(type="button").youtube__play-button Воспроизвести видео
               .teachers-video__name Александр Сергеев
               .teachers-video__grey Английский язык
               .teachers-video__grey Школа: Раменское
-          li
+          div
             .teachers-video__slide
-              .embed-responsive.embed-responsive-16by9.teachers-video__video.page-reviews__photo--no-border
-                iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0" title="Наши учителя о себе и школе YES").embed-responsive-item
+              div.wrapper.teachers-video__video.page-reviews__photo--no-border
+                div(data-embed="fUYKHUH1VvI").embed-responsive.embed-responsive-16by9.youtube.embed-responsive-item
+                  button(type="button").youtube__play-button Воспроизвести видео
               .teachers-video__name Вера Литвинец
               .teachers-video__grey Английский язык
               .teachers-video__grey Школа: Войковская
-          li
+          div
             .teachers-video__slide
-              .embed-responsive.embed-responsive-16by9.teachers-video__video.page-reviews__photo--no-border
-                iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0" title="Наши учителя о себе и школе YES").embed-responsive-item
+              div.wrapper.teachers-video__video.page-reviews__photo--no-border
+                div(data-embed="5D0OyvlDV6U").embed-responsive.embed-responsive-16by9.youtube.embed-responsive-item
+                  button(type="button").youtube__play-button Воспроизвести видео.embed-responsive-item
               .teachers-video__name Александр Сергеев
               .teachers-video__grey Английский язык
               .teachers-video__grey Школа: Раменское

@@ -6,8 +6,9 @@ mixin page-jobs(data)
         .row
           .col-xl-auto
             .page-jobs__video
-              .embed-responsive.embed-responsive-16by9
-                iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0" title="Работа в YES Center").embed-responsive-item
+              div.wrapper
+                div(data-embed="fUYKHUH1VvI").embed-responsive.embed-responsive-16by9.youtube.embed-responsive-item
+                  button(type="button").youtube__play-button Воспроизвести видео
           .col-xl
             .page-jobs__desc
               p Работа в наших школах - это стабильность, перспектива, реализация планов, управляемые перемены, реализация потенциала и творческая составляющая деятельности. Наша Компания — это сообщество людей, стремящихся к развитию своих личностных возможностей и реализации способностей и талантов.

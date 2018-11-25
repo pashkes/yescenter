@@ -39,7 +39,7 @@ mixin news(data)
               h2.news__title.h2 познавательные Статьи
               article.news__item
                 a(href="#").news__img
-                  img(src="%=static=%img/content/news-img.jpg" width="272" height="176" alt="Следуй плану, достигай цель!")
+                  img(data-src="%=static=%img/content/news-img.jpg" width="272" height="176" alt="Следуй плану, достигай цель!").lazyload.blur-up
                 h3.news__name
                   a(href="#") Следуй плану, достигай цель!
                 cite.news__sub-name Автор: Афанаскина Екатерина Владимировна

@@ -8197,6 +8197,17 @@ p {
   }
 }
 
+.blur-up {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.blur-up.lazyloaded {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+
 .container,
 .container-fluid {
   padding-right: 24px;
@@ -15575,87 +15586,6 @@ body.compensate-for-scrollbar {
   }
 }
 
-.interestring-education {
-  padding-top: 28px;
-}
-
-@media (min-width: 768px) {
-  .interestring-education {
-    padding-top: 40px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .interestring-education {
-    padding-top: 82px;
-    padding-bottom: 4px;
-  }
-}
-
-.interestring-education--padding-bottom {
-  padding-bottom: 28px;
-}
-
-@media (min-width: 768px) {
-  .interestring-education--padding-bottom {
-    padding-bottom: 40px;
-    margin-top: -10px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .interestring-education--padding-bottom {
-    margin-top: -18px;
-    padding-bottom: 100px;
-  }
-}
-
-.interestring-education .page-eng__title-card {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-.interestring-education__title {
-  margin-bottom: 28px;
-  letter-spacing: 0.7px;
-}
-
-@media (min-width: 768px) {
-  .interestring-education__title {
-    margin-bottom: 24px;
-    font-size: 30px;
-    line-height: 42px;
-    letter-spacing: 1.5px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .interestring-education__title {
-    margin-bottom: 50px;
-  }
-}
-
-.interestring-education .lang-card {
-  min-height: 272px;
-}
-
-@media (min-width: 1344px) {
-  .interestring-education .lang-card {
-    margin-bottom: 0;
-    min-height: 276px;
-  }
-}
-
-.interestring-education .slick-dots {
-  margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  .interestring-education .slick-dots {
-    margin-top: 10px;
-  }
-}
-
 .info__title {
   margin-bottom: 20px;
 }
@@ -15804,6 +15734,87 @@ body.compensate-for-scrollbar {
 @media (min-width: 768px) {
   .info__btn {
     max-width: 198px;
+  }
+}
+
+.interestring-education {
+  padding-top: 28px;
+}
+
+@media (min-width: 768px) {
+  .interestring-education {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .interestring-education {
+    padding-top: 82px;
+    padding-bottom: 4px;
+  }
+}
+
+.interestring-education--padding-bottom {
+  padding-bottom: 28px;
+}
+
+@media (min-width: 768px) {
+  .interestring-education--padding-bottom {
+    padding-bottom: 40px;
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .interestring-education--padding-bottom {
+    margin-top: -18px;
+    padding-bottom: 100px;
+  }
+}
+
+.interestring-education .page-eng__title-card {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.interestring-education__title {
+  margin-bottom: 28px;
+  letter-spacing: 0.7px;
+}
+
+@media (min-width: 768px) {
+  .interestring-education__title {
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .interestring-education__title {
+    margin-bottom: 50px;
+  }
+}
+
+.interestring-education .lang-card {
+  min-height: 272px;
+}
+
+@media (min-width: 1344px) {
+  .interestring-education .lang-card {
+    margin-bottom: 0;
+    min-height: 276px;
+  }
+}
+
+.interestring-education .slick-dots {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .interestring-education .slick-dots {
+    margin-top: 10px;
   }
 }
 
@@ -18916,6 +18927,82 @@ body.show-menu .header__logo-wrapper {
   }
 }
 
+.page-corporate-fr {
+  padding-bottom: 22px;
+}
+
+@media (min-width: 1344px) {
+  .page-corporate-fr {
+    padding-bottom: 50px;
+  }
+}
+
+.page-corporate-fr__title {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .page-corporate-fr__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-corporate-fr__title {
+    margin-bottom: 24px;
+  }
+}
+
+.page-corporate-fr__subtitle {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .page-corporate-fr__subtitle {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-corporate-fr__subtitle {
+    margin-bottom: 80px;
+    line-height: 26px;
+  }
+}
+
+.page-corporate-fr .page-eng__list-card {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .page-corporate-fr .page-eng__list-card {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-corporate-fr .page-eng__list-card {
+    margin-bottom: 38px;
+  }
+}
+
+.page-corporate-fr__text p {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .page-corporate-fr__text p {
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-corporate-fr__text p {
+    margin-bottom: 28px;
+    line-height: 26px;
+  }
+}
+
 .page-corporate {
   padding-bottom: 18px;
 }
@@ -19080,82 +19167,6 @@ body.show-menu .header__logo-wrapper {
   .page-corporate__btn:hover {
     border-color: #B82730;
     color: #fff;
-  }
-}
-
-.page-corporate-fr {
-  padding-bottom: 22px;
-}
-
-@media (min-width: 1344px) {
-  .page-corporate-fr {
-    padding-bottom: 50px;
-  }
-}
-
-.page-corporate-fr__title {
-  margin-bottom: 12px;
-}
-
-@media (min-width: 768px) {
-  .page-corporate-fr__title {
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-corporate-fr__title {
-    margin-bottom: 24px;
-  }
-}
-
-.page-corporate-fr__subtitle {
-  margin-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-  .page-corporate-fr__subtitle {
-    margin-bottom: 48px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-corporate-fr__subtitle {
-    margin-bottom: 80px;
-    line-height: 26px;
-  }
-}
-
-.page-corporate-fr .page-eng__list-card {
-  margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  .page-corporate-fr .page-eng__list-card {
-    margin-bottom: 8px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-corporate-fr .page-eng__list-card {
-    margin-bottom: 38px;
-  }
-}
-
-.page-corporate-fr__text p {
-  margin-bottom: 10px;
-}
-
-@media (min-width: 768px) {
-  .page-corporate-fr__text p {
-    margin-bottom: 22px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-corporate-fr__text p {
-    margin-bottom: 28px;
-    line-height: 26px;
   }
 }
 
@@ -19496,166 +19507,6 @@ body.show-menu .header__logo-wrapper {
 @media (min-width: 1344px) {
   .foreign-course .lang-card__lang-title span {
     display: block;
-  }
-}
-
-.page-forKids {
-  padding-bottom: 0;
-}
-
-@media (min-width: 1344px) {
-  .page-forKids {
-    padding-top: 87px;
-  }
-}
-
-.page-forKids .page-eng__title {
-  margin-bottom: 16px;
-}
-
-@media (min-width: 1344px) {
-  .page-forKids .page-eng__title {
-    margin-bottom: 32px;
-  }
-}
-
-.page-forKids .subtitle {
-  margin-bottom: 24px;
-}
-
-@media (min-width: 768px) {
-  .page-forKids .subtitle {
-    margin-bottom: 26px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-forKids .subtitle {
-    max-width: 1010px;
-    margin-bottom: 50px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-forKids .page-eng__list-card {
-    margin-bottom: 38px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-forKids .page-eng__card.lang-card {
-    margin-bottom: 34px;
-    min-height: 347px;
-  }
-}
-
-.page-forKids .list + p {
-  margin-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-  .page-forKids .list + p {
-    margin-bottom: 46px;
-  }
-}
-
-.page-forKids .list li {
-  margin-bottom: 18px;
-}
-
-@media (min-width: 768px) {
-  .page-forKids .list li {
-    padding-left: 42px;
-    margin-bottom: 22px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-forKids .list li {
-    font-size: 15px;
-    line-height: 24px;
-    letter-spacing: 0.3px;
-  }
-}
-
-.page-forKids .list li::before {
-  width: 8px;
-  height: 8px;
-  top: 8px;
-}
-
-.page-forKids .kids-program-order {
-  margin-bottom: 24px;
-}
-
-@media (min-width: 768px) {
-  .page-forKids .kids-program-order {
-    margin-bottom: 40px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-forKids .kids-program-order {
-    margin-bottom: 61px;
-  }
-}
-
-@media (min-width: 768px) {
-  .page-forKids .forms-education {
-    padding-bottom: 27px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-forKids .forms-education {
-    padding-top: 88px;
-    padding-bottom: 85px;
-  }
-}
-
-@media (min-width: 768px) {
-  .page-forKids .forms-education__title {
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-forKids .forms-education__title {
-    margin-bottom: 37px;
-  }
-}
-
-@media (min-width: 768px) {
-  .page-forKids .forms-education__subject {
-    margin-bottom: 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .page-forKids .forms-education__item {
-    margin-bottom: 21px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-forKids .trial-lesson {
-    margin-top: 34px;
-  }
-}
-
-.page-forKids-intro .subtitle {
-  margin-bottom: 36px;
-}
-
-@media (min-width: 768px) {
-  .page-forKids-intro .subtitle {
-    margin-bottom: 35px;
-  }
-}
-
-@media (min-width: 1344px) {
-  .page-forKids-intro .subtitle {
-    margin-bottom: 84px;
   }
 }
 
@@ -20436,6 +20287,166 @@ body.show-menu .header__logo-wrapper {
 @media (min-width: 768px) {
   .page-reg__submit {
     width: 288px;
+  }
+}
+
+.page-forKids {
+  padding-bottom: 0;
+}
+
+@media (min-width: 1344px) {
+  .page-forKids {
+    padding-top: 87px;
+  }
+}
+
+.page-forKids .page-eng__title {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .page-eng__title {
+    margin-bottom: 32px;
+  }
+}
+
+.page-forKids .subtitle {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-forKids .subtitle {
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .subtitle {
+    max-width: 1010px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .page-eng__list-card {
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .page-eng__card.lang-card {
+    margin-bottom: 34px;
+    min-height: 347px;
+  }
+}
+
+.page-forKids .list + p {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .page-forKids .list + p {
+    margin-bottom: 46px;
+  }
+}
+
+.page-forKids .list li {
+  margin-bottom: 18px;
+}
+
+@media (min-width: 768px) {
+  .page-forKids .list li {
+    padding-left: 42px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .list li {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+  }
+}
+
+.page-forKids .list li::before {
+  width: 8px;
+  height: 8px;
+  top: 8px;
+}
+
+.page-forKids .kids-program-order {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-forKids .kids-program-order {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .kids-program-order {
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-forKids .forms-education {
+    padding-bottom: 27px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .forms-education {
+    padding-top: 88px;
+    padding-bottom: 85px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-forKids .forms-education__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .forms-education__title {
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-forKids .forms-education__subject {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-forKids .forms-education__item {
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids .trial-lesson {
+    margin-top: 34px;
+  }
+}
+
+.page-forKids-intro .subtitle {
+  margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+  .page-forKids-intro .subtitle {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .page-forKids-intro .subtitle {
+    margin-bottom: 84px;
   }
 }
 
@@ -26007,6 +26018,56 @@ body.show-menu .header__logo-wrapper {
   .trial-lesson__btn {
     max-width: 278px;
   }
+}
+
+.youtube:hover .youtube__play-button {
+  background-color: #D42530;
+}
+
+.youtube img {
+  position: absolute;
+  width: 100%;
+  top: -16.82%;
+  left: 0;
+}
+
+.youtube__play-button {
+  width: 65px;
+  height: 45px;
+  background-color: rgba(41, 41, 41, 0.9);
+  z-index: 1;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 0;
+}
+
+.youtube__play-button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 0 11px 20px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.youtube img,
+.youtube .play-button {
+  cursor: pointer;
+}
+
+.youtube__play-button,
+.youtube__play-button:before {
+  position: absolute;
+}
+
+.youtube__play-button,
+.youtube__play-button:before {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
 }
 
 .video-data {

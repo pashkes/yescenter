@@ -14,12 +14,12 @@ mixin video-data(data)
         | Следующий слайд
       .container
         div.video-data__list.js-video-data-slider
-          div
-            .embed-responsive.embed-responsive-16by9
-              iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0" title="Работа в YES Center").embed-responsive-item
-          div
-            .embed-responsive.embed-responsive-16by9
-              iframe(src="https://www.youtube.com/embed/5D0OyvlDV6U?rel=0&amp;controls=0&amp;showinfo=0" title="Работа в YES Center").embed-responsive-item
+          div.wrapper
+            div(data-embed="fUYKHUH1VvI").embed-responsive.embed-responsive-16by9.youtube.embed-responsive-item
+              button(type="button").youtube__play-button Воспроизвести видео 1
+          div.wrapper
+            div(data-embed="5D0OyvlDV6U").embed-responsive.embed-responsive-16by9.youtube.embed-responsive-item
+              button(type="button").youtube__play-button Воспроизвести видео 2
     .video-data__footer
       .container
         .row.justify-content-md-between.align-items-md-center

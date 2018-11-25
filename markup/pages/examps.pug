@@ -33,8 +33,9 @@ html(class="no-js", lang="ru")
           .examps-intro__main
             .row.justify-content-between
               .col-md
-                .embed-responsive.embed-responsive-16by9.examps-intro__video
-                  iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0" title="Как сдают экзамены").embed-responsive-item
+                div.wrapper
+                  div(data-embed="fUYKHUH1VvI").embed-responsive.embed-responsive-16by9.youtube.embed-responsive-item
+                    button(type="button").youtube__play-button Воспроизвести видео 2
               .col-md-auto
                 .examps-intro__cert
                   img(src="%=static=%img/content/cert.jpg" alt="Сертификат")

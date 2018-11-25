@@ -9,11 +9,11 @@ mixin certifications(data)
           .row.certifications__slider.js-certifications-slider
             .col
               //Big image in link in href attributes. Small image in img tag
-              a(href="%=static=%img/content/certification-1.jpg" data-fancybox="gallery")
-                img(src="%=static=%img/content/certification-1.jpg" width="200" height="284" alt="сертификат-1")
+              a(href="%=static=%img/content/certification-1.jpg" data-fancybox="gallery").lazyload.blur-up
+                img(data-src="%=static=%img/content/certification-1.jpg" width="200" height="284" alt="сертификат-1").lazyload.blur-up
             .col
               //Big image in link in href attributes. Small image in img tag
               a(href="%=static=%img/content/certification-1.jpg" data-fancybox="gallery")
-                img(src="%=static=%img/content/certification-2.jpg" width="200" height="284" alt="сертификат-2")
+                img(data-src="%=static=%img/content/certification-2.jpg" width="200" height="284" alt="сертификат-2").lazyload.blur-up
 
 

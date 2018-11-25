@@ -8,7 +8,7 @@ mixin features(data)
           div(class=item.classListColumn)
             .features__item
               div(class="features__img "+item.classIconClassName)
-                img(src="%=static=%img/general/"+item.imgSrc width=item.width height=item.height alt=item.desc aria-hidden="true")
+                img(data-src="%=static=%img/general/"+item.imgSrc width=item.width height=item.height alt=item.desc aria-hidden="true").lazyload.blur-up
               h3.features__name
                 if data.link
                   a(href="#") !{item.desc}

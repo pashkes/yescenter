@@ -2,7 +2,7 @@ mixin teacher(data)
   .teacher&attributes(attributes)
     .teacher__inner
       a(href="teacher.html").teacher__img
-        img(src="%=static=%img/content/" + data.photo width="166" height="166" alt=data.name)
+        img(data-src="%=static=%img/content/" + data.photo width="166" height="166" alt=data.name).lazyload.blur-up
       a(href="teacher.html").teacher__name
         cite !{data.name}
       if data.lang
