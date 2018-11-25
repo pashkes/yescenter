@@ -16,10 +16,10 @@ mixin video-data(data)
         div.video-data__list.js-video-data-slider
           div
             .embed-responsive.embed-responsive-16by9
-              iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0").embed-responsive-item
+              iframe(src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;controls=0&amp;showinfo=0" title="Работа в YES Center").embed-responsive-item
           div
             .embed-responsive.embed-responsive-16by9
-              iframe(src="https://www.youtube.com/embed/5D0OyvlDV6U?rel=0&amp;controls=0&amp;showinfo=0").embed-responsive-item
+              iframe(src="https://www.youtube.com/embed/5D0OyvlDV6U?rel=0&amp;controls=0&amp;showinfo=0" title="Работа в YES Center").embed-responsive-item
     .video-data__footer
       .container
         .row.justify-content-md-between.align-items-md-center
@@ -27,4 +27,4 @@ mixin video-data(data)
             .video-data__dots
           .col-md-auto
             a(href="#").show-all смотреть все видеоматериалы
-              span &nbsp;&rarr;
+              span(aria-hidden="true") &nbsp;&rarr;

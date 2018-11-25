@@ -1,9 +1,9 @@
 mixin news(data)
-  section.news
+  .news
     .container
       .row
         .col-xl-6
-          .news__section
+          section.news__section
             .container
               h2.news__title.h2 Новости и события
               ul.news__slide.js-news-slide
@@ -31,10 +31,10 @@ mixin news(data)
                   .news__dots
                 .col-md-auto.text-center
                   a(href="#").show-all в архив новостей
-                    span &nbsp;&rarr;
+                    span(aria-hidden="true") &nbsp;&rarr;
 
         .col-xl-6.border-left-xl
-          .news__section.news__section--single-news
+          section.news__section.news__section--single-news
             .container
               h2.news__title.h2 познавательные Статьи
               article.news__item
@@ -42,14 +42,14 @@ mixin news(data)
                   img(src="%=static=%img/content/news-img.jpg" width="272" height="176" alt="Следуй плану, достигай цель!")
                 h3.news__name
                   a(href="#") Следуй плану, достигай цель!
-                span.news__sub-name Автор: Афанаскина Екатерина Владимировна
+                cite.news__sub-name Автор: Афанаскина Екатерина Владимировна
                 p.news__preview-text Хотелось бы выучить язык международного общения, но все как-то не складывается — командировки, загруженность на работе, маленький ребенок. Хотя, чаще всего, это только отговорки. На мой взгляд, если у человека есть четкое понимание, зачем ему нужен английский язык, то он найдет возможность им заняться, и не придется придумывать оправдания своей чрезмерной ...
           .news__footer
             .container
               .row.justify-content-center.justify-content-md-end.justify-content-xl-start
                 .col-auto
                   a(href="#").show-all читать больше статей
-                    span &nbsp;&rarr;
+                    span(aria-hidden="true") &nbsp;&rarr;
 
 
 

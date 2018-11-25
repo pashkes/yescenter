@@ -6,14 +6,14 @@ var data = {
       iconWidth: 11,
       iconHeight: 20,
       alternativeText: 'odnoklassniki',
-      name: 'Наш Однокласники'
+      name: 'Мы в Однокласники'
     },
     {
       iconName: 'vk',
       iconWidth: 21,
       iconHeight: 12,
       alternativeText: 'vkontakte',
-      name: 'Наш Вконтакте'
+      name: 'Мы в Вконтакте'
     },
     {
       iconName: 'youtube',

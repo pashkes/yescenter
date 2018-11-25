@@ -1,8 +1,8 @@
 mixin page-reg(data)
   form.page-reg.section--grey.form#reg-for-course
     .container
-      .page-reg__section.page-reg__section--select-lang
-        h3.page-reg__title 1. Какой иностранный язык вас интересует?
+      fieldset.page-reg__section.page-reg__section--select-lang
+        legend.page-reg__title 1. Какой иностранный язык вас интересует?
         .row.no-gutters
           .col-md-6.col-xl-3.page-reg__col
             label.page-reg__item
@@ -49,8 +49,8 @@ mixin page-reg(data)
             label.page-reg__item
               input(type="radio" name="select-lang").page-reg__radio
               span.page-reg__name Другой язык
-      .page-reg__section.page-reg__section--type-education
-        h3.page-reg__title 2. Предпочитаемый вид обучения
+      fieldset.page-reg__section.page-reg__section--type-education
+        legend.page-reg__title 2. Предпочитаемый вид обучения
         .row.no-gutters
           .col-md-6.col-xl-3.page-reg__col
             label.page-reg__item
@@ -68,8 +68,8 @@ mixin page-reg(data)
             label.page-reg__item
               input(type="radio" name="select-type-education").page-reg__radio
               span.page-reg__name Дистанционное на&#160;онлайн&#160;платформе
-      .page-reg__section.page-reg__section--fields
-        h3.page-reg__title 3. Контактная информация
+      fieldset.page-reg__section.page-reg__section--fields
+        legend.page-reg__title 3. Контактная информация
         .page-reg__row-field
           .page-reg__col-field
             label(for="reg-for-course-full-name").hidden Ваше имя и фамилия

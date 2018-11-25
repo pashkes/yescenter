@@ -11,7 +11,8 @@ mixin school-list(data)
               a(href="#map-list-w" role="tab" aria-selected="true" data-toggle="tab").school-list__tab.active списком
               a(href="#on-map" role="tab" aria-selected="true" data-toggle="tab").school-list__tab на карте
     form.school-list__inner#map-list
-      header.school-list__top
+      fieldset.school-list__top
+        legend.hidden Наши школы, фильтрация адресов
         .container
           .row.align-items-xl-center
             .col-xl
@@ -67,7 +68,7 @@ mixin school-list(data)
                     .col-12
                       .row
                         .col-xl-auto
-                          span.school-list__address
+                          address.school-list__address
                             +icon('picker', 11, 16)
                             | #{item.address}
                         .col-xl
@@ -97,7 +98,7 @@ mixin school-list(data)
                 | Пн-Пт 10:00 — 22:00,
                 br
                 | Сб-Вс 10:00 — 16:00
-              span.school-list__address
+              address.school-list__address
                 +icon('picker', 11, 16)
                 | Метро Коломенская,
                 br

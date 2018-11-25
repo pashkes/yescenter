@@ -67,7 +67,7 @@ mixin page-for-kids-small(data)
         if data.footer
           .timetable__footer.d-flex.justify-content-center.justify-content-md-start
             a(href="#").show-all расписание всех групп
-              span &nbsp;&rarr;
+              span(aria-hidden="true") &nbsp;&rarr;
       +trial-lesson()
     section.additional.section
       .container

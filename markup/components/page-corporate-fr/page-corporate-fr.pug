@@ -1,5 +1,5 @@
 mixin page-corporate-fr(data)
-  .page-corporate-fr.page-eng.section.section--grey
+  section.page-corporate-fr.page-eng.section.section--grey
     .container
       h2.page-corporate-fr__title.h2 Наши программы
       p.page-corporate-fr__subtitle.subtitle Согласно статистике на французском языке могут общаться порядка 76 миллионов человек в мире. Его носители составляют существенную часть населения в таких странах как Канада, Бельгия, Швейцария, Монако и, конечно, самой Франции. Интерес к языку подкрепляется лидерством Франции во многих областях – в индустрии красоты и моды, в гастрономии и киноискусстве. Париж входит в карту желаний едва ли не всех реальных и потенциальных путешественников. Все это делает Францию желанным партнером в самых разных областях предпринимательства. Для многих компаний изучение французского языка – настоятельная потребность.
@@ -7,7 +7,7 @@ mixin page-corporate-fr(data)
         .row
           each itemList in data.listCard
             .col-xl-6.d-flex.align-content-stretch
-              .lang-card.page-eng__card
+             article.lang-card.page-eng__card
                 h3.page-eng__title-card.lang-card__name
                   a(href="#") !{itemList.title}
                 span.page-eng__subtitle.grey !{itemList.info}

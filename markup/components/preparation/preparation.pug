@@ -11,5 +11,5 @@ mixin preparation(data)
           .col-md-6.col-xl-4.preparation__item
             .preparation__inner
               .preparation__icon
-                img(src="%=static=%img/general/" + item.src width=item.width height=item.height alt=item.alt)
+                img(src="%=static=%img/general/" + item.src width=item.width height=item.height alt=item.alt aria-hidden="true")
               p.preparation__text !{item.text}

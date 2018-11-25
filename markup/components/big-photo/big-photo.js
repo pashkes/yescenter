@@ -14,10 +14,10 @@
         }
       );
       images.forEach(function (item, index) {
-        let li = $('<li class="big-photo__slide">');
+        let li = $('<div class="big-photo__slide">');
         let img = $('<img class="big-photo__img">');
-        let caption = $('<span class="big-photo__caption">');
-        let imgInner = $('<div class="big-photo__img-inner">');
+        let caption = $('<figcaption class="big-photo__caption">');
+        let imgInner = $('<figure class="big-photo__img-inner">');
         let imgWrapper = $('<div class="big-photo__img-wrapper">');
         caption.text(alts[index]);
         img.attr('src', item);

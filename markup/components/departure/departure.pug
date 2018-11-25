@@ -15,9 +15,9 @@ mixin departure(data, title)
         +icon('arrow-right', 12, 11)
         | Следующий слайд
       .container
-        ul(class="departure__slider "+data.classSlider)
+        div(class="departure__slider "+data.classSlider)
           each item in data.images
-            li.departure__slide
+            .departure__slide
               img(src="%=static=%img/content/"+item.src alt=item.alt)
         if data.textBottom
           p.departure__text-bottom !{data.textBottom}

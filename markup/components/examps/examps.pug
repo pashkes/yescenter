@@ -12,7 +12,7 @@ mixin card(data)
     .examps__main
       p !{data.desc}
     a(href="#").show-all Перейти в раздел
-      span &nbsp;&rarr;
+      span(aria-hidden="true") &nbsp;&rarr;
 mixin examps(data)
   section.examps
     .container

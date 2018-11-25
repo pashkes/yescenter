@@ -78,9 +78,6 @@
     letter-spacing: 0.8px;
     color: $primary-red;
     text-transform: uppercase;
-    &:focus {
-      outline: none;
-    }
   }
   &__answer {
     display: none;
@@ -153,7 +150,6 @@
       width: calc(100% / 3 - 58px);
       margin-right: 29px;
       margin-left: 29px;
-      flex: 1 1 0;
     }
     &--w100-md {
       @include media-breakpoint-up(md) {

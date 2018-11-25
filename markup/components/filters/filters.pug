@@ -1,8 +1,8 @@
 mixin filters(data)
   form.page-schedule__section#select-lang
-    .page-schedule__section-item
+    fieldset.page-schedule__section-item
       if data.titleOfSelectLands
-        h3.page-reg__title #{data.title}
+        legend.page-reg__title #{data.title}
       .row.no-gutters
         .col-md-6.col-xl-3.page-reg__col
           label.page-reg__item
@@ -50,8 +50,8 @@ mixin filters(data)
             input(type="radio" name="select-lang").page-reg__radio
             span.page-reg__name Другой язык
     if data.selectGroup
-      .page-schedule__section-item
-        h3.page-reg__title Какая группа вас интересует?
+      fieldset.page-schedule__section-item
+        legend.page-reg__title Какая группа вас интересует?
         .row.no-gutters
           .col-3.col-md.col-xl-auto.page-schedule__col
             label.page-schedule__item
@@ -100,7 +100,8 @@ mixin filters(data)
               span.page-reg__name Разговорный
     button(type="button").page-schedule__show-filter.js-show-filter
       span показать еще фильтры
-    .page-schedule__filter.js-filter
+    fieldset.page-schedule__filter.js-filter
+      legend.hidden Список языков
       .page-schedule__filter-inner
         .page-schedule__filter-item.js-select-custom-scroll
           label(for="select-lang-school").page-schedule__label.form__label #{data.select.label}

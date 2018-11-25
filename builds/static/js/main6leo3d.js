@@ -1437,6 +1437,9 @@ var Util = function ($) {
 }($);
 //# sourceMappingURL=util.js.map
 
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t():"function"==typeof define&&define.amd?define(t):t()}(0,function(){"use strict";"undefined"!=typeof document&&function(e){var t;function n(){t||(t=!0,e())}["interactive","complete"].indexOf(document.readyState)>=0?e():(t=!1,document.addEventListener("DOMContentLoaded",n,!1),window.addEventListener("load",n,!1))}(function(){var e=!0,t=!1,n=null,o={text:!0,search:!0,url:!0,tel:!0,email:!0,password:!0,number:!0,date:!0,month:!0,week:!0,time:!0,datetime:!0,"datetime-local":!0};function d(e){return!!(e&&e!==document&&"HTML"!==e.nodeName&&"BODY"!==e.nodeName&&"classList"in e&&"contains"in e.classList)}function i(e){e.classList.contains("focus-visible")||(e.classList.add("focus-visible"),e.setAttribute("data-focus-visible-added",""))}function s(t){e=!1}function u(){document.addEventListener("mousemove",a),document.addEventListener("mousedown",a),document.addEventListener("mouseup",a),document.addEventListener("pointermove",a),document.addEventListener("pointerdown",a),document.addEventListener("pointerup",a),document.addEventListener("touchmove",a),document.addEventListener("touchstart",a),document.addEventListener("touchend",a)}function a(t){"html"!==t.target.nodeName.toLowerCase()&&(e=!1,document.removeEventListener("mousemove",a),document.removeEventListener("mousedown",a),document.removeEventListener("mouseup",a),document.removeEventListener("pointermove",a),document.removeEventListener("pointerdown",a),document.removeEventListener("pointerup",a),document.removeEventListener("touchmove",a),document.removeEventListener("touchstart",a),document.removeEventListener("touchend",a))}document.addEventListener("keydown",function(t){d(document.activeElement)&&i(document.activeElement),e=!0},!0),document.addEventListener("mousedown",s,!0),document.addEventListener("pointerdown",s,!0),document.addEventListener("touchstart",s,!0),document.addEventListener("focus",function(t){var n,s,u;d(t.target)&&(e||(n=t.target,s=n.type,"INPUT"==(u=n.tagName)&&o[s]&&!n.readOnly||"TEXTAREA"==u&&!n.readOnly||n.isContentEditable))&&i(t.target)},!0),document.addEventListener("blur",function(e){var o;d(e.target)&&(e.target.classList.contains("focus-visible")||e.target.hasAttribute("data-focus-visible-added"))&&(t=!0,window.clearTimeout(n),n=window.setTimeout(function(){t=!1,window.clearTimeout(n)},100),(o=e.target).hasAttribute("data-focus-visible-added")&&(o.classList.remove("focus-visible"),o.removeAttribute("data-focus-visible-added")))},!0),document.addEventListener("visibilitychange",function(n){"hidden"==document.visibilityState&&(t&&(e=!0),u())},!0),u(),document.body.classList.add("js-focus-visible")})});
+//# sourceMappingURL=focus-visible.min.js.map
+
 // ==================================================
 // fancyBox v3.3.5
 //
@@ -1926,10 +1929,10 @@ object-assign
         }
       );
       images.forEach(function (item, index) {
-        let li = $('<li class="big-photo__slide">');
+        let li = $('<div class="big-photo__slide">');
         let img = $('<img class="big-photo__img">');
-        let caption = $('<span class="big-photo__caption">');
-        let imgInner = $('<div class="big-photo__img-inner">');
+        let caption = $('<figcaption class="big-photo__caption">');
+        let imgInner = $('<figure class="big-photo__img-inner">');
         let imgWrapper = $('<div class="big-photo__img-wrapper">');
         caption.text(alts[index]);
         img.attr('src', item);
@@ -2008,30 +2011,6 @@ $('#trial-lesson').on('submit', function (event) {
 
 
 
-(function () {
-  $('.js-certifications-slider').slick({
-    arrows: false,
-    mobileFirst: true,
-    dots: true,
-    centerMode: false,
-    centerPadding: false,
-    infinite: false,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 3,
-        variableWidth: true
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
-  });
-})();
-
 
 
 
@@ -2077,6 +2056,30 @@ $('#trial-lesson').on('submit', function (event) {
   }
   $(window).on('load resize', function () {
     slickMobile(langSlider, langSliderSettigs);
+  });
+})();
+
+(function () {
+  $('.js-certifications-slider').slick({
+    arrows: false,
+    mobileFirst: true,
+    dots: true,
+    centerMode: false,
+    centerPadding: false,
+    infinite: false,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
   });
 })();
 
@@ -2136,6 +2139,44 @@ $('#trial-lesson').on('submit', function (event) {
     appendDots: $('.js-examps-dots')
   });
 })();
+
+
+
+(function () {
+  var TABLET_SCREEN = 767;
+  var langSlider = $('.js-form-education-slider');
+  var langSliderSettigs = {
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    adaptiveHeight: true
+  };
+  // включение слайдера на мобильном
+  function slickMobile(slider, settings) {
+    if ($(window).width() > TABLET_SCREEN) {
+      if (slider.hasClass('slick-initialized')) {
+        slider.slick('unslick');
+      }
+      return false;
+    }
+    if (!slider.hasClass('slick-initialized')) {
+      return slider.slick(settings);
+    }
+  }
+  $(window).on('load resize', function () {
+    slickMobile(langSlider, langSliderSettigs);
+  });
+})();
+
+(function () {
+  $('.js-show-main-menu').on('click', function () {
+    $('body').toggleClass('show-menu');
+  });
+})();
+
+
+
+
 
 (function () {
   $('.js-slider-education').slick({
@@ -2219,44 +2260,6 @@ $('#trial-lesson').on('submit', function (event) {
 
 
 (function () {
-  var TABLET_SCREEN = 767;
-  var langSlider = $('.js-form-education-slider');
-  var langSliderSettigs = {
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    adaptiveHeight: true
-  };
-  // включение слайдера на мобильном
-  function slickMobile(slider, settings) {
-    if ($(window).width() > TABLET_SCREEN) {
-      if (slider.hasClass('slick-initialized')) {
-        slider.slick('unslick');
-      }
-      return false;
-    }
-    if (!slider.hasClass('slick-initialized')) {
-      return slider.slick(settings);
-    }
-  }
-  $(window).on('load resize', function () {
-    slickMobile(langSlider, langSliderSettigs);
-  });
-})();
-
-(function () {
-  $('.js-show-main-menu').on('click', function () {
-    $('body').toggleClass('show-menu');
-  });
-})();
-
-
-
-
-
-
-
-(function () {
   $('.js-toggle-answer').on('click', function () {
     console.log($(this).next());
     $(this).next().slideToggle();
@@ -2267,8 +2270,6 @@ $('#trial-lesson').on('submit', function (event) {
     }
   });
 })();
-
-
 
 
 
@@ -2633,6 +2634,40 @@ $(window).on('load', function () {
 
 
 
+
+
+
+
+
+
+
+
+(function () {
+  $('.js-promo-slider').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    centerPadding: '0',
+    appendDots: $('.promo__dots'),
+    prevArrow: $('.js-promo-prev-btn'),
+    nextArrow: $('.js-promo-next-btn'),
+
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        variableWidth: true,
+        arrows: true
+      }
+    }]
+  });
+})();
+
 (function () {
   $('.js-partners-slider').slick({
     arrows: false,
@@ -2703,16 +2738,14 @@ $(window).on('load', function () {
 
 
 
-(function () {
-  $('.js-promo-slider').slick({
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    centerPadding: '0',
-    appendDots: $('.promo__dots'),
-    prevArrow: $('.js-promo-prev-btn'),
-    nextArrow: $('.js-promo-next-btn'),
 
+(function () {
+  var sliderReviews = $('.js-reviews-slider').slick({
+    dots: true,
+    arrows: false,
+    mobileFirst: true,
+    appendDots: $('.reviews__dots'),
+    adaptiveHeight: true,
     responsive: [{
       breakpoint: 767,
       settings: {
@@ -2722,22 +2755,36 @@ $(window).on('load', function () {
     {
       breakpoint: 1343,
       settings: {
-        variableWidth: true,
-        arrows: true
+        variableWidth: false,
+        arrows: true,
+        slidesToShow: 3,
+        prevArrow: $('.js-reviews-prev-btn'),
+        nextArrow: $('.js-reviews-next-btn'),
+        adaptiveHeight: true,
       }
-    }]
+    }
+      ]
+  });
+  $('.review__message p').readmore({
+    moreLink: '<button type="button" class="review__read-more">читать отзыв</a>',
+    lessLink: '<button type="button" class="review__read-more">Свернуть</a>',
+
+  });
+  $('.review__message').on('click', function () {
+    $('.js-reviews-slider').find('.slick-list').height('auto');
   });
 })();
 
 
 (function () {
-  $('.js-close-map-popup').on('click', function () {
-    $(this).parent('.js-map-popup').remove();
+  $('.subscribe').on('submit', function (evt) {
+    evt.preventDefault();
+    $('#subscribe').modal('hide');
+    setTimeout(function () {
+      $('#order-success').modal('show');
+    }, 1000);
   });
 })();
-
-
-
 
 
 
@@ -2781,15 +2828,6 @@ $(window).on('load', function () {
   });
 })();
 
-
-
-(function () {
-  $('.js-show-all-teachers').on('click', function () {
-    $('.js-list-teachers').addClass('active');
-    $(this).hide();
-  });
-})();
-
 (function () {
   $('.js-teachers-video').slick({
     dots: true,
@@ -2829,44 +2867,13 @@ $(window).on('load', function () {
   });
 })();
 
-(function () {
-  var sliderReviews = $('.js-reviews-slider').slick({
-    dots: true,
-    arrows: false,
-    mobileFirst: true,
-    appendDots: $('.reviews__dots'),
-    adaptiveHeight: true,
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        variableWidth: true
-      }
-    },
-    {
-      breakpoint: 1343,
-      settings: {
-        variableWidth: false,
-        arrows: true,
-        slidesToShow: 3,
-        prevArrow: $('.js-reviews-prev-btn'),
-        nextArrow: $('.js-reviews-next-btn'),
-        adaptiveHeight: true,
-      }
-    }
-      ]
-  });
-  $('.review__message p').readmore({
-    moreLink: '<button type="button" class="review__read-more">читать отзыв</a>',
-    lessLink: '<button type="button" class="review__read-more">Свернуть</a>',
 
-  });
-  $('.review__message').on('click', function () {
-    $('.js-reviews-slider').find('.slick-list').height('auto');
+
+(function () {
+  $('.js-close-map-popup').on('click', function () {
+    $(this).parent('.js-map-popup').remove();
   });
 })();
-
-
-
 
 (function () {
   $('.js-thanks-slider').slick({
@@ -2922,6 +2929,13 @@ $(window).on('load', function () {
   });
 })();
 
+(function () {
+  $('.js-show-all-teachers').on('click', function () {
+    $('.js-list-teachers').addClass('active');
+    $(this).hide();
+  });
+})();
+
 
 
 (function () {
@@ -2948,15 +2962,4 @@ $(window).on('load', function () {
   });
 })();
 
-
-
-(function () {
-  $('.subscribe').on('submit', function (evt) {
-    evt.preventDefault();
-    $('#subscribe').modal('hide');
-    setTimeout(function () {
-      $('#order-success').modal('show');
-    }, 1000);
-  });
-})();
 

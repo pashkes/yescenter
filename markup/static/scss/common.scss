@@ -54,7 +54,25 @@ p {
     padding-left: 32px;
   }
 }
-
+blockquote {
+  margin: 0;
+}
+legend {
+  display: table;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  + * {
+    clear: both;
+  }
+}
+cite {
+  font-style: normal;
+}
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
 .hidden {
   position: absolute;
   left: -10000px;
@@ -64,9 +82,12 @@ p {
   overflow: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-style: normal;
   font-weight: 400;
+}
+figure {
+  margin-bottom: 0;
 }
 
 .h2 {

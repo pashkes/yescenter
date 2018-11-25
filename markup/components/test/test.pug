@@ -19,8 +19,8 @@ mixin test(data)
           | Результаты используются для формирования групп с&nbsp;равным уровнем, интересами и&nbsp;целями для максимально эффективного обучения.
           | Не&nbsp;пользуйтесь учебниками и&nbsp;пособиями при прохождении тестирования онлайн. Чем честнее будет результат, тем больше мы&nbsp;вам сможем дать.
       form.page-reg.form#reg-for-course.js-test-langs
-        .page-reg__section.page-reg__section--select-lang
-          h3.page-reg__title Выберите язык для тестирования
+        fieldset.page-reg__section.page-reg__section--select-lang
+          legend.page-reg__title Выберите язык для тестирования
           .row.no-gutters
             .col-md-4.col-xl.page-reg__col
               label.page-reg__item
@@ -60,8 +60,8 @@ mixin test(data)
                 span.page-reg__name Испанский
                   br
                   | язык
-        .page-reg__section.page-reg__section--type-education.js-old
-          h3.page-reg__title Выберите возраст
+        fieldset.page-reg__section.page-reg__section--type-education.js-old
+          legend.page-reg__title Выберите возраст
           .row.no-gutters
             .col-md-4.col-xl.page-reg__col
               label.page-reg__item
@@ -74,8 +74,8 @@ mixin test(data)
             .col-xl
             .col-xl
             .col-xl
-        .page-reg__section.page-reg__section--fields
-          h3.page-reg__title Контактная информация
+        fieldset.page-reg__section.page-reg__section--fields
+          legend.page-reg__title Контактная информация
           .page-reg__row-field
             .page-reg__col-field
               label(for="reg-for-course-full-name").hidden Ваше имя и фамилия

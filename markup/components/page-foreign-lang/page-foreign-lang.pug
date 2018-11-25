@@ -7,7 +7,7 @@ mixin page-foreign-lang(data)
         .row
           each item in data
             .col-md-6.col-xl-3.d-flex.align-content-stretch
-              .lang-card.foreign-course__item
+              article.lang-card.foreign-course__item
                 .lang-card__top
                   .lang-card__flag
                     img(src="%=static=%img/general/"+item.countryImg width="40" height="26" alt=item.countryNameAlt)
@@ -15,7 +15,7 @@ mixin page-foreign-lang(data)
                     a(href="#") !{item.countryName}
                 a(href="#").lang-card__more.btn.btn--border-red Подробнее
           .col-md-6.col-xl-3.d-flex.align-content-stretch
-            .lang-card.lang-card--bg.foreign-course__item.lang-card--school
+            article.lang-card.lang-card--bg.foreign-course__item.lang-card--school
               h3.lang-card__name
                 a(href="#") Не нашли&#160;
                   span нужный язык?

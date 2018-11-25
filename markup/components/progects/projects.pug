@@ -15,8 +15,8 @@ mixin projects(data)
                   a(href="#").projects__btn.btn.btn--border-red #{item.buttonText}
                 else
                   a(href="#").projects__read-more.show-all читать отчет в блоге
-                    span &nbsp;&rarr;
+                    span(aria-hidden="true") &nbsp;&rarr;
 
       a(href="#").projects__show-all.show-all.d-none.d-md-block архив выездных проектов
-        span &nbsp;&rarr;
+        span(aria-hidden="true") &nbsp;&rarr;
 

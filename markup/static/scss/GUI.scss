@@ -49,7 +49,6 @@
     border-color: $primary-red;
     background-color: $primary-red;
     color: #fff;
-    outline: none;
   }
   &:active {
     background-color: #c6242e;
@@ -86,7 +85,6 @@
   border: none;
   font-size: 0;
   &:hover, &:focus {
-    outline: none;
     .icon {
       fill: $primary-red;
     }
@@ -117,9 +115,6 @@
   font-size: 0;
   border: none;
   background-color: transparent;
-  &:focus {
-    outline: none;
-  }
 }
 
 .slick-dots button::before {
@@ -159,9 +154,6 @@
   z-index: 2;
   &:hover {
     transform: translateX(0);
-  }
-  &:focus {
-    outline: none;
   }
   @include media-breakpoint-only(xl) {
     display: flex;
@@ -266,9 +258,9 @@
       color: rgba(54, 54, 54, 0.6);
     }
     &:focus {
-      outline: none;
       border-color: #d52833;
       box-shadow: none;
+      outline: none;
     }
     @include media-breakpoint-up(md) {
       margin-bottom: 17px;
@@ -292,9 +284,6 @@
     background-size: 12px 8px;
     &::-ms-expand {
       display: none;
-    }
-    &:focus {
-      outline: none;
     }
   }
   .SumoSelect {

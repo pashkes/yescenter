@@ -259,7 +259,7 @@ mixin article(data)
               a(href="#").pagination__arrow.show-all
                 | следующая&#160;
                 .d-none.d-xl-inline страница&#160;
-                span &nbsp;&rarr;
+                span(aria-hidden="true") &nbsp;&rarr;
     .article__like.section--grey
       .container
         .article__inner

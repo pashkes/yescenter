@@ -8,7 +8,7 @@ mixin review(data)
           cite.review__name #{data.name}
           span.review__school #{data.school}
       .review__message
-        p #{data.message}
+        blockquote #{data.message}
     if data.footer
       footer.review__bottom
         .row

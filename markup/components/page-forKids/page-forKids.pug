@@ -2,7 +2,7 @@ mixin page-forKids(data)
   include ../trial-lesson/trial-lesson
   include ../kids-program-order/kids-program-order
   include ../forms-education/forms-education
-  .page-forKids.page-eng.section.section--grey
+  section.page-forKids.page-eng.section.section--grey
     .container
       h2.page-eng__title.h2 Стоимость и варианты обучения
       p.page-forKids__subtitle.subtitle Авторская методика, разработанная нашими преподавателями на основе самых эффективных наработок лучших языковых школ мира, основана на комплексном подходе при обучении английскому языку детей дошкольного возраста. Именно поэтому она показывает высокую результативность и при занятии с совсем малышами, и при прохождении курсов ребятами, которые готовятся сесть за школьные парты.
@@ -10,7 +10,7 @@ mixin page-forKids(data)
         .row
           each itemList in data.listCard
             .col-xl-6.d-flex.align-content-stretch
-              .lang-card.page-eng__card
+              article.lang-card.page-eng__card
                 h3.page-eng__title-card.lang-card__name
                   a(href="#") !{itemList.title}
                 span.page-eng__subtitle.grey !{itemList.info}

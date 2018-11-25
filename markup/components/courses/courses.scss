@@ -146,7 +146,6 @@
       display: none;
     }
     &:focus {
-      outline: none;
       + .icon {
         transform: rotate(180deg);
       }

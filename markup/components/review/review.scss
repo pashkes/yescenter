@@ -38,7 +38,7 @@
     .review__school {
       line-height: 18px;
     }
-    .review__message p {
+    .review__message blockquote {
       @include media-breakpoint-up(md) {
         margin-bottom: 0;
       }
@@ -127,13 +127,15 @@
         top: 11px;
       }
     }
-    p {
+    blockquote {
       margin-bottom: 22px;
       overflow: hidden;
       text-indent: 33px;
       line-height: 22px;
       max-height: 176px;
       transition: $transition-collapse;
+      font-weight: 400;
+      font-family: "Open Sans", Arial, sans-serif;
       @include media-breakpoint-up(md) {
         margin-bottom: 23px;
         max-height: 132px;
@@ -161,9 +163,6 @@
     color: $primary-red;
     text-transform: uppercase;
     text-align: left;
-    &:focus {
-      outline: none;
-    }
   }
   &__bottom {
     margin-top: auto;
