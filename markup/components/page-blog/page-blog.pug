@@ -21,7 +21,7 @@ mixin page-blog(data)
           select.page-blog__select.d-md-none.js-reviews-list#page-blog-sections
             each itemReviews in data.sections
               option(value=itemReviews.amount) #{itemReviews.name}
-        label(for="page-blog-years").hidden Сортировка по годам
+        label(for="page-blog-years").visually-hidden Сортировка по годам
         select.form__select.d-md-none#page-blog-years
           each itemReviews in data.years
             option #{itemReviews.name}

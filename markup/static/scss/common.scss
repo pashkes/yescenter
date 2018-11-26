@@ -82,7 +82,7 @@ cite {
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
-.hidden {
+.visually-hidden {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -114,6 +114,11 @@ figure {
   @include media-breakpoint-up(xl) {
     font-size: 30px;
     letter-spacing: 1.1px;
+  }
+  &--no-text-bottom {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 36px;
+    }
   }
 }
 
@@ -476,7 +481,7 @@ section.lytkarino-about {
       font-size: 60px;
       line-height: 1.33;
     }
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xl) {
       font-size: 70px;
       line-height: 1.14;
     }

@@ -21,7 +21,7 @@ mixin page-reviews(data)
             each itemReviews in data.selectList
               option(value=itemReviews.amount) #{itemReviews.name}
         fieldset
-          legend.hidden Фильтрация отзывов
+          legend.visually-hidden Фильтрация отзывов
           ul.page-reviews__filters.d-none.d-md-flex.flex-md-wrap
             each item in data.selectList
               li.page-reviews__filter

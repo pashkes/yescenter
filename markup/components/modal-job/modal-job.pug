@@ -9,17 +9,17 @@ mixin modal-job(data)
             p.map__title.modal-title#job-title Откликнуться
               br
               | на вакансию
-            label(for="modal-job-form-name").hidden Представьтесь, пожалуйста *
+            label(for="modal-job-form-name").visually-hidden Представьтесь, пожалуйста *
             input(placeholder="Представьтесь, пожалуйста *" name="name" required).form__field#modal-job-form-name
-            label(for="modal-job-form-phone").hidden Контактный номер телефона *
+            label(for="modal-job-form-phone").visually-hidden Контактный номер телефона *
             input(type="tel" placeholder="Контактный номер телефона *"  name="phone" required).form__field.callback__phone#modal-job-form-phone
 
             .modal-job__file
               label.form__field.js-attach-file
                 span.grey Прикрепить резюме
-                input(type="file").js-file-field.hidden
+                input(type="file").js-file-field.visually-hidden
               button(type="button").js-select-remove-file.modal-job__btn select/remove
-            label(for="modal-job-form-link").hidden Ссылка на резюме на hh.ru
+            label(for="modal-job-form-link").visually-hidden Ссылка на резюме на hh.ru
             input(type="url" placeholder="Ссылка на резюме на hh.ru" pattern="https?://.+" name="name").form__field#modal-job-form-link
             p.map__conf Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
               a(href="#" class="js-open-agreement" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement") политикой конфиденциальности

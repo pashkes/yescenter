@@ -12,12 +12,12 @@ mixin school-list(data)
               a(href="#on-map" role="tab" aria-selected="true" data-toggle="tab").school-list__tab на карте
     form.school-list__inner#map-list
       fieldset.school-list__top
-        legend.hidden Наши школы, фильтрация адресов
+        legend.visually-hidden Наши школы, фильтрация адресов
         .container
           .row.align-items-xl-center
             .col-xl
               .js-select-custom-scroll.d-md-none
-                label(for="map-list-cities").hidden Наши школы
+                label(for="map-list-cities").visually-hidden Наши школы
                 .form__select-custom.school-list__select
                   select(id="map-list-cities").js-select-defaul
                     option Москва

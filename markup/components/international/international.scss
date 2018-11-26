@@ -6,77 +6,10 @@
   @include media-breakpoint-up(xl) {
     padding-bottom: 54px;
   }
-  &__top {
+  &__nav {
     margin-bottom: 32px;
-    padding-top: 32px;
-    padding-bottom: 24px;
-    background-color: rgba($grey-primary, .7);
     @include media-breakpoint-up(md) {
       margin-bottom: 48px;
-      padding-top: 26px;
-      padding-bottom: 25px;
-    }
-    @include media-breakpoint-up(xl) {
-      padding-top: 27px;
-      padding-bottom: 27px;
-    }
-  }
-  &__filters {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -16px;
-    margin-left: -16px;
-    padding: 0;
-    list-style-type: none;
-    @include media-breakpoint-up(md) {
-      margin-bottom: -9px;
-    }
-  }
-  &__filter {
-    margin: 0 16px;
-    @include media-breakpoint-up(md) {
-      margin-bottom: 9px;
-    }
-    @include media-breakpoint-up(xl) {
-      margin-bottom: 8px;
-    }
-  }
-
-  &__item-list {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0;
-    input {
-      display: none;
-      &:checked + .international__name-filter {
-        color: $primary-red;
-        &::before {
-          border-bottom-color: transparent;
-        }
-      }
-    }
-  }
-
-  &__name-filter {
-    font-size: 11px;
-    line-height: 22px;
-    letter-spacing: 1.1px;
-    color: $text-color;
-  }
-  &__name-filter {
-    position: relative;
-    margin-right: 7px;
-    vertical-align: top;
-    transition: $transition-base;
-    text-transform: uppercase;
-    &::before {
-      content: '';
-      position: absolute;
-      right: 0;
-      left: 0;
-      bottom: 4px;
-      border-bottom: dashed 1px #A9AAAB;
-      transition: $transition-base;
     }
   }
   .page-eng__card.lang-card {

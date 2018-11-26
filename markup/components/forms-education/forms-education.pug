@@ -32,3 +32,13 @@ mixin forms-education-lytkyno(data)
                   h3.forms-education__subject !{item.subtitle}
                   if item.text
                     | !{item.text}
+mixin forms-education-ilts(data)
+  section.forms-education.section.section--grey&attributes(attributes)
+    .container
+      h2.forms-education__title.h2 !{data.title}
+      each item in data.list
+        article.forms-education__item
+          h3.forms-education__subject !{item.subtitle}
+          if item.text
+            | !{item.text}
+

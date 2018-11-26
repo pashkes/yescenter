@@ -5,7 +5,7 @@ mixin offline-lesson
     .article-menu.section--grey
       .container
         .article-menu__mobile.d-md-none
-          label(for="lang").hidden язык
+          label(for="lang").visually-hidden язык
           select.form__select#lang.js-sub-menu-article.mb-4
             option(value="page-url") Английский
             option(value="page-url") Немецкий
@@ -14,7 +14,7 @@ mixin offline-lesson
             option(value="page-url") Испанский
             option(value="page-url") Китайский
             option(value="page-url") Японский
-          label(for="section-menu").hidden Раздел
+          label(for="section-menu").visually-hidden Раздел
           select.form__select#section-menu.js-sub-menu-article
             option(value="page-url") Фонетика
             option(value="page-url") Грамматика

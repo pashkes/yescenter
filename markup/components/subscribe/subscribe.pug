@@ -5,7 +5,7 @@ mixin subscribe(data)
         .row
           .col-md-auto
             .subscribe__img
-              img(data-src="%=static=%img/general/letter.png" alt="Подпишитесь на нашу новостную рассылку" aria-hidden="true").lazyload.blur-up
+              img(data-src="%=static=%img/general/letter.png" role="presentation").lazyload.blur-up
           .col-md
             .subscribe__body
               h2.subscribe__title
@@ -13,7 +13,7 @@ mixin subscribe(data)
                 | на нашу новостную рассылку
               .row
                 .col-xl-6
-                  label(for="subscribe-email").hidden Ваше имя и фамилия
+                  label(for="subscribe-email").visually-hidden Ваше имя и фамилия
                   input(type="email" placeholder="Ваша электронная почта" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}$" required).subscribe__field.form__field#subscribe-email
                 .col-xl-6
                   button.subscribe__btn.btn.btn--red Отправить

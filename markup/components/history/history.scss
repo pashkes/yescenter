@@ -169,6 +169,11 @@
         left: 13px;
       }
     }
+    &--medium {
+      @include media-breakpoint-up(md) {
+        font-size: 60px;
+      }
+    }
 
     span {
       padding-left: 8px;

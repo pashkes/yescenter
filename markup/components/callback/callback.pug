@@ -7,9 +7,9 @@ mixin callback(data)
           | Закрыть
         p.map__title.modal-title.title#callback-title Оставьте ваш номер
         p.form__subtitle и мы перезвоним в удобное для вас время
-        label(for="callback-name").hidden Представьтесь, пожалуйста *
+        label(for="callback-name").visually-hidden Представьтесь, пожалуйста *
         input(placeholder="Представьтесь, пожалуйста *" name="name" required).form__field#callback-name
-        label(for="callback-phone").hidden Контактный номер телефона *
+        label(for="callback-phone").visually-hidden Контактный номер телефона *
         input(type="tel" placeholder="Контактный номер телефона *"  name="phone" required).form__field.callback__phone#callback-phone
         .callback__row
           .callback__col
@@ -27,7 +27,7 @@ mixin callback(data)
                 option 18:00
                 option 19:00
           .callback__col.d-flex.align-items-end
-            label(for="callback-time").hidden Время
+            label(for="callback-time").visually-hidden Время
             select.js-select-time#callback-time
               option 10:00
               option(selected) 11:00
@@ -87,11 +87,11 @@ mixin callback(data)
         p.map__title.modal-title#write-course Записаться
           br
           | на курсы
-        label(for="order-course-form-name").hidden Представьтесь, пожалуйста *
+        label(for="order-course-form-name").visually-hidden Представьтесь, пожалуйста *
         input(placeholder="Представьтесь, пожалуйста *" name="name" required).form__field#order-course-form-name
-        label(for="order-course-phone").hidden Контактный номер телефона *
+        label(for="order-course-phone").visually-hidden Контактный номер телефона *
         input(type="tel" placeholder="Контактный номер телефона *"  name="phone" required).form__field.callback__phone#order-course-phone
-        label(for="order-course-time-first").hidden Выберите язык для изучения *
+        label(for="order-course-time-first").visually-hidden Выберите язык для изучения *
         select.js-select-lang-order#order-course-time-first
           option(selected disabled) Выберите язык для изучения *
           option Английский язык
@@ -102,7 +102,7 @@ mixin callback(data)
           option Китайский язык
           option Японский язык
           option Другой (укажите в комментариях)
-        label(for="order-course-form-message").hidden Комментарий
+        label(for="order-course-form-message").visually-hidden Комментарий
         input(placeholder="Комментарий" name="name").form__field#order-course-form-message
         p.map__conf Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
           a(href="#" class="js-open-agreement" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement") политикой конфиденциальности
@@ -116,11 +116,11 @@ mixin callback(data)
         p.map__title.modal-title#trial-lesson-title Пробный урок
           br
           | в подарок!
-        label(for="trial-lesson-name").hidden Представьтесь, пожалуйста *
+        label(for="trial-lesson-name").visually-hidden Представьтесь, пожалуйста *
         input(placeholder="Представьтесь, пожалуйста *" name="name" required).form__field#trial-lesson-name
-        label(for="trial-lesson-phone").hidden Контактный номер телефона *
+        label(for="trial-lesson-phone").visually-hidden Контактный номер телефона *
         input(type="tel" placeholder="Контактный номер телефона *"  name="phone" required).form__field.callback__phone#trial-lesson-phone
-        label(for="trial-lesson-select-course").hidden Выберите язык для изучения *
+        label(for="trial-lesson-select-course").visually-hidden Выберите язык для изучения *
         select.js-select-lang-order#trial-lesson-select-course
           option Английский язык
           option(selected disabled) Выберите язык для изучения *
@@ -131,7 +131,7 @@ mixin callback(data)
           option Китайский язык
           option Японский язык
           option Другой (укажите в комментариях)
-        label(for="trial-lesson-message").hidden Комментарий
+        label(for="trial-lesson-message").visually-hidden Комментарий
         input(placeholder="Комментарий" name="name").form__field#trial-lesson-message
         p.map__conf Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;
           a(href="#" class="js-open-agreement" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement") политикой конфиденциальности

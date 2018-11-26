@@ -1,58 +1,7 @@
 mixin international(data)
+  include ../examps-nav/examps-nav
   .international
-    form.international__top#international
-      .container
-        fieldset
-          legend.hidden Наши школы. Фильтры
-          .row.align-items-xl-center
-            .col-xl
-              .js-select-custom-scroll.d-md-none
-                label(for="tests").hidden Наши школы
-                .form__select-custom.international__select
-                  select(id="tests").js-select-defaul
-                    option Подготовка к YLE
-                    option Подготовка к KET
-                    option Подготовка к PET
-                    option Подготовка к FCE
-                    option Подготовка к CAE
-                    option Подготовка к CPE
-                    option Подготовка к IELTS
-                    option Подготовка к TOEFL
-              .international__filters.d-none.d-md-flex
-                .international__filter
-                  label.international__item-list
-                    input(type="radio" name="international-tests" checked)
-                    span.international__name-filter Подготовка к YLE
-                .international__filter
-                  label.international__item-list
-                    input(type="radio" name="international-tests")
-                    span.international__name-filter Подготовка к KET
-                .international__filter
-                  label.international__item-list
-                    input(type="radio" name="international-tests")
-                    span.international__name-filter Подготовка к PET
-                .international__filter
-                  label.international__item-list
-                    input(type="radio" name="international-tests")
-                    span.international__name-filter Подготовка к FCE
-                .w-100.d-xl-none
-                .international__filter
-                  label.international__item-list
-                    input(type="radio" name="international-tests")
-                    span.international__name-filter Подготовка к CAE
-                .international__filter
-                  label.international__item-list
-                    input(type="radio" name="international-tests")
-                    span.international__name-filter Подготовка к CPE
-                .w-100
-                .international__filter
-                  label.international__item-list
-                    input(type="radio" name="international-tests")
-                    span.international__name-filter Подготовка к IELTS
-                .international__filter
-                  label.international__item-list
-                    input(type="radio" name="international-tests")
-                    span.international__name-filter Подготовка к TOEFL
+    +examps-nav('Подготовка к YLE').international__nav
     .container
       .row
         each itemList in data.listCard
