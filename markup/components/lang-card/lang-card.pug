@@ -2,5 +2,6 @@ mixin lang-card(data, btnText)
   article.lang-card&attributes(attributes)
     h3.lang-card__name
       a(href="#") !{data.title}
-    p.lang-card__desc !{data.desc}
+    if data.desc
+      p.lang-card__desc !{data.desc}
     a(href="#").lang-card__more.btn.btn--border-red #{btnText}

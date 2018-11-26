@@ -1,0 +1,48 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/footer/footer.pug
+  include ../components/header/header
+  include ../components/reviews/reviews
+  include ../components/map/map
+  include ../components/subscribe/subscribe
+  include ../components/callback/callback
+  include ../components/modal-search/modal-search
+  include ../components/modal-location/modal-location
+  include ../components/breadcrumb/breadcrumb
+  include ../components/history/history
+  include ../components/basic-knowledge/basic-knowledge
+  include ../components/spec-course/spec-course
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header(headerDefault)
+      .container
+        +breadcrumb(breadcrumb.individual)
+      section.page-programs.page-individual
+        .container
+          h2.h2.page-programs__title Индивидуальный план обучения
+          p.page-programs__subtitle.subtitle Индивидуальный план обучения&#160;&#8212; это поэтапный план достижения ваших целей в&#160;английском языке.Теперь у&#160;Вас появилась уникальная возможность действительно выучить язык и&#160;добиться гарантированного результата.&#160;95% наших учеников достигают своих целей вместе с&#160;нами!
+          p
+            em
+              | Индивидуальный план обучения&#160;&#8212; это получение базовых знаний в&#160;группах&#160;
+              a(href="#") 2&#160;раза в&#160;неделю от&#160;7000 рублей в&#160;месяц,
+              | &#160;а&#160;также дополнительные курсы с&#160;учетом ваших целей.
+      +basic-knowledge()
+      +spec-course(specCource)
+      +history(pageProgramsStatistics).history--no-line.history--bdt-line.mt-0.border-top-0
+      +reviews(reviews, 'отзывы наших учеников')
+      +map()
+      +subscribe()
+      +footer()
+    +callback()
+    +modal-search()
+    +modal-location()
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer )
+    script(src='%=static=%js/main%=hash=%.js')

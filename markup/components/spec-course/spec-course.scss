@@ -1,0 +1,48 @@
+.spec-course.courses {
+  padding-top: 28px;
+  @include media-breakpoint-up(md) {
+    padding-top: 41px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 72px;
+    padding-bottom: 88px;
+  }
+  .h2 {
+    margin-bottom: 26px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 32px;
+    }
+  }
+  .spec-course__subtitle {
+    margin-bottom: 25px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 44px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 65px;
+    }
+  }
+  .lang-card {
+    padding-top: 28px;
+  }
+  .programs__item {
+    margin-bottom: 24px;
+    min-height: auto;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 32px;
+      min-height: 248px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 272px;
+    }
+  }
+  .lang-card__desc {
+    margin-bottom: 27px;
+  }
+  .spec-course__wrapper {
+    margin-bottom: 8px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 16px;
+    }
+  }
+}

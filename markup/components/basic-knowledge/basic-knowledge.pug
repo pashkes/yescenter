@@ -1,0 +1,26 @@
+mixin slide(src, alt)
+  div
+    .basic-knowledge__slide
+      img(src="__static__img/content/"+src alt=alt)
+mixin basic-knowledge(data)
+  section.basic-knowledge
+    .container
+      h2.basic-knowledge__title.h2 Базовые знания
+      p.basic-knowledge__subtitle На&#160;групповых занятиях основной упор делается на&#160;разговорный язык, говорим только на&#160;английском и&#160;большая часть урока посвящена практике общения. Помимо говорения, групповые занятия позволяют развить навыки грамматики, чтения, письма и&#160;аудирования.
+      p.basic-knowledge__title-sm Шкалы успеха для различный возрастных групп учеников:
+    .basic-knowledge__wrapper
+      button(type="button").basic-knowledge__toggle-slide.slide-arrow.slide-arrow--prev.text-hide.js-prev-btn
+        +icon('arrow-left', 12, 11)
+        | Предадущий слайд
+      button(type="button").basic-knowledge__toggle-slide.slide-arrow.slide-arrow--next.text-hide.js-next-btn
+        +icon('arrow-right', 12, 11)
+        | Следующий слайд
+      .container
+        .basic-knowledge__slider.js-knowledge-slider
+          +slide('knowledge-slide-1.png', 'график 1')
+          +slide('knowledge-slide-2.png', 'график 2')
+          +slide('knowledge-slide-3.png', 'график 3')
+          +slide('knowledge-slide-1.png', 'график 1')
+        .basic-knowledge__dots.js-knnowledge-dots
+
+

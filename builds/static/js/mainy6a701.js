@@ -1918,6 +1918,36 @@ object-assign
 
 
 (function () {
+  (function () {
+    $('.js-knowledge-slider').slick({
+      arrows: false,
+      dots: true,
+      mobileFirst: true,
+      appendDots: $('.js-knnowledge-dots'),
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 959,
+          settings: {
+            slidesToShow: 3,
+            arrows: true,
+            dots: false,
+            prevArrow: $('.js-prev-btn'),
+            nextArrow: $('.js-next-btn')
+          }
+        }
+      ]
+    });
+  })();
+
+})();
+
+(function () {
   let sliderStatus = 'no-initialize';
   let bigPhoto = $('.js-big-photo');
   $('.js-show-big-photo').on('click', function (evt) {
@@ -2086,6 +2116,53 @@ $('#trial-lesson').on('submit', function (event) {
 })();
 
 (function () {
+  $('.js-departure-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          dots: false,
+          slidesToShow: 2
+        }
+      }
+
+    ]
+  });
+})();
+(function () {
+  $('.js-lytkarino-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          dots: false
+        }
+      }
+
+    ]
+  });
+})();
+
+(function () {
   $('.js-slider-education').slick({
     arrows: false,
     dots: true,
@@ -2165,49 +2242,10 @@ $('#trial-lesson').on('submit', function (event) {
 })();
 
 (function () {
-  $('.js-departure-slider').slick({
-    variableWidth: true,
-    centerPadding: '0',
-    slidesToShow: 1,
-    dots: true,
-    mobileFirst: true,
+  $('.js-examps-define-slider').slick({
     arrows: false,
-    prevArrow: '.js-departure-prev-btn',
-    nextArrow: '.js-departure-next-btn',
-    responsive: [
-      {
-        breakpoint: 1343,
-        settings: {
-          arrows: true,
-          dots: false,
-          slidesToShow: 2
-        }
-      }
-
-    ]
-  });
-})();
-(function () {
-  $('.js-lytkarino-slider').slick({
-    variableWidth: true,
-    centerPadding: '0',
-    slidesToShow: 1,
     dots: true,
-    mobileFirst: true,
-    arrows: false,
-    prevArrow: '.js-departure-prev-btn',
-    nextArrow: '.js-departure-next-btn',
-    responsive: [
-      {
-        breakpoint: 1343,
-        settings: {
-          arrows: true,
-          slidesToShow: 2,
-          dots: false
-        }
-      }
-
-    ]
+    appendDots: $('.js-examps-dots')
   });
 })();
 
@@ -2249,16 +2287,6 @@ $('#trial-lesson').on('submit', function (event) {
 
 
 
-(function () {
-  $('.js-examps-define-slider').slick({
-    arrows: false,
-    dots: true,
-    appendDots: $('.js-examps-dots')
-  });
-})();
-
-
-
 
 
 
@@ -2276,69 +2304,7 @@ $('#trial-lesson').on('submit', function (event) {
 })();
 
 
-(function () {
-  $('.js-menu-close').on('click', function () {
-    $('body').removeClass('show-menu');
-  });
-})();
 
-
-
-
-
-(function () {
-  function addEventFileRemove() {
-    $(this).css('z-index', '-1');
-    $('.js-attach-file').find('span').addClass('grey');
-    $(this).removeClass('remove-icon');
-    $(this).addClass('attach-icon');
-    $('.js-attach-file').find('span').text('Прикрепить резюме');
-    $('.js-select-remove-file').off('click', addEventFileRemove);
-  }
-
-  $('.js-file-field').on('change', function (e) {
-    if (!e.target.files[0]) {
-      return false;
-    }
-    var fileName = e.target.files[0].name;
-    $(this).prev().removeClass('grey');
-    $(this).prev().text(fileName);
-    $('.js-select-remove-file').css('z-index', '1');
-    $('.js-select-remove-file').addClass('remove-icon');
-    $('.js-select-remove-file').on('click', addEventFileRemove);
-  });
-})();
-
-
-
-
-
-(function () {
-  var TABLET_SIZE = 767;
-  var newsSlider = $('.js-news-slide');
-  var newsSliderSettigs = {
-    arrows: false,
-    dots: true,
-    mobileFirst: true,
-    adaptiveHeight: true,
-    appendDots: $('.news__dots')
-  };
-  // включение слайдера на мобильном
-  function slickMobile(slider, settings) {
-    if ($(window).width() > TABLET_SIZE) {
-      if (slider.hasClass('slick-initialized')) {
-        slider.slick('unslick');
-      }
-      return false;
-    }
-    if (!slider.hasClass('slick-initialized')) {
-      return slider.slick(settings);
-    }
-  }
-  $(window).on('load resize', function () {
-    slickMobile(newsSlider, newsSliderSettigs);
-  });
-})();
 
 
 
@@ -2526,6 +2492,72 @@ $('.js-select-time').SumoSelect({
   captionFormat: '{0} Selected'
 });
 
+(function () {
+  $('.js-menu-close').on('click', function () {
+    $('body').removeClass('show-menu');
+  });
+})();
+
+
+
+(function () {
+  function addEventFileRemove() {
+    $(this).css('z-index', '-1');
+    $('.js-attach-file').find('span').addClass('grey');
+    $(this).removeClass('remove-icon');
+    $(this).addClass('attach-icon');
+    $('.js-attach-file').find('span').text('Прикрепить резюме');
+    $('.js-select-remove-file').off('click', addEventFileRemove);
+  }
+
+  $('.js-file-field').on('change', function (e) {
+    if (!e.target.files[0]) {
+      return false;
+    }
+    var fileName = e.target.files[0].name;
+    $(this).prev().removeClass('grey');
+    $(this).prev().text(fileName);
+    $('.js-select-remove-file').css('z-index', '1');
+    $('.js-select-remove-file').addClass('remove-icon');
+    $('.js-select-remove-file').on('click', addEventFileRemove);
+  });
+})();
+
+
+
+
+
+(function () {
+  var TABLET_SIZE = 767;
+  var newsSlider = $('.js-news-slide');
+  var newsSliderSettigs = {
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    adaptiveHeight: true,
+    appendDots: $('.news__dots')
+  };
+  // включение слайдера на мобильном
+  function slickMobile(slider, settings) {
+    if ($(window).width() > TABLET_SIZE) {
+      if (slider.hasClass('slick-initialized')) {
+        slider.slick('unslick');
+      }
+      return false;
+    }
+    if (!slider.hasClass('slick-initialized')) {
+      return slider.slick(settings);
+    }
+  }
+  $(window).on('load resize', function () {
+    slickMobile(newsSlider, newsSliderSettigs);
+  });
+})();
+
+
+
+
+
 
 
 
@@ -2606,6 +2638,29 @@ $(window).on('load', function () {
 });
 
 
+
+(function () {
+  $('.js-school-slider').slick({
+    variableWidth: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    dots: true,
+    mobileFirst: true,
+    arrows: false,
+    prevArrow: '.js-departure-prev-btn',
+    nextArrow: '.js-departure-next-btn',
+    responsive: [
+      {
+        breakpoint: 1343,
+        settings: {
+          arrows: true,
+          slidesToShow: 2
+        }
+      }
+
+    ]
+  });
+})();
 
 
 
@@ -2750,8 +2805,6 @@ $(window).on('load', function () {
     $(this).parent('.js-map-popup').remove();
   });
 })();
-
-
 
 
 
@@ -2969,26 +3022,3 @@ $(window).on('load', function () {
   };
 
 } )();
-
-(function () {
-  $('.js-school-slider').slick({
-    variableWidth: true,
-    centerPadding: '0',
-    slidesToShow: 1,
-    dots: true,
-    mobileFirst: true,
-    arrows: false,
-    prevArrow: '.js-departure-prev-btn',
-    nextArrow: '.js-departure-next-btn',
-    responsive: [
-      {
-        breakpoint: 1343,
-        settings: {
-          arrows: true,
-          slidesToShow: 2
-        }
-      }
-
-    ]
-  });
-})();

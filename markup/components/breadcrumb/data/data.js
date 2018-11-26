@@ -446,7 +446,15 @@ const data = {
       {
         name: 'IELTS'
       }
+    ],
+    individual: [
+      {
+        name: 'Главная',
+        link: 'index.html'
+      },
+      {
+        name: ' Индивидуальный план обучения'
+      }
     ]
-
   }
 };

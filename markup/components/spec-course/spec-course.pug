@@ -1,0 +1,14 @@
+mixin spec-course(data)
+  include ../icon/icon
+  include ../lang-card/lang-card
+  include ../trial-lesson/trial-lesson
+  section.spec-course.courses.section.section--grey.programs
+    .spec-course__wrapper
+      .container
+        h2.spec-course__title.h2 Специальные курсы
+        p.spec-course__subtitle Специальные курсы в&#160;совокупности с&#160;основным обязательным курсом помогают достигнуть вашей личной цели.
+        .row
+          each item in data.cards
+            .col-md-6.col-lg-4.col-xl-3.d-flex
+              +lang-card(item, 'подробнее').programs__item
+    +trial-lesson(true)
