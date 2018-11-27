@@ -1,8 +1,9 @@
-mixin video-data(data)
+mixin video-data(data, title, nameLesson)
+  - var textBottom = 'смотреть все видеоматериалы';
   section.video-data.section&attributes(attributes)
     if data.title
       .container
-        h2.video-data__title.h2 #{data.title}
+        h2.video-data__title.h2 !{title}
         if data.subtitle
           p.video-data__subtitle.subtitle #{data.subtitle}
     .video-data__slider
@@ -16,15 +17,27 @@ mixin video-data(data)
         div.video-data__list.js-video-data-slider
           div.wrapper
             div(data-embed="fUYKHUH1VvI" data-title="Видео 1").embed-responsive.embed-responsive-16by9.youtube.embed-responsive-item
+              if nameLesson
+                .video-data__label
+                  p.video-data__name Уроки английского языка для начинающих.
+                  span Выпуск &#8470;&#160;1
               button(type="button").youtube__play-button Воспроизвести видео 1
+
           div.wrapper
             div(data-embed="5D0OyvlDV6U" data-title="Видео 2").embed-responsive.embed-responsive-16by9.youtube.embed-responsive-item
               button(type="button").youtube__play-button Воспроизвести видео 2
+              if nameLesson
+                .video-data__label
+                  p.video-data__name Уроки английского языка для начинающих.
+                  span Выпуск &#8470;&#160;2
     .video-data__footer
       .container
         .row.justify-content-md-between.align-items-md-center
           .col-md-auto
             .video-data__dots
           .col-md-auto
-            a(href="#").show-all смотреть все видеоматериалы
-              span(aria-hidden="true") &nbsp;&rarr;
+            if block
+              block
+            else
+              a(href="#").show-all #{textBottom}
+                span(aria-hidden="true") &nbsp;&rarr;

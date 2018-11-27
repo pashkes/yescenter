@@ -1,0 +1,19 @@
+mixin card(data)
+  .col-xl-4.d-flex
+    article.start-learn__item
+      h2.start-learn__title
+        a(href="#") #{data.title}
+      p.start-learn__desc !{data.desc}
+      a(href="#").start-learn__more.show-all Показать все акции
+        span(aria-hidden="true") &nbsp;&rarr;
+mixin start-learn(data)
+  include ../trial-lesson/trial-lesson
+  section.start-learn.section--grey
+    .start-learn__main
+      .container
+        h2.start-learn__title.h2 С чего начать изучение языка
+        p.start-learn__subtitle.subtitle &#171;Каждый язык расширяет сознание человека и&#160;его мир. Это как будто еще один глаз и&#160;еще одно ухо&#187;,&#160;&#8212; так считает герой книги Людмилы Улицкой Даниэль Штайн. А&#160;вы&#160;хотели&#160;бы расширить свою картину мира и&#160;найти общий язык с&#160;более чем миллиардом человек?
+        .row
+          each item in data
+            +card(item)
+    +trial-lesson(true)

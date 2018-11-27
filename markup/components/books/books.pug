@@ -1,0 +1,35 @@
+mixin book(data)
+  div
+    article.books__item
+        a(href="#").books__img
+          img(src="__static__img/content/" + data.src alt=data.alt)
+        .d-none.d-md-block
+          h3.books__text !{data.name}
+          cite.books__text #{data.author}
+
+mixin books(data)
+  section.books
+    .container
+      h2.books__title.h2 Книги на&#160;английском языке
+      p.books__subtitle &#171;Read a&#160;thousand books, and your words will flow like a&#160;river.&#187; Это знаменитое высказывание можно перевести не&#160;менее знаменитой русской
+        | пословицей: &#171;Кто много читает, тот много знает&#187;. Изучение зарубежной культуры просто невозможно представить без книг. Во-первых, чтение литературы на&#160;английском языке способно существенно обогатить ваш словарный запас. Во-вторых, вы&#160;улучшаете своё правописание.
+        | В-третьих, происходит расширение личного кругозора. И&#160;главное, растёт ваша самооценка!
+    .books__wrapper
+      button(type="button").books__arrow.slide-arrow.slide-arrow--prev.text-hide.js-books-prev-btn
+        +icon('arrow-left', 12, 11)
+        | Предадущий слайд
+      button(type="button").books__arrow.slide-arrow.slide-arrow--next.text-hide.js-books-next-btn
+        +icon('arrow-right', 12, 11)
+        | Следующий слайд
+      .books__container
+        .books__slider.js-books-slider
+          each book in data
+            +book(book)
+    .container
+      .row.justify-content-center.justify-content-md-between.align-items-md-center
+        .col-md-auto
+          .books__dots.js-book-dots
+        .col-auto
+          a(href="`#").show-all Смотреть все книги
+            span(aria-hidden="true") &nbsp;&rarr;
+

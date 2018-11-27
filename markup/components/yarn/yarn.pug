@@ -1,0 +1,17 @@
+mixin cardI(data)
+  .col-xl-4.d-flex
+    article.yarn__item
+      h2.yarn__title
+        a(href="#") !{data.title}
+      h4.yarn__title-small !{data.titleSm}
+      if data.desc
+        p.yarn__desc !{data.desc}
+      a(href="#").yarn__more.show-all Смотреть все
+        span(aria-hidden="true") &nbsp;&rarr;
+
+mixin yarn(data)
+  .yarn.section--grey&attributes(attributes)
+    .container
+      .row
+        each card in data
+          +cardI(card)

@@ -1,0 +1,33 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  include ../components/footer/footer.pug
+  include ../components/header/header
+  include ../components/subscribe/subscribe
+  include ../components/callback/callback
+  include ../components/modal-search/modal-search
+  include ../components/modal-location/modal-location
+  include ../components/breadcrumb/breadcrumb
+  include ../components/pay/pay
+  head
+    +head(head.defaults)
+  body
+    .page-wrapper
+      +header(headerDefault)
+      .container
+        +breadcrumb(breadcrumb.english)
+      .container.h2--bottom-block
+        h2.h2.h2--no-text-bottom.h2--bottom-block Обучение английскому языку
+      +pay(pay)
+      +subscribe()
+      +footer()
+    +callback()
+    +modal-search()
+    +modal-location()
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer )
+    script(src='%=static=%js/main%=hash=%.js')

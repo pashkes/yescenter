@@ -120,6 +120,15 @@ figure {
       margin-bottom: 36px;
     }
   }
+  &--bottom-block {
+    margin-bottom: 34px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 44px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .h3 {

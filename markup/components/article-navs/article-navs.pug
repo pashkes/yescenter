@@ -1,0 +1,79 @@
+mixin article-navs()
+  .article-menu.section--grey&attributes(attributes)
+    .container
+      .article-menu__mobile.d-md-none
+        label(for="lang").visually-hidden язык
+        select.form__select#lang.js-sub-menu-article.mb-4
+          option(value="page-url") Английский
+          option(value="page-url") Немецкий
+          option(value="page-url") Французкий
+          option(value="page-url") Итальянский
+          option(value="page-url") Испанский
+          option(value="page-url") Китайский
+          option(value="page-url") Японский
+        label(for="section-menu").visually-hidden Раздел
+        select.form__select#section-menu.js-sub-menu-article
+          option(selected disabled) выберите раздел
+          option(value="page-url") Фонетика
+          option(value="page-url") Грамматика
+          option(value="page-url") Видеоуроки
+          option(value="page-url") Пословицы и поговорки
+          option(value="page-url") Афоризмы
+          option(value="page-url") Анекдоты
+          option(value="page-url") Видео
+          option(value="page-url") Книги
+          option(value="page-url") С чего начать изучение языка
+          option(value="page-url") Изучение языка
+          option(value="page-url") Уроки онлайн
+    .article-menu__row.d-none.d-md-block
+      .container
+        .row
+          .col-auto
+            span язык
+          .col
+            ul.article-menu__list
+              li.active
+                a(href="#") Английский
+              li
+                a(href="#") Немецкий
+              li
+                a(href="#") французкий
+              li
+                a(href="#") итальянский
+              li
+                a(href="#") испанский
+              li
+                a(href="#") китайский
+              li
+                a(href="#") японский
+    .article-menu__row.d-none.d-md-block
+      .container
+        .row
+          .col-auto
+            span Раздел
+          .col
+            ul.article-menu__list
+              li
+                a(href="#") Алфавит
+              li
+                a(href="#") Фонетика
+              li
+                a(href="#") Грамматика
+              li
+                a(href="#") Видеоуроки
+              li
+                a(href="#") Пословицы и поговорки
+              li
+                a(href="#") Афоризмы
+              li
+                a(href="#") Анекдоты
+              li
+                a(href="#") Видео
+              li
+                a(href="#") Книги
+              li
+                a(href="#") С чего начать
+              li
+                a(href="#") изучение языка
+              li.active
+                a(href="#") Уроки онлайн
