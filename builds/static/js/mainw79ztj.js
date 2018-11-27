@@ -1906,13 +1906,13 @@ object-assign
 
 
 
+
+
 (function () {
   $('.js-sub-menu-article').on('change', function () {
     window.location.href = $(this).val();
   });
 })();
-
-
 
 
 
@@ -2010,8 +2010,6 @@ object-assign
   });
 })();
 
-
-
 $('.js-books-slider').slick({
   dots: true,
   arrows: false,
@@ -2029,6 +2027,8 @@ $('.js-books-slider').slick({
     }
   ]
 });
+
+
 
 $('#callback-form').on('submit', function (event) {
   event.preventDefault();
