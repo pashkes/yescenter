@@ -1,4 +1,10 @@
 .article {
+  &--border-bottom {
+    @include media-breakpoint-up(xl) {
+      border-bottom: 1px solid #ebebeb;
+      padding-bottom: 78px;
+    }
+  }
   h1 {
     margin-bottom: 24px;
     @include media-breakpoint-up(md) {
@@ -16,8 +22,18 @@
       padding-bottom: 45px;
     }
     @include media-breakpoint-up(xl) {
-      padding-top: 84px;
-      padding-bottom: 48px;
+      padding-top: 45px;
+      padding-bottom: 50px;
+    }
+    &--grey {
+      background-color: #f0f2f3;
+      margin-bottom: 26px;
+      @include media-breakpoint-up(md){
+        margin-bottom: 40px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 48px;
+      }
     }
     p {
       margin-bottom: 0;
@@ -104,6 +120,11 @@
       font-weight: 700;
       letter-spacing: 0.1px;
     }
+    > p {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
     p {
       margin-bottom: 10px;
       @include media-breakpoint-up(md) {
@@ -133,6 +154,13 @@
       @include media-breakpoint-up(md) {
         margin-bottom: 38px;
       }
+    }
+    b em {
+      border-bottom: 1px solid #8D8D8D;
+      font-style: inherit;
+    }
+    b {
+      font-style: italic;
     }
   }
   &__like {
@@ -226,6 +254,11 @@
       letter-spacing: 0.8px;
       color: rgba(37, 37, 37, 0.5);
     }
+  }
+  &__promo {
+    max-width: 852px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

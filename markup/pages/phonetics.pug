@@ -1,0 +1,14 @@
+extends _template
+block main
+  include ../components/article-navs/article-navs
+  include ../components/card-articles/card-articles
+  include ../components/phonetics-content/phonetics-content
+  .container
+    +breadcrumb(breadcrumb.phonetics)
+  .container.h2--bottom-block
+    h2.h2.h2--no-text-bottom.h2--bottom-block Английский алфавит с русским произношением
+  +article-navs('Фонетика')
+  +card-articles(articlesCard)
+  +phonetics-content()
+
+

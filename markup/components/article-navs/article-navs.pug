@@ -1,4 +1,7 @@
-mixin article-navs()
+mixin link(name, active)
+  li(class={active: active === name})
+    a(href="#") #{name}
+mixin article-navs(data)
   .article-menu.section--grey&attributes(attributes)
     .container
       .article-menu__mobile.d-md-none
@@ -53,27 +56,15 @@ mixin article-navs()
             span Раздел
           .col
             ul.article-menu__list
-              li
-                a(href="#") Алфавит
-              li
-                a(href="#") Фонетика
-              li
-                a(href="#") Грамматика
-              li
-                a(href="#") Видеоуроки
-              li
-                a(href="#") Пословицы и поговорки
-              li
-                a(href="#") Афоризмы
-              li
-                a(href="#") Анекдоты
-              li
-                a(href="#") Видео
-              li
-                a(href="#") Книги
-              li
-                a(href="#") С чего начать
-              li
-                a(href="#") изучение языка
-              li.active
-                a(href="#") Уроки онлайн
+              +link('Алфавит', data)
+              +link('Фонетика', data)
+              +link('Грамматика', data)
+              +link('Видеоуроки', data)
+              +link('Пословицы и поговорки', data)
+              +link('Афоризмы', data)
+              +link('Анекдоты', data)
+              +link('Видео', data)
+              +link('Книги', data)
+              +link('С чего начать', data)
+              +link('изучение языка', data)
+              +link('Уроки онлайн', data)

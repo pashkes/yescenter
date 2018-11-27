@@ -1,49 +1,21 @@
-doctype html
-html(class="no-js", lang="ru")
-
-  include ../components/head/head.pug
-  include ../components/footer/footer.pug
-  include ../components/header/header
-  include ../components/breadcrumb/breadcrumb
-  include ../components/subscribe/subscribe
-  include ../components/teachers/teachers
-  include ../components/map/map
-  include ../components/departure/departure
-  include ../components/additional/additional
-  include ../components/history/history
-  include ../components/partners/partners
+extends _template
+block main
   include ../components/thanks/thanks
   include ../components/page-corporate/page-corporate
   include ../components/corporate-education/corporate-education
   include ../components/page-corporate-fr/page-corporate-fr
-  include ../components/callback/callback
-  include ../components/modal-search/modal-search
-  include ../components/modal-location/modal-location
-  head
-    +head(head.defaults)
-  body
-    .page-wrapper
-      +header(headerDefault)
-      .container
-        +breadcrumb(breadcrumb.corporateFr)
-      +corporate-education(corporate.defaultFr)
-      +page-corporate-fr(pageCorporateFr)
-      +additional(additionalText.pageCorporate, 'Почему компании выбирают нас?').additional--video-data
-      +departure(departure)
-      +history(pageProgramsStatistics).history--no-line.history--bdt-line
-      +teachers(teachers, true, 'Наши преподаватели').teachers--bt-none
-      +page-corporate(pageForeignLang, 'single')
-      +partners(partners.corporate).partners--third-row.section--grey
-      +thanks(thanks)
-      +map()
-      +subscribe()
-      +footer()
-    +callback()
-    +modal-search()
-    +modal-location()
-    script(src='%=static=%js/separate-js/svg4everybody.min.js')
-    script svg4everybody();
 
-    //- Main scripts. You can replace it, but I recommend you to leave it here
-    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer)
-    script(src='%=static=%js/main%=hash=%.js')
+  .container
+    +breadcrumb(breadcrumb.corporateFr)
+  +corporate-education(corporate.defaultFr)
+  +page-corporate-fr(pageCorporateFr)
+  +additional(additionalText.pageCorporate, 'Почему компании выбирают нас?').additional--video-data
+  +departure(departure)
+  +history(pageProgramsStatistics).history--no-line.history--bdt-line
+  +teachers(teachers, true, 'Наши преподаватели').teachers--bt-none
+  +page-corporate(pageForeignLang, 'single')
+  +partners(partners.corporate).partners--third-row.section--grey
+  +thanks(thanks)
+  +map()
+  block mapScript
+    +mapScript()

@@ -1,6 +1,6 @@
 mixin navLink (name, activeItem)
   .examps-nav__item
-    a(href="#" class={active: activeItem === name}).examps-nav__link
+    a(href="#" class={active : name === activeItem}).examps-nav__link
       span.examps-nav__name=name
 mixin examps-nav(newActive)
   nav.examps-nav&attributes(attributes)

@@ -1,0 +1,93 @@
+.hot-schedule-text {
+  padding-top: 78px;
+  p {
+    margin-bottom: 22px;
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 28px;
+  }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.hot-schedule-questions {
+  padding-bottom: 3px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 10px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 44px;
+  }
+  .forms-education__item {
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 38px;
+    }
+  }
+  .forms-education__title {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.hot-schedule.page-forKids {
+  padding-top: 25px;
+  padding-bottom: 32px;
+  @include media-breakpoint-up(md) {
+    padding-top: 41px;
+  }
+  .timetable__title.h2 {
+    max-width: 100%;
+  }
+  .trial-lesson {
+    margin-bottom: 0;
+    @include media-breakpoint-up(xl) {
+      margin-top: 26px;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    padding-bottom: 48px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 88px;
+    padding-top: 880px;
+  }
+  .timetable__title {
+    margin-bottom: 2px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 16px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 32px;
+    }
+  }
+  .timetable__table-d th:first-child {
+      width: 159px;
+  }
+   .timetable__table-d th:nth-child(2) {
+    width: 160px;
+  }
+   .timetable__table-d th:nth-child(3) {
+    width: 162px;
+  }
+  .timetable__table-d th:nth-child(4) {
+    width: 126px;
+  }
+  .timetable__table-d th:nth-child(5) {
+    width: 126px;
+    text-align: left;
+  }
+  .timetable__table-d th:nth-child(5) {
+    width: 124px;
+    text-align: center;
+  }
+  .timetable__table-d th:nth-child(5) {
+    width: 140px;
+    text-align: center;
+  }
+  .timetable__table-d th:nth-last-child(2) {
+    text-align: left;
+  }
+}

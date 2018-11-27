@@ -1,43 +1,12 @@
-doctype html
-html(class="no-js", lang="ru")
-
-  include ../components/head/head.pug
-  include ../components/footer/footer.pug
-  include ../components/header/header
-  include ../components/teachers/teachers
-  include ../components/subscribe/subscribe
-  include ../components/breadcrumb/breadcrumb
+extends _template
+block main
   include ../components/about/about
-  include ../components/forms-education/forms-education
-  include ../components/history/history
-  include ../components/additional/additional
-  include ../components/departure/departure
-  include ../components/interestring-education/interestring-education
-  include ../components/callback/callback
-  include ../components/modal-search/modal-search
-  include ../components/modal-location/modal-location
-  head
-    +head(head.defaults)
-  body
-    .page-wrapper
-      +header(headerDefault)
-      .container
-        +breadcrumb(breadcrumb.about)
-      +about()
-      +forms-education(ourMission).forms-education--our-mission
-      +history(history)
-      +additional(additionalText.pageAbout)
-      +departure(departure)
-      +teachers(teachers, true, 'Наши преподаватели').teachers--bb-none
-      +interestring-education(interestingEducation).interestring-education--padding-bottom.section--grey
-      +subscribe()
-      +footer()
-    +callback()
-    +modal-search()
-    +modal-location()
-    script(src='%=static=%js/separate-js/svg4everybody.min.js')
-    script svg4everybody();
-
-    //- Main scripts. You can replace it, but I recommend you to leave it here
-    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer)
-    script(src='%=static=%js/main%=hash=%.js')
+  .container
+    +breadcrumb(breadcrumb.about)
+  +about()
+  +forms-education(ourMission).forms-education--our-mission
+  +history(history)
+  +additional(additionalText.pageAbout)
+  +departure(departure)
+  +teachers(teachers, true, 'Наши преподаватели').teachers--bb-none
+  +interestring-education(interestingEducation).interestring-education--padding-bottom.section--grey

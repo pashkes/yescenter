@@ -11388,6 +11388,7 @@ body.compensate-for-scrollbar {
 
 .albums__caption {
   position: relative;
+  display: block;
   padding: 20px 24px 13px;
   font-size: 11px;
   line-height: 22px;
@@ -11429,6 +11430,13 @@ body.compensate-for-scrollbar {
   }
 }
 
+@media (min-width: 1344px) {
+  .article--border-bottom {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 78px;
+  }
+}
+
 .article h1 {
   margin-bottom: 24px;
 }
@@ -11459,8 +11467,25 @@ body.compensate-for-scrollbar {
 
 @media (min-width: 1344px) {
   .article__intro {
-    padding-top: 84px;
-    padding-bottom: 48px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+}
+
+.article__intro--grey {
+  background-color: #f0f2f3;
+  margin-bottom: 26px;
+}
+
+@media (min-width: 768px) {
+  .article__intro--grey {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .article__intro--grey {
+    margin-bottom: 48px;
   }
 }
 
@@ -11587,6 +11612,10 @@ body.compensate-for-scrollbar {
   letter-spacing: 0.1px;
 }
 
+.article__content > p:last-of-type {
+  margin-bottom: 0;
+}
+
 .article__content p {
   margin-bottom: 10px;
 }
@@ -11633,6 +11662,15 @@ body.compensate-for-scrollbar {
   .article__content img {
     margin-bottom: 38px;
   }
+}
+
+.article__content b em {
+  border-bottom: 1px solid #8D8D8D;
+  font-style: inherit;
+}
+
+.article__content b {
+  font-style: italic;
 }
 
 .article__like {
@@ -11761,6 +11799,12 @@ body.compensate-for-scrollbar {
   line-height: 22px;
   letter-spacing: 0.8px;
   color: rgba(37, 37, 37, 0.5);
+}
+
+.pagination__promo {
+  max-width: 852px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .article-menu {
@@ -12719,6 +12763,136 @@ body.compensate-for-scrollbar {
   .callback.order-course .form__field:last-of-type {
     margin-bottom: 33px;
   }
+}
+
+.card-articles {
+  padding-top: 32px;
+}
+
+@media (min-width: 768px) {
+  .card-articles {
+    padding-top: 52px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .card-articles {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .card-articles__col:nth-child(even) .card-articles__item {
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .card-articles__col:nth-child(odd) .card-articles__item {
+    margin-right: 8px;
+  }
+}
+
+.card-articles__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 32px;
+  padding: 32px 32px 25px;
+  border: 1px solid #ebebeb;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card-articles__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 48px 18px 32px 48px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .card-articles__item {
+    margin-bottom: 48px;
+    padding: 48px 48px 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card-articles__img {
+  display: block;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 768px) {
+  .card-articles__img {
+    margin-right: 32px;
+    margin-bottom: 0;
+    width: 304px;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+}
+
+@media (min-width: 1344px) {
+  .card-articles__img {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 28px;
+  }
+}
+
+.card-articles__title {
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+@media (min-width: 768px) {
+  .card-articles__title {
+    font-size: 24px;
+    line-height: 1.08;
+  }
+}
+
+.card-articles__title a {
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.card-articles__desc {
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.47;
+}
+
+@media (min-width: 768px) {
+  .card-articles__desc {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-articles__desc {
+    letter-spacing: 0;
+  }
+}
+
+.card-articles .show-all {
+  margin-top: auto;
 }
 
 .causes {

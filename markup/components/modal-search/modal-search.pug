@@ -1,17 +1,16 @@
 mixin modal-search(data)
-  .modal-search
-    div(tabindex="-1" role="dialog" aria-labelledby="search-label" aria-hidden="true").callback.modal#modal-search
-      div(role="document").modal-dialog.d-flex.justify-content-center.modal-dialog-centered
-        form.modal-conten.map__form.form#search
-          button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
-            +icon('close', 14, 14)
-            | Закрыть
-          p.map__title.modal-title.title#search-label Поиск по сайту
-          .row.no-gutters
-            .col-sm.d-flex
-              span.modal-search__icon
-                +icon('search', 16, 16)
-              label(for="search-field").visually-hidden Поиск по сайту
-              input(type="search" placeholder="Я ищу, папример: курсы анлийского языка для детей").form__field.flex-grow-1#search-field
-            .col-sm-auto
-              button.modal-search__btn.btn.btn--red найти
+  div(tabindex="-1" role="dialog" aria-labelledby="search-label" aria-hidden="true").callback.modal.modal-search#modal-search
+    div(role="document").modal-dialog.d-flex.justify-content-center.modal-dialog-centered
+      form.modal-conten.map__form.form#search
+        button(type="button" data-dismiss="modal" aria-label="Close").btn-close.form__close
+          +icon('close', 14, 14)
+          | Закрыть
+        p.map__title.modal-title.title#search-label Поиск по сайту
+        .row.no-gutters
+          .col-sm.d-flex
+            span.modal-search__icon
+              +icon('search', 16, 16)
+            label(for="search-field").visually-hidden Поиск по сайту
+            input(type="search" placeholder="Я ищу, папример: курсы анлийского языка для детей").form__field.flex-grow-1#search-field
+          .col-sm-auto
+            button.modal-search__btn.btn.btn--red найти

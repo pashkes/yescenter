@@ -1,0 +1,18 @@
+mixin card(data)
+  .col-md-6.col-xl-4.d-flex
+    article.pay__item
+      h2.pay__title #{data.title}
+      ul.pay__logos
+        each logo in data.logos
+          li
+            img(src="__static__img/content/logos-pay/"+logo.src alt=logo.alt width=logo.width height=logo.height)
+      h4.pay__title-small !{data.titleSm}
+      p.pay__desc !{data.desc}
+
+mixin pay(data)
+  .pay.section--grey
+    .container
+      .row
+        each card in data
+          +card(card)
+

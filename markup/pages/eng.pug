@@ -1,68 +1,39 @@
-doctype html
-html(class="no-js", lang="ru")
-
-  include ../components/head/head.pug
-  include ../components/footer/footer.pug
-  include ../components/header/header
-  include ../components/breadcrumb/breadcrumb
-  include ../components/features/features
+extends _template
+block main
   include ../components/page-eng/page-eng
-  include ../components/video-data/video-data
-  include ../components/map/map
-  include ../components/subscribe/subscribe
-  include ../components/reviews/reviews
-  include ../components/text-section/text-section
-  include ../components/callback/callback
-  include ../components/modal-search/modal-search
-  include ../components/modal-location/modal-location
-
-  head
-    +head(head.defaults)
-  body
-    .page-wrapper
-      +header(headerDefault)
-      .container
-        +breadcrumb(breadcrumb.eng)
-      section.page-programs
-        .container
-          h2.h2.page-programs__title Курсы английского языка
-          p.page-programs__subtitle.subtitle.mb-xl-2 Центр YES приглашает на курсы английского языка в Москве и на выездные тренинги в Лондоне и Брайтоне! Коммуникативное обучение английскому помогает быстрее достичь Вашей цели – подняться с нуля до уровня свободного владения, сдать тесты IELTS и TOEFL, Кембриджский экзамен, найти общий язык с иностранными коллегами. Вам станут доступны информационные сокровища всего мира – книги, публикации, интернет-статьи, самые ценные из которых имеют англоязычный аналог. У нас Вы обретете настоящую свободу в общении. Жизнь изменится — у Вас появятся новые друзья и полезные связи!
-      +features(features.engPage).pt-0.features--icon-start.features--no-border.features--no-shadow
-      +page-eng(pageEng)
-      section.additional.section.additional--has-title
-        .container
-          h2.additional__title.h2.text-red Особенности методики обучения английскому языку в Центре YES:
-          h3.h2 Какая литература, используется на&#160;курсах?
-          .row
-            .col-xl-4
-              .additional__text
-                article.additional__sect
-                  h4.h3.additional__subtitle Для взрослых и студентов:
-                  p Global, Straightforward New Students book, Activate, Intelligent Business, New Total Eng, Gold Experience, Speakout, Survival, English New Edition Student‘s Book — интенсивный курс.
-            .col-xl-4
-              article.additional__text
-                .additional__sect
-                  h4.h3.additional__subtitle Для детей и школьников:
-                  p Playway to English, English World, My Little Island, Our Discovery Island, Wonderland Junior, Pre-Junior, Academy Stars.
-            .col-xl-4
-              article.additional__text
-                .additional__sect
-                  h4.h3.additional__subtitle Для взрослых и студентов:
-                  p Hot Spot, Mac Exam Skills for Russia, Super Minds, Eng in Mind, Discover Eng Global, Gateway.
-      +text-section(textSection.first)
-      +text-section(textSection.second)
-      +text-section(textSection.third)
-      +video-data(videoData.engPage, 'Как проходят наши занятия').video-data--border-top
-      +reviews(reviews, 'отзывы наших учеников').reviews--border-top
-      +map()
-      +subscribe()
-      +footer()
-    +callback()
-    +modal-search()
-    +modal-location()
-    script(src='%=static=%js/separate-js/svg4everybody.min.js')
-    script svg4everybody();
-
-    //- Main scripts. You can replace it, but I recommend you to leave it here
-    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer)
-    script(src='%=static=%js/main%=hash=%.js')
+  .container
+    +breadcrumb(breadcrumb.eng)
+  section.page-programs
+    .container
+      h2.h2.page-programs__title Курсы английского языка
+      p.page-programs__subtitle.subtitle.mb-xl-2 Центр YES приглашает на курсы английского языка в Москве и на выездные тренинги в Лондоне и Брайтоне! Коммуникативное обучение английскому помогает быстрее достичь Вашей цели – подняться с нуля до уровня свободного владения, сдать тесты IELTS и TOEFL, Кембриджский экзамен, найти общий язык с иностранными коллегами. Вам станут доступны информационные сокровища всего мира – книги, публикации, интернет-статьи, самые ценные из которых имеют англоязычный аналог. У нас Вы обретете настоящую свободу в общении. Жизнь изменится — у Вас появятся новые друзья и полезные связи!
+  +features(features.engPage).pt-0.features--icon-start.features--no-border.features--no-shadow
+  +page-eng(pageEng)
+  section.additional.section.additional--has-title
+    .container
+      h2.additional__title.h2.text-red Особенности методики обучения английскому языку в Центре YES:
+      h3.h2 Какая литература, используется на&#160;курсах?
+      .row
+        .col-xl-4
+          .additional__text
+            article.additional__sect
+              h4.h3.additional__subtitle Для взрослых и студентов:
+              p Global, Straightforward New Students book, Activate, Intelligent Business, New Total Eng, Gold Experience, Speakout, Survival, English New Edition Student‘s Book — интенсивный курс.
+        .col-xl-4
+          article.additional__text
+            .additional__sect
+              h4.h3.additional__subtitle Для детей и школьников:
+              p Playway to English, English World, My Little Island, Our Discovery Island, Wonderland Junior, Pre-Junior, Academy Stars.
+        .col-xl-4
+          article.additional__text
+            .additional__sect
+              h4.h3.additional__subtitle Для взрослых и студентов:
+              p Hot Spot, Mac Exam Skills for Russia, Super Minds, Eng in Mind, Discover Eng Global, Gateway.
+  +text-section(textSection.first)
+  +text-section(textSection.second)
+  +text-section(textSection.third)
+  +video-data(videoData.engPage, 'Как проходят наши занятия').video-data--border-top
+  +reviews(reviews, 'отзывы наших учеников').reviews--border-top
+  +map()
+  block mapScrip
+    +mapScript()
