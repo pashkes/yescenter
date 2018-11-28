@@ -1,0 +1,41 @@
+extends _template
+block main
+  include ../components/article-navs/article-navs
+  include ../components/pagination/pagination
+  .container
+    +breadcrumb(breadcrumb.animals)
+  .container.h2--bottom-block
+    h2.h2.h2--no-text-bottom.h2--bottom-block Английские пословицы и поговорки
+      br
+      | по теме Животные (Animals)
+  +article-navs('Пословицы и поговорки')
+  .article.article--sayings
+    .container
+      .row
+        .col-xl-6.
+          <p class="definition"><em>The scalded cat fears cold water.</em></p>
+          <p>Перевод: <i>Обваренная кошка боится холодной воды.</i> Аналог: <i>Пуганая ворона куста боится.</i></p>
+          <p class="definition"><em>Have more lives than a&#160;cat.</em></p>
+          <p>Перевод: <i>Иметь больше жизней, чем у&#160;кошки.</i> Аналог: <i>Как у&#160;кошки&#160;&#8212;
+          9&#160;жизней.</i></p>
+          <p class="definition"><em>Every dog has his day.</em></p>
+          <p>Перевод: <i>У&#160;каждого пса есть свой день.</i> Аналог: <i>Будет и&#160;на&#160;нашей улице праздник.</i></p>
+          <p class="definition"><em>Like a&#160;cat on&#160;hot bricks.</em></p>
+          <p>Перевод: <i>Как кошка на&#160;горячих кирпичах.</i> Аналог: <i>Сидеть, как
+          на&#160;иголках.</i></p>
+          <p class="definition"><em>There is&#160;more than one way to&#160;kill a&#160;cat.</em></p>
+          <p>Перевод: <i>Существует не&#160;один способ убить кошку.</i> Аналог: <i>Свет клином не&#160;сошелся.</i></p>
+
+        .col-xl-6.
+          <p class="definition"><em>Dog does not eat dog.</em></p>
+          <p>Перевод: <i>Собака не&#160;ест собаку.</i> Аналог: <i>Ворон ворону глаз не&#160;выклюет.</i></p>
+          <p class="definition"><em>It&#146;s no&#160;place to&#160;swing a&#160;cat.</em></p>
+          <p>Перевод: <i>Негде кошке развернуться.</i> Аналог: <i>Негде яблоку упасть.</i></p>
+          <p class="definition"><em>It&#146;s a&#160;bold mouse that nestles in&#160;the cat&#146;s ear.</em></p>
+          <p>Перевод: <i>Наглая мышь гнездится в&#160;ухе у&#160;кошки.</i> Аналог: <i>Не&#160;клади волку пальца в&#160;рот.</i></p>
+          <p class="definition"><em>Like a&#160;cat on&#160;hot bricks.</em></p>
+          <p>Перевод: <i>Как кошка на&#160;горячих кирпичах.</i> Аналог: <i>Сидеть, как
+          на&#160;иголках.</i></p>
+          <p class="definition"><em>One cannot run with the hare and hunt with the hounds.</em></p>
+          <p>Перевод: <i>Нельзя бежать с&#160;зайцем и&#160;охотиться с&#160;гончими.</i> Аналог: <i>Между двумя стульями не&#160;усидишь.</i></p>
+  +pagination().pagination--expanded.m-0.pt-0

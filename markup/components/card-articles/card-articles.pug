@@ -1,17 +1,17 @@
-mixin articleCard(data)
-  .col-xl-6.card-articles__col
-    article.card-articles__item
-      a(href="#").card-articles__img
-        img(src="__static__img/content/"+data.img alt=data.title)
-      .card-articles__main
-        h2.card-articles__title
-          a(href="#") #{data.title}
-        p.card-articles__desc !{data.desc}
-        a(href="#").show-all Перейти в раздел
-          span(aria-hidden="true") &nbsp;&rarr;
+mixin articleCard(data, nameLink)
+  article.card-articles__item&attributes(attributes)
+    a(href="#").card-articles__img
+      img(src="__static__img/content/"+data.img alt=data.title)
+    .card-articles__main
+      h2.card-articles__title
+        a(href="#") #{data.title}
+      p.card-articles__desc !{data.desc}
+      a(href="#").show-all #{nameLink}
+        span(aria-hidden="true") &nbsp;&rarr;
 mixin card-articles(data)
   .card-articles
     .container
       .row
         each item in data
-          +articleCard(item)
+          .col-xl-6.card-articles__col.d-flex
+            +articleCard(item, 'Перейти в раздел')

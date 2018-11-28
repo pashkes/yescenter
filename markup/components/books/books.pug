@@ -1,12 +1,20 @@
-mixin book(data)
-  div
-    article.books__item
-        a(href="#").books__img
-          img(src="__static__img/content/" + data.src alt=data.alt)
-        .d-none.d-md-block
-          h3.books__text !{data.name}
-          cite.books__text #{data.author}
-
+mixin book(data, downloadBtn)
+  article.books__item&attributes(attributes)
+    a(href="#").books__img
+      img(src="__static__img/content/" + data.src alt=data.alt)
+    if !downloadBtn
+      .d-none.d-md-block
+        h3.books__text !{data.name}
+        cite.books__text #{data.author}
+    else
+      .books__download
+        .row
+          .col.col-md-12
+            h3.books__text !{data.name}
+            cite.books__text #{data.author}
+          .col-auto.col-md-12
+            a(href="#").show-all Скачать
+              span(aria-hidden="true") &nbsp;&rarr;
 mixin books(data)
   section.books
     .container
@@ -24,7 +32,8 @@ mixin books(data)
       .books__container
         .books__slider.js-books-slider
           each book in data
-            +book(book)
+            div
+              +book(book, false)
     .container
       .row.justify-content-center.justify-content-md-between.align-items-md-center
         .col-md-auto

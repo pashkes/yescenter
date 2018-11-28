@@ -1,0 +1,10 @@
+extends _template
+block main
+  include ../components/article-navs/article-navs
+  include ../components/video-lessons/video-lessons
+  .container
+    +breadcrumb(breadcrumb.videoLesson)
+  .container.h2--bottom-block
+    h2.h2.h2--no-text-bottom.h2--bottom-block Видеоуроки
+  +article-navs('Видеоуроки')
+  +video-lessons(video)

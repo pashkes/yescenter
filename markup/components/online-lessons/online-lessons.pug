@@ -1,0 +1,13 @@
+mixin online-lessons(data)
+  include ../card-articles/card-articles
+
+  .online-lessons
+    .container
+      .online-lessons__list
+        div(role="list").row
+          each item in data
+            div(role="listitem").col-md-6.card-articles__col.d-flex
+              +articleCard(item, 'смотреть урок').online-lessons__card
+      .row.justify-content-md-center
+        .col-md-auto
+          a(href="#").online-lessons__btn.btn.btn--grey показать еще

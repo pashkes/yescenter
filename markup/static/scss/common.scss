@@ -557,3 +557,54 @@ section.lytkarino-about {
     }
   }
 }
+.books-origin {
+  padding-top: 32px;
+  margin-bottom: -32px;
+  @include media-breakpoint-up(md) {
+    padding-top: 52px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 88px;
+  }
+  &__col {
+  }
+  &__item {
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+}
+.books-origin {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -24px;
+    margin-left: -24px;
+    @include media-breakpoint-up(md) {
+      justify-content: flex-start;
+    }
+  }
+  .books__item {
+    max-width: 272px;
+    @include media-breakpoint-up(md) {
+      max-width: 100%;
+    }
+  }
+  &__col {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 24px;
+    padding-left: 24px;
+    @include media-breakpoint-up(md) {
+      flex: 0 0 (100% / 3);
+      max-width: (100% / 3);
+    }
+    @include media-breakpoint-up(xl) {
+      flex: 0 0 (100% / 5);
+      max-width: (100% / 5);
+    }
+  }
+}

@@ -1,31 +1,8 @@
-doctype html
-html(class="no-js", lang="ru")
-
-  include ../components/head/head.pug
-  include ../components/footer/footer.pug
-  include ../components/header/header
-  include ../components/breadcrumb/breadcrumb
-  include ../components/subscribe/subscribe
+extends _template
+block main
   include ../components/school-list/school-list
-  include ../components/callback/callback
-  include ../components/modal-search/modal-search
-  include ../components/modal-location/modal-location
-
-  head
-    +head(head.defaults)
-  body
-    .page-wrapper
-      +header(headerDefault)
-      .container
-        +breadcrumb(breadcrumb.schoolList)
-      +school-list(schoolList)
-      +subscribe()
-      +footer()
-    +callback()
-    +modal-search()
-    +modal-location()
-    script(src='%=static=%js/separate-js/svg4everybody.min.js')
-    script svg4everybody();
-    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer)
-    //- Main scripts. You can replace it, but I recommend you to leave it here
-    script(src='%=static=%js/main%=hash=%.js')
+  .container
+    +breadcrumb(breadcrumb.schoolList)
+  +school-list(schoolList)
+block mapScript
+  +mapScript()

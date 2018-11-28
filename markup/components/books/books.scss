@@ -85,5 +85,16 @@
       margin-left: -4px;
     }
   }
+  &__download {
+    .books__text {
+      margin-bottom: 0;
+    }
+    .show-all {
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        top: -6px;
+      }
+    }
+  }
 }
 

@@ -1,43 +1,17 @@
-doctype html
-html(class="no-js", lang="ru")
-
-  include ../components/head/head.pug
-  include ../components/footer/footer.pug
-  include ../components/header/header
-  include ../components/breadcrumb/breadcrumb
-  include ../components/features/features
+extends _template
+block main
   include ../components/page-for-kids-small/page-for-kids-small
-  include ../components/teachers/teachers
-  include ../components/map/map
-  include ../components/subscribe/subscribe
-  include ../components/reviews/reviews
-  include ../components/callback/callback
-  include ../components/modal-search/modal-search
-  include ../components/modal-location/modal-location
-  head
-    +head(head.defaults)
-  body
-    .page-wrapper
-      +header(headerDefault)
-      .container
-        +breadcrumb(breadcrumb.forKidsSmall)
-      section.page-forKids-intro
-        .container
-          h2.h2.page-programs__title Курсы английского языка для детей 3-4 лет
-          p.page-forKids-intro__subtitle.subtitle Центр иностранных языков YES предлагает эффективные курсы для детей от 3 лет и старше. Ознакомление маленьких студентов с азами английского языка происходит в игровой, увлекательной форме. Красочные картинки, песни, мультфильмы и другой образовательный материал, которые сопровождают начальное обучение детей, вызывает искренний интерес у ребят и позволяет запоминать новые слова и грамматику достаточно просто. Курсы английского языка для детей от 3 до 4 лет предусматривают многоэтапное изучение языка. На первой стадии обучения важную роль играет регулярное повторение названий предметов и действий в разных ситуациях. Для освоения и закрепления знаний дети участвуют в сюжетно-ролевых играх. Постепенно маленькие студенты начинают запоминать много английских слов, составляют простые предложения и ведут несложные диалоги.
-      +features(features.forKidsPage).pt-0.features--no-border.page-kids__features.features--no-shadow
-      +page-for-kids-small(timetableKidsFour)
-      +teachers(teachers, true, 'Наши преподаватели').teachers--bb-none
-      +reviews(reviews, 'отзывы наших учеников').reviews--border-top
-      +map()
-      +subscribe()
-      +footer()
-    +callback()
-    +modal-search()
-    +modal-location()
-    script(src='%=static=%js/separate-js/svg4everybody.min.js')
-    script svg4everybody();
 
-    //- Main scripts. You can replace it, but I recommend you to leave it here
-    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer)
-    script(src='%=static=%js/main%=hash=%.js')
+  .container
+    +breadcrumb(breadcrumb.forKidsSmall)
+  section.page-forKids-intro
+    .container
+      h2.h2.page-programs__title Курсы английского языка для детей 3-4 лет
+      p.page-forKids-intro__subtitle.subtitle Центр иностранных языков YES предлагает эффективные курсы для детей от 3 лет и старше. Ознакомление маленьких студентов с азами английского языка происходит в игровой, увлекательной форме. Красочные картинки, песни, мультфильмы и другой образовательный материал, которые сопровождают начальное обучение детей, вызывает искренний интерес у ребят и позволяет запоминать новые слова и грамматику достаточно просто. Курсы английского языка для детей от 3 до 4 лет предусматривают многоэтапное изучение языка. На первой стадии обучения важную роль играет регулярное повторение названий предметов и действий в разных ситуациях. Для освоения и закрепления знаний дети участвуют в сюжетно-ролевых играх. Постепенно маленькие студенты начинают запоминать много английских слов, составляют простые предложения и ведут несложные диалоги.
+  +features(features.forKidsPage).pt-0.features--no-border.page-kids__features.features--no-shadow
+  +page-for-kids-small(timetableKidsFour)
+  +teachers(teachers, true, 'Наши преподаватели').teachers--bb-none
+  +reviews(reviews, 'отзывы наших учеников').reviews--border-top
+  +map()
+block mapScript
+  +mapScript()

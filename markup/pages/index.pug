@@ -1,50 +1,21 @@
-doctype html
-html(class="no-js", lang="ru")
-
-  include ../components/head/head.pug
-  include ../components/footer/footer.pug
-  include ../components/header/header
+extends _template
+block main
   include ../components/promo/promo
   include ../components/courses/courses
-  include ../components/features/features
   include ../components/certifications/certifications
-  include ../components/video-data/video-data
-  include ../components/reviews/reviews
-  include ../components/teachers/teachers
-  include ../components/news/news
-  include ../components/map/map
-  include ../components/partners/partners
   include ../components/causes/causes
-  include ../components/forms-education/forms-education
-  include ../components/subscribe/subscribe
-  include ../components/callback/callback
-  include ../components/modal-search/modal-search
-  include ../components/modal-location/modal-location
-  head
-    +head(head.defaults)
-  body
-    .page-wrapper
-      +header(headerDefault)
-      +promo(defaultPhotos)
-      +courses(courses, true)
-      +features(features.mainPage)
-      +certifications()
-      +video-data(videoData.mainPage, 'видеоматериалы').section--grey
-      +reviews(reviews, 'отзывы наших учеников')
-      +teachers(teachers, true, 'Наши преподаватели')
-      +news()
-      +map()
-      +partners(partners.mainPage)
-      +causes()
-      +forms-education(formEducation)
-      +subscribe()
-      +footer()
-    +callback()
-    +modal-search()
-    +modal-location()
-    script(src='%=static=%js/separate-js/svg4everybody.min.js')
-    script svg4everybody();
 
-    //- Main scripts. You can replace it, but I recommend you to leave it here
-    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer )
-    script(src='%=static=%js/main%=hash=%.js')
+  +promo(defaultPhotos)
+  +courses(courses, true)
+  +features(features.mainPage)
+  +certifications()
+  +video-data(videoData.mainPage, 'видеоматериалы').section--grey
+  +reviews(reviews, 'отзывы наших учеников')
+  +teachers(teachers, true, 'Наши преподаватели')
+  +news()
+  +map()
+  +partners(partners.mainPage)
+  +causes()
+  +forms-education(formEducation)
+block mapScript
+  +mapScript()

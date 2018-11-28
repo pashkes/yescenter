@@ -1,46 +1,18 @@
-doctype html
-html(class="no-js", lang="ru")
-
-  include ../components/head/head.pug
-  include ../components/header/header
-  include ../components/footer/footer.pug
-  include ../components/breadcrumb/breadcrumb
+extends _template
+block main
   include ../components/programs/programs
-  include ../components/additional/additional
-  include ../components/history/history
-  include ../components/departure/departure
-  include ../components/map/map
-  include ../components/subscribe/subscribe
-  include ../components/partners/partners
-  include ../components/reviews/reviews
-  include ../components/callback/callback
-  include ../components/modal-search/modal-search
-  include ../components/modal-location/modal-location
-  head
-    +head(head.defaults)
-  body
-    .page-wrapper
-      +header(headerDefault)
-      .container
-        +breadcrumb(breadcrumb.programs)
-      section.page-programs
-        .container
-          h2.h2.page-programs__title Программы по&#160;изучению иностранных языков
-          p.page-programs__subtitle.subtitle Иностранный язык эффективнее учить в&#160;стране его бытования. Но&#160;что делать, если у&#160;Вас нет возможности поехать во&#160;Францию и&#160;осваивать французский в&#160;аутентичной обстановке? Тогда Вам нужно найти такую школу, где создают условия для полного погружения в&#160;языковую среду. Обучение иностранным языкам в&#160;центре изучения YES построено именно по&#160;такому принципу. Учите иностранный язык эффективно! Не&#160;повторяйте школьных ошибок!
-      +programs(programs, true)
-      +additional(additionalText.pageProgram, 'Почему выбирают обучение в YES?')
-      +departure(departure)
-      +history(pageProgramsStatistics).history--no-line.history--bdt-line
-      +reviews(reviews, 'отзывы наших учеников')
-      +map()
-      +subscribe()
-      +footer()
-    +callback()
-    +modal-search()
-    +modal-location()
-    script(src='%=static=%js/separate-js/svg4everybody.min.js')
-    script svg4everybody();
 
-    //- Main scripts. You can replace it, but I recommend you to leave it here
-    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer)
-    script(src='%=static=%js/main%=hash=%.js')
+  .container
+    +breadcrumb(breadcrumb.programs)
+  section.page-programs
+    .container
+      h2.h2.page-programs__title Программы по&#160;изучению иностранных языков
+      p.page-programs__subtitle.subtitle Иностранный язык эффективнее учить в&#160;стране его бытования. Но&#160;что делать, если у&#160;Вас нет возможности поехать во&#160;Францию и&#160;осваивать французский в&#160;аутентичной обстановке? Тогда Вам нужно найти такую школу, где создают условия для полного погружения в&#160;языковую среду. Обучение иностранным языкам в&#160;центре изучения YES построено именно по&#160;такому принципу. Учите иностранный язык эффективно! Не&#160;повторяйте школьных ошибок!
+  +programs(programs, true)
+  +additional(additionalText.pageProgram, 'Почему выбирают обучение в YES?')
+  +departure(departure)
+  +history(pageProgramsStatistics).history--no-line.history--bdt-line
+  +reviews(reviews, 'отзывы наших учеников')
+  +map()
+block mapScript
+  +mapScript()

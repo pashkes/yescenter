@@ -1,6 +1,18 @@
 extends _template
 block main
   include ../components/article/article
+  include ../components/article-navs/article-navs
+  include ../components/pagination/pagination
+  include ../components/like-article/like-article
+
   .container
     +breadcrumb(breadcrumb.baseText)
+  .container
+    h2.h2 Числительные
+  +article-navs('Грамматика')
   +article()
+  +pagination()
+  +like-article()
+
+
+

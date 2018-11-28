@@ -1,0 +1,11 @@
+extends _template
+block main
+  include ../components/article-navs/article-navs
+  include ../components/online-lessons/online-lessons
+
+  .container
+    +breadcrumb(breadcrumb.animals)
+  .container.h2--bottom-block
+    h2.h2.h2--no-text-bottom.h2--bottom-block Онлайн уроки по английскому
+  +article-navs('Уроки онлайн')
+  +online-lessons(onlineLessons)

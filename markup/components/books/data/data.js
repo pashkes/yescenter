@@ -4,30 +4,30 @@ const data = {
     {
       src: 'book-1.jpg',
       alt: '100 Selected Stories. O. Henry',
-      name: '100 Selected Stories <br>O. Henry',
+      name: '100 Selected Stories',
       author: 'O. Henry'
     },
     {
       src: 'book-2.jpg',
       alt: 'Robinson Crusoe. Daniel Defoe',
-      name: 'Robinson Crusoe <br>Daniel Defoe',
+      name: 'Robinson Crusoe',
       author: 'Daniel Defoe'
     },
     {
       src: 'book-3.jpg',
       alt: 'The Great Gatsby.',
-      name: 'The Great Gatsby <br>F. Scott Fitzgerald',
+      name: 'The Great Gatsby',
       author: 'F. Scott Fitzgerald'
     },{
       src: 'book-4.jpg',
       alt: 'The Black Tulip Alexandre Dumas',
-      name: 'The Black Tulip<br> Alexandre Dumas',
+      name: 'The Black Tulip',
       author: 'Alexandre Dumas'
     },
     {
       src: 'book-5.jpg',
       alt: 'Moby Dick Herman. Melville',
-      name: 'Moby Dick <br>Herman Melville',
+      name: 'Moby Dick',
       author: 'Mark Twain'
     },
     {
@@ -39,8 +39,40 @@ const data = {
     {
       src: 'book-1.jpg',
       alt: '100 Selected Stories. O. Henry',
-      name: '100 Selected Stories <br>O. Henry',
+      name: '100 Selected Stories',
       author: 'O. Henry'
     },
+  ],
+  booksOrigin: [
+    {
+      src: 'book-1.jpg',
+      alt: '100 Selected Stories. O. Henry',
+      name: '100 Selected Stories',
+      author: 'O. Henry'
+    },
+    {
+      src: 'book-2.jpg',
+      alt: 'Robinson Crusoe. Daniel Defoe',
+      name: 'Robinson Crusoe',
+      author: 'Daniel Defoe'
+    },
+    {
+      src: 'book-3.jpg',
+      alt: 'The Great Gatsby.',
+      name: 'The Great Gatsby',
+      author: 'F. Scott Fitzgerald'
+    },{
+      src: 'book-4.jpg',
+      alt: 'The Black Tulip Alexandre Dumas',
+      name: 'The Black Tulip',
+      author: 'Alexandre Dumas'
+    },
+    {
+      src: 'book-5.jpg',
+      alt: 'Moby Dick Herman. Melville',
+      name: 'Moby Dick',
+      author: 'Mark Twain'
+    }
   ]
+
 };

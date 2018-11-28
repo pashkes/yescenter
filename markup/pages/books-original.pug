@@ -1,0 +1,21 @@
+extends _template
+block main
+  include ../components/article-navs/article-navs
+  include ../components/books/books
+
+  mixin booksOriginal(data)
+    .books-origin
+      .container
+        .books-origin__row
+          each item in data
+            .books-origin__col
+              +book(item, true).books-origin__item
+
+  .container
+    +breadcrumb(breadcrumb.animals)
+  .container.h2--bottom-block
+    h2.h2.h2--no-text-bottom.h2--bottom-block Original
+  +article-navs('Книги')
+
+  +booksOriginal(booksOrigin)
+

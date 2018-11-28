@@ -1,0 +1,46 @@
+.online-lessons {
+  padding-top: 32px;
+  @include media-breakpoint-up(md) {
+    padding-top: 52px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 48px;
+  }
+  &__btn {
+    color: $black;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      min-width: 242px;
+    }
+  }
+  &__card {
+    @include media-breakpoint-up(md) {
+      flex-direction: column;
+      padding: 32px 32px 22px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 544px;
+      padding: 48px 48px 38px;
+    }
+    .card-articles__desc{
+      @include media-breakpoint-up(md) {
+        margin-bottom: 12px;
+      }
+    }
+    .card-articles__img{
+      @include media-breakpoint-up(md) {
+        margin-bottom: 16px;
+        margin-right: 0;
+        width: 100%;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 26px;
+      }
+    }
+  }
+  &__list {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 16px;
+    }
+  }
+}

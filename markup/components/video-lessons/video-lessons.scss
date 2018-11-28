@@ -1,0 +1,87 @@
+.video-lessons {
+  padding-top: 24px;
+  @include media-breakpoint-up(md) {
+    padding-top: 44px;
+  }
+  @include media-breakpoint-up(md) {
+    padding-top: 48px;
+  }
+  &__col {
+    &:last-child {
+      .video-lessons__item {
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &:nth-last-of-type(1) {
+      .video-lessons__item {
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &:nth-child(even) {
+      .video-lessons__item {
+        margin-left: 8px;
+      }
+    }
+    &:nth-child(odd) {
+      .video-lessons__item {
+        margin-right: 8px;
+      }
+    }
+  }
+  &__item {
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 28px;
+    }
+  }
+  .youtube {
+    margin-bottom: 14px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 22px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 26px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 26px;
+    line-height: 1.57;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 40px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 80px;
+    }
+  }
+  &__title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.44;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 18px;
+      font-size: 24px;
+      line-height: 1.08;
+    }
+    a{
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+  &__desc {
+    margin-bottom: 0;
+    letter-spacing: 0.3px;
+    @include media-breakpoint-up(md) {
+      line-height: 1.57;
+    }
+    @include media-breakpoint-up(xl) {
+      line-height: 1.71;
+      letter-spacing: 0.3px;
+    }
+  }
+}

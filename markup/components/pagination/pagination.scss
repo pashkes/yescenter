@@ -1,0 +1,79 @@
+.pagination {
+  margin-bottom: 20px;
+  margin-top: 28px;
+  padding-top: 20px;
+  @include media-breakpoint-up(md) {
+    padding-top: 18px;
+    margin-bottom: 45px;
+    border: none;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 40px;
+    margin-bottom: 77px;
+  }
+  .container {
+    padding: 0;
+  }
+  &--expanded {
+    .pagination__inner {
+      max-width: 1216px;
+    }
+  }
+  &__inner {
+    max-width: 922px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+    @include media-breakpoint-up(md) {
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 15px;
+    padding: 0;
+    list-style-type: none;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+  &__page {
+    margin-right: 7px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active .pagination__link {
+      color: #fff;
+      background-color: $secondary-red;
+    }
+  }
+  &__link {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: $secondary-red;
+    font-size: 11px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+  }
+  &__arrow {
+    &.disable {
+      pointer-events: none;
+      font-size: 11px;
+      line-height: 22px;
+      letter-spacing: 0.8px;
+      color: rgba(37, 37, 37, 0.5);
+    }
+  }
+  &__promo {
+    max-width: 852px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
