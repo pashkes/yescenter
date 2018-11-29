@@ -2306,6 +2306,12 @@ $('#trial-lesson').on('submit', function (event) {
 
 
 
+(function () {
+  $('.js-menu-close').on('click', function () {
+    $('body').removeClass('show-menu');
+  });
+})();
+
 var myMap, data = [], geodata = [];
 var markCounter = 1;
 
@@ -2489,12 +2495,6 @@ $('.js-select-lang-order').SumoSelect({
 $('.js-select-time').SumoSelect({
   captionFormat: '{0} Selected'
 });
-
-(function () {
-  $('.js-menu-close').on('click', function () {
-    $('body').removeClass('show-menu');
-  });
-})();
 
 
 
