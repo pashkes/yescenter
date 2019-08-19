@@ -9,8 +9,10 @@
     `npm i`
     `npm i -g tars-cli`
     `npm run start`
-   **How to build the project:**
-    `npm run build`
+
+**How to build the project:**
+`npm run build`
+
 or you can use tars [CLI](https://github.com/tars/tars-cli/blob/master/README.md)
    
 You can find more detail documentation for this Markup builder follow to the [Link](https://github.com/pashkes/tars-doc/blob/master/README.md)
