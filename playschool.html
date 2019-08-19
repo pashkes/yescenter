@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>default title</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta name="HandheldFriendly" content="true" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;amp;subset=cyrillic-ext" rel="preload" as="font" />
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/mainps0bma.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <script>
+            (function (H) {
+                H.className = H.className.replace(/\bno-js\b/, 'js')
+              })(document.documentElement)
+        </script>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-auto">
+                                <form>
+                                    <button class="header__you-city" type="button" data-toggle="modal" data-target="#modal-location">Ваш город:&#160;<span class="header__city">Москва</span>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="col-auto d-xl-flex align-items-center">
+                                <nav>
+                                    <ul class="header__additional-menu d-none d-xl-flex">
+                                        <li class="header__item-menu"><a class="header__link" href="#">Компаниям</a>
+                                        </li>
+                                        <li class="header__item-menu"><a class="header__link" href="#">Франчайзинг</a>
+                                        </li>
+                                        <li class="header__item-menu"><a class="header__link" href="#">Разговорный клуб</a>
+                                        </li>
+                                        <li class="header__item-menu"><a class="header__link" href="#">Дистанционное обучение</a>
+                                        </li>
+                                        <li class="header__item-menu"><a class="header__link" href="#">Онлайн тестирование</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <button class="header__search-btn text-hide" type="button" data-toggle="modal" data-target="#modal-search">
+                                    <svg class="icon" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#search"></use>
+                                    </svg>Поиск
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center no-gutters">
+                            <div class="col-auto">
+                                <div class="header__logo-wrapper">
+                                    <a class="header__logo" href="index.html">
+                                        <img src="static/img/general/logo.svg" width="42" height="42" alt="Иностранные языки в Москве" />
+                                    </a>
+                                    <h1 class="header__site-desc">Иностранные языки<br/>в Москве</h1>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header__user-bar">
+                                    <div class="header__item header__item--contact d-none d-md-block"><span class="header__title-delivery d-block">Бесплатно по России</span><a class="header__tel" href="tel:+488005554477">8 800 555-44-77</a>
+                                    </div>
+                                    <div class="header__item d-none d-xl-block">
+                                        <button class="header__order-call btn btn--grey" type="button" data-toggle="modal" data-target="#callback">заказать звонок</button>
+                                    </div>
+                                    <div class="header__item d-none d-md-block">
+                                        <button class="header__registered-course btn btn--red" type="button" data-toggle="modal" data-target="#order-course">записаться на курсы</button>
+                                    </div>
+                                    <div class="header__item d-xl-none">
+                                        <button class="header__toggle-menu js-show-main-menu text-hide" type="button">Показать меню</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <nav class="menu">
+                        <div class="menu__inner">
+                            <div class="container">
+                                <button class="menu__close btn-close text-hide d-none js-menu-close d-md-block d-xl-none" type="button">
+                                    <svg class="icon" width="14" height="14" aria-hidden="true">
+                                        <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                                    </svg>Закрыть
+                                </button>
+                                <ul class="menu__main">
+                                    <li class="menu__main-item active"><a class="menu__main-link" href="#">Иностранные языки</a>
+                                        <ul class="menu__submenu menu__submenu--second-level">
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Анлийский язык</a>
+                                                <ul class="menu__submenu menu__submenu--third-level">
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                                    </li>
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="programs.html">Программы</a>
+                                        <ul class="menu__submenu menu__submenu--second-level">
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Курсы подготовки к экзамену IELTS</a>
+                                                <ul class="menu__submenu menu__submenu--third-level">
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                                    </li>
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="eng.html">Расписание</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Цены</a>
+                                        <ul class="menu__submenu menu__submenu--second-level">
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Анлийский язык</a>
+                                                <ul class="menu__submenu menu__submenu--third-level">
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                                    </li>
+                                                    <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Немецкий язык</a>
+                                            </li>
+                                            <li class="menu__subitem"><a class="menu__sublink" href="#">Французкий язык</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Акции</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="about.html">О компании</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Информация</a>
+                                    </li>
+                                    <li class="menu__main-item"><a class="menu__main-link" href="#">Школы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu__body d-xl-none">
+                                <div class="container">
+                                    <ul class="menu__additional">
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Компаниям</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Франчайзинг</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Разговорный клуб</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Дистанционное обучение</a>
+                                        </li>
+                                        <li class="menu__additional-item"><a class="menu__additional-link" href="#">Онлайн тестирование</a>
+                                        </li>
+                                    </ul>
+                                    <button class="menu__registration-course btn btn--red" type="button" data-toggle="modal" data-target="#order-course">записаться на курсы</button>
+                                    <div class="menu__footer">
+                                        <ul class="menu__contacts">
+                                            <li class="menu__contact"><a class="menu__tel" href="tel:+484953800520">8 495 380-05-20</a><span class="menu__desc d-block">Для Москвы, 09:00—18:00</span>
+                                            </li>
+                                            <li class="menu__contact"><a class="menu__tel" href="tel:+488005554477">8 800 555-44-77</a><span class="menu__desc d-block">Бесплатно по России</span>
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn--light-blue" data-toggle="modal" data-target="#callback">заказать обратный звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item">Британский детский садик</li>
+                </ul>
+            </div>
+            <section class="playschool">
+                <div class="container">
+                    <h2 class="playschool__title h2">Британский детский садик</h2>
+                </div>
+                <div class="order">
+                    <div class="order__inner section--grey">
+                        <div class="container">
+                            <div class="order__title h3">С 11:00 до 13:00 часов. Для&#160;ребят в возрасте от&#160;3&#160;до&#160;6&#160;лет.</div>
+                            <div class="order__footer">
+                                <button class="order__btn btn btn--red" type="button">оставьте заявку</button>
+                                <p class="order__text">или позвоните по номеру<a href="#">8 800 555-44-77</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="order__desc">При языковом центре YES Education Group работает Британский детский сад для детей 3-6 лет, где дети не только изучают английский язык с опытными преподавателями, но и открывают в себе новые таланты и получают полезные навыки! Уникальная
+                            программа для детей на английском языке: декоративно-прикладное искусство, музыка, изостудия, спортивные игры, математика, кулинарные мастер-классы, театральные постановки, «5 o'clock tea». Программа детского сада разработана
+                            опытными педагогами и психологами специально для ребят столь юного возраста.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="features features--icon-start features--no-border features--no-shadow">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-6 col-xl">
+                            <div class="features__item">
+                                <div class="features__img features__img--light">
+                                    <img class="lazyload blur-up" data-src="static/img/general/light.svg" width="30" height="44" role="presentation" />
+                                </div>
+                                <h3 class="features__name">Уникальная авторская методика без зубрежки
+                </h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl">
+                            <div class="features__item">
+                                <div class="features__img features__img--thumb">
+                                    <img class="lazyload blur-up" data-src="static/img/general/thumb.svg" width="40" height="44" role="presentation" />
+                                </div>
+                                <h3 class="features__name">Использование игрового подхода
+                </h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl">
+                            <div class="features__item">
+                                <div class="features__img features__img--parachute">
+                                    <img class="lazyload blur-up" data-src="static/img/general/parachute.svg" width="46" height="44" role="presentation" />
+                                </div>
+                                <h3 class="features__name">Использование игрового подхода
+                </h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl">
+                            <div class="features__item">
+                                <div class="features__img features__img--pencil">
+                                    <img class="lazyload blur-up" data-src="static/img/general/pencil.svg" width="34" height="45" role="presentation" />
+                                </div>
+                                <h3 class="features__name">Языковое погружение через различные методы
+                </h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl">
+                            <div class="features__item">
+                                <div class="features__img features__img--children">
+                                    <img class="lazyload blur-up" data-src="static/img/general/children.svg" width="35" height="46" role="presentation" />
+                                </div>
+                                <h3 class="features__name">Обучение детей — наше приоритетное направление
+                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="forms-education forms-education--no-slider section section--grey">
+                <div class="container">
+                    <h2 class="forms-education__title h2">Что получит ваш ребенок на занятиях в британском детском садике YES</h2>
+                    <div class="forms-education__row">
+                        <div class="forms-education__col">
+                            <article class="forms-education__item">
+                                <h3 class="forms-education__subject">Устная речь</h3>
+                                <p class="forms-education__text">Малыши учатся рассказывать о своей семье, описывать игрушки, животных, членов семьи, себя и своих друзей. Они начинают выражать свое мнение на английском языке, умеют давать советы, рассказывать о своей жизни.</p>
+                            </article>
+                        </div>
+                        <div class="forms-education__col">
+                            <article class="forms-education__item">
+                                <h3 class="forms-education__subject">Чтение</h3>
+                                <p class="forms-education__text">Дети, освоившие навыки чтения народном языке, обучаются чтению на английском. Им под силу небольшие диалоги, рассказы и комиксы.</p>
+                            </article>
+                        </div>
+                        <div class="forms-education__col">
+                            <article class="forms-education__item">
+                                <h3 class="forms-education__subject">Письмо</h3>
+                                <p class="forms-education__text">На данном этапе мы учим ребят писать отдельные слова, которые после формируются в небольшие предложения например, в надписи к поздравительным открыткам.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="departure departure--border-bottom departure--has-subtitle">
+                <div class="container">
+                    <h2 class="departure__title h2">Как проходят наши занятия</h2>
+                </div>
+                <div class="container">
+                    <p class="departure__subtitle subtitle">Все малыши разные: кто-то вдумчиво повторяет за учителем новые слова, а кто-то не может ни минуты усидеть на месте. Но никому не дают заскучать веселые игры, конкурсы, соревнования – именно в такой форме проводятся уроки на языковых
+                        курсах для детей в школе YES. Главное, что наши любознательные непоседы погружаются в языковую среду с первой до последней минуты занятий, общаясь на английском языке друг с другом и с преподавателем</p>
+                </div>
+                <div class="departure__inner">
+                    <button class="departure__arrow slide-arrow slide-arrow--prev text-hide js-departure-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                        </svg>Предадущий слайд
+                    </button>
+                    <button class="departure__arrow slide-arrow slide-arrow--next text-hide js-departure-next-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                        </svg>Следующий слайд
+                    </button>
+                    <div class="container">
+                        <div class="departure__slider js-school-slider">
+                            <div class="departure__slide">
+                                <img src="static/img/content/playschool-1.jpg" alt="Как проходят наши занятия" />
+                            </div>
+                            <div class="departure__slide">
+                                <img src="static/img/content/playschool-2.jpg" alt="Как проходят наши занятия" />
+                            </div>
+                            <div class="departure__slide">
+                                <img src="static/img/content/playschool-1.jpg" alt="Как проходят наши занятия" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="reviews section">
+                <div class="container">
+                    <h2 class="reviews__title h2">отзывы о британском детском садике</h2>
+                </div>
+                <div class="reviews__slider">
+                    <button class="reviews__arrow slide-arrow slide-arrow--prev text-hide js-reviews-prev-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-left"></use>
+                        </svg>Предадущий слайд
+                    </button>
+                    <button class="reviews__arrow slide-arrow slide-arrow--next text-hide js-reviews-next-btn" type="button">
+                        <svg class="icon" width="12" height="11" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#arrow-right"></use>
+                        </svg>Следующий слайд
+                    </button>
+                    <div class="container">
+                        <div class="row js-reviews-slider">
+                            <div class="col-auto">
+                                <div class="review reviews__item">
+                                    <div class="review__body">
+                                        <header class="review__top">
+                                            <div class="review__photo">
+                                                <img class="lazyload blur-up" data-src="static/img/content/review-photo-1.jpg" width="80" height="80" alt="Мацакян Ваге" />
+                                            </div>
+                                            <div class="review__info">
+                                                <cite class="review__name">Мацакян Ваге</cite><span class="review__school">Школа в Кузьминках</span>
+                                            </div>
+                                        </header>
+                                        <div class="review__message">
+                                            <blockquote>Я учусь в YES еще с открытия школы. Я могу сказать, что это очень эффективные занятия, дополнительные курсы. Я в течении очень маленького периода времени обучился Я могу сказать, что это очень эффективные занятия,
+                                                дополнительные курсы. Я в течении очень маленького периода времени обучился</blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="review reviews__item">
+                                    <div class="review__body">
+                                        <header class="review__top">
+                                            <div class="review__photo">
+                                                <img class="lazyload blur-up" data-src="static/img/content/review-photo-2.jpg" width="80" height="80" alt="Настя Тарасюк" />
+                                            </div>
+                                            <div class="review__info">
+                                                <cite class="review__name">Настя Тарасюк</cite><span class="review__school">Школа в Хорвино</span>
+                                            </div>
+                                        </header>
+                                        <div class="review__message">
+                                            <blockquote>Больше всего мне нравится наш педагог, Екатерина Немцова. Она хорошо объясняет, добрая, отзывчивая. Мне нравятся люди, которые сидят на ресепшн, если что – подскажут. Она хорошо объясняет, добрая, отзывчивая.
+                                                Мне нравятся люди, которые сидят на ресепшн, если что – подскажут.</blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="review reviews__item">
+                                    <div class="review__body">
+                                        <header class="review__top">
+                                            <div class="review__photo">
+                                                <img class="lazyload blur-up" data-src="static/img/content/review-photo-3.jpg" width="80" height="80" alt="Павел" />
+                                            </div>
+                                            <div class="review__info">
+                                                <cite class="review__name">Павел</cite><span class="review__school">Школа в Солнцево</span>
+                                            </div>
+                                        </header>
+                                        <div class="review__message">
+                                            <blockquote>Прошел летний интенсив в Солнцево. Понравилось. Отдельное спасибо преподавателю Дарье, помогла преодолеть неуверенность в произношении на английском. Прошел летний интенсив в Солнцево. Понравилось.</blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="review reviews__item">
+                                    <div class="review__body">
+                                        <header class="review__top">
+                                            <div class="review__photo">
+                                                <img class="lazyload blur-up" data-src="static/img/content/review-photo-1.jpg" width="80" height="80" alt="Мацакян Ваге" />
+                                            </div>
+                                            <div class="review__info">
+                                                <cite class="review__name">Мацакян Ваге</cite><span class="review__school">Школа в Кузьминках</span>
+                                            </div>
+                                        </header>
+                                        <div class="review__message">
+                                            <blockquote>Я учусь в YES еще с открытия школы. Я могу сказать, что это очень эффективные занятия, дополнительные курсы. Я в течении очень маленького периода времени обучился Я могу сказать, что это очень эффективные занятия,
+                                                дополнительные курсы. Я в течении очень маленького периода времени обучился</blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__footer">
+                    <div class="container">
+                        <div class="row align-items-md-center">
+                            <div class="col-md-auto d-xl-none">
+                                <div class="reviews__dots"></div>
+                            </div>
+                            <div class="col-md-auto ml-md-auto text-center"><a class="show-all" href="#">читать все отзывы<span aria-hidden="true">&nbsp;&rarr;</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="map">
+                <div class="container">
+                    <form class="map__form form" id="order-lesson">
+                        <p class="map__title">Ждём вас
+                            <br/>на бесплатном
+                            <br/>занятии!</p>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <label class="visually-hidden" for="order-lesson-full-name">Ваше имя и фамилия</label>
+                                <input class="form__field" placeholder="Ваше имя и фамилия" name="name" required="required" id="order-lesson-full-name" />
+                            </div>
+                            <div class="col-xl-6">
+                                <label class="visually-hidden" for="order-lesson-phone">Ваш номер телефона</label>
+                                <input class="form__field" type="tel" placeholder="Ваш номер телефона" name="phone" required="required" id="order-lesson-phone" />
+                            </div>
+                        </div>
+                        <label class="visually-hidden" for="order-lesson-language">Выберите язык для изучения</label>
+                        <select class="js-select-lang-order" id="order-lesson-language">
+                            <option>Английский</option>
+                            <option selected="selected" disabled="disabled">Выберите язык для изучения</option>
+                            <option>Французкий</option>
+                            <option>Японский</option>
+                            <option>Китайский</option>
+                        </select>
+                        <label class="visually-hidden" for="order-lesson-comment">Комментарии</label>
+                        <input class="form__field" placeholder="Комментарии" name="comments" id="order-lesson-comment" />
+                        <p class="map__conf">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;<a href="#" data-toggle="modal" data-target="#agreement">политикой конфиденциальности YES EDUCATION GROUP</a>
+                        </p>
+                        <button class="map__btn btn btn--red">Отправить заявку</button>
+                    </form>
+                </div>
+                <div class="map__wrapper">
+                    <div class="map__canvas" id="map"></div>
+                </div>
+            </div>
+            <section class="subscribe section">
+                <div class="container">
+                    <form class="subscribe__inner form" id="subscribe">
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <div class="subscribe__img">
+                                    <img class="lazyload blur-up" data-src="static/img/general/letter.png" alt="alt" role="presentation" />
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="subscribe__body">
+                                    <h2 class="subscribe__title"><span>Подпишитесь&#160;</span>на нашу новостную рассылку</h2>
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <label class="visually-hidden" for="subscribe-email">Ваше имя и фамилия</label>
+                                            <input class="subscribe__field form__field" type="email" placeholder="Ваша электронная почта" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="required" id="subscribe-email" />
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <button class="subscribe__btn btn btn--red">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-md-7 col-xl-9">
+                                <div class="footer__inner-langs">
+                                    <h2 class="footer__label-couses d-none d-xl-block">Курсы:</h2>
+                                    <ul class="footer__lang-list">
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Английский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Немецкий</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Французский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Итальянский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Испанский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Китайский</a>
+                                        </li>
+                                        <li class="footer__lang"><a class="footer__link-lang" href="#">Японский</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <button class="footer__btn btn btn--red" type="button" data-toggle="modal" data-target="#order-course">записаться на курсы</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__body">
+                        <div class="row justify-content-xl-start">
+                            <div class="col-7 d-none d-xl-block">
+                                <div class="row align-items-md-center align-items-xl-start">
+                                    <div class="col-3">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">О компании</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">база знаний</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Карта сайта</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Расписание</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Наши школы</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">цены</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">Иностранные языки детям</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">начинающим</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Подросткам</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Взрослым</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Корпоративное обучение</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Английский разговорный клуб</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="footer__menu">
+                                            <li class="footer__item"><a class="footer__link" href="#">международные экзамены</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">Франшиза</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">онлайн тестирование</a>
+                                            </li>
+                                            <li class="footer__item"><a class="footer__link" href="#">YES MY LIFE</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="row justify-content-center justify-content-md-between justify-content-xl-start">
+                                    <div class="col-md-auto col-xl-6">
+                                        <div class="footer__contact"><a class="footer__tel" href="tel:+784953800520">8 495 380-05-20</a><span class="footer__sub-title">Для Москвы, 09:00—18:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-xl-6">
+                                        <div class="footer__contact"><a class="footer__tel" href="tel:+788005554477">8 800 555-44-77</a><span class="footer__sub-title">Бесплатно по России</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-xl-auto ml-xl-auto">
+                                        <button class="footer__btn btn btn--grey" type="button" data-toggle="modal" data-target="#callback">заказать обратный звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="row justify-content-md-between align-items-md-center">
+                            <div class="col-md-auto order-md-2">
+                                <ul class="social footer__social">
+                                    <li class="social__item">
+                                        <a class="social__link" href="#" title="Мы в Однокласники">
+                                            <svg class="icon" width="11" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#odnoklassniki"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#" title="Мы в Вконтакте">
+                                            <svg class="icon" width="21" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#" title="Наш Ютуб">
+                                            <svg class="icon" width="18" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#youtube"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#" title="Наш Фейбук">
+                                            <svg class="icon" width="10" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#fb"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#" title="Наш Инстаграм">
+                                            <svg class="icon" width="18" aria-hidden="true">
+                                                <use xlink:href="static/img/svg-symbols.svg#insta"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md col-xl-9 order-md-1">
+                                <p class="footer__copy">&copy; 2001—2018 Центр иностранных языков Yes. «Yes» является зарегистрированным товарным знаком.<span>При использовании любых материалов сайта, включая фотографии и тексты, активная ссылка на&nbsp;<a href="#">&nbsp;www.yescenter.ru&nbsp;</a>обязательна.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="callback modal fade" tabindex="-1" role="dialog" aria-labelledby="callback-title" aria-hidden="true" id="callback">
+            <div class="modal-dialog d-flex justify-content-center" role="document">
+                <form class="modal-conten form map__form" id="callback-form">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title modal-title title" id="callback-title">Оставьте ваш номер</p>
+                    <p class="form__subtitle">и мы перезвоним в удобное для вас время</p>
+                    <label class="visually-hidden" for="callback-name">Представьтесь, пожалуйста *</label>
+                    <input class="form__field" placeholder="Представьтесь, пожалуйста *" name="name" required="required" id="callback-name" />
+                    <label class="visually-hidden" for="callback-phone">Контактный номер телефона *</label>
+                    <input class="form__field callback__phone" type="tel" placeholder="Контактный номер телефона *" name="phone" required="required" id="callback-phone" />
+                    <div class="callback__row">
+                        <div class="callback__col"><span class="callback__line"></span>
+                            <label class="callback__label d-block" for="callback-time-first">Время
+                                <select class="js-select-time" id="callback-time-first">
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                    <option>18:00</option>
+                                    <option>19:00</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="callback__col d-flex align-items-end">
+                            <label class="visually-hidden" for="callback-time">Время</label>
+                            <select class="js-select-time" id="callback-time">
+                                <option>10:00</option>
+                                <option selected="selected">11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p class="map__conf">Нажимая на кнопку «Перезвоните мне», я даю согласие на обработку персональных данных и соглашаюсь c&#160;<a class="js-open-agreement" href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement">политикой конфиденциальности</a>
+                    </p>
+                    <button class="btn btn--red w-100 js-succes-send">перезвоните мне</button>
+                </form>
+            </div>
+        </div>
+        <div class="callback modal fade" tabindex="-1" role="dialog" aria-labelledby="success-sent" aria-hidden="true" id="success-sended">
+            <div class="modal-dialog d-flex justify-content-center" role="document">
+                <div class="modal-conten map__form">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title callback__title-success" id="success-sent">Спасибо, Ваша заявка отправлена</p>
+                    <p class="callback__subtitle-success">Ближайшее время наш&#160;менедер свяжется с вами.</p>
+                    <button class="btn btn--red w-100" data-dismiss="modal" aria-label="Close" type="button">Закрыть</button>
+                </div>
+            </div>
+        </div>
+        <div class="agreement">
+            <div class="callback modal" tabindex="-1" role="dialog" aria-labelledby="add-info" aria-hidden="true" id="agreement">
+                <div class="modal-dialog d-flex justify-content-center modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                            <svg class="icon" width="14" height="14" aria-hidden="true">
+                                <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                            </svg>Закрыть
+                        </button>
+                        <p class="agreement__title map__title" id="add-info">Соглашение о защите прав и информации. Условия и правила использования данных.</p>
+                        <div class="agreement__content" data-simplebar="data-simplebar" data-simplebar-auto-hide="false" id="agreement-content">
+                            <div class="agreement__content-inner">
+                                <h3>1. ВАШЕ СОГЛАСИЕ</h3>
+                                <p>Предоставив Ваши персональные данные на сайте&#160;<a href="www.yescenter.ru">www.yescenter.ru&#160;</a>ЧОУ ДО Школа английского языка «ЕС» (далее YES), Вы автоматически соглашаетесь с тем, что указанные Вами данные могут
+                                    быть использованы YES или аффилированными лицами YES в информационной и рекламной рассылке, в том числе по email и SMS, и Ваши данные охраняются в рамках Соглашения о защите прав. Вы можете отказаться от получения рекламной
+                                    информации YES и аффилированных лиц YES, связавшись с нашим контактным центром по номеру телефона 8-800 555-44-77 или по электронному адресу&#160;<a href="mailto:media@yescenter.ru">media@yescenter.ru.</a>
+                                </p>
+                                <h3>2. ВАШИ КОНТАКТНЫЕ ДАННЫЕ</h3>
+                                <p>При бронировании курса или оформлении запроса на бесплатный тест на нашем сайте, нам необходимо узнать Ваши персональные данные - такие, как Ваше имя, эл. адрес, номер телефона и место жительства. Мы не разглашаем Ваши
+                                    персональные данные за пределами организации.</p>
+                                <h3>3. ИНФОРМАЦИЯ О ПОСЕТИТЕЛЯХ САЙТА www.yescenter.ru</h3>
+                                <p>YES может получить доступ к информации о посещаемости от&#160;<a href="www.yescenter.ru">www.yescenter.ru&#160;</a>, например, о количестве и частоте посещаемости на нашем вебсайте. Эти данные используются только в суммарном
+                                    виде и не содержат никакой персональной идентификационной информации.</p>
+                                <h3>4. ИСПОЛЬЗОВАНИЕ COOKIES</h3>
+                                <p>YES применяет так называемую технологию "cookies". Сookies - это информационные файлы, которые передаются с вебсайта на жесткий диск Вашего компьютера в целях хранения данной информации. Они предоставляют нам информацию
+                                    о том как, когда и каким количеством людей посещаются страницы нашего вебсайта.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="callback modal fade order-course" tabindex="-1" role="dialog" aria-labelledby="write-course" aria-hidden="true" id="order-course">
+            <div class="modal-dialog d-flex justify-content-center" role="document">
+                <form class="modal-conten form map__form" id="order-course-form">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title modal-title" id="write-course">Записаться
+                        <br/>на курсы</p>
+                    <label class="visually-hidden" for="order-course-form-name">Представьтесь, пожалуйста *</label>
+                    <input class="form__field" placeholder="Представьтесь, пожалуйста *" name="name" required="required" id="order-course-form-name" />
+                    <label class="visually-hidden" for="order-course-phone">Контактный номер телефона *</label>
+                    <input class="form__field callback__phone" type="tel" placeholder="Контактный номер телефона *" name="phone" required="required" id="order-course-phone" />
+                    <label class="visually-hidden" for="order-course-time-first">Выберите язык для изучения *</label>
+                    <select class="js-select-lang-order" id="order-course-time-first">
+                        <option selected="selected" disabled="disabled">Выберите язык для изучения *</option>
+                        <option>Английский язык</option>
+                        <option>Немецкий язык</option>
+                        <option>Французкий язык</option>
+                        <option>Испанский язык</option>
+                        <option>Итальянский язык</option>
+                        <option>Китайский язык</option>
+                        <option>Японский язык</option>
+                        <option>Другой (укажите в комментариях)</option>
+                    </select>
+                    <label class="visually-hidden" for="order-course-form-message">Комментарий</label>
+                    <input class="form__field" placeholder="Комментарий" name="name" id="order-course-form-message" />
+                    <p class="map__conf">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;<a class="js-open-agreement" href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement">политикой конфиденциальности</a>
+                    </p>
+                    <button class="btn btn--red w-100 js-succes-send">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+        <div class="callback modal fade order-course" tabindex="-1" role="dialog" aria-labelledby="trial-lesson-title" aria-hidden="true" id="trial-lesson-modal">
+            <div class="modal-dialog d-flex justify-content-center" role="document">
+                <form class="modal-conten form map__form">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title modal-title" id="trial-lesson-title">Пробный урок
+                        <br/>в подарок!</p>
+                    <label class="visually-hidden" for="trial-lesson-name">Представьтесь, пожалуйста *</label>
+                    <input class="form__field" placeholder="Представьтесь, пожалуйста *" name="name" required="required" id="trial-lesson-name" />
+                    <label class="visually-hidden" for="trial-lesson-phone">Контактный номер телефона *</label>
+                    <input class="form__field callback__phone" type="tel" placeholder="Контактный номер телефона *" name="phone" required="required" id="trial-lesson-phone" />
+                    <label class="visually-hidden" for="trial-lesson-select-course">Выберите язык для изучения *</label>
+                    <select class="js-select-lang-order" id="trial-lesson-select-course">
+                        <option>Английский язык</option>
+                        <option selected="selected" disabled="disabled">Выберите язык для изучения *</option>
+                        <option>Немецкий язык</option>
+                        <option>Французкий язык</option>
+                        <option>Испанский язык</option>
+                        <option>Итальянский язык</option>
+                        <option>Китайский язык</option>
+                        <option>Японский язык</option>
+                        <option>Другой (укажите в комментариях)</option>
+                    </select>
+                    <label class="visually-hidden" for="trial-lesson-message">Комментарий</label>
+                    <input class="form__field" placeholder="Комментарий" name="name" id="trial-lesson-message" />
+                    <p class="map__conf">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c&#160;<a class="js-open-agreement" href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#agreement">политикой конфиденциальности</a>
+                    </p>
+                    <button class="btn btn--red w-100 js-succes-send">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+        <div class="callback modal fade" tabindex="-1" role="dialog" aria-labelledby="orderSuccessLabel" aria-hidden="true" id="order-success">
+            <div class="modal-dialog d-flex justify-content-center" role="document">
+                <div class="modal-conten map__form">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title callback__title-success" id="orderSuccessLabel">Поздравляем!
+                        <br/>теперь Вы подписаны
+                        <br/>на новостнуюq
+                        <br/>рассылку.</p>
+                    <p class="callback__subtitle-success">Теперь вы всегда будете первыми узнавать о последних новстях и акциях нашей школы! Нужен текст.</p>
+                    <button class="btn btn--red w-100" data-dismiss="modal" aria-label="Close" type="button">Закрыть</button>
+                </div>
+            </div>
+        </div>
+        <div class="callback modal modal-search" tabindex="-1" role="dialog" aria-labelledby="search-label" aria-hidden="true" id="modal-search">
+            <div class="modal-dialog d-flex justify-content-center modal-dialog-centered" role="document">
+                <form class="modal-conten map__form form" id="search">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title modal-title title" id="search-label">Поиск по сайту</p>
+                    <div class="row no-gutters">
+                        <div class="col-sm d-flex"><span class="modal-search__icon">
+                <svg class="icon" width="16" height="16" aria-hidden="true">
+                  <use xlink:href="static/img/svg-symbols.svg#search"></use>
+                </svg></span>
+                            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+                            <input class="form__field flex-grow-1" type="search" placeholder="Я ищу, папример: курсы анлийского языка для детей" id="search-field" />
+                        </div>
+                        <div class="col-sm-auto">
+                            <button class="modal-search__btn btn btn--red">найти</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="callback modal modal-location" tabindex="-1" role="dialog" aria-labelledby="select-your-city" aria-hidden="true" id="modal-location">
+            <div class="modal-dialog d-flex justify-content-center modal-dialog-centered" role="document">
+                <form class="modal-conten map__form">
+                    <button class="btn-close form__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon" width="14" height="14" aria-hidden="true">
+                            <use xlink:href="static/img/svg-symbols.svg#close"></use>
+                        </svg>Закрыть
+                    </button>
+                    <p class="map__title modal-title title" id="select-your-city">Выберите ваш город</p>
+                    <div class="modal-location__row">
+                        <div class="modal-location__container">
+                            <div class="modal-location__city-col"><span class="modal-location__city">Москва</span>
+                            </div>
+                            <div class="modal-location__col-list">
+                                <ul class="modal-location__list">
+                                    <li><a href="#">Москва</a>
+                                    </li>
+                                    <li><a href="#">Солнцево</a>
+                                    </li>
+                                    <li><a href="#">Хорвино</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-location__col-list">
+                                <ul class="modal-location__list">
+                                    <li><a href="#">Метро Кузьминки</a>
+                                    </li>
+                                    <li><a href="#">Метро Павелецкая</a>
+                                    </li>
+                                    <li><a href="#">Метро Перово</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-location__col-list">
+                                <ul class="modal-location__list">
+                                    <li><a href="#">Метро Каховская</a>
+                                    </li>
+                                    <li><a href="#">Метро Топарево</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-location__row">
+                        <div class="modal-location__container">
+                            <div class="modal-location__city-col">Московская
+                                <br/>область</div>
+                            <div class="modal-location__col-list">
+                                <ul class="modal-location__list">
+                                    <li><a href="#">Люберцы</a>
+                                    </li>
+                                    <li><a href="#">Рамеское</a>
+                                    </li>
+                                    <li><a href="#">Жуковский</a>
+                                    </li>
+                                    <li><a href="#">Балашиха</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-location__col-list">
+                                <ul class="modal-location__list">
+                                    <li><a href="#">Волокаламск</a>
+                                    </li>
+                                    <li><a href="#">Латкарино</a>
+                                    </li>
+                                    <li><a href="#">Егорьевск</a>
+                                    </li>
+                                    <li><a href="#">Щелково</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-location__col-list">
+                                <ul class="modal-location__list">
+                                    <li><a href="#">Подольск</a>
+                                    </li>
+                                    <li><a href="#">Пушкино</a>
+                                    </li>
+                                    <li><a href="#">Коломна</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-location__row">
+                        <div class="modal-location__container">
+                            <div class="modal-location__city-col">Ленинградская
+                                <br/>область</div>
+                            <div class="modal-location__col-list">
+                                <ul class="modal-location__list">
+                                    <li><a href="#">Санкт-Петербург</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-location__row">
+                        <div class="modal-location__container">
+                            <div class="modal-location__city-col">Тульская
+                                <br/>область</div>
+                            <div class="modal-location__col-list">
+                                <ul class="modal-location__list">
+                                    <li><a href="#">Тула</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-location__row">
+                        <div class="modal-location__container">
+                            <div class="modal-location__city-col">Владимирская
+                                <br/>область</div>
+                            <div class="modal-location__col-list">
+                                <ul class="modal-location__list">
+                                    <li><a href="#">Александров</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer="defer"></script>
+        <script src="static/js/mainps0bma.js"></script>
+    </body>
+
+</html>
