@@ -5,13 +5,13 @@
 
 **Tags**: pug, Sass
 
-**How to start dev server:**
-    `npm i`
-    `npm i -g tars-cli`
-    `npm run start`
-
-**How to build the project:**
-`npm run build`
+**How to start dev server?**  
+ - you have to install TARS-CLI globally: `npm i -g tars-cli`
+ - then you should install npm dependencies `npm i`
+ - start dev server `npm run start`
+ 
+**How to build the project?**  
+Just enter  `npm run build`
 
 or you can use tars [CLI](https://github.com/tars/tars-cli/blob/master/README.md)
    
