@@ -2187,6 +2187,14 @@ $('#trial-lesson').on('submit', function (event) {
 
 
 (function () {
+  $('.js-examps-define-slider').slick({
+    arrows: false,
+    dots: true,
+    appendDots: $('.js-examps-dots')
+  });
+})();
+
+(function () {
   $('.js-examp-first-slider').slick({
     dots: true,
     arrows: false,
@@ -2238,14 +2246,6 @@ $('#trial-lesson').on('submit', function (event) {
         }
       }
     ]
-  });
-})();
-
-(function () {
-  $('.js-examps-define-slider').slick({
-    arrows: false,
-    dots: true,
-    appendDots: $('.js-examps-dots')
   });
 })();
 
@@ -2305,12 +2305,6 @@ $('#trial-lesson').on('submit', function (event) {
 
 
 
-
-(function () {
-  $('.js-menu-close').on('click', function () {
-    $('body').removeClass('show-menu');
-  });
-})();
 
 var myMap, data = [], geodata = [];
 var markCounter = 1;
@@ -2496,7 +2490,11 @@ $('.js-select-time').SumoSelect({
   captionFormat: '{0} Selected'
 });
 
-
+(function () {
+  $('.js-menu-close').on('click', function () {
+    $('body').removeClass('show-menu');
+  });
+})();
 
 (function () {
   function addEventFileRemove() {
@@ -2520,6 +2518,8 @@ $('.js-select-time').SumoSelect({
     $('.js-select-remove-file').on('click', addEventFileRemove);
   });
 })();
+
+
 
 
 
@@ -2577,16 +2577,6 @@ $('.js-select-time').SumoSelect({
 
 
 (function () {
-
-  $('.js-reviews-list').on('change', function () {
-    let amountReviews = $(this).find('option:selected').val();
-    let currentTextOption = $(this).find('option:selected').text();
-    $('.js-name-list-reviews').text(currentTextOption);
-    $('.js-amount-list-reviews').text(amountReviews);
-  });
-})();
-
-(function () {
   $('.js-select-defaul').each(function () {
     $(this).SumoSelect({    nativeOnDevice: ['Android', 'BlackBerry', 'iPhone', 'iPad', 'iPod', 'Opera Mini', 'IEMobile', 'Silk'],
     });
@@ -2636,6 +2626,16 @@ $(window).on('load', function () {
 });
 
 
+
+(function () {
+
+  $('.js-reviews-list').on('change', function () {
+    let amountReviews = $(this).find('option:selected').val();
+    let currentTextOption = $(this).find('option:selected').text();
+    $('.js-name-list-reviews').text(currentTextOption);
+    $('.js-amount-list-reviews').text(amountReviews);
+  });
+})();
 
 (function () {
   $('.js-school-slider').slick({
