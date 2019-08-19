@@ -55,7 +55,7 @@
     "gulp-pug-inheritance": "https://github.com/artem-malko/gulp-pug-inheritance/archive/master.tar.gz",
     "gulp-rename": "^1.2.2",
     "gulp-replace-task": "^0.11.0",
-    "gulp-sass": "^2.3.2",
+    "gulp-sass": "4.0.2",
     "gulp-sourcemaps": "1.6.0",
     "gulp-stylus": "^2.5.0",
     "gulp-svg-spritesheet": "https://github.com/artem-malko/gulp-svg-spritesheet/archive/master.tar.gz",
@@ -67,6 +67,7 @@
     "gulp.spritesmith": "^6.2.1",
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
+    "node-sass": "^4.12.0",
     "run-sequence": "^1.2.2",
     "source-map-loader": "^0.1.5",
     "stream-combiner": "^0.2.2",
@@ -82,8 +83,9 @@
   "scripts": {
     "install": "node ./tars/helpers/install-additional-deps.js",
     "lint": "eslint webpack.config.js tars/*.js tars/tasks/**/*.js tars/watchers/**/*.js tars/helpers/**/*.js gulpfile.js --rule 'valid-jsdoc: [0, {}]'",
-    "start": "gulp dev --lr",
-    "deploy": "gh-pages -d builds"
+    "start": "tars dev -l",
+    "build": "tars build -r",
+    "deploy": "npm run build && gh-pages -d builds"
   },
   "repository": {
     "type": "git",
