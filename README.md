@@ -7,6 +7,7 @@
 
 **How to start dev server:**
     `npm i`
+    `npm i -g tars-cli`
     `npm run start`
    
    **How to build the project:**
