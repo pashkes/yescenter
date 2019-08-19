@@ -9,7 +9,6 @@
     `npm i`
     `npm i -g tars-cli`
     `npm run start`
-   
    **How to build the project:**
     `npm run build`
 or you can use tars [CLI](https://github.com/tars/tars-cli/blob/master/README.md)
