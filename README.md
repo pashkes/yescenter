@@ -2,7 +2,8 @@
 
 ## Yescenter
 **Project brief:** The site school foreign languages in corporate design. This is great experience how to reusable blocks in different pages of the site. There are 47 pages.
-Tags: pug, Sass
+
+**Tags**: pug, Sass
 
 **How to start dev server:**
     `npm i`
@@ -22,7 +23,7 @@ You can find more detail documentation for this Markup builder follow to the [Li
  3. [Actions](https://pashkes.github.io/yescenter/actions)
  4. [Album](https://pashkes.github.io/yescenter/album)
  5. [Albums](https://pashkes.github.io/yescenter/albums)
- 6. [enter link description here](https://pashkes.github.io/yescenter/animals)
+ 6. [Animals](https://pashkes.github.io/yescenter/animals)
  7. [Base](https://pashkes.github.io/yescenter/base)
  8. [Base text](https://pashkes.github.io/yescenter/base-text)
  9. [Blog](https://pashkes.github.io/yescenter/blog)
@@ -36,7 +37,7 @@ You can find more detail documentation for this Markup builder follow to the [Li
  17. [English](https://pashkes.github.io/yescenter/english)
  18. [Examps](https://pashkes.github.io/yescenter/examps)
  19. [FAQ](https://pashkes.github.io/yescenter/faq)
- 20. [enter link description here](https://pashkes.github.io/yescenter/for-kids)
+ 20. [For-kids](https://pashkes.github.io/yescenter/for-kids)
  21. [For-kids-3-4](https://pashkes.github.io/yescenter/for-kids-3-4)
  22. [Foreign-lang](https://pashkes.github.io/yescenter/foreign-lang)
  23. [Individual](https://pashkes.github.io/yescenter/individual)
